@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>helios - API Reference</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1md_docs_2heliosapi"/></para>
+<sect1 id="index_1autotoc_md61">
+<title>Introduction</title><para>Welcome to the API reference for the <computeroutput><ref refid="namespacehelios" kindref="compound">helios</ref></computeroutput> Framework.</para>
+<para><computeroutput><ref refid="namespacehelios" kindref="compound">helios</ref></computeroutput> is an ongoing, educational project and strives for providing a foundational and modular technical backbone for game development. Designed with a top-down, prototype-oriented approach, it emphasizes a clear separation of concerns and robust architectural patterns to help with creating maintainable games.</para>
+</sect1>
+<sect1 id="index_1autotoc_md62">
+<title>Core Purpose</title><para>The primary objective of <computeroutput><ref refid="namespacehelios" kindref="compound">helios</ref></computeroutput> is to offer a flexible and extensible platform for interactive games. As a prototype, it provides the following systems:</para>
+<para><itemizedlist>
+<listitem><para><bold>Rendering Pipeline:</bold> A rendering layer with customizable render passes.</para>
+</listitem><listitem><para><bold>Modular Subsystems:</bold> Well-defined interfaces for core components such as Scene Management and Rendering.</para>
+</listitem><listitem><para><bold>Modern C++ Practices:</bold> Leveraging C++(23) Modules for improved dependency management and compile-time efficiency.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="index_1autotoc_md63">
+<title>Architecture Overview</title><para>The framework&apos;s architecture follows a component-based philosophy, providing abstract interfaces that decouple high-level scene descriptions from underlying hardware implementations. Further details on specific modules, classes, and their relationships can be found within the respective namespace and class documentation sections.</para>
+</sect1>
+<sect1 id="index_1autotoc_md64">
+<title>License</title><para><computeroutput><ref refid="namespacehelios" kindref="compound">helios</ref></computeroutput> is distributed under the MIT-license. </para>
+</sect1>
+    </detaileddescription>
+    <location file="docs/heliosapi.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,20 @@
+<map id="include/helios/rendering/model/config/MaterialProperties.ixx" name="include/helios/rendering/model/config/MaterialProperties.ixx">
+<area shape="rect" id="Node000001" title=" " alt="" coords="196,5,455,45"/>
+<area shape="rect" id="Node000002" href="$UniformSemantics_8ixx.html" title=" " alt="" coords="5,181,184,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,48,226,95,128,174,125,170,222,91,294,43"/>
+<area shape="rect" id="Node000004" href="$UniformValueMap_8ixx.html" title=" " alt="" coords="236,93,415,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="328,46,328,79,323,79,323,46"/>
+<area shape="rect" id="Node000008" href="$math_2types_2__module_8ixx.html" title=" " alt="" coords="480,189,619,214"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="358,43,428,91,484,136,529,177,526,181,480,141,425,95,355,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="61,269,129,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,222,97,255,92,255,92,222"/>
+<area shape="poly" id="edge9_Node000004_Node000002" title=" " alt="" coords="276,136,159,179,157,174,274,131"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="208,189,264,214"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="307,136,260,181,256,177,304,132"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="288,189,363,214"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="328,134,328,175,323,175,323,134"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="387,189,455,214"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="348,132,399,177,396,181,345,136"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="375,131,508,181,506,186,374,136"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="584,186,624,185,639,191,645,201,641,211,630,216,597,219,597,213,628,211,637,207,640,201,636,195,624,190,584,191"/>
+</map>

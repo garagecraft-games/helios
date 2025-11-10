@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="heliosapi_8md" kind="file" language="Markdown">
+    <compoundname>heliosapi.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>helios<sp/>-<sp/>API<sp/>Reference</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Introduction</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Welcome<sp/>to<sp/>the<sp/>API<sp/>reference<sp/>for<sp/>the<sp/>`helios`<sp/>Framework.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`helios`<sp/>is<sp/>an<sp/>ongoing,<sp/>educational<sp/>project<sp/>and<sp/>strives<sp/>for<sp/>providing<sp/>a<sp/>foundational<sp/>and<sp/>modular<sp/>technical<sp/>backbone<sp/>for<sp/>game<sp/>development.<sp/>Designed<sp/>with<sp/>a<sp/>top-down,<sp/>prototype-oriented<sp/>approach,<sp/>it<sp/>emphasizes<sp/>a<sp/>clear<sp/>separation<sp/>of<sp/>concerns<sp/>and<sp/>robust<sp/>architectural<sp/>patterns<sp/>to<sp/>help<sp/>with<sp/>creating<sp/>maintainable<sp/>games.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Core<sp/>Purpose</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>primary<sp/>objective<sp/>of<sp/>`helios`<sp/>is<sp/>to<sp/>offer<sp/>a<sp/>flexible<sp/>and<sp/>extensible<sp/>platform<sp/>for<sp/>interactive<sp/>games.<sp/>As<sp/>a<sp/>prototype,<sp/>it<sp/>provides<sp/>the<sp/>following<sp/>systems:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**Rendering<sp/>Pipeline:**<sp/>A<sp/>rendering<sp/>layer<sp/>with<sp/>customizable<sp/>render<sp/>passes.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Modular<sp/>Subsystems:**<sp/>Well-defined<sp/>interfaces<sp/>for<sp/>core<sp/>components<sp/>such<sp/>as<sp/>Scene<sp/>Management<sp/>and<sp/>Rendering.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Modern<sp/>C++<sp/>Practices:**<sp/>Leveraging<sp/>C++(23)<sp/>Modules<sp/>for<sp/>improved<sp/>dependency<sp/>management<sp/>and<sp/>compile-time<sp/>efficiency.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Architecture<sp/>Overview</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>framework&apos;s<sp/>architecture<sp/>follows<sp/>a<sp/>component-based<sp/>philosophy,<sp/>providing<sp/>abstract<sp/>interfaces<sp/>that<sp/>decouple<sp/>high-level<sp/>scene<sp/>descriptions<sp/>from<sp/>underlying<sp/>hardware<sp/>implementations.<sp/>Further<sp/>details<sp/>on<sp/>specific<sp/>modules,<sp/>classes,<sp/>and<sp/>their<sp/>relationships<sp/>can<sp/>be<sp/>found<sp/>within<sp/>the<sp/>respective<sp/>namespace<sp/>and<sp/>class<sp/>documentation<sp/>sections.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>License</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`helios`<sp/>is<sp/>distributed<sp/>under<sp/>the<sp/>MIT-license.</highlight></codeline>
+    </programlisting>
+    <location file="docs/heliosapi.md"/>
+  </compounddef>
+</doxygen>

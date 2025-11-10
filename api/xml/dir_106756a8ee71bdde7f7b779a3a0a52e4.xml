@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_106756a8ee71bdde7f7b779a3a0a52e4" kind="dir">
+    <compoundname>include/ext</compoundname>
+    <innerdir refid="dir_87bb11e6601443413726efc9dc479d01">include/ext/glfw</innerdir>
+    <innerdir refid="dir_e6d2024ed47421d40e989df615c8235b">include/ext/opengl</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="dir_106756a8ee71bdde7f7b779a3a0a52e4_1autotoc_md16">
+<title>helios::ext</title><para>This namespace contains platform-specific implementations for various subsystems including GLFW window management and OpenGL rendering.</para>
+<para><hruler/>
+ <details><summary>Doxygen</summary><para></para>
+<para></para>
+</details></para>
+</sect1>
+    </detaileddescription>
+    <location file="include/ext/"/>
+  </compounddef>
+</doxygen>

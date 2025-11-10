@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="ext_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <innernamespace refid="namespacehelios_1_1ext">helios::ext</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>helios::ext</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>namespace<sp/>contains<sp/>platform-specific<sp/>implementations<sp/>for<sp/>various<sp/>subsystems<sp/>including<sp/>GLFW<sp/>window<sp/>management<sp/>and<sp/>OpenGL<sp/>rendering.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">&lt;details&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;summary&gt;Doxygen&lt;/summary&gt;&lt;p&gt;</highlight></codeline>
+<codeline><highlight class="normal">@namespace<sp/>helios::ext</highlight></codeline>
+<codeline><highlight class="normal">@brief<sp/>Platform-specific<sp/>extensions<sp/>and<sp/>implementations.</highlight></codeline>
+<codeline><highlight class="normal">@details<sp/>This<sp/>namespace<sp/>contains<sp/>platform-specific<sp/>implementations<sp/>for<sp/>various<sp/>subsystems<sp/>including<sp/>GLFW<sp/>window<sp/>management<sp/>and<sp/>OpenGL<sp/>rendering.</highlight></codeline>
+<codeline><highlight class="normal">&lt;/p&gt;&lt;/details&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="include/ext/README.md"/>
+  </compounddef>
+</doxygen>

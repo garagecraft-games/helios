@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8window_8event_8FrameBufferResizeEvent" kind="module">
+    <compoundname>helios.window.event.FrameBufferResizeEvent</compoundname>
+    <innerfile refid="FrameBufferResizeEvent_8ixx">FrameBufferResizeEvent.ixx</innerfile>
+    <innerclass refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent" prot="public">helios::window::event::FrameBufferResizeEvent</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a034473dee57a544db3c11cdce9581cee" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int helios::window::event::FrameBufferResizeEvent::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>helios::window::event::FrameBufferResizeEvent::width</qualifiedname>
+        <briefdescription>
+<para>The width of the framebuffer in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/window/event/FrameBufferResizeEvent.ixx" line="29" column="19" bodyfile="include/helios/window/event/FrameBufferResizeEvent.ixx" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1ab820764c47c98cbadccf84316a9eb10e">helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a50baa7a32422bfb0458fa5c2c1554e65">helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a10c981d2a950346e2515a2e8a3ededd0" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int helios::window::event::FrameBufferResizeEvent::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>helios::window::event::FrameBufferResizeEvent::height</qualifiedname>
+        <briefdescription>
+<para>The height of the framebuffer in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/window/event/FrameBufferResizeEvent.ixx" line="35" column="19" bodyfile="include/helios/window/event/FrameBufferResizeEvent.ixx" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1ab820764c47c98cbadccf84316a9eb10e">helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a50baa7a32422bfb0458fa5c2c1554e65">helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1ab820764c47c98cbadccf84316a9eb10e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</definition>
+        <argsstring>(const util::Guid sourceGuid, const int width, const int height) noexcept</argsstring>
+        <name>FrameBufferResizeEvent</name>
+        <qualifiedname>helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</qualifiedname>
+        <param>
+          <type>const util::Guid</type>
+          <declname>sourceGuid</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a `FrameBufferResizeEvent`. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceGuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Guid of the source of the event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new width of the framebuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new height of the framebuffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/window/event/FrameBufferResizeEvent.ixx" line="45" column="9"/>
+        <references refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a10c981d2a950346e2515a2e8a3ededd0" compoundref="FrameBufferResizeEvent_8ixx" startline="35">helios::window::event::FrameBufferResizeEvent::height</references>
+        <references refid="classhelios_1_1window_1_1event_1_1WindowEvent_1a8116ef9bcb82c44bbf6ee846abca9f00" compoundref="WindowEvent_8ixx" startline="43">helios::window::event::WindowEvent::sourceGuid</references>
+        <references refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a034473dee57a544db3c11cdce9581cee" compoundref="FrameBufferResizeEvent_8ixx" startline="29">helios::window::event::FrameBufferResizeEvent::width</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a50baa7a32422bfb0458fa5c2c1554e65" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</definition>
+        <argsstring>(const util::Guid sourceGuid, const int width, const int height, const uint64_t tag) noexcept</argsstring>
+        <name>FrameBufferResizeEvent</name>
+        <qualifiedname>helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</qualifiedname>
+        <param>
+          <type>const util::Guid</type>
+          <declname>sourceGuid</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const uint64_t</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a `FrameBufferResizeEvent`. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceGuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Guid of the source of the event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new width of the framebuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new height of the framebuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A `uint64_t` tag for identifying/categorizing the event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/window/event/FrameBufferResizeEvent.ixx" line="58" column="9"/>
+        <references refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a10c981d2a950346e2515a2e8a3ededd0" compoundref="FrameBufferResizeEvent_8ixx" startline="35">helios::window::event::FrameBufferResizeEvent::height</references>
+        <references refid="classhelios_1_1window_1_1event_1_1WindowEvent_1a8116ef9bcb82c44bbf6ee846abca9f00" compoundref="WindowEvent_8ixx" startline="43">helios::window::event::WindowEvent::sourceGuid</references>
+        <references refid="classhelios_1_1event_1_1Event_1a6b7048ac1591c2decbbabbb2100e7db7">helios::event::Event::tag</references>
+        <references refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a034473dee57a544db3c11cdce9581cee" compoundref="FrameBufferResizeEvent_8ixx" startline="29">helios::window::event::FrameBufferResizeEvent::width</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/helios/window/event/FrameBufferResizeEvent.ixx" line="5" column="15"/>
+  </compounddef>
+</doxygen>

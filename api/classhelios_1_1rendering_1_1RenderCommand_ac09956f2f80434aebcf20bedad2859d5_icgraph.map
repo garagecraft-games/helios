@@ -1,0 +1,6 @@
+<map id="helios::rendering::RenderCommand::mesh" name="helios::rendering::RenderCommand::mesh">
+<area shape="rect" id="Node000001" title="Returns a weak ptr to the mesh associated with this command. Use `mesh.lock()` on the return value to..." alt="" coords="309,29,488,69"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="444,18,428,11,399,8,373,10,358,15,352,21,355,28,350,30,347,20,355,10,372,5,399,3,429,5,446,13"/>
+<area shape="rect" id="Node000002" href="$classhelios_1_1rendering_1_1RenderCommand.html#a26b8f9e5e6422bdda7ca626002c7d2a3" title="Constructs a new `RenderCommand`. Initializes this `RenderCommand` with weak pointers to the shader a..." alt="" coords="5,29,261,69"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="296,52,261,52,261,47,296,47"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="helios::scene::SceneNode::renderable" name="helios::scene::SceneNode::renderable">
+<area shape="rect" id="Node000001" title="Returns a shared pointer to the Renderable of this SceneNode." alt="" coords="241,37,429,77"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="375,26,361,19,335,16,313,18,299,23,294,29,297,36,292,38,289,28,296,18,312,13,335,11,363,14,378,21"/>
+<area shape="rect" id="Node000002" href="$classhelios_1_1scene_1_1SceneNode.html#af2af3ad7c17ecf2a693724deed12ce02" title="Constructs a new SceneNode representing a renderable object." alt="" coords="5,5,193,45"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="227,45,193,41,194,35,228,40"/>
+<area shape="rect" id="Node000003" href="$classhelios_1_1scene_1_1SceneNode.html#ac391d6973219428d9048caffe721cfb1" title="Constructs a new SceneNode representing a renderable object." alt="" coords="5,69,193,109"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="228,75,194,79,193,74,227,69"/>
+</map>

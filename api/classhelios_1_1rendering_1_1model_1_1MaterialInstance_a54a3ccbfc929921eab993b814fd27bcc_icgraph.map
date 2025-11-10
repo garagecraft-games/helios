@@ -1,0 +1,6 @@
+<map id="helios::rendering::model::MaterialInstance::shader" name="helios::rendering::model::MaterialInstance::shader">
+<area shape="rect" id="Node000001" title="Returns a shared pointer to the shader used by the Material." alt="" coords="233,29,413,84"/>
+<area shape="rect" id="Node000002" href="$classhelios_1_1rendering_1_1model_1_1MaterialInstance.html#a2b3bd5639e434bb30cc3edddb50088d7" title="Writes this MaterialInstance&#39;s uniform values into the given map." alt="" coords="5,29,185,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,59,185,59,185,54,219,54"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="133,18,119,11,95,8,75,10,62,15,56,21,56,29,51,29,51,19,59,10,74,5,95,3,121,6,136,14"/>
+</map>

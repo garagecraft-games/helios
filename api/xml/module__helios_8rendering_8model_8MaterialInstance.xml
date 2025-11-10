@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8rendering_8model_8MaterialInstance" kind="module">
+    <compoundname>helios.rendering.model.MaterialInstance</compoundname>
+    <innerfile refid="MaterialInstance_8ixx">MaterialInstance.ixx</innerfile>
+    <innerclass refid="classhelios_1_1rendering_1_1model_1_1MaterialInstance" prot="public">helios::rendering::model::MaterialInstance</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1abbc6f457f9b5b85ede65c8b4c1ac2b32" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1model_1_1Material" kindref="compound">helios::rendering::model::Material</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;const helios::rendering::model::Material&gt; helios::rendering::model::MaterialInstance::materialDefinition_</definition>
+        <argsstring></argsstring>
+        <name>materialDefinition_</name>
+        <qualifiedname>helios::rendering::model::MaterialInstance::materialDefinition_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/rendering/model/MaterialInstance.ixx" line="36" column="25" bodyfile="include/helios/rendering/model/MaterialInstance.ixx" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1a53526b3c9da3017a0d63ff71d932d7d5" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; const <ref refid="structhelios_1_1rendering_1_1model_1_1config_1_1MaterialPropertiesOverride" kindref="compound">helios::rendering::model::config::MaterialPropertiesOverride</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;const helios::rendering::model::config::MaterialPropertiesOverride&gt; helios::rendering::model::MaterialInstance::materialOverrides_</definition>
+        <argsstring></argsstring>
+        <name>materialOverrides_</name>
+        <qualifiedname>helios::rendering::model::MaterialInstance::materialOverrides_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/rendering/model/MaterialInstance.ixx" line="38" column="25" bodyfile="include/helios/rendering/model/MaterialInstance.ixx" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1a16e2c1102974a52123b3376e4c78376f" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classhelios_1_1util_1_1log_1_1Logger" kindref="compound">helios::util::log::Logger</ref> &amp;</type>
+        <definition>const helios::util::log::Logger&amp; helios::rendering::model::MaterialInstance::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>helios::rendering::model::MaterialInstance::logger_</qualifiedname>
+        <initializer>= <ref refid="classhelios_1_1util_1_1log_1_1LogManager_1aeb3c579d6cd53e2ca50384ceadd5d3a6" kindref="member">helios::util::log::LogManager::getInstance</ref>().registerLogger(
+            <ref refid="OpenGLUniformLocationMap_8ixx_1acbc04f24078582c7d42b2085be5d5750" kindref="member">HELIOS_LOG_SCOPE</ref>
+        )</initializer>
+        <briefdescription>
+<para>The logger used with this <ref refid="classhelios_1_1rendering_1_1model_1_1MaterialInstance" kindref="compound">MaterialInstance</ref>. Defaults to HELIOS_LOG_SCOPE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000009"><xreftitle>Todo</xreftitle><xrefdescription><para>constructor injection </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/rendering/model/MaterialInstance.ixx" line="46" column="41" bodyfile="include/helios/rendering/model/MaterialInstance.ixx" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1ad3a021c45202961cafd0a6bc3f2194b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>helios::rendering::model::MaterialInstance::~MaterialInstance</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MaterialInstance</name>
+        <qualifiedname>helios::rendering::model::MaterialInstance::~MaterialInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/rendering/model/MaterialInstance.ixx" line="51" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1afa71849324724cbec6ce8223de4b6bef" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>helios::rendering::model::MaterialInstance::MaterialInstance</definition>
+        <argsstring>(std::shared_ptr&lt; const helios::rendering::model::Material &gt; material, std::shared_ptr&lt; const helios::rendering::model::config::MaterialPropertiesOverride &gt; materialOverrides=nullptr)</argsstring>
+        <name>MaterialInstance</name>
+        <qualifiedname>helios::rendering::model::MaterialInstance::MaterialInstance</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1model_1_1Material" kindref="compound">helios::rendering::model::Material</ref> &gt;</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; const <ref refid="structhelios_1_1rendering_1_1model_1_1config_1_1MaterialPropertiesOverride" kindref="compound">helios::rendering::model::config::MaterialPropertiesOverride</ref> &gt;</type>
+          <declname>materialOverrides</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new <ref refid="classhelios_1_1rendering_1_1model_1_1MaterialInstance" kindref="compound">MaterialInstance</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes this instance with a base material definition and an optional set of property overrides.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A shared pointer to the base <ref refid="classhelios_1_1rendering_1_1model_1_1Material" kindref="compound">Material</ref> definition. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>materialOverrides</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional shared pointer to a MaterialPropertiesOverride object, containing values that override the defaults from the base material. If nullptr, only the <ref refid="classhelios_1_1rendering_1_1model_1_1Material" kindref="compound">Material</ref>&apos;s defaults will be used.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the shared ptr to material represents a nullptr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/rendering/model/MaterialInstance.ixx" line="65" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1a54a3ccbfc929921eab993b814fd27bcc" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1shader_1_1Shader" kindref="compound">helios::rendering::shader::Shader</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; const helios::rendering::shader::Shader &gt; helios::rendering::model::MaterialInstance::shader</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>shader</name>
+        <qualifiedname>helios::rendering::model::MaterialInstance::shader</qualifiedname>
+        <briefdescription>
+<para>Returns a shared pointer to the shader used by the <ref refid="classhelios_1_1rendering_1_1model_1_1Material" kindref="compound">Material</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Delegates to <ref refid="classhelios_1_1rendering_1_1model_1_1Material_1a89ec5b97ee85a0662cab432ff870de50" kindref="member">Material::shader()</ref>.</para>
+<para><simplesect kind="return"><para>A shared_ptr to the Shader that the underlying <ref refid="classhelios_1_1rendering_1_1model_1_1Material" kindref="compound">Material</ref> uses. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/rendering/model/MaterialInstance.ixx" line="78" column="26"/>
+        <referencedby refid="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1a2b3bd5639e434bb30cc3edddb50088d7">helios::rendering::model::MaterialInstance::writeUniformValues</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1a2b3bd5639e434bb30cc3edddb50088d7" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::rendering::model::MaterialInstance::writeUniformValues</definition>
+        <argsstring>(helios::rendering::shader::UniformValueMap &amp;uniformValueMap) const noexcept</argsstring>
+        <name>writeUniformValues</name>
+        <qualifiedname>helios::rendering::model::MaterialInstance::writeUniformValues</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1rendering_1_1shader_1_1UniformValueMap" kindref="compound">helios::rendering::shader::UniformValueMap</ref> &amp;</type>
+          <declname>uniformValueMap</declname>
+        </param>
+        <briefdescription>
+<para>Writes this <ref refid="classhelios_1_1rendering_1_1model_1_1MaterialInstance" kindref="compound">MaterialInstance</ref>&apos;s uniform values into the given map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method first applies the default uniform values from the base <ref refid="classhelios_1_1rendering_1_1model_1_1Material" kindref="compound">Material</ref> definition and then overlays any specific overrides provided by this instance&apos;s MaterialPropertiesOverride.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uniformValueMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target map receiving the uniform values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/rendering/model/MaterialInstance.ixx" line="89" column="14"/>
+        <references refid="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1a54a3ccbfc929921eab993b814fd27bcc">helios::rendering::model::MaterialInstance::shader</references>
+        <references refid="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1a2b3bd5639e434bb30cc3edddb50088d7">helios::rendering::model::MaterialInstance::writeUniformValues</references>
+        <referencedby refid="classhelios_1_1rendering_1_1model_1_1MaterialInstance_1a2b3bd5639e434bb30cc3edddb50088d7">helios::rendering::model::MaterialInstance::writeUniformValues</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Material instance combining a base Material with optional overrides. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/helios/rendering/model/MaterialInstance.ixx" line="8" column="15"/>
+  </compounddef>
+</doxygen>

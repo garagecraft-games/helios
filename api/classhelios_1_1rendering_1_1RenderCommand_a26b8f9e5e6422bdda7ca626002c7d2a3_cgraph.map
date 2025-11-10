@@ -1,0 +1,20 @@
+<map id="helios::rendering::RenderCommand::RenderCommand" name="helios::rendering::RenderCommand::RenderCommand">
+<area shape="rect" id="Node000001" title="Constructs a new `RenderCommand`. Initializes this `RenderCommand` with weak pointers to the shader a..." alt="" coords="5,183,261,223"/>
+<area shape="rect" id="Node000002" href="$classhelios_1_1rendering_1_1RenderCommand.html#a12393226183cacaf5335beac7bffb6ab" title="Returns a const ref to this command&#39;s UniformValueMap for the material." alt="" coords="312,29,563,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,181,230,142,308,101,342,87,344,91,310,106,232,147,167,186"/>
+<area shape="rect" id="Node000003" href="$classhelios_1_1rendering_1_1RenderCommand.html#a529b8d2ad25ab718c490b6a7c77afa88" title="Returns a weak ptr to the shader associated with this command. Use `shader.lock()` on the return valu..." alt="" coords="613,102,800,142"/>
+<area shape="poly" id="edge12_Node000001_Node000003" title=" " alt="" coords="185,181,244,161,309,145,384,133,461,126,600,119,600,124,461,131,385,138,310,150,245,166,187,186"/>
+<area shape="rect" id="Node000004" href="$classhelios_1_1rendering_1_1RenderCommand.html#ac09956f2f80434aebcf20bedad2859d5" title="Returns a weak ptr to the mesh associated with this command. Use `mesh.lock()` on the return value to..." alt="" coords="348,183,527,223"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="262,201,334,201,334,206,262,206"/>
+<area shape="rect" id="Node000005" href="$classhelios_1_1rendering_1_1RenderCommand.html#ad4a8aa4a94a4abbd21e984ac47c60c04" title="Returns a const ref to this command&#39;s UniformValueMap for the object." alt="" coords="319,272,555,327"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="198,221,338,265,336,270,197,226"/>
+<area shape="rect" id="Node000006" href="$classhelios_1_1rendering_1_1RenderCommand.html#ab99843dfddf77202869e685426d0d759" title="Prevent copying. A RenderCommand is not intended to be copied." alt="" coords="309,375,565,415"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="159,221,225,276,311,336,373,368,371,372,308,340,222,280,155,226"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="385,29,385,19,395,10,412,5,437,3,468,6,485,14,483,18,466,11,437,8,413,10,397,15,390,21,390,29"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="551,81,611,96,610,101,550,87"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="657,102,654,92,662,83,680,77,707,75,738,78,755,85,753,90,737,83,707,81,681,83,665,87,659,93,662,101"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="387,184,384,174,393,164,410,159,437,157,469,159,486,167,483,172,467,165,437,162,411,164,395,169,390,175,393,182"/>
+<area shape="poly" id="edge9_Node000005_Node000003" title=" " alt="" coords="498,270,564,233,622,191,672,149,675,153,626,195,567,238,501,274"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="385,272,385,262,395,253,412,247,437,245,468,248,485,256,483,261,466,254,437,251,413,253,397,257,390,264,390,272"/>
+<area shape="poly" id="edge11_Node000006_Node000006" title=" " alt="" coords="387,376,384,366,393,356,410,351,437,349,469,351,486,359,483,364,467,357,437,354,411,356,395,361,390,367,393,374"/>
+</map>

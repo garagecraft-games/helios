@@ -1,0 +1,9 @@
+<map id="helios::ext::opengl::rendering::OpenGLRenderable::OpenGLRenderable" name="helios::ext::opengl::rendering::OpenGLRenderable::OpenGLRenderable">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,66,231,121"/>
+<area shape="rect" id="Node000002" href="$classhelios_1_1rendering_1_1Renderable.html#a75aba581d21c509d9d14581e76b3f0ca" title="Returns a const reference to the MaterialInstance associated with this Renderable." alt="" coords="279,29,493,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,72,265,67,265,72,231,77"/>
+<area shape="rect" id="Node000003" href="$classhelios_1_1rendering_1_1Renderable.html#a7a7d54190d3e65ee8a933e0e6ef75dea" title="Returns a shared ptr to the Mesh this Renderable uses. The returned shared_ptr references the underly..." alt="" coords="316,117,456,157"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="231,109,303,121,302,126,230,114"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="337,30,334,20,342,10,359,5,386,3,417,5,434,13,432,18,416,11,386,8,360,10,344,15,339,21,342,28"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="337,118,334,108,342,98,359,93,386,91,417,93,434,101,432,106,416,99,386,96,360,98,344,103,339,109,342,116"/>
+</map>
