@@ -1,8 +1,0 @@
-<map id="helios::rendering::Renderable::materialInstance" name="helios::rendering::Renderable::materialInstance">
-<area shape="rect" id="Node000001" title="Returns a const reference to the MaterialInstance associated with this Renderable." alt="" coords="279,49,493,89"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="432,37,416,30,386,27,360,29,344,34,339,40,342,47,337,49,334,39,342,30,359,24,386,22,417,25,434,32"/>
-<area shape="rect" id="Node000002" href="$classhelios_1_1ext_1_1opengl_1_1rendering_1_1OpenGLRenderable.html#a62c884e1b814c24ecfe8994cdf0e1b23" title=" " alt="" coords="5,5,231,60"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="265,55,230,50,231,45,266,50"/>
-<area shape="rect" id="Node000003" href="$classhelios_1_1rendering_1_1Renderable.html#a4f9d2935a141735fb3f10c1108aeda20" title="Creates a new Renderable instance." alt="" coords="29,85,207,125"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="266,88,208,95,207,90,265,82"/>
-</map>

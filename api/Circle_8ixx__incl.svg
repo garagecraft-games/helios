@@ -58,7 +58,7 @@ var sectionId = 'dynsection-0';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Basic circle shape for rendering.">
 <polygon fill="#999999" stroke="#666666" points="466,-219.17 311,-219.17 311,-189.17 466,-189.17 466,-219.17"/>
 <text text-anchor="start" x="319" y="-207.17" font-family="Helvetica,sans-Serif" font-size="10.00">include/helios/rendering</text>
 <text text-anchor="middle" x="388.5" y="-196.17" font-family="Helvetica,sans-Serif" font-size="10.00">/asset/shape/basic/Circle.ixx</text>
@@ -122,7 +122,7 @@ var sectionId = 'dynsection-0';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="PrimitiveType_8ixx.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="PrimitiveType_8ixx.html" target="_top" xlink:title="Enum of primitive types for mesh rendering.">
 <polygon fill="white" stroke="#666666" points="229.5,-87.17 65.5,-87.17 65.5,-57.17 229.5,-57.17 229.5,-87.17"/>
 <text text-anchor="start" x="73.5" y="-75.17" font-family="Helvetica,sans-Serif" font-size="10.00">helios.rendering.model.config.</text>
 <text text-anchor="middle" x="147.5" y="-64.17" font-family="Helvetica,sans-Serif" font-size="10.00">PrimitiveType</text>
@@ -141,7 +141,7 @@ var sectionId = 'dynsection-0';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="math_2types_2__module_8ixx.html" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="helios_2math_2types_2__module_8ixx.html" target="_top" xlink:title="Module exports for vector and matrix type definitions.">
 <polygon fill="white" stroke="#666666" points="486.5,-21.17 382.5,-21.17 382.5,-2.17 486.5,-2.17 486.5,-21.17"/>
 <text text-anchor="middle" x="434.5" y="-9.17" font-family="Helvetica,sans-Serif" font-size="10.00">helios.math.types</text>
 </a>
@@ -159,7 +159,7 @@ var sectionId = 'dynsection-0';
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="Vertex_8ixx.html" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="Vertex_8ixx.html" target="_top" xlink:title="Vertex description and utilities for rendering.">
 <polygon fill="white" stroke="#666666" points="453.5,-81.67 323.5,-81.67 323.5,-62.67 453.5,-62.67 453.5,-81.67"/>
 <text text-anchor="middle" x="388.5" y="-69.67" font-family="Helvetica,sans-Serif" font-size="10.00">helios.rendering.Vertex</text>
 </a>
@@ -177,7 +177,7 @@ var sectionId = 'dynsection-0';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="Shape_8ixx.html" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="Shape_8ixx.html" target="_top" xlink:title="Interface for simple geometric shapes used for testing and debugging.">
 <polygon fill="white" stroke="#666666" points="356.5,-153.17 196.5,-153.17 196.5,-123.17 356.5,-123.17 356.5,-153.17"/>
 <text text-anchor="start" x="204.5" y="-141.17" font-family="Helvetica,sans-Serif" font-size="10.00">helios.rendering.asset.shape.</text>
 <text text-anchor="middle" x="276.5" y="-130.17" font-family="Helvetica,sans-Serif" font-size="10.00">Shape</text>

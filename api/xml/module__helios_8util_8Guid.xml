@@ -4,6 +4,7 @@
     <compoundname>helios.util.Guid</compoundname>
     <innerfile refid="Guid_8ixx">Guid.ixx</innerfile>
     <innerclass refid="classhelios_1_1util_1_1Guid" prot="public">helios::util::Guid</innerclass>
+    <innerclass refid="structstd_1_1hash_3_01helios_1_1util_1_1Guid_01_4" prot="public">std::hash&lt; helios::util::Guid &gt;</innerclass>
     <sectiondef kind="var">
       <memberdef kind="variable" id="classhelios_1_1util_1_1Guid_1ab2ced4c00a25e6304adab843e0226746" prot="private" static="no" mutable="no">
         <type>uint64_t</type>
@@ -17,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/util/Guid.ixx" line="23" column="18" bodyfile="include/helios/util/Guid.ixx" bodystart="23" bodyend="-1"/>
+        <location file="include/helios/util/Guid.ixx" line="24" column="18" bodyfile="include/helios/util/Guid.ixx" bodystart="24" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -37,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/util/Guid.ixx" line="22" column="18"/>
+        <location file="include/helios/util/Guid.ixx" line="23" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1util_1_1Guid_1a56c29dc3db8911269e868b4581e621ec" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -55,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/util/Guid.ixx" line="27" column="24"/>
+        <location file="include/helios/util/Guid.ixx" line="28" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1util_1_1Guid_1a2978dd83ba248095e02b05d8a33271d0" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -73,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/util/Guid.ixx" line="28" column="24"/>
+        <location file="include/helios/util/Guid.ixx" line="29" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1util_1_1Guid_1abec6ac186114474b23bfb8369e4080a9" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>Guid</type>
@@ -92,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/util/Guid.ixx" line="38" column="21"/>
+        <location file="include/helios/util/Guid.ixx" line="39" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1util_1_1Guid_1a42652f894bf300b8d3060a1d8352458c" prot="public" static="no" nodiscard="yes" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>uint64_t</type>
@@ -110,16 +111,52 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/util/Guid.ixx" line="45" column="29" bodyfile="include/helios/util/Guid.ixx" bodystart="45" bodyend="47"/>
-        <references refid="classhelios_1_1util_1_1Guid_1a42652f894bf300b8d3060a1d8352458c" compoundref="Guid_8ixx" startline="45" endline="47">helios::util::Guid::value</references>
-        <referencedby refid="classhelios_1_1util_1_1Guid_1a42652f894bf300b8d3060a1d8352458c" compoundref="Guid_8ixx" startline="45" endline="47">helios::util::Guid::value</referencedby>
+        <location file="include/helios/util/Guid.ixx" line="46" column="29" bodyfile="include/helios/util/Guid.ixx" bodystart="46" bodyend="48"/>
+        <references refid="classhelios_1_1util_1_1Guid_1a42652f894bf300b8d3060a1d8352458c" compoundref="Guid_8ixx" startline="46" endline="48">helios::util::Guid::value</references>
+        <referencedby refid="classhelios_1_1util_1_1Guid_1a42652f894bf300b8d3060a1d8352458c" compoundref="Guid_8ixx" startline="46" endline="48">helios::util::Guid::value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1util_1_1Guid_1a2be0de1a0c0c0d321459531e9b308c34" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t helios::util::Guid::hash</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>hash</name>
+        <qualifiedname>helios::util::Guid::hash</qualifiedname>
+        <briefdescription>
+<para>Calculates a hash fot this GUID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The hash simply defaults to the value_ of this <ref refid="classhelios_1_1util_1_1Guid" kindref="compound">Guid</ref>.</para>
+<para><simplesect kind="return"><para>The hash value for this <ref refid="classhelios_1_1util_1_1Guid" kindref="compound">Guid</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/util/Guid.ixx" line="57" column="22" bodyfile="include/helios/util/Guid.ixx" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structstd_1_1hash_3_01helios_1_1util_1_1Guid_01_4_1a60abc24fa057aaf88b4ee94437da80bf" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t std::hash&lt; helios::util::Guid &gt;::operator()</definition>
+        <argsstring>(const helios::util::Guid &amp;guid) const noexcept</argsstring>
+        <name>operator()</name>
+        <qualifiedname>std::hash&lt; helios::util::Guid &gt;::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="classhelios_1_1util_1_1Guid" kindref="compound">helios::util::Guid</ref> &amp;</type>
+          <declname>guid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/util/Guid.ixx" line="68" column="17" bodyfile="include/helios/util/Guid.ixx" bodystart="68" bodyend="70"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Lightweight GUID (globally unique identifier) implementation. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/util/Guid.ixx" line="10" column="15"/>
+    <location file="include/helios/util/Guid.ixx" line="11" column="15"/>
   </compounddef>
 </doxygen>

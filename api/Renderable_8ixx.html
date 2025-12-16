@@ -106,13 +106,17 @@ $(function() {
   <div class="headertitle"><div class="title">Renderable.ixx File Reference<div class="ingroups">module <a class="el" href="module__helios_8rendering_8Renderable.html">helios.rendering.Renderable</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Representative of a configurable Renderable rendered by the underlying GL API.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
-<code>import <a class="el" href="Logger_8ixx_source.html">helios.util.log.Logger</a>;</code><br />
 <code>import <a class="el" href="LogManager_8ixx_source.html">helios.util.log.LogManager</a>;</code><br />
-<code>import <a class="el" href="MaterialInstance_8ixx_source.html">helios.rendering.model.MaterialInstance</a>;</code><br />
-<code>import <a class="el" href="math_2types_2__module_8ixx_source.html">helios.math.types</a>;</code><br />
-<code>import <a class="el" href="Mesh_8ixx_source.html">helios.rendering.model.Mesh</a>;</code><br />
+<code>import <a class="el" href="Logger_8ixx_source.html">helios.util.log.Logger</a>;</code><br />
+<code>import <a class="el" href="UniformValueMap_8ixx_source.html">helios.rendering.shader.UniformValueMap</a>;</code><br />
+<code>import <a class="el" href="MaterialPropertiesOverride_8ixx_source.html">helios.rendering.model.config.MaterialPropertiesOverride</a>;</code><br />
+<code>import <a class="el" href="RenderPrototype_8ixx_source.html">helios.rendering.RenderPrototype</a>;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for Renderable.ixx:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
@@ -125,7 +129,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:helios_3A_3Arendering_3A_3ARenderable" id="r_helios_3A_3Arendering_3A_3ARenderable"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1rendering_1_1Renderable.html">helios::rendering::Renderable</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representative of a configurable <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> rendered by the underlying GL API.  <a href="classhelios_1_1rendering_1_1Renderable.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representative of a configurable <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> that references an immutable <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a> and instance specific material property overrides.  <a href="classhelios_1_1rendering_1_1Renderable.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -137,7 +141,11 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:acbc04f24078582c7d42b2085be5d5750" id="r_acbc04f24078582c7d42b2085be5d5750"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbc04f24078582c7d42b2085be5d5750">HELIOS_LOG_SCOPE</a>&#160;&#160;&#160;&quot;helios::rendering::Renderable&quot;</td></tr>
 </table>
-<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Representative of a configurable Renderable rendered by the underlying GL API. </p>
+
+<p class="definition">Definition in file <a class="el" href="Renderable_8ixx_source.html">Renderable.ixx</a>.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="acbc04f24078582c7d42b2085be5d5750" name="acbc04f24078582c7d42b2085be5d5750"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbc04f24078582c7d42b2085be5d5750">&#9670;&#160;</a></span>HELIOS_LOG_SCOPE</h2>
 

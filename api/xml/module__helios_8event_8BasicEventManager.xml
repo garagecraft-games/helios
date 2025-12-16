@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/event/BasicEventManager.ixx" line="36" column="18"/>
+        <location file="include/helios/event/BasicEventManager.ixx" line="40" column="18"/>
         <references refid="classhelios_1_1event_1_1EventManager_1a575c31f89f8002b9c507e3a00da32cb1">helios::event::EventManager::dispatcher</references>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1event_1_1BasicEventManager_1a572c4c66409151b16992008849d9bbe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/event/BasicEventManager.ixx" line="50" column="22"/>
+        <location file="include/helios/event/BasicEventManager.ixx" line="54" column="22"/>
         <references refid="classhelios_1_1event_1_1EventManager_1a4a28a6df832bab23b4f9ef4d867a197e">helios::event::EventManager::EventManager</references>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1event_1_1BasicEventManager_1ac477416fc138acbb03df5e946dc99240" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/event/BasicEventManager.ixx" line="66" column="22"/>
+        <location file="include/helios/event/BasicEventManager.ixx" line="70" column="22"/>
         <references refid="classhelios_1_1event_1_1EventManager_1a4a28a6df832bab23b4f9ef4d867a197e">helios::event::EventManager::EventManager</references>
       </memberdef>
     </sectiondef>
@@ -129,6 +129,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/event/BasicEventManager.ixx" line="6" column="15"/>
+    <location file="include/helios/event/BasicEventManager.ixx" line="10" column="15"/>
   </compounddef>
 </doxygen>

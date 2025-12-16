@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8util_8log_8ConsoleSink" kind="module">
+    <compoundname>helios.util.log.ConsoleSink</compoundname>
+    <innerfile refid="ConsoleSink_8ixx">ConsoleSink.ixx</innerfile>
+    <innerclass refid="classhelios_1_1util_1_1log_1_1ConsoleSink" prot="public">helios::util::log::ConsoleSink</innerclass>
+    <innerclass refid="classhelios_1_1util_1_1log_1_1ConsoleSink" prot="public">helios::util::log::ConsoleSink</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1util_1_1log_1_1ConsoleSink_1aa7a0c9d6f6536c90ed342cadc6246107" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>SinkTypeId</type>
+        <definition>SinkTypeId helios::util::log::ConsoleSink::TYPE_ID</definition>
+        <argsstring></argsstring>
+        <name>TYPE_ID</name>
+        <qualifiedname>helios::util::log::ConsoleSink::TYPE_ID</qualifiedname>
+        <initializer>= &quot;console&quot;</initializer>
+        <briefdescription>
+<para>Unique type identifier for this sink. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/util/log/ConsoleSink.ixx" line="28" column="37" bodyfile="include/helios/util/log/ConsoleSink.ixx" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1util_1_1log_1_1ConsoleSink_1a8ff58267b554bfb4edc32d0e22804485" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type>SinkTypeId</type>
+        <definition>SinkTypeId helios::util::log::ConsoleSink::typeId</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>typeId</name>
+        <qualifiedname>helios::util::log::ConsoleSink::typeId</qualifiedname>
+        <reimplements refid="classhelios_1_1util_1_1log_1_1LogSink_1a1eac0bfe8af64547c7f6f2fb9d815b17">typeId</reimplements>
+        <briefdescription>
+<para>Returns the unique type identifier for this sink. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>&quot;console&quot;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/util/log/ConsoleSink.ixx" line="35" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1util_1_1log_1_1ConsoleSink_1a2d8eea47e4fdc9fd758e988ed4f3dbb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void helios::util::log::ConsoleSink::write</definition>
+        <argsstring>(LogLevel level, const std::string &amp;scope, const std::string &amp;message) override</argsstring>
+        <name>write</name>
+        <qualifiedname>helios::util::log::ConsoleSink::write</qualifiedname>
+        <reimplements refid="classhelios_1_1util_1_1log_1_1LogSink_1aa8a9b93a650cd8111fa5a5358d2c2376">write</reimplements>
+        <param>
+          <type>LogLevel</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>scope</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Writes a formatted log message to stdout. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The severity level of the message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scope</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source scope/module name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The log message text. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/util/log/ConsoleSink.ixx" line="44" column="14"/>
+        <references refid="classhelios_1_1util_1_1log_1_1ConsoleSink_1a2d8eea47e4fdc9fd758e988ed4f3dbb7">helios::util::log::ConsoleSink::write</references>
+        <referencedby refid="classhelios_1_1util_1_1log_1_1ConsoleSink_1a2d8eea47e4fdc9fd758e988ed4f3dbb7">helios::util::log::ConsoleSink::write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1util_1_1log_1_1ConsoleSink_1aef7ce8eb3e08ae3302986a506610b4d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void helios::util::log::ConsoleSink::flush</definition>
+        <argsstring>() override</argsstring>
+        <name>flush</name>
+        <qualifiedname>helios::util::log::ConsoleSink::flush</qualifiedname>
+        <reimplements refid="classhelios_1_1util_1_1log_1_1LogSink_1a63612d9abf81ff9610a1b3bccccc1af5">flush</reimplements>
+        <briefdescription>
+<para>Flushes the stdout buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/util/log/ConsoleSink.ixx" line="49" column="14"/>
+        <references refid="classhelios_1_1util_1_1log_1_1ConsoleSink_1aef7ce8eb3e08ae3302986a506610b4d5">helios::util::log::ConsoleSink::flush</references>
+        <referencedby refid="classhelios_1_1util_1_1log_1_1ConsoleSink_1aef7ce8eb3e08ae3302986a506610b4d5">helios::util::log::ConsoleSink::flush</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/helios/util/log/ConsoleSink.ixx" line="9" column="15"/>
+  </compounddef>
+</doxygen>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="GLFW gamepad mapping helpers.">
 <polygon fill="#999999" stroke="#666666" points="223.5,-85 75.5,-85 75.5,-55 223.5,-55 223.5,-85"/>
 <text text-anchor="start" x="83.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">include/ext/glfw/input</text>
 <text text-anchor="middle" x="149.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">/GLFWGamepadLookup.ixx</text>
@@ -75,7 +75,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="Gamepad_8ixx.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="Gamepad_8ixx.html" target="_top" xlink:title="Identifiers for supported gamepads.">
 <polygon fill="white" stroke="#666666" points="363.5,-19 209.5,-19 209.5,0 363.5,0 363.5,-19"/>
 <text text-anchor="middle" x="286.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">helios.input.types.Gamepad</text>
 </a>

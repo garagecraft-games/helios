@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="GLFW key code to `heliosinput::types::Key` mapping.">
 <polygon fill="#999999" stroke="#666666" points="183.5,-85 61.5,-85 61.5,-55 183.5,-55 183.5,-85"/>
 <text text-anchor="start" x="69.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">include/ext/glfw/input</text>
 <text text-anchor="middle" x="122.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">/GLFWKeyLookup.ixx</text>
@@ -57,7 +57,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="Key_8ixx.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="Key_8ixx.html" target="_top" xlink:title="Key code definitions used across input adapters.">
 <polygon fill="white" stroke="#666666" points="287,-19 162,-19 162,0 287,0 287,-19"/>
 <text text-anchor="middle" x="224.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">helios.input.types.Key</text>
 </a>

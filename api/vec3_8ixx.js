@@ -8,5 +8,8 @@ var vec3_8ixx =
     [ "helios::math::dot", "namespacehelios_1_1math.html#a076c3e1ea3dd5beb87bc701e87cd4f1a", null ],
     [ "helios::math::operator*", "namespacehelios_1_1math.html#a81d43c532316a12782bef5db9230ff84", null ],
     [ "helios::math::operator*", "namespacehelios_1_1math.html#ae21f80815ae495b8d521d6ad829ee7b6", null ],
-    [ "helios::math::operator-", "namespacehelios_1_1math.html#a7a21ef269927b19863a1eae2d87666ee", null ]
+    [ "helios::math::operator*", "namespacehelios_1_1math.html#a6bca908e940499722f0a3af6447ad719", null ],
+    [ "helios::math::operator+", "namespacehelios_1_1math.html#a01625d8968c400bd7e812715d7f1941f", null ],
+    [ "helios::math::operator-", "namespacehelios_1_1math.html#a7a21ef269927b19863a1eae2d87666ee", null ],
+    [ "helios::math::operator/", "namespacehelios_1_1math.html#accf7fb22d70fc125b56f230c6c6cc8d5", null ]
 ];

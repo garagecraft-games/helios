@@ -43,6 +43,7 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
@@ -73,16 +74,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Application_8ixx.html",
-"classhelios_1_1app_1_1controller_1_1Controller.html#aefb5f61bd95699abaeebad8f50e2647e",
-"classhelios_1_1ext_1_1glfw_1_1window_1_1GLFWWindow.html#ae81673542c2bfd20a38a2a0f16e2ecf0",
-"classhelios_1_1input_1_1InputManager.html#a4981679919003c18830da98f4e3c8e65",
-"classhelios_1_1rendering_1_1model_1_1MaterialInstance.html#a54a3ccbfc929921eab993b814fd27bcc",
-"classhelios_1_1scene_1_1SceneNode.html#a8f13644573f0a5ffd64d11424937fdce",
-"classhelios_1_1window_1_1event_1_1WindowEvent.html",
-"module__helios_8ext_8glfw_8window_8GLFWWindowUserPointer.html#a05a73095f2fe6739eb2a309c85d8d158",
-"module__helios_8rendering_8asset_8shape_8basic_8Line.html#a427210e20dc07acf0a3d765892d66074",
-"modulemembers_func_h.html",
-"structhelios_1_1math_1_1vec4.html#a6737f82dfb6d4b5afc3eee979715a500"
+"classhelios_1_1app_1_1Application.html#a2dfaeb4cd7c741b225bd968c827983d3",
+"classhelios_1_1event_1_1BasicEventManager.html#a1ce9ef29ac8f29915b027fdc888db6a9",
+"classhelios_1_1ext_1_1imgui_1_1ImGuiBackend.html#a78ca09a0223a87f25adfbbbb1fa358e7",
+"classhelios_1_1ext_1_1opengl_1_1rendering_1_1OpenGLDevice.html#a8f15cee19cf071f05f1f320ca30243a8",
+"classhelios_1_1input_1_1gamepad_1_1GamepadState.html#a068967ab65a6874ce5b5de039af79e8c",
+"classhelios_1_1rendering_1_1Renderable.html",
+"classhelios_1_1rendering_1_1shader_1_1UniformValueMap.html#aa1bb7e38a8043a669bcd8a1df783615e",
+"classhelios_1_1scene_1_1SceneNode.html#ab908b6a16d34640eca0d92f2573e6cc3",
+"classhelios_1_1util_1_1log_1_1LogManager.html#a7fd1afc8a2049fee3212387976a748ed",
+"dir_faba1e8ac90047e249cc0ce4819a22fa.html",
+"module__helios_8engine_8game_8InputSnapshot.html#af5f6e43831a9b8ae1c41c687f6a5c38e",
+"module__helios_8input_8gamepad_8GamepadSettings.html#a62440565754425f1b3337aebeffcb224",
+"module__helios_8rendering_8Viewport.html#a6d7fc6de0fc5c9c31d2d7ee760f1f126",
+"module__helios_8util.html",
+"namespacehelios_1_1math.html#a6bca908e940499722f0a3af6447ad719",
+"structhelios_1_1math_1_1vec3.html#a6db16504ac2287d0bfb8909075248b49"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

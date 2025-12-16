@@ -17,15 +17,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/asset/shape/basic/Line.ixx" line="27" column="9" bodyfile="include/helios/rendering/asset/shape/basic/Line.ixx" bodystart="27" bodyend="36"/>
-        <references refid="structhelios_1_1rendering_1_1asset_1_1shape_1_1Shape_1a45b8025937ff78d5ca63ef3ea4b56d54" compoundref="Shape_8ixx" startline="41" endline="44">helios::rendering::asset::shape::Shape::Shape</references>
+        <location file="include/helios/rendering/asset/shape/basic/Line.ixx" line="28" column="9" bodyfile="include/helios/rendering/asset/shape/basic/Line.ixx" bodystart="28" bodyend="37"/>
+        <references refid="structhelios_1_1rendering_1_1asset_1_1shape_1_1Shape_1a45b8025937ff78d5ca63ef3ea4b56d54" compoundref="Shape_8ixx" startline="45" endline="48">helios::rendering::asset::shape::Shape::Shape</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Basic line shape (2D segment). </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/rendering/asset/shape/basic/Line.ixx" line="9" column="15"/>
+    <location file="include/helios/rendering/asset/shape/basic/Line.ixx" line="10" column="15"/>
   </compounddef>
 </doxygen>

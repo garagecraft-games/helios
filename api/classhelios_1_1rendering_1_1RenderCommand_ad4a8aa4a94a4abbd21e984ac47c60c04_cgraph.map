@@ -1,7 +1,4 @@
 <map id="helios::rendering::RenderCommand::objectUniformValues" name="helios::rendering::RenderCommand::objectUniformValues">
 <area shape="rect" id="Node000001" title="Returns a const ref to this command&#39;s UniformValueMap for the object." alt="" coords="5,29,241,84"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="73,29,73,19,82,10,99,5,123,3,152,6,169,14,167,18,151,11,123,8,100,10,85,15,78,21,78,29"/>
-<area shape="rect" id="Node000002" href="$classhelios_1_1rendering_1_1RenderCommand.html#a529b8d2ad25ab718c490b6a7c77afa88" title="Returns a weak ptr to the shader associated with this command. Use `shader.lock()` on the return valu..." alt="" coords="289,37,476,77"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="241,54,276,54,276,59,241,59"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="335,37,332,27,340,18,357,12,383,10,413,13,429,20,427,25,411,18,383,15,358,17,342,22,337,28,340,35"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="78,29,78,19,86,10,101,5,123,3,150,6,165,14,162,18,148,11,123,8,102,10,89,15,83,21,83,29"/>
 </map>

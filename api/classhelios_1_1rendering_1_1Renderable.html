@@ -103,68 +103,69 @@ $(function() {
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">helios::rendering::Renderable Class Reference<span class="mlabels"><span class="mlabel export">export</span></span><div class="ingroups">module <a class="el" href="module__helios_8rendering_8Renderable.html">helios.rendering.Renderable</a></div></div></div>
+  <div class="headertitle"><div class="title">helios::rendering::Renderable Class Reference<span class="mlabels"><span class="mlabel final">final</span><span class="mlabel export">export</span></span><div class="ingroups">module <a class="el" href="module__helios_8rendering_8Renderable.html">helios.rendering.Renderable</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Representative of a configurable <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> rendered by the underlying GL API.  
+<p>Representative of a configurable <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> that references an immutable <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a> and instance specific material property overrides.  
  <a href="#details">More...</a></p>
-<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Inheritance diagram for helios::rendering::Renderable:</div>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for helios::rendering::Renderable:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable__inherit__graph.svg" width="236" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for helios::rendering::Renderable:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable__coll__graph.svg" width="150" height="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c026c028ca9e697aa2226ffd265c8ba" id="r_a7c026c028ca9e697aa2226ffd265c8ba"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c026c028ca9e697aa2226ffd265c8ba">~Renderable</a> ()=default</td></tr>
+<tr class="memitem:a5f6b1a62d690b901c71292fd85484601" id="r_a5f6b1a62d690b901c71292fd85484601"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable</a> ()=delete</td></tr>
+<tr class="memdesc:a5f6b1a62d690b901c71292fd85484601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted default constructor.  <br /></td></tr>
 <tr class="memitem:a6a9406c41eca52028f9cd08a1c2c300a" id="r_a6a9406c41eca52028f9cd08a1c2c300a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a9406c41eca52028f9cd08a1c2c300a">Renderable</a> (const Renderable &amp;)=delete</td></tr>
-<tr class="memdesc:a6a9406c41eca52028f9cd08a1c2c300a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete copy constructor.  <br /></td></tr>
-<tr class="memitem:adc490817c535742ed59dc691a68f440f" id="r_adc490817c535742ed59dc691a68f440f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc490817c535742ed59dc691a68f440f">operator=</a> (const <a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable</a> &amp;)=delete</td></tr>
-<tr class="memdesc:adc490817c535742ed59dc691a68f440f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete copy assignment operator.  <br /></td></tr>
-<tr class="memitem:a7f8dfa2987e25fb3994225b77de8c5b7" id="r_a7f8dfa2987e25fb3994225b77de8c5b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f8dfa2987e25fb3994225b77de8c5b7">Renderable</a> (Renderable &amp;&amp;) noexcept=delete</td></tr>
-<tr class="memdesc:a7f8dfa2987e25fb3994225b77de8c5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete move constructor.  <br /></td></tr>
-<tr class="memitem:a69c84c1afbfc0b66e96b505c3729fa26" id="r_a69c84c1afbfc0b66e96b505c3729fa26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69c84c1afbfc0b66e96b505c3729fa26">operator=</a> (<a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable</a> &amp;&amp;) noexcept=delete</td></tr>
-<tr class="memdesc:a69c84c1afbfc0b66e96b505c3729fa26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete move assignment operator.  <br /></td></tr>
-<tr class="memitem:a4f9d2935a141735fb3f10c1108aeda20" id="r_a4f9d2935a141735fb3f10c1108aeda20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f9d2935a141735fb3f10c1108aeda20">Renderable</a> (std::shared_ptr&lt; <a class="el" href="classhelios_1_1rendering_1_1model_1_1Mesh.html">helios::rendering::model::Mesh</a> &gt; <a class="el" href="#a7a7d54190d3e65ee8a933e0e6ef75dea">mesh</a>, std::shared_ptr&lt; <a class="el" href="classhelios_1_1rendering_1_1model_1_1MaterialInstance.html">helios::rendering::model::MaterialInstance</a> &gt; <a class="el" href="#a75aba581d21c509d9d14581e76b3f0ca">materialInstance</a>)</td></tr>
-<tr class="memdesc:a4f9d2935a141735fb3f10c1108aeda20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> instance.  <br /></td></tr>
-<tr class="memitem:a7a7d54190d3e65ee8a933e0e6ef75dea" id="r_a7a7d54190d3e65ee8a933e0e6ef75dea"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="classhelios_1_1rendering_1_1model_1_1Mesh.html">helios::rendering::model::Mesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a7d54190d3e65ee8a933e0e6ef75dea">mesh</a> () const noexcept</td></tr>
-<tr class="memdesc:a7a7d54190d3e65ee8a933e0e6ef75dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a shared ptr to the Mesh this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> uses. The returned shared_ptr references the underlying Mesh object.  <br /></td></tr>
-<tr class="memitem:a75aba581d21c509d9d14581e76b3f0ca" id="r_a75aba581d21c509d9d14581e76b3f0ca"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classhelios_1_1rendering_1_1model_1_1MaterialInstance.html">helios::rendering::model::MaterialInstance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75aba581d21c509d9d14581e76b3f0ca">materialInstance</a> () const noexcept</td></tr>
-<tr class="memdesc:a75aba581d21c509d9d14581e76b3f0ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the MaterialInstance associated with this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a>.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5a0b1ee7371be890d2b48b5582e4eebf" id="r_a5a0b1ee7371be890d2b48b5582e4eebf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable</a> ()=default</td></tr>
+<tr class="memdesc:a6a9406c41eca52028f9cd08a1c2c300a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy constructor.  <br /></td></tr>
+<tr class="memitem:adc490817c535742ed59dc691a68f440f" id="r_adc490817c535742ed59dc691a68f440f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc490817c535742ed59dc691a68f440f">operator=</a> (const <a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable</a> &amp;)=delete</td></tr>
+<tr class="memdesc:adc490817c535742ed59dc691a68f440f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy assignment operator.  <br /></td></tr>
+<tr class="memitem:a6d557b575fc5bd09bcb1370e5ea4b0a9" id="r_a6d557b575fc5bd09bcb1370e5ea4b0a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d557b575fc5bd09bcb1370e5ea4b0a9">Renderable</a> (Renderable &amp;&amp;) noexcept=default</td></tr>
+<tr class="memdesc:a6d557b575fc5bd09bcb1370e5ea4b0a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaulted move constructor.  <br /></td></tr>
+<tr class="memitem:ac5f1ab331ba24f577a29f072701e595d" id="r_ac5f1ab331ba24f577a29f072701e595d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5f1ab331ba24f577a29f072701e595d">operator=</a> (<a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable</a> &amp;&amp;) noexcept=default</td></tr>
+<tr class="memdesc:ac5f1ab331ba24f577a29f072701e595d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaulted move assignment operator.  <br /></td></tr>
+<tr class="memitem:a528392841e8f262631950e1bde961e57" id="r_a528392841e8f262631950e1bde961e57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a528392841e8f262631950e1bde961e57">Renderable</a> (std::shared_ptr&lt; const <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html">helios::rendering::RenderPrototype</a> &gt; <a class="el" href="#ad62cb2a3bbb92eb64b901e110a357e8c">renderPrototype</a>, const std::optional&lt; <a class="el" href="structhelios_1_1rendering_1_1model_1_1config_1_1MaterialPropertiesOverride.html">helios::rendering::model::config::MaterialPropertiesOverride</a> &gt; &amp;<a class="el" href="#a9ff2cf3f0474d419477027dc81c86165">materialOverride</a>=std::nullopt)</td></tr>
+<tr class="memdesc:a528392841e8f262631950e1bde961e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> instance.  <br /></td></tr>
+<tr class="memitem:ad62cb2a3bbb92eb64b901e110a357e8c" id="r_ad62cb2a3bbb92eb64b901e110a357e8c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html">helios::rendering::RenderPrototype</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad62cb2a3bbb92eb64b901e110a357e8c">renderPrototype</a> () const noexcept</td></tr>
+<tr class="memdesc:ad62cb2a3bbb92eb64b901e110a357e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a shared pointer to the <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a> used by this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a>.  <br /></td></tr>
+<tr class="memitem:a9ff2cf3f0474d419477027dc81c86165" id="r_a9ff2cf3f0474d419477027dc81c86165"><td class="memItemLeft" align="right" valign="top">const std::optional&lt; <a class="el" href="structhelios_1_1rendering_1_1model_1_1config_1_1MaterialPropertiesOverride.html">helios::rendering::model::config::MaterialPropertiesOverride</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ff2cf3f0474d419477027dc81c86165">materialOverride</a> () const noexcept</td></tr>
+<tr class="memdesc:a9ff2cf3f0474d419477027dc81c86165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the optional instance-specific MaterialPropertiesOverride.  <br /></td></tr>
+<tr class="memitem:a11455b5220d78030b1ddf5dd9abbbd7c" id="r_a11455b5220d78030b1ddf5dd9abbbd7c"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structhelios_1_1rendering_1_1model_1_1config_1_1MaterialPropertiesOverride.html">helios::rendering::model::config::MaterialPropertiesOverride</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11455b5220d78030b1ddf5dd9abbbd7c">materialOverride</a> () noexcept</td></tr>
+<tr class="memdesc:a11455b5220d78030b1ddf5dd9abbbd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a non-const reference to the optional instance-specific MaterialPropertiesOverride.  <br /></td></tr>
+<tr class="memitem:a936e692f977095b6fcc40fb931024617" id="r_a936e692f977095b6fcc40fb931024617"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a936e692f977095b6fcc40fb931024617">hasMaterialOverride</a> () const noexcept</td></tr>
+<tr class="memdesc:a936e692f977095b6fcc40fb931024617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> was configured with a MaterialPropertiesOverride.  <br /></td></tr>
+<tr class="memitem:ac84d4c3a3639c01c10ab926fab13c1cd" id="r_ac84d4c3a3639c01c10ab926fab13c1cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac84d4c3a3639c01c10ab926fab13c1cd">writeUniformValues</a> (<a class="el" href="classhelios_1_1rendering_1_1shader_1_1UniformValueMap.html">helios::rendering::shader::UniformValueMap</a> &amp;uniformValueMap) const noexcept</td></tr>
+<tr class="memdesc:ac84d4c3a3639c01c10ab926fab13c1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes uniform values into the given map.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a3571aa77dd70413767443bb5fe9b2105" id="r_a3571aa77dd70413767443bb5fe9b2105"><td class="memItemLeft" align="right" valign="top"><a id="a3571aa77dd70413767443bb5fe9b2105" name="a3571aa77dd70413767443bb5fe9b2105"></a>
-std::shared_ptr&lt; <a class="el" href="classhelios_1_1rendering_1_1model_1_1Mesh.html">helios::rendering::model::Mesh</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mesh_</b> = nullptr</td></tr>
-<tr class="memdesc:a3571aa77dd70413767443bb5fe9b2105"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the Mesh this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> uses. <br /></td></tr>
-<tr class="memitem:ab809c7cec04da5320174a52d369e8a02" id="r_ab809c7cec04da5320174a52d369e8a02"><td class="memItemLeft" align="right" valign="top"><a id="ab809c7cec04da5320174a52d369e8a02" name="ab809c7cec04da5320174a52d369e8a02"></a>
-std::shared_ptr&lt; <a class="el" href="classhelios_1_1rendering_1_1model_1_1MaterialInstance.html">helios::rendering::model::MaterialInstance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>materialInstance_</b> = nullptr</td></tr>
-<tr class="memdesc:ab809c7cec04da5320174a52d369e8a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the MaterialInstance owned by the <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a>. <br /></td></tr>
+<tr class="memitem:a8fd3f447a861f9fe08d5a4555d12b5b1" id="r_a8fd3f447a861f9fe08d5a4555d12b5b1"><td class="memItemLeft" align="right" valign="top"><a id="a8fd3f447a861f9fe08d5a4555d12b5b1" name="a8fd3f447a861f9fe08d5a4555d12b5b1"></a>
+std::shared_ptr&lt; const <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html">helios::rendering::RenderPrototype</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderPrototype_</b> = nullptr</td></tr>
+<tr class="memdesc:a8fd3f447a861f9fe08d5a4555d12b5b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer to the immutable <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a> definition. <br /></td></tr>
+<tr class="memitem:a0969404f052cbd94a94b3a3fa0e6c7a7" id="r_a0969404f052cbd94a94b3a3fa0e6c7a7"><td class="memItemLeft" align="right" valign="top"><a id="a0969404f052cbd94a94b3a3fa0e6c7a7" name="a0969404f052cbd94a94b3a3fa0e6c7a7"></a>
+std::optional&lt; <a class="el" href="structhelios_1_1rendering_1_1model_1_1config_1_1MaterialPropertiesOverride.html">helios::rendering::model::config::MaterialPropertiesOverride</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>materialOverride_</b></td></tr>
+<tr class="memdesc:a0969404f052cbd94a94b3a3fa0e6c7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MaterialPropertiesOverride owned by this class. This will be std::nullopt if not available. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-static-attribs" class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
 <tr class="memitem:ab3090959e1dc6df5b5737501abbb648a" id="r_ab3090959e1dc6df5b5737501abbb648a"><td class="memItemLeft" align="right" valign="top"><a id="ab3090959e1dc6df5b5737501abbb648a" name="ab3090959e1dc6df5b5737501abbb648a"></a>
-const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::util::log::Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>logger_</b></td></tr>
-<tr class="memdesc:ab3090959e1dc6df5b5737501abbb648a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The logger used with this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> instance. Defaults to HELIOS_LOG_SCOPE. <br /></td></tr>
+static const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::util::log::Logger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>logger_</b> = <a class="el" href="classhelios_1_1util_1_1log_1_1LogManager.html#a750d8fd5b3ee3678600644756b0631e7">helios::util::log::LogManager::loggerForScope</a>(<a class="el" href="OpenGLUniformLocationMap_8ixx.html#acbc04f24078582c7d42b2085be5d5750">HELIOS_LOG_SCOPE</a>)</td></tr>
+<tr class="memdesc:ab3090959e1dc6df5b5737501abbb648a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared logger instance for all <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> objects. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Representative of a configurable <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> rendered by the underlying GL API. </p>
-<p>A <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> is an aggregate consisting of Material and a Mesh, providing geometric primitives and material information.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo</a></b></dt><dd>a <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> should be configured with optional, selected overrides for the associated mesh/material, so that for the used shared mesh/material objects, individual draw configs are possible. </dd></dl>
+<div class="textblock"><p>Representative of a configurable <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> that references an immutable <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a> and instance specific material property overrides. </p>
+<p>A <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> aggregates a reference to an immutable <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a> (the shared asset definition) with optional instance-specific material property overrides. This separation enables efficient batching of shared RenderPrototypes while allowing individual visual adjustments per <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> instance.</p>
+<p>The <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a>'s interface is API-agnostic, enabling efficient batching and per-instance customization, while abstracting the underlying API-specific rendering resources bundled within the <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a>.</p>
+<p>Renderables are designed to be movable (e.g., in render queues) but not copyable to ensure unique instance identity in processing. </p>
 
-<p class="definition">Definition at line <a class="el" href="Renderable_8ixx_source.html#l00033">33</a> of file <a class="el" href="Renderable_8ixx_source.html">Renderable.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Renderable_8ixx_source.html#l00038">38</a> of file <a class="el" href="Renderable_8ixx_source.html">Renderable.ixx</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5a0b1ee7371be890d2b48b5582e4eebf" name="a5a0b1ee7371be890d2b48b5582e4eebf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a0b1ee7371be890d2b48b5582e4eebf">&#9670;&#160;</a></span>Renderable() <span class="overload">[1/4]</span></h2>
+<a id="a5f6b1a62d690b901c71292fd85484601" name="a5f6b1a62d690b901c71292fd85484601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6b1a62d690b901c71292fd85484601">&#9670;&#160;</a></span>Renderable() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,43 +182,20 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel export">export</span><span class="mlabel protected">protected</span><span class="mlabel default">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel export">export</span><span class="mlabel delete">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="#adc490817c535742ed59dc691a68f440f">operator=()</a>, <a class="el" href="#a69c84c1afbfc0b66e96b505c3729fa26">operator=()</a>, <a class="el" href="#a6a9406c41eca52028f9cd08a1c2c300a">Renderable()</a>, <a class="el" href="#a7f8dfa2987e25fb3994225b77de8c5b7">Renderable()</a>, and <a class="el" href="#a4f9d2935a141735fb3f10c1108aeda20">Renderable()</a>.</p>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a5a0b1ee7371be890d2b48b5582e4eebf_icgraph.svg" width="416" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p>Deleted default constructor. </p>
 
+<p class="reference">Referenced by <a class="el" href="#adc490817c535742ed59dc691a68f440f">operator=()</a>, <a class="el" href="#ac5f1ab331ba24f577a29f072701e595d">operator=()</a>, <a class="el" href="#a6a9406c41eca52028f9cd08a1c2c300a">Renderable()</a>, <a class="el" href="#a6d557b575fc5bd09bcb1370e5ea4b0a9">Renderable()</a>, and <a class="el" href="#a528392841e8f262631950e1bde961e57">Renderable()</a>.</p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a5f6b1a62d690b901c71292fd85484601_icgraph.svg" width="416" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<a id="a7c026c028ca9e697aa2226ffd265c8ba" name="a7c026c028ca9e697aa2226ffd265c8ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c026c028ca9e697aa2226ffd265c8ba">&#9670;&#160;</a></span>~Renderable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual helios::rendering::Renderable::~Renderable </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel export">export</span><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -244,20 +222,20 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
 </table>
 </div><div class="memdoc">
 
-<p>Delete copy constructor. </p>
+<p>Deleted copy constructor. </p>
 
-<p class="reference">References <a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable()</a>.</p>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable()</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a6a9406c41eca52028f9cd08a1c2c300a_cgraph.svg" width="416" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="a7f8dfa2987e25fb3994225b77de8c5b7" name="a7f8dfa2987e25fb3994225b77de8c5b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f8dfa2987e25fb3994225b77de8c5b7">&#9670;&#160;</a></span>Renderable() <span class="overload">[3/4]</span></h2>
+<a id="a6d557b575fc5bd09bcb1370e5ea4b0a9" name="a6d557b575fc5bd09bcb1370e5ea4b0a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d557b575fc5bd09bcb1370e5ea4b0a9">&#9670;&#160;</a></span>Renderable() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,25 +252,25 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel export">export</span><span class="mlabel delete">delete</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel export">export</span><span class="mlabel default">default</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Delete move constructor. </p>
+<p>Defaulted move constructor. </p>
 
-<p class="reference">References <a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable()</a>.</p>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a7f8dfa2987e25fb3994225b77de8c5b7_cgraph.svg" width="416" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a6d557b575fc5bd09bcb1370e5ea4b0a9_cgraph.svg" width="416" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="a4f9d2935a141735fb3f10c1108aeda20" name="a4f9d2935a141735fb3f10c1108aeda20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f9d2935a141735fb3f10c1108aeda20">&#9670;&#160;</a></span>Renderable() <span class="overload">[4/4]</span></h2>
+<a id="a528392841e8f262631950e1bde961e57" name="a528392841e8f262631950e1bde961e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528392841e8f262631950e1bde961e57">&#9670;&#160;</a></span>Renderable() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,12 +281,12 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
         <tr>
           <td class="memname">helios::rendering::Renderable::Renderable </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classhelios_1_1rendering_1_1model_1_1Mesh.html">helios::rendering::model::Mesh</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
+          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html">helios::rendering::RenderPrototype</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>renderPrototype</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classhelios_1_1rendering_1_1model_1_1MaterialInstance.html">helios::rendering::model::MaterialInstance</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>materialInstance</em></span>&#160;)</td>
+          <td class="paramtype">const std::optional&lt; <a class="el" href="structhelios_1_1rendering_1_1model_1_1config_1_1MaterialPropertiesOverride.html">helios::rendering::model::config::MaterialPropertiesOverride</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>materialOverride</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::nullopt</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -318,34 +296,34 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> instance. </p>
+<p>Creates a new <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mesh</td><td>A shared pointer to the Mesh associated with this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a>. </td></tr>
-    <tr><td class="paramname">materialInstance</td><td>A shared pointer to the MaterialInstance owned by this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a>.</td></tr>
+    <tr><td class="paramname">renderPrototype</td><td>A shared pointer to the immutable <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a> definition. Must not be nullptr. </td></tr>
+    <tr><td class="paramname">materialOverride</td><td>An optional set of instance-specific material property overrides. If std::nullopt, the <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> uses only the default properties from the <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a>'s Material.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td>if either mesh or material are null. </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>if `renderPrototype` is a nullptr. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="#a75aba581d21c509d9d14581e76b3f0ca">materialInstance()</a>, <a class="el" href="#a7a7d54190d3e65ee8a933e0e6ef75dea">mesh()</a>, and <a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable()</a>.</p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="#a9ff2cf3f0474d419477027dc81c86165">materialOverride()</a>, <a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable()</a>, and <a class="el" href="#ad62cb2a3bbb92eb64b901e110a357e8c">renderPrototype()</a>.</p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a4f9d2935a141735fb3f10c1108aeda20_cgraph.svg" width="452" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a528392841e8f262631950e1bde961e57_cgraph.svg" width="452" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a75aba581d21c509d9d14581e76b3f0ca" name="a75aba581d21c509d9d14581e76b3f0ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75aba581d21c509d9d14581e76b3f0ca">&#9670;&#160;</a></span>materialInstance()</h2>
+<a id="a936e692f977095b6fcc40fb931024617" name="a936e692f977095b6fcc40fb931024617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a936e692f977095b6fcc40fb931024617">&#9670;&#160;</a></span>hasMaterialOverride()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -354,7 +332,7 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classhelios_1_1rendering_1_1model_1_1MaterialInstance.html">helios::rendering::model::MaterialInstance</a> &amp; helios::rendering::Renderable::materialInstance </td>
+          <td class="memname">bool helios::rendering::Renderable::hasMaterialOverride </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -367,29 +345,29 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
 </table>
 </div><div class="memdoc">
 
-<p>Returns a const reference to the MaterialInstance associated with this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>A const reference to the MaterialInstance. </dd></dl>
+<p>Returns true if this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> was configured with a MaterialPropertiesOverride. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a> was configured with a MaterialPropertiesOverride instance, otherwise false. </dd></dl>
 
-<p class="reference">References <a class="el" href="#a75aba581d21c509d9d14581e76b3f0ca">materialInstance()</a>.</p>
+<p class="reference">References <a class="el" href="#a936e692f977095b6fcc40fb931024617">hasMaterialOverride()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="#a75aba581d21c509d9d14581e76b3f0ca">materialInstance()</a>, <a class="el" href="classhelios_1_1ext_1_1opengl_1_1rendering_1_1OpenGLRenderable.html#a62c884e1b814c24ecfe8994cdf0e1b23">helios::ext::opengl::rendering::OpenGLRenderable::OpenGLRenderable()</a>, and <a class="el" href="#a4f9d2935a141735fb3f10c1108aeda20">Renderable()</a>.</p>
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<p class="reference">Referenced by <a class="el" href="#a936e692f977095b6fcc40fb931024617">hasMaterialOverride()</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a936e692f977095b6fcc40fb931024617_cgraph.svg" width="248" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a75aba581d21c509d9d14581e76b3f0ca_cgraph.svg" width="226" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a75aba581d21c509d9d14581e76b3f0ca_icgraph.svg" width="499" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a936e692f977095b6fcc40fb931024617_icgraph.svg" width="248" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="a7a7d54190d3e65ee8a933e0e6ef75dea" name="a7a7d54190d3e65ee8a933e0e6ef75dea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a7d54190d3e65ee8a933e0e6ef75dea">&#9670;&#160;</a></span>mesh()</h2>
+<a id="a9ff2cf3f0474d419477027dc81c86165" name="a9ff2cf3f0474d419477027dc81c86165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff2cf3f0474d419477027dc81c86165">&#9670;&#160;</a></span>materialOverride() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,7 +376,7 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; const <a class="el" href="classhelios_1_1rendering_1_1model_1_1Mesh.html">helios::rendering::model::Mesh</a> &gt; helios::rendering::Renderable::mesh </td>
+          <td class="memname">const std::optional&lt; <a class="el" href="structhelios_1_1rendering_1_1model_1_1config_1_1MaterialPropertiesOverride.html">helios::rendering::model::config::MaterialPropertiesOverride</a> &gt; &amp; helios::rendering::Renderable::materialOverride </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -411,23 +389,61 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
 </table>
 </div><div class="memdoc">
 
-<p>Returns a shared ptr to the Mesh this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a> uses. The returned shared_ptr references the underlying Mesh object. </p>
-<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the Mesh used by this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable rendered by the underlying GL API.">Renderable</a>. </dd></dl>
+<p>Returns a const reference to the optional instance-specific MaterialPropertiesOverride. </p>
+<p>This allows read-only access to the overrides. Use `.has_value()` to check for existence and `.value()` or `-&gt;` to safely access the override data.</p>
+<dl class="section return"><dt>Returns</dt><dd>A const reference to the std::optional&lt;MaterialPropertiesOverride&gt;. </dd></dl>
 
-<p class="reference">References <a class="el" href="#a7a7d54190d3e65ee8a933e0e6ef75dea">mesh()</a>.</p>
+<p class="reference">References <a class="el" href="#a9ff2cf3f0474d419477027dc81c86165">materialOverride()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="#a7a7d54190d3e65ee8a933e0e6ef75dea">mesh()</a>, <a class="el" href="classhelios_1_1ext_1_1opengl_1_1rendering_1_1OpenGLRenderable.html#a62c884e1b814c24ecfe8994cdf0e1b23">helios::ext::opengl::rendering::OpenGLRenderable::OpenGLRenderable()</a>, and <a class="el" href="#a4f9d2935a141735fb3f10c1108aeda20">Renderable()</a>.</p>
-<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<p class="reference">Referenced by <a class="el" href="#a9ff2cf3f0474d419477027dc81c86165">materialOverride()</a>, <a class="el" href="#a11455b5220d78030b1ddf5dd9abbbd7c">materialOverride()</a>, and <a class="el" href="#a528392841e8f262631950e1bde961e57">Renderable()</a>.</p>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a9ff2cf3f0474d419477027dc81c86165_cgraph.svg" width="226" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a7a7d54190d3e65ee8a933e0e6ef75dea_cgraph.svg" width="151" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a9ff2cf3f0474d419477027dc81c86165_icgraph.svg" width="488" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+
+</div>
+</div>
+<a id="a11455b5220d78030b1ddf5dd9abbbd7c" name="a11455b5220d78030b1ddf5dd9abbbd7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11455b5220d78030b1ddf5dd9abbbd7c">&#9670;&#160;</a></span>materialOverride() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structhelios_1_1rendering_1_1model_1_1config_1_1MaterialPropertiesOverride.html">helios::rendering::model::config::MaterialPropertiesOverride</a> &gt; &amp; helios::rendering::Renderable::materialOverride </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a non-const reference to the optional instance-specific MaterialPropertiesOverride. </p>
+<p>This allows modification of the overrides. If the optional currently has no value, it can be assigned to or `.emplace()` can be used to create a new MaterialPropertiesOverride.</p>
+<dl class="section return"><dt>Returns</dt><dd>A non-const reference to the std::optional&lt;MaterialPropertiesOverride&gt;. </dd></dl>
+
+<p class="reference">References <a class="el" href="#a9ff2cf3f0474d419477027dc81c86165">materialOverride()</a>.</p>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a7a7d54190d3e65ee8a933e0e6ef75dea_icgraph.svg" width="424" height="131"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a11455b5220d78030b1ddf5dd9abbbd7c_cgraph.svg" width="488" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -442,9 +458,9 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable</a> &amp; helios::rendering::Renderable::operator= </td>
+          <td class="memname"><a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable</a> &amp; helios::rendering::Renderable::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -455,9 +471,9 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
 </table>
 </div><div class="memdoc">
 
-<p>Delete copy assignment operator. </p>
+<p>Deleted copy assignment operator. </p>
 
-<p class="reference">References <a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable()</a>.</p>
+<p class="reference">References <a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable()</a>.</p>
 <div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
@@ -467,8 +483,8 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
 
 </div>
 </div>
-<a id="a69c84c1afbfc0b66e96b505c3729fa26" name="a69c84c1afbfc0b66e96b505c3729fa26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69c84c1afbfc0b66e96b505c3729fa26">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="ac5f1ab331ba24f577a29f072701e595d" name="ac5f1ab331ba24f577a29f072701e595d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5f1ab331ba24f577a29f072701e595d">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -477,27 +493,121 @@ const <a class="el" href="classhelios_1_1util_1_1log_1_1Logger.html">helios::uti
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable</a> &amp; helios::rendering::Renderable::operator= </td>
+          <td class="memname"><a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable</a> &amp; helios::rendering::Renderable::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel export">export</span><span class="mlabel delete">delete</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel export">export</span><span class="mlabel default">default</span><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Delete move assignment operator. </p>
+<p>Defaulted move assignment operator. </p>
 
-<p class="reference">References <a class="el" href="#a5a0b1ee7371be890d2b48b5582e4eebf">Renderable()</a>.</p>
+<p class="reference">References <a class="el" href="#a5f6b1a62d690b901c71292fd85484601">Renderable()</a>.</p>
 <div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_a69c84c1afbfc0b66e96b505c3729fa26_cgraph.svg" width="408" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_ac5f1ab331ba24f577a29f072701e595d_cgraph.svg" width="408" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad62cb2a3bbb92eb64b901e110a357e8c" name="ad62cb2a3bbb92eb64b901e110a357e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62cb2a3bbb92eb64b901e110a357e8c">&#9670;&#160;</a></span>renderPrototype()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; const <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html">helios::rendering::RenderPrototype</a> &gt; helios::rendering::Renderable::renderPrototype </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a shared pointer to the <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a> used by this <a class="el" href="classhelios_1_1rendering_1_1Renderable.html" title="Representative of a configurable Renderable that references an immutable RenderPrototype and instance...">Renderable</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the <a class="el" href="classhelios_1_1rendering_1_1RenderPrototype.html" title="An immutable, shared prototype of a renderable object.">RenderPrototype</a>. </dd></dl>
+
+<p class="reference">References <a class="el" href="#ad62cb2a3bbb92eb64b901e110a357e8c">renderPrototype()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#a528392841e8f262631950e1bde961e57">Renderable()</a>, and <a class="el" href="#ad62cb2a3bbb92eb64b901e110a357e8c">renderPrototype()</a>.</p>
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_ad62cb2a3bbb92eb64b901e110a357e8c_cgraph.svg" width="220" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_ad62cb2a3bbb92eb64b901e110a357e8c_icgraph.svg" width="447" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac84d4c3a3639c01c10ab926fab13c1cd" name="ac84d4c3a3639c01c10ab926fab13c1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac84d4c3a3639c01c10ab926fab13c1cd">&#9670;&#160;</a></span>writeUniformValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void helios::rendering::Renderable::writeUniformValues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classhelios_1_1rendering_1_1shader_1_1UniformValueMap.html">helios::rendering::shader::UniformValueMap</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>uniformValueMap</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes uniform values into the given map. </p>
+<p>This method first applies the default uniform values from the base Material definition and then overlays any specific overrides provided by this instance's MaterialPropertiesOverride.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uniformValueMap</td><td>Target map receiving the uniform values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="#ac84d4c3a3639c01c10ab926fab13c1cd">writeUniformValues()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ac84d4c3a3639c01c10ab926fab13c1cd">writeUniformValues()</a>.</p>
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_ac84d4c3a3639c01c10ab926fab13c1cd_cgraph.svg" width="244" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classhelios_1_1rendering_1_1Renderable_ac84d4c3a3639c01c10ab926fab13c1cd_icgraph.svg" width="244" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

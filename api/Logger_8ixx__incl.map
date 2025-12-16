@@ -1,7 +1,14 @@
 <map id="include/helios/util/log/Logger.ixx" name="include/helios/util/log/Logger.ixx">
-<area shape="rect" id="Node000001" title=" " alt="" coords="23,5,161,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,85,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,47,62,83,57,80,78,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="109,93,168,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,44,127,80,122,83,101,47"/>
+<area shape="rect" id="Node000001" title="Simple synchronous logger with configurable output sinks." alt="" coords="82,5,220,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="156,167,215,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,47,49,60,22,76,14,86,9,95,9,106,14,117,41,142,74,159,109,169,143,174,142,179,108,174,72,164,38,147,10,120,4,107,4,94,9,83,19,72,47,55,81,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="25,93,88,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,48,83,86,79,82,126,43"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="112,93,190,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,46,154,79,148,79,148,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="214,93,278,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="175,43,222,82,219,86,172,48"/>
+<area shape="rect" id="Node000006" href="$LogSink_8ixx.html" title="Abstract interface for log output destinations." alt="" coords="302,93,467,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="208,43,338,86,336,91,206,48"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="353,121,229,165,227,160,351,116"/>
 </map>

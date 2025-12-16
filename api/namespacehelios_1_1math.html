@@ -115,18 +115,20 @@ Namespaces</h2></td></tr>
 <tr class="memitem:concepts" id="r_concepts"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios_1_1math_1_1concepts.html">concepts</a></td></tr>
 <tr class="memdesc:namespacehelios_1_1math_1_1concepts"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mathematical concepts for type constraints. <br /></td></tr>
 <tr class="memitem:transform" id="r_transform"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios_1_1math_1_1transform.html">transform</a></td></tr>
-<tr class="memdesc:namespacehelios_1_1math_1_1transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transformation utilities for 3D graphics. <br /></td></tr>
+<tr class="memdesc:namespacehelios_1_1math_1_1transform"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transformation utilities for 3D graphics and scene graph inheritance. <br /></td></tr>
 <tr class="memitem:types" id="r_types"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios_1_1math_1_1types.html">types</a></td></tr>
 <tr class="memdesc:namespacehelios_1_1math_1_1types"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector and matrix types. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:aabb" id="r_aabb"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhelios_1_1math_1_1aabb.html">aabb</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Axis-Aligned Bounding Box for spatial culling and collision detection.  <a href="structhelios_1_1math_1_1aabb.html#details">More...</a><br /></td></tr>
 <tr class="memitem:mat4" id="r_mat4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhelios_1_1math_1_1mat4.html">mat4</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a 4x4 matrix, stored in column-major order.  <a href="structhelios_1_1math_1_1mat4.html#details">More...</a><br /></td></tr>
-<tr class="memitem:vec2" id="r_vec2"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a 2-dimensional vector of the generic type &lt;T&gt;.  <a href="structhelios_1_1math_1_1vec2.html#details">More...</a><br /></td></tr>
 <tr class="memitem:vec3" id="r_vec3"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a 3-dimensional vector of the generic type &lt;T&gt;.  <a href="structhelios_1_1math_1_1vec3.html#details">More...</a><br /></td></tr>
+<tr class="memitem:vec2" id="r_vec2"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a 2-dimensional vector of the generic type &lt;T&gt;.  <a href="structhelios_1_1math_1_1vec2.html#details">More...</a><br /></td></tr>
 <tr class="memitem:vec4" id="r_vec4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhelios_1_1math_1_1vec4.html">vec4</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a 4-dimensional vector of the generic type &lt;T&gt;.  <a href="structhelios_1_1math_1_1vec4.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
@@ -137,6 +139,15 @@ Concepts</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a4c90766d59f3c1ce32821bbbd3cdd62b" id="r_a4c90766d59f3c1ce32821bbbd3cdd62b"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a4c90766d59f3c1ce32821bbbd3cdd62b template"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c90766d59f3c1ce32821bbbd3cdd62b">helios::math::FloatingPointType</a></td></tr>
+<tr class="memdesc:a4c90766d59f3c1ce32821bbbd3cdd62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type trait that promotes integral types to double, while preserving floating-point types.  <br /></td></tr>
+<tr class="memitem:a124c0492430aeecedc1c1a5ece4ba488" id="r_a124c0492430aeecedc1c1a5ece4ba488"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a124c0492430aeecedc1c1a5ece4ba488">helios::math::aabbf</a> = <a class="el" href="structhelios_1_1math_1_1aabb.html">aabb</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:a124c0492430aeecedc1c1a5ece4ba488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-precision floating-point AABB.  <br /></td></tr>
+<tr class="memitem:a3c63775a7d6ff09058288223291660b7" id="r_a3c63775a7d6ff09058288223291660b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c63775a7d6ff09058288223291660b7">helios::math::aabbi</a> = <a class="el" href="structhelios_1_1math_1_1aabb.html">aabb</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:a3c63775a7d6ff09058288223291660b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer AABB.  <br /></td></tr>
+<tr class="memitem:a8cdcd5dfceca20081416ef7ac3374e01" id="r_a8cdcd5dfceca20081416ef7ac3374e01"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cdcd5dfceca20081416ef7ac3374e01">helios::math::aabbd</a> = <a class="el" href="structhelios_1_1math_1_1aabb.html">aabb</a>&lt;double&gt;</td></tr>
+<tr class="memdesc:a8cdcd5dfceca20081416ef7ac3374e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double-precision floating-point AABB.  <br /></td></tr>
 <tr class="memitem:ad422120d6e1f106140808f16e348f0b3" id="r_ad422120d6e1f106140808f16e348f0b3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad422120d6e1f106140808f16e348f0b3">helios::math::mat4f</a> = <a class="el" href="structhelios_1_1math_1_1mat4.html">mat4</a>&lt;float&gt;</td></tr>
 <tr class="memitem:a058bd8629e8b9fdd7914ec513cf515f5" id="r_a058bd8629e8b9fdd7914ec513cf515f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a058bd8629e8b9fdd7914ec513cf515f5">helios::math::mat4d</a> = <a class="el" href="structhelios_1_1math_1_1mat4.html">mat4</a>&lt;double&gt;</td></tr>
 <tr class="memitem:abfde83491c8def2cca7e8816bb9a0075" id="r_abfde83491c8def2cca7e8816bb9a0075"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfde83491c8def2cca7e8816bb9a0075">helios::math::mat4i</a> = <a class="el" href="structhelios_1_1math_1_1mat4.html">mat4</a>&lt;int&gt;</td></tr>
@@ -144,14 +155,31 @@ Typedefs</h2></td></tr>
 <tr class="memitem:acb8f1b0c5acc937254f38e27787db452" id="r_acb8f1b0c5acc937254f38e27787db452"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb8f1b0c5acc937254f38e27787db452">helios::math::vec2d</a> = <a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a>&lt;double&gt;</td></tr>
 <tr class="memitem:aff32bafe25abeda0bb858b51ae46bff8" id="r_aff32bafe25abeda0bb858b51ae46bff8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff32bafe25abeda0bb858b51ae46bff8">helios::math::vec2i</a> = <a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a>&lt;int&gt;</td></tr>
 <tr class="memitem:a71f1e40e636f47229c3122bdb63099d5" id="r_a71f1e40e636f47229c3122bdb63099d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71f1e40e636f47229c3122bdb63099d5">helios::math::vec3f</a> = <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:a71f1e40e636f47229c3122bdb63099d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-precision floating-point 3D vector.  <br /></td></tr>
 <tr class="memitem:a0fd329cdb93d866fad284b88f7acb4f4" id="r_a0fd329cdb93d866fad284b88f7acb4f4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fd329cdb93d866fad284b88f7acb4f4">helios::math::vec3i</a> = <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:a0fd329cdb93d866fad284b88f7acb4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer 3D vector.  <br /></td></tr>
 <tr class="memitem:a57c950d4cb887c103dc2423f3ea81ce4" id="r_a57c950d4cb887c103dc2423f3ea81ce4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57c950d4cb887c103dc2423f3ea81ce4">helios::math::vec3d</a> = <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt;double&gt;</td></tr>
+<tr class="memdesc:a57c950d4cb887c103dc2423f3ea81ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double-precision floating-point 3D vector.  <br /></td></tr>
 <tr class="memitem:a08252f81850c5902e3c8dead272f3332" id="r_a08252f81850c5902e3c8dead272f3332"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08252f81850c5902e3c8dead272f3332">helios::math::vec4f</a> = <a class="el" href="structhelios_1_1math_1_1vec4.html">vec4</a>&lt;float&gt;</td></tr>
+<tr class="memdesc:a08252f81850c5902e3c8dead272f3332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-precision floating-point 4D vector.  <br /></td></tr>
 <tr class="memitem:a78a0f495523b71681b549f098f994126" id="r_a78a0f495523b71681b549f098f994126"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78a0f495523b71681b549f098f994126">helios::math::vec4d</a> = <a class="el" href="structhelios_1_1math_1_1vec4.html">vec4</a>&lt;double&gt;</td></tr>
+<tr class="memdesc:a78a0f495523b71681b549f098f994126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double-precision floating-point 4D vector.  <br /></td></tr>
 <tr class="memitem:a9ce6ecf5869b53d92a26354e2c48d0b4" id="r_a9ce6ecf5869b53d92a26354e2c48d0b4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ce6ecf5869b53d92a26354e2c48d0b4">helios::math::vec4i</a> = <a class="el" href="structhelios_1_1math_1_1vec4.html">vec4</a>&lt;int&gt;</td></tr>
+<tr class="memdesc:a9ce6ecf5869b53d92a26354e2c48d0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer 4D vector.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a27682cda52181a23edab8c0249fa531d" id="r_a27682cda52181a23edab8c0249fa531d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27682cda52181a23edab8c0249fa531d">helios::math::TransformType</a> : uint8_t { <a class="el" href="#a27682cda52181a23edab8c0249fa531da6dd08874f83507e9c7b23f1a46b7fa7c">Translation</a> = 1 &lt;&lt; 0
+, <a class="el" href="#a27682cda52181a23edab8c0249fa531daf1a42bd417390fc63b030a519624607a">Rotation</a> = 1 &lt;&lt; 1
+, <a class="el" href="#a27682cda52181a23edab8c0249fa531da85a7cd587d6142dbfc1a4de05af7b75d">Scale</a> = 1 &lt;&lt; 2
+, <a class="el" href="#a27682cda52181a23edab8c0249fa531dab1c94ca2fbc3e78fc30069c8d0f01680">All</a> = Translation | Rotation | Scale
+ }</td></tr>
+<tr class="memdesc:a27682cda52181a23edab8c0249fa531d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmask enum controlling which transform components a child node inherits from its parent.  <a href="#a27682cda52181a23edab8c0249fa531d">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a3009ee1714550dc2af4d7e5e952e8a90" id="r_a3009ee1714550dc2af4d7e5e952e8a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad422120d6e1f106140808f16e348f0b3">mat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3009ee1714550dc2af4d7e5e952e8a90">helios::math::perspective</a> (float fovY, float aspect, float zNear, float zFar) noexcept</td></tr>
+<tr class="memdesc:a3009ee1714550dc2af4d7e5e952e8a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the 4x4 perspective projection matrix based on the specified field of view, aspect ratio, and near and far clipping planes.  <br /></td></tr>
 <tr class="memitem:aef6bef7ca3d31a4908a66e16c9771420" id="r_aef6bef7ca3d31a4908a66e16c9771420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad422120d6e1f106140808f16e348f0b3">mat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef6bef7ca3d31a4908a66e16c9771420">helios::math::lookAt</a> (const <a class="el" href="#a71f1e40e636f47229c3122bdb63099d5">vec3f</a> &amp;eye, const <a class="el" href="#a71f1e40e636f47229c3122bdb63099d5">vec3f</a> &amp;center, const <a class="el" href="#a71f1e40e636f47229c3122bdb63099d5">vec3f</a> &amp;up) noexcept</td></tr>
 <tr class="memdesc:aef6bef7ca3d31a4908a66e16c9771420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 4x4 lookAt-matrix for transforming world coordinates to camera space. The method creates the camera coordinate system based on the parameters eye, i.e. the vantage point in world space, the camera's up direction and center, representing the point of interest. Note that the returned matrix is essentially a composition of a change of coordinates matrix P(C &lt;- W) and a translation to the origin, i.e. the camera is sitting at the origin (0, 0, 0) looking down the negative z-axis, i.e. conceptually.  <br /></td></tr>
 <tr class="memitem:a643691235959c2f53d144a4ee9a0e251" id="r_a643691235959c2f53d144a4ee9a0e251"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad422120d6e1f106140808f16e348f0b3">mat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a643691235959c2f53d144a4ee9a0e251">helios::math::rotate</a> (const <a class="el" href="#ad422120d6e1f106140808f16e348f0b3">mat4f</a> &amp;model, float <a class="el" href="#a4949642a7cca09c7950bb6a1b75260c9">radians</a>, const <a class="el" href="#a71f1e40e636f47229c3122bdb63099d5">vec3f</a> &amp;axis) noexcept</td></tr>
@@ -162,21 +190,37 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae230dbf0f416c8c868d5fea73d6babdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an affine transformation matrix S' = M * S by ""baking" the scaling part into the model matrix. Any operation S' * v will make sure that v is scaled in local space, then transformed into world space.  <br /></td></tr>
 <tr class="memitem:a8cc238c96b9b131d26357870e87ed668" id="r_a8cc238c96b9b131d26357870e87ed668"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="#ad422120d6e1f106140808f16e348f0b3">mat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cc238c96b9b131d26357870e87ed668">helios::math::scale</a> (const <a class="el" href="#ad422120d6e1f106140808f16e348f0b3">mat4f</a> &amp;model, const float scale_by) noexcept</td></tr>
 <tr class="memdesc:a8cc238c96b9b131d26357870e87ed668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an affine transformation matrix S' = M * S by "baking" the scaling part into the model matrix. Any operation S' * v will make sure that v is scaled in local space, then transformed into world space.  <br /></td></tr>
+<tr class="memitem:aca9266bbc6a927b4e082fb75d0d31434" id="r_aca9266bbc6a927b4e082fb75d0d31434"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a27682cda52181a23edab8c0249fa531d">TransformType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca9266bbc6a927b4e082fb75d0d31434">helios::math::operator|</a> (<a class="el" href="#a27682cda52181a23edab8c0249fa531d">TransformType</a> a, <a class="el" href="#a27682cda52181a23edab8c0249fa531d">TransformType</a> b)</td></tr>
+<tr class="memdesc:aca9266bbc6a927b4e082fb75d0d31434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combines two Inherit flags using bitwise OR.  <br /></td></tr>
+<tr class="memitem:a21fb88902bc365300cd88dad37e1d123" id="r_a21fb88902bc365300cd88dad37e1d123"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21fb88902bc365300cd88dad37e1d123">helios::math::transformTypeMatch</a> (<a class="el" href="#a27682cda52181a23edab8c0249fa531d">TransformType</a> mask, <a class="el" href="#a27682cda52181a23edab8c0249fa531d">TransformType</a> flag)</td></tr>
+<tr class="memdesc:a21fb88902bc365300cd88dad37e1d123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a specific inheritance flag is set in a mask.  <br /></td></tr>
 <tr class="memitem:a0e37b93487d103aa6588ba44bdb1a0b6" id="r_a0e37b93487d103aa6588ba44bdb1a0b6"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </td></tr>
 <tr class="memitem:a0e37b93487d103aa6588ba44bdb1a0b6 template"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e37b93487d103aa6588ba44bdb1a0b6">helios::math::value_ptr</a> (const <a class="el" href="structhelios_1_1math_1_1mat4.html">mat4</a>&lt; T &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:a0e37b93487d103aa6588ba44bdb1a0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to the first element of the matrix's components.  <br /></td></tr>
 <tr class="memitem:a581fd38f8554d49c33a42b46255cc983" id="r_a581fd38f8554d49c33a42b46255cc983"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </td></tr>
 <tr class="memitem:a581fd38f8554d49c33a42b46255cc983 template"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a581fd38f8554d49c33a42b46255cc983">helios::math::value_ptr</a> (<a class="el" href="structhelios_1_1math_1_1mat4.html">mat4</a>&lt; T &gt; &amp;m) noexcept</td></tr>
 <tr class="memdesc:a581fd38f8554d49c33a42b46255cc983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the first element of the matrix's components.  <br /></td></tr>
+<tr class="memitem:a3aa0fd063dbb05fb49b6e82621fedfed" id="r_a3aa0fd063dbb05fb49b6e82621fedfed"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </td></tr>
+<tr class="memitem:a3aa0fd063dbb05fb49b6e82621fedfed template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3aa0fd063dbb05fb49b6e82621fedfed">helios::math::operator*</a> (const <a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a>&lt; T &gt; &amp;v, const T n) noexcept</td></tr>
+<tr class="memdesc:a3aa0fd063dbb05fb49b6e82621fedfed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a 2D vector by a scalar value.  <br /></td></tr>
 <tr class="memitem:a7523e1a120cccd29674cf428bfdeb86c" id="r_a7523e1a120cccd29674cf428bfdeb86c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </td></tr>
 <tr class="memitem:a7523e1a120cccd29674cf428bfdeb86c template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7523e1a120cccd29674cf428bfdeb86c">helios::math::dot</a> (const <a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a>&lt; T &gt; &amp;v1, const <a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a>&lt; T &gt; &amp;v2) noexcept</td></tr>
 <tr class="memdesc:a7523e1a120cccd29674cf428bfdeb86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the dot product of two 2D vectors.  <br /></td></tr>
 <tr class="memitem:ae21f80815ae495b8d521d6ad829ee7b6" id="r_ae21f80815ae495b8d521d6ad829ee7b6"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </td></tr>
 <tr class="memitem:ae21f80815ae495b8d521d6ad829ee7b6 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae21f80815ae495b8d521d6ad829ee7b6">helios::math::operator*</a> (const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;v, const T n) noexcept</td></tr>
 <tr class="memdesc:ae21f80815ae495b8d521d6ad829ee7b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a 3D vector by a scalar value.  <br /></td></tr>
+<tr class="memitem:accf7fb22d70fc125b56f230c6c6cc8d5" id="r_accf7fb22d70fc125b56f230c6c6cc8d5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </td></tr>
+<tr class="memitem:accf7fb22d70fc125b56f230c6c6cc8d5 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf7fb22d70fc125b56f230c6c6cc8d5">helios::math::operator/</a> (const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;v, T s) noexcept</td></tr>
+<tr class="memdesc:accf7fb22d70fc125b56f230c6c6cc8d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides a 3D vector by a scalar value.  <br /></td></tr>
 <tr class="memitem:a81d43c532316a12782bef5db9230ff84" id="r_a81d43c532316a12782bef5db9230ff84"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </td></tr>
 <tr class="memitem:a81d43c532316a12782bef5db9230ff84 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81d43c532316a12782bef5db9230ff84">helios::math::operator*</a> (const T n, const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;v) noexcept</td></tr>
 <tr class="memdesc:a81d43c532316a12782bef5db9230ff84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a scalar value by a 3D vector.  <br /></td></tr>
+<tr class="memitem:a6bca908e940499722f0a3af6447ad719" id="r_a6bca908e940499722f0a3af6447ad719"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </td></tr>
+<tr class="memitem:a6bca908e940499722f0a3af6447ad719 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bca908e940499722f0a3af6447ad719">helios::math::operator*</a> (const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;v1, const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;v2) noexcept</td></tr>
+<tr class="memdesc:a6bca908e940499722f0a3af6447ad719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies two vectors componentwise.  <br /></td></tr>
+<tr class="memitem:a01625d8968c400bd7e812715d7f1941f" id="r_a01625d8968c400bd7e812715d7f1941f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </td></tr>
+<tr class="memitem:a01625d8968c400bd7e812715d7f1941f template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01625d8968c400bd7e812715d7f1941f">helios::math::operator+</a> (const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;v1, const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;v2) noexcept</td></tr>
+<tr class="memdesc:a01625d8968c400bd7e812715d7f1941f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the componentwise sum of the two vectors.  <br /></td></tr>
 <tr class="memitem:a82d2ab8d8240be4606a885c554b93fb5" id="r_a82d2ab8d8240be4606a885c554b93fb5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </td></tr>
 <tr class="memitem:a82d2ab8d8240be4606a885c554b93fb5 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82d2ab8d8240be4606a885c554b93fb5">helios::math::cross</a> (const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;v1, const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;v2) noexcept</td></tr>
 <tr class="memdesc:a82d2ab8d8240be4606a885c554b93fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the cross product of two 3D vectors.  <br /></td></tr>
@@ -191,11 +235,135 @@ Functions</h2></td></tr>
 <tr class="memdesc:afba89a2aa6938d85fd8be3974a9aed36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to the first element of the vector's components.  <br /></td></tr>
 <tr class="memitem:a4949642a7cca09c7950bb6a1b75260c9" id="r_a4949642a7cca09c7950bb6a1b75260c9"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4949642a7cca09c7950bb6a1b75260c9">helios::math::radians</a> (const float angle) noexcept</td></tr>
 <tr class="memdesc:a4949642a7cca09c7950bb6a1b75260c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an angle from degrees to radians.  <br /></td></tr>
+<tr class="memitem:a73c58ac1ac41973b9927ab6893662104" id="r_a73c58ac1ac41973b9927ab6893662104"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73c58ac1ac41973b9927ab6893662104">helios::math::degrees</a> (const float <a class="el" href="#a4949642a7cca09c7950bb6a1b75260c9">radians</a>) noexcept</td></tr>
+<tr class="memdesc:a73c58ac1ac41973b9927ab6893662104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an angle from radians to degrees.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af25d93f23f91acae02abfd7706b2e36d" id="r_af25d93f23f91acae02abfd7706b2e36d"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af25d93f23f91acae02abfd7706b2e36d">helios::math::EPSILON_LENGTH</a> = 1e-6f</td></tr>
+<tr class="memdesc:af25d93f23f91acae02abfd7706b2e36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A small epsilon value used for length-based comparisons.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Mathematical operations and types. </p>
 <p>This namespace provides comprehensive mathematical functionality including vector and matrix types, transformation utilities, mathematical concepts, and utility functions for 3D graphics and game framework computations. Provides all mathematical operations required for 3D graphics, including transformations, projections, and spatial computations. </p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a id="a8cdcd5dfceca20081416ef7ac3374e01" name="a8cdcd5dfceca20081416ef7ac3374e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cdcd5dfceca20081416ef7ac3374e01">&#9670;&#160;</a></span>aabbd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a8cdcd5dfceca20081416ef7ac3374e01">helios::math::aabbd</a> = <a class="el" href="structhelios_1_1math_1_1aabb.html">aabb</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel export">export</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Double-precision floating-point AABB. </p>
+
+<p class="definition">Definition at line <a class="el" href="aabb_8ixx_source.html#l00212">212</a> of file <a class="el" href="aabb_8ixx_source.html">aabb.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a124c0492430aeecedc1c1a5ece4ba488" name="a124c0492430aeecedc1c1a5ece4ba488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a124c0492430aeecedc1c1a5ece4ba488">&#9670;&#160;</a></span>aabbf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a124c0492430aeecedc1c1a5ece4ba488">helios::math::aabbf</a> = <a class="el" href="structhelios_1_1math_1_1aabb.html">aabb</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel export">export</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Single-precision floating-point AABB. </p>
+
+<p class="definition">Definition at line <a class="el" href="aabb_8ixx_source.html#l00202">202</a> of file <a class="el" href="aabb_8ixx_source.html">aabb.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a3c63775a7d6ff09058288223291660b7" name="a3c63775a7d6ff09058288223291660b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c63775a7d6ff09058288223291660b7">&#9670;&#160;</a></span>aabbi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a3c63775a7d6ff09058288223291660b7">helios::math::aabbi</a> = <a class="el" href="structhelios_1_1math_1_1aabb.html">aabb</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel export">export</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Integer AABB. </p>
+
+<p class="definition">Definition at line <a class="el" href="aabb_8ixx_source.html#l00207">207</a> of file <a class="el" href="aabb_8ixx_source.html">aabb.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a4c90766d59f3c1ce32821bbbd3cdd62b" name="a4c90766d59f3c1ce32821bbbd3cdd62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c90766d59f3c1ce32821bbbd3cdd62b">&#9670;&#160;</a></span>FloatingPointType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a4c90766d59f3c1ce32821bbbd3cdd62b">helios::math::FloatingPointType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel export">export</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"> std::conditional_t&lt;</div>
+<div class="line">        std::is_floating_point_v&lt;T&gt;,</div>
+<div class="line">        T,</div>
+<div class="line">        <span class="keywordtype">double</span></div>
+<div class="line">    &gt;</div>
+</div><!-- fragment -->
+<p>Type trait that promotes integral types to double, while preserving floating-point types. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>the input type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="FloatingPointTypeTrait_8ixx_source.html#l00018">18</a> of file <a class="el" href="FloatingPointTypeTrait_8ixx_source.html">FloatingPointTypeTrait.ixx</a>.</p>
+
+</div>
+</div>
 <a id="a058bd8629e8b9fdd7914ec513cf515f5" name="a058bd8629e8b9fdd7914ec513cf515f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a058bd8629e8b9fdd7914ec513cf515f5">&#9670;&#160;</a></span>mat4d</h2>
 
@@ -216,7 +384,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mat4_8ixx_source.html#l00250">250</a> of file <a class="el" href="mat4_8ixx_source.html">mat4.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mat4_8ixx_source.html#l00396">396</a> of file <a class="el" href="mat4_8ixx_source.html">mat4.ixx</a>.</p>
 
 </div>
 </div>
@@ -240,7 +408,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mat4_8ixx_source.html#l00249">249</a> of file <a class="el" href="mat4_8ixx_source.html">mat4.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mat4_8ixx_source.html#l00395">395</a> of file <a class="el" href="mat4_8ixx_source.html">mat4.ixx</a>.</p>
 
 </div>
 </div>
@@ -264,7 +432,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mat4_8ixx_source.html#l00251">251</a> of file <a class="el" href="mat4_8ixx_source.html">mat4.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mat4_8ixx_source.html#l00397">397</a> of file <a class="el" href="mat4_8ixx_source.html">mat4.ixx</a>.</p>
 
 </div>
 </div>
@@ -288,7 +456,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vec2_8ixx_source.html#l00095">95</a> of file <a class="el" href="vec2_8ixx_source.html">vec2.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec2_8ixx_source.html#l00193">193</a> of file <a class="el" href="vec2_8ixx_source.html">vec2.ixx</a>.</p>
 
 </div>
 </div>
@@ -312,7 +480,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vec2_8ixx_source.html#l00094">94</a> of file <a class="el" href="vec2_8ixx_source.html">vec2.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec2_8ixx_source.html#l00192">192</a> of file <a class="el" href="vec2_8ixx_source.html">vec2.ixx</a>.</p>
 
 </div>
 </div>
@@ -336,7 +504,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vec2_8ixx_source.html#l00096">96</a> of file <a class="el" href="vec2_8ixx_source.html">vec2.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec2_8ixx_source.html#l00194">194</a> of file <a class="el" href="vec2_8ixx_source.html">vec2.ixx</a>.</p>
 
 </div>
 </div>
@@ -360,7 +528,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00211">211</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p>Double-precision floating-point 3D vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00379">379</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -384,7 +554,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00209">209</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p>Single-precision floating-point 3D vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00369">369</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -408,7 +580,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00210">210</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p>Integer 3D vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00374">374</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -432,7 +606,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vec4_8ixx_source.html#l00117">117</a> of file <a class="el" href="vec4_8ixx_source.html">vec4.ixx</a>.</p>
+<p>Double-precision floating-point 4D vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="vec4_8ixx_source.html#l00141">141</a> of file <a class="el" href="vec4_8ixx_source.html">vec4.ixx</a>.</p>
 
 </div>
 </div>
@@ -456,7 +632,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vec4_8ixx_source.html#l00116">116</a> of file <a class="el" href="vec4_8ixx_source.html">vec4.ixx</a>.</p>
+<p>Single-precision floating-point 4D vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="vec4_8ixx_source.html#l00136">136</a> of file <a class="el" href="vec4_8ixx_source.html">vec4.ixx</a>.</p>
 
 </div>
 </div>
@@ -480,7 +658,60 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vec4_8ixx_source.html#l00118">118</a> of file <a class="el" href="vec4_8ixx_source.html">vec4.ixx</a>.</p>
+<p>Integer 4D vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="vec4_8ixx_source.html#l00146">146</a> of file <a class="el" href="vec4_8ixx_source.html">vec4.ixx</a>.</p>
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
+<a id="a27682cda52181a23edab8c0249fa531d" name="a27682cda52181a23edab8c0249fa531d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27682cda52181a23edab8c0249fa531d">&#9670;&#160;</a></span>TransformType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a27682cda52181a23edab8c0249fa531d">helios::math::TransformType</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel export">export</span><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bitmask enum controlling which transform components a child node inherits from its parent. </p>
+<p>When a SceneNode is attached to a parent, its final world transform is computed by combining the parent's world transform with the child's local transform. The `Inherit` flags determine which components (Translation, Rotation, Scale) of the parent transform are applied to the child.</p>
+<p>This enables flexible scene graph behaviors such as:</p><ul>
+<li>A camera that follows an object's position but maintains its own orientation (`TransformType::Translation`)</li>
+<li>UI elements that inherit full transforms (`TransformType::All`)</li>
+<li>Objects that only inherit rotation for billboard effects (`TransformType::Rotation`)</li>
+</ul>
+<p>Example usage: ```cpp using namespace <a class="el" href="namespacehelios_1_1math.html" title="Mathematical operations and types.">helios::math</a>;</p>
+<p>// Camera follows spaceship position only cameraNode-&gt;setInheritance(TransformType::Translation);</p>
+<p>// Full transform inheritance (default) childNode-&gt;setInheritance(TransformType::All);</p>
+<p>// Combine specific flags node-&gt;setInheritance(<a class="el" href="#a27682cda52181a23edab8c0249fa531da6dd08874f83507e9c7b23f1a46b7fa7c" title="Inherit only the translation component from the parent.">TransformType::Translation</a> | <a class="el" href="#a27682cda52181a23edab8c0249fa531daf1a42bd417390fc63b030a519624607a" title="Inherit only the rotation component from the parent.">TransformType::Rotation</a>); ``` </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a27682cda52181a23edab8c0249fa531da6dd08874f83507e9c7b23f1a46b7fa7c" name="a27682cda52181a23edab8c0249fa531da6dd08874f83507e9c7b23f1a46b7fa7c"></a>Translation&#160;</td><td class="fielddoc"><p>Inherit only the translation component from the parent. </p>
+<p>The child's world position is offset by the parent's world position, but rotation and scale remain unaffected by the parent. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a27682cda52181a23edab8c0249fa531daf1a42bd417390fc63b030a519624607a" name="a27682cda52181a23edab8c0249fa531daf1a42bd417390fc63b030a519624607a"></a>Rotation&#160;</td><td class="fielddoc"><p>Inherit only the rotation component from the parent. </p>
+<p>The child's orientation is combined with the parent's orientation, but position and scale remain unaffected. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a27682cda52181a23edab8c0249fa531da85a7cd587d6142dbfc1a4de05af7b75d" name="a27682cda52181a23edab8c0249fa531da85a7cd587d6142dbfc1a4de05af7b75d"></a>Scale&#160;</td><td class="fielddoc"><p>Inherit only the scale component from the parent. </p>
+<p>The child's scale is multiplied by the parent's scale, but position and rotation remain unaffected. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a27682cda52181a23edab8c0249fa531dab1c94ca2fbc3e78fc30069c8d0f01680" name="a27682cda52181a23edab8c0249fa531dab1c94ca2fbc3e78fc30069c8d0f01680"></a>All&#160;</td><td class="fielddoc"><p>Inherit all transform components (Translation, Rotation, Scale). </p>
+<p>This is the default behavior where the child's world transform is the full composition of parent and local transforms. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="TransformType_8ixx_source.html#l00041">41</a> of file <a class="el" href="TransformType_8ixx_source.html">TransformType.ixx</a>.</p>
 
 </div>
 </div>
@@ -530,7 +761,51 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> instance representing the cross product. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00170">170</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00291">291</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a73c58ac1ac41973b9927ab6893662104" name="a73c58ac1ac41973b9927ab6893662104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c58ac1ac41973b9927ab6893662104">&#9670;&#160;</a></span>degrees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float helios::math::degrees </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>radians</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts an angle from radians to degrees. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radians</td><td>The angle value in radians. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The converted angle value in degrees. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utils_8ixx_source.html#l00040">40</a> of file <a class="el" href="utils_8ixx_source.html">utils.ixx</a>.</p>
+
+<p class="reference">References <a class="el" href="utils_8ixx_source.html#l00030">radians()</a>.</p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacehelios_1_1math_a73c58ac1ac41973b9927ab6893662104_cgraph.svg" width="380" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -579,7 +854,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The dot product as a value of type T. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec2_8ixx_source.html#l00090">90</a> of file <a class="el" href="vec2_8ixx_source.html">vec2.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec2_8ixx_source.html#l00188">188</a> of file <a class="el" href="vec2_8ixx_source.html">vec2.ixx</a>.</p>
 
 </div>
 </div>
@@ -628,7 +903,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The dot product as a value of type T. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00189">189</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00310">310</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -681,7 +956,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </div>
 </div>
 <a id="a81d43c532316a12782bef5db9230ff84" name="a81d43c532316a12782bef5db9230ff84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81d43c532316a12782bef5db9230ff84">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d43c532316a12782bef5db9230ff84">&#9670;&#160;</a></span>operator*() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -725,12 +1000,61 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> instance representing the result of the scalar multiplication. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00144">144</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00246">246</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a3aa0fd063dbb05fb49b6e82621fedfed" name="a3aa0fd063dbb05fb49b6e82621fedfed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa0fd063dbb05fb49b6e82621fedfed">&#9670;&#160;</a></span>operator*() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a>&lt; T &gt; helios::math::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T</td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplies a 2D vector by a scalar value. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The numeric type of the vector components. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The <a class="el" href="structhelios_1_1math_1_1vec2.html" title="Represents a 2-dimensional vector of the generic type &lt;T&gt;.">vec2&lt;T&gt;</a> vector to be multiplied. </td></tr>
+    <tr><td class="paramname">n</td><td>The scalar vector to multiplay the vector by.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new <a class="el" href="structhelios_1_1math_1_1vec2.html" title="Represents a 2-dimensional vector of the generic type &lt;T&gt;.">vec2&lt;T&gt;</a> instance representing the result of the scalar multiplication. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="vec2_8ixx_source.html#l00173">173</a> of file <a class="el" href="vec2_8ixx_source.html">vec2.ixx</a>.</p>
 
 </div>
 </div>
 <a id="ae21f80815ae495b8d521d6ad829ee7b6" name="ae21f80815ae495b8d521d6ad829ee7b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae21f80815ae495b8d521d6ad829ee7b6">&#9670;&#160;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae21f80815ae495b8d521d6ad829ee7b6">&#9670;&#160;</a></span>operator*() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -768,13 +1092,111 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>The <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> vector to be multiplied. </td></tr>
-    <tr><td class="paramname">n</td><td>The scalar vector to multiplay the vector by.</td></tr>
+    <tr><td class="paramname">n</td><td>The scalar value to multiply the vector by.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a new <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> instance representing the result of the scalar multiplication. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00128">128</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00213">213</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a6bca908e940499722f0a3af6447ad719" name="a6bca908e940499722f0a3af6447ad719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bca908e940499722f0a3af6447ad719">&#9670;&#160;</a></span>operator*() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; helios::math::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplies two vectors componentwise. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The numeric type of the vector components. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>The left-hand <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> vector to be multiplied. </td></tr>
+    <tr><td class="paramname">v2</td><td>The right-hand <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> vector to be multiplied.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> instance representing the result of the componentwise multiplication of the two vectors. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00261">261</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a01625d8968c400bd7e812715d7f1941f" name="a01625d8968c400bd7e812715d7f1941f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01625d8968c400bd7e812715d7f1941f">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; helios::math::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the componentwise sum of the two vectors. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The numeric type of the vector components. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>The left-hand <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> vector to be added. </td></tr>
+    <tr><td class="paramname">v2</td><td>The right-hand <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> vector to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> instance representing the sum of the two vectors. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00276">276</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -823,7 +1245,159 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> instance representing the difference between v1 and v2. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00204">204</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00325">325</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+
+</div>
+</div>
+<a id="accf7fb22d70fc125b56f230c6c6cc8d5" name="accf7fb22d70fc125b56f230c6c6cc8d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf7fb22d70fc125b56f230c6c6cc8d5">&#9670;&#160;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; helios::math::operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structhelios_1_1math_1_1vec3.html">vec3</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>s</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Divides a 3D vector by a scalar value. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The numeric type of the vector components. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> vector to be divided. </td></tr>
+    <tr><td class="paramname">s</td><td>The scalar divisor. Must not be zero.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3&lt;T&gt;</a> instance representing the result of the scalar division.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>s != 0 (asserted in debug builds). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00229">229</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+
+</div>
+</div>
+<a id="aca9266bbc6a927b4e082fb75d0d31434" name="aca9266bbc6a927b4e082fb75d0d31434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9266bbc6a927b4e082fb75d0d31434">&#9670;&#160;</a></span>operator|()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a27682cda52181a23edab8c0249fa531d">TransformType</a> helios::math::operator| </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a27682cda52181a23edab8c0249fa531d">TransformType</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a27682cda52181a23edab8c0249fa531d">TransformType</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel export">export</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Combines two Inherit flags using bitwise OR. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first inheritance flag. </td></tr>
+    <tr><td class="paramname">b</td><td>The second inheritance flag.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The combined inheritance mask. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="TransformType_8ixx_source.html#l00083">83</a> of file <a class="el" href="TransformType_8ixx_source.html">TransformType.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a3009ee1714550dc2af4d7e5e952e8a90" name="a3009ee1714550dc2af4d7e5e952e8a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3009ee1714550dc2af4d7e5e952e8a90">&#9670;&#160;</a></span>perspective()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad422120d6e1f106140808f16e348f0b3">mat4f</a> helios::math::perspective </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fovY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>aspect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>zNear</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>zFar</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the 4x4 perspective projection matrix based on the specified field of view, aspect ratio, and near and far clipping planes. </p>
+<p>This method returns a matrix suitable for projecting 3D points onto a 2D screen from the perspective of a camera. The perspective transformation maps 3D points inside the specified viewing frustum to normalized device coordinates, which are then clipped and transformed to screen space.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fovY</td><td>Field of view in the Y direction, specified in radians. </td></tr>
+    <tr><td class="paramname">aspect</td><td>The aspect ratio of the view, defined as width divided by height. </td></tr>
+    <tr><td class="paramname">zNear</td><td>The distance to the near clipping plane. Must be greater than zero. </td></tr>
+    <tr><td class="paramname">zFar</td><td>The distance to the far clipping plane. Must be greater than zNear.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 4x4 matrix representing the perspective projection transformation.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://thorsten.suckow-homberg.de/docs/articles/computer-graphics/from-camera-to-clip-space-derivation-of-the-projection-matrices">https://thorsten.suckow-homberg.de/docs/articles/computer-graphics/from-camera-to-clip-space-derivation-of-the-projection-matrices</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="Camera_8ixx_source.html#l00076">helios::scene::Camera::update()</a>.</p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacehelios_1_1math_a3009ee1714550dc2af4d7e5e952e8a90_icgraph.svg" width="412" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -859,14 +1433,14 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The converted angle value in radians. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utils_8ixx_source.html#l00018">18</a> of file <a class="el" href="utils_8ixx_source.html">utils.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utils_8ixx_source.html#l00030">30</a> of file <a class="el" href="utils_8ixx_source.html">utils.ixx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="#a643691235959c2f53d144a4ee9a0e251">rotate()</a>.</p>
-<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="utils_8ixx_source.html#l00040">degrees()</a>, <a class="el" href="CameraWidget_8ixx_source.html#l00213">helios::ext::imgui::widgets::CameraWidget::draw()</a>, and <a class="el" href="#a643691235959c2f53d144a4ee9a0e251">rotate()</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacehelios_1_1math_a4949642a7cca09c7950bb6a1b75260c9_icgraph.svg" width="368" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacehelios_1_1math_a4949642a7cca09c7950bb6a1b75260c9_icgraph.svg" width="444" height="151"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -914,11 +1488,11 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="reference">References <a class="el" href="utils_8ixx_source.html#l00018">radians()</a>.</p>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="utils_8ixx_source.html#l00030">radians()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacehelios_1_1math_a643691235959c2f53d144a4ee9a0e251_cgraph.svg" width="368" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -961,7 +1535,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="model_8ixx_source.html#l00069">69</a> of file <a class="el" href="model_8ixx_source.html">model.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model_8ixx_source.html#l00073">73</a> of file <a class="el" href="model_8ixx_source.html">model.ixx</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1576,59 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="model_8ixx_source.html#l00049">49</a> of file <a class="el" href="model_8ixx_source.html">model.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model_8ixx_source.html#l00053">53</a> of file <a class="el" href="model_8ixx_source.html">model.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a21fb88902bc365300cd88dad37e1d123" name="a21fb88902bc365300cd88dad37e1d123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21fb88902bc365300cd88dad37e1d123">&#9670;&#160;</a></span>transformTypeMatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool helios::math::transformTypeMatch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a27682cda52181a23edab8c0249fa531d">TransformType</a></td>          <td class="paramname"><span class="paramname"><em>mask</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a27682cda52181a23edab8c0249fa531d">TransformType</a></td>          <td class="paramname"><span class="paramname"><em>flag</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel export">export</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a specific inheritance flag is set in a mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mask</td><td>The inheritance mask to check against. </td></tr>
+    <tr><td class="paramname">flag</td><td>The specific flag to test for.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>`true` if the flag is present in the mask, `false` otherwise.</dd></dl>
+<p>Example usage: ```cpp using namespace <a class="el" href="namespacehelios_1_1math.html" title="Mathematical operations and types.">helios::math</a>;</p>
+<p><a class="el" href="#a27682cda52181a23edab8c0249fa531d" title="Bitmask enum controlling which transform components a child node inherits from its parent.">TransformType</a> mode = <a class="el" href="#a27682cda52181a23edab8c0249fa531da6dd08874f83507e9c7b23f1a46b7fa7c" title="Inherit only the translation component from the parent.">TransformType::Translation</a> | <a class="el" href="#a27682cda52181a23edab8c0249fa531daf1a42bd417390fc63b030a519624607a" title="Inherit only the rotation component from the parent.">TransformType::Rotation</a>;</p>
+<p>if (transformTypeMatch(mode, TransformType::Translation)) { // Apply parent translation... } ``` </p>
+
+<p class="definition">Definition at line <a class="el" href="TransformType_8ixx_source.html#l00107">107</a> of file <a class="el" href="TransformType_8ixx_source.html">TransformType.ixx</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mat4_8ixx_source.html#l00313">helios::math::mat4&lt; float &gt;::decompose()</a>.</p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacehelios_1_1math_a21fb88902bc365300cd88dad37e1d123_icgraph.svg" width="428" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -1043,7 +1669,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="model_8ixx_source.html#l00031">31</a> of file <a class="el" href="model_8ixx_source.html">model.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model_8ixx_source.html#l00035">35</a> of file <a class="el" href="model_8ixx_source.html">model.ixx</a>.</p>
 
 </div>
 </div>
@@ -1088,13 +1714,13 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A const pointer to the element at [0, 0]. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mat4_8ixx_source.html#l00228">228</a> of file <a class="el" href="mat4_8ixx_source.html">mat4.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mat4_8ixx_source.html#l00374">374</a> of file <a class="el" href="mat4_8ixx_source.html">mat4.ixx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mat4_8ixx_source.html#l00175">helios::math::mat4&lt; float &gt;::operator==()</a>, and <a class="el" href="mat4_8ixx_source.html#l00150">helios::math::mat4&lt; float &gt;::same()</a>.</p>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="mat4_8ixx_source.html#l00206">helios::math::mat4&lt; float &gt;::operator==()</a>, and <a class="el" href="mat4_8ixx_source.html#l00181">helios::math::mat4&lt; float &gt;::same()</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacehelios_1_1math_a0e37b93487d103aa6588ba44bdb1a0b6_icgraph.svg" width="398" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1126,22 +1752,20 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </div><div class="memdoc">
 
 <p>Returns a const pointer to the first element of the vector's components. </p>
-<p>Useful for APIs that expect a pointer to vector data, like OpenGL.</p>
+<p>Useful for APIs that expect a pointer to vector data, like OpenGL </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>A reference to the `vec4&lt;T&gt;` vector. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The numeric type of the vector components. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">m</td><td>A reference to the `vec4&lt;T&gt;` vector. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A const pointer to the element at index 0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec4_8ixx_source.html#l00112">112</a> of file <a class="el" href="vec4_8ixx_source.html">vec4.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec4_8ixx_source.html#l00129">129</a> of file <a class="el" href="vec4_8ixx_source.html">vec4.ixx</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1810,35 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the element at [0, 0]. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mat4_8ixx_source.html#l00245">245</a> of file <a class="el" href="mat4_8ixx_source.html">mat4.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mat4_8ixx_source.html#l00391">391</a> of file <a class="el" href="mat4_8ixx_source.html">mat4.ixx</a>.</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="af25d93f23f91acae02abfd7706b2e36d" name="af25d93f23f91acae02abfd7706b2e36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af25d93f23f91acae02abfd7706b2e36d">&#9670;&#160;</a></span>EPSILON_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float helios::math::EPSILON_LENGTH = 1e-6f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span><span class="mlabel export">export</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A small epsilon value used for length-based comparisons. </p>
+<p>This constant represents the minimum threshold value for length comparisons to account for numerical precision errors in floating-point calculations. It is often used to avoid treating very small values as significant, effectively filtering out noise in computations that involve vector-lengths. </p>
+
+<p class="definition">Definition at line <a class="el" href="utils_8ixx_source.html#l00022">22</a> of file <a class="el" href="utils_8ixx_source.html">utils.ixx</a>.</p>
 
 </div>
 </div>

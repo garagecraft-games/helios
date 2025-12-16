@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/util/io/BasicStringFileReader.ixx" line="25" column="22"/>
+        <location file="include/helios/util/io/BasicStringFileReader.ixx" line="26" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1util_1_1io_1_1BasicStringFileReader_1a5c6f5d7806705be33e1f58807999bc2e" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="virtual">
         <type>bool</type>
@@ -88,14 +88,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/util/io/BasicStringFileReader.ixx" line="30" column="15"/>
+        <location file="include/helios/util/io/BasicStringFileReader.ixx" line="31" column="15"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Basic file-to-string reader implementation. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/util/io/BasicStringFileReader.ixx" line="8" column="15"/>
+    <location file="include/helios/util/io/BasicStringFileReader.ixx" line="9" column="15"/>
   </compounddef>
 </doxygen>

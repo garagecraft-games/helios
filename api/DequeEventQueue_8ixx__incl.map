@@ -1,24 +1,25 @@
 <map id="include/helios/event/DequeEventQueue.ixx" name="include/helios/event/DequeEventQueue.ixx">
-<area shape="rect" id="Node000001" title=" " alt="" coords="122,5,293,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,167,68,192"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,48,131,69,96,95,70,125,51,156,47,153,66,122,92,91,128,64,164,43"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="132,167,219,192"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,48,128,67,104,94,101,112,109,129,124,144,142,158,139,162,120,148,104,132,96,113,100,92,124,63,156,43"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="293,240,370,265"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,43,287,63,314,92,329,126,336,162,337,226,332,226,331,163,324,128,309,95,284,68,253,48"/>
-<area shape="rect" id="Node000005" href="$Event_8ixx.html" title=" " alt="" coords="376,167,519,192"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="261,43,310,64,358,91,398,123,430,155,426,158,394,127,355,96,307,69,259,48"/>
-<area shape="rect" id="Node000009" href="$EventQueue_8ixx.html" title=" " alt="" coords="115,93,300,119"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="210,46,210,79,205,79,205,46"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="430,194,363,235,361,230,427,190"/>
-<area shape="rect" id="Node000006" href="$Guid_8ixx.html" title=" " alt="" coords="394,240,514,265"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="451,192,454,226,449,227,446,193"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="375,313,442,339"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="449,267,426,303,421,300,444,264"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="466,313,533,339"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="464,264,487,300,482,303,459,267"/>
-<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="181,121,78,164,76,159,179,116"/>
-<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="204,120,188,155,184,153,200,118"/>
-<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="220,117,315,228,311,231,215,121"/>
-<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="247,116,396,160,394,165,245,121"/>
+<area shape="rect" id="Node000001" title="Double&#45;ended event queue implementation." alt="" coords="71,5,242,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,68,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,48,67,88,64,84,126,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="153,167,240,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,45,193,153,188,154,159,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="237,240,314,265"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,47,139,77,130,115,130,154,134,173,143,191,159,209,179,223,224,240,222,245,177,227,155,213,138,193,129,175,125,155,125,114,134,75,145,45"/>
+<area shape="rect" id="Node000005" href="$Event_8ixx.html" title="Base class for events in the helios framework." alt="" coords="327,167,469,192"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="243,38,333,60,371,74,395,92,403,106,407,122,406,153,401,153,401,123,398,108,391,95,368,79,332,65,242,43"/>
+<area shape="rect" id="Node000010" href="$EventQueue_8ixx.html" title="Thread&#45;safe queue for Event objects." alt="" coords="195,93,380,119"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="190,43,258,84,255,88,187,48"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="380,194,308,235,306,231,377,190"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="482,240,541,265"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="418,190,483,230,480,235,415,194"/>
+<area shape="rect" id="Node000007" href="$Guid_8ixx.html" title="Lightweight GUID (globally unique identifier) implementation." alt="" coords="338,240,458,265"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="401,192,401,226,395,226,395,192"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="319,313,386,339"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="393,267,370,303,365,300,388,264"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="410,313,477,339"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="408,264,431,300,426,303,403,267"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="274,121,224,160,221,156,271,117"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="289,119,280,227,275,226,284,119"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="307,116,370,157,367,161,304,121"/>
 </map>

@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classhelios_1_1event_1_1Event.html#aff33304fcafe5987b24ebacb7ec5fe45" target="_top" xlink:title="Constructs a new event with a unique Guid and teh specified default tag.">
+<g id="a_Node000002"><a xlink:href="classhelios_1_1event_1_1Event.html#a741350d083ce20aefbb749fd0a83e5f2" target="_top" xlink:title="Constructs a new event with a unique Guid and teh specified default tag.">
 <polygon fill="white" stroke="#666666" points="137.5,-138 24.5,-138 24.5,-108 137.5,-108 137.5,-138"/>
 <text text-anchor="start" x="32.5" y="-126" font-family="Helvetica,sans-Serif" font-size="10.00">helios::event::Event</text>
 <text text-anchor="middle" x="81" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00">::Event</text>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent.html#a50baa7a32422bfb0458fa5c2c1554e65" target="_top" xlink:title="Constructs a `FrameBufferResizeEvent`.">
+<g id="a_Node000003"><a xlink:href="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent.html#a48c03ab86ea3ba9358c6c9b95a810a8c" target="_top" xlink:title="Constructs a `FrameBufferResizeEvent`.">
 <polygon fill="white" stroke="#666666" points="152.5,-89.5 9.5,-89.5 9.5,-48.5 152.5,-48.5 152.5,-89.5"/>
 <text text-anchor="start" x="17.5" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">helios::window::event</text>
 <text text-anchor="start" x="17.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">::FrameBufferResizeEvent</text>

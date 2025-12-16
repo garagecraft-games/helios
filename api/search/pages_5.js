@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['overview_0',['Architecture Overview',['../index.html#autotoc_md63',1,'']]]
+  ['6_20imgui_20debug_20overlay_0',['6. ImGui Debug Overlay',['../index.html#autotoc_md107',1,'']]]
 ];

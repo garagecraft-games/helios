@@ -3,6 +3,25 @@
   <compounddef id="module__helios_8math_8utils" kind="module">
     <compoundname>helios.math.utils</compoundname>
     <innerfile refid="utils_8ixx">utils.ixx</innerfile>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacehelios_1_1math_1af25d93f23f91acae02abfd7706b2e36d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>float</type>
+        <definition>float helios::math::EPSILON_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>EPSILON_LENGTH</name>
+        <qualifiedname>helios::math::EPSILON_LENGTH</qualifiedname>
+        <initializer>= 1e-6f</initializer>
+        <briefdescription>
+<para>A small epsilon value used for length-based comparisons. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This constant represents the minimum threshold value for length comparisons to account for numerical precision errors in floating-point calculations. It is often used to avoid treating very small values as significant, effectively filtering out noise in computations that involve vector-lengths. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/utils.ixx" line="22" column="21" bodyfile="include/helios/math/utils.ixx" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
     <sectiondef kind="func">
       <memberdef kind="function" id="namespacehelios_1_1math_1a4949642a7cca09c7950bb6a1b75260c9" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>float</type>
@@ -33,15 +52,48 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/utils.ixx" line="18" column="21" bodyfile="include/helios/math/utils.ixx" bodystart="18" bodyend="20"/>
+        <location file="include/helios/math/utils.ixx" line="30" column="21" bodyfile="include/helios/math/utils.ixx" bodystart="30" bodyend="32"/>
+        <referencedby refid="namespacehelios_1_1math_1a73c58ac1ac41973b9927ab6893662104" compoundref="utils_8ixx" startline="40" endline="42">helios::math::degrees</referencedby>
+        <referencedby refid="classhelios_1_1ext_1_1imgui_1_1widgets_1_1CameraWidget_1a07fc0fbbf52e97d447e2f3177980dd00" compoundref="CameraWidget_8ixx" startline="213" endline="424">helios::ext::imgui::widgets::CameraWidget::draw</referencedby>
         <referencedby refid="namespacehelios_1_1math_1a643691235959c2f53d144a4ee9a0e251">helios::math::rotate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacehelios_1_1math_1a73c58ac1ac41973b9927ab6893662104" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float helios::math::degrees</definition>
+        <argsstring>(const float radians) noexcept</argsstring>
+        <name>degrees</name>
+        <qualifiedname>helios::math::degrees</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>radians</declname>
+        </param>
+        <briefdescription>
+<para>Converts an angle from radians to degrees. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radians</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle value in radians. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The converted angle value in degrees. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/utils.ixx" line="40" column="21" bodyfile="include/helios/math/utils.ixx" bodystart="40" bodyend="42"/>
+        <references refid="namespacehelios_1_1math_1a4949642a7cca09c7950bb6a1b75260c9" compoundref="utils_8ixx" startline="30" endline="32">helios::math::radians</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Misc math utility functions. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/math/utils.ixx" line="8" column="15"/>
+    <location file="include/helios/math/utils.ixx" line="9" column="15"/>
   </compounddef>
 </doxygen>

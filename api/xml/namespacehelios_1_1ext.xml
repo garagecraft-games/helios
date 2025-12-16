@@ -3,13 +3,14 @@
   <compounddef id="namespacehelios_1_1ext" kind="namespace" language="C++">
     <compoundname>helios::ext</compoundname>
     <innernamespace refid="namespacehelios_1_1ext_1_1glfw">helios::ext::glfw</innernamespace>
+    <innernamespace refid="namespacehelios_1_1ext_1_1imgui">helios::ext::imgui</innernamespace>
     <innernamespace refid="namespacehelios_1_1ext_1_1opengl">helios::ext::opengl</innernamespace>
     <briefdescription>
-<para>Platform-specific extensions and implementations. </para>
+<para>Platform-specific extensions and backend implementations. </para>
     </briefdescription>
     <detaileddescription>
-<para>This namespace contains platform-specific implementations for various subsystems including GLFW window management and OpenGL rendering. </para>
+<para>This namespace contains concrete implementations of helios core interfaces for various platforms, including GLFW-based windowing/input and OpenGL rendering. </para>
     </detaileddescription>
-    <location file="include/ext/glfw/app/GLFWApplication.ixx" line="20" column="1"/>
+    <location file="include/ext/glfw/app/GLFWApplication.ixx" line="25" column="1"/>
   </compounddef>
 </doxygen>

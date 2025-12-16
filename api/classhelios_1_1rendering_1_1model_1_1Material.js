@@ -4,7 +4,7 @@ var classhelios_1_1rendering_1_1model_1_1Material =
     [ "~Material", "classhelios_1_1rendering_1_1model_1_1Material.html#aaf3a9fd39ec7f25ace56cd65a937d857", null ],
     [ "Material", "classhelios_1_1rendering_1_1model_1_1Material.html#a23481bde5a56c1d2d4a9c8bca57bc7a1", null ],
     [ "materialProperties", "classhelios_1_1rendering_1_1model_1_1Material.html#abee66c72fa5c827dfdba3a2efe023277", null ],
-    [ "shader", "classhelios_1_1rendering_1_1model_1_1Material.html#a89ec5b97ee85a0662cab432ff870de50", null ],
+    [ "shader", "classhelios_1_1rendering_1_1model_1_1Material.html#afc78ee032a66d4b2bb48b866612c9125", null ],
     [ "writeUniformValues", "classhelios_1_1rendering_1_1model_1_1Material.html#a3bd2e09ddc59bfc501a889079bc865b6", null ],
     [ "logger_", "classhelios_1_1rendering_1_1model_1_1Material.html#a9cef4928f7f9bc0b885f6659faa5a356", null ],
     [ "materialProperties_", "classhelios_1_1rendering_1_1model_1_1Material.html#ac7060340ba7d307aac7f30d46474b1d5", null ],

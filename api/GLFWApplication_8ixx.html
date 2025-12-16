@@ -106,16 +106,20 @@ $(function() {
   <div class="headertitle"><div class="title">GLFWApplication.ixx File Reference<div class="ingroups">module <a class="el" href="module__helios_8ext_8glfw_8app_8GLFWApplication.html">helios.ext.glfw.app.GLFWApplication</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>GLFW-specific Application implementation.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>import <a class="el" href="GLFWRAIIGuard_8ixx_source.html">helios.ext.glfw.app.GLFWRAIIGuard</a>;</code><br />
 <code>import <a class="el" href="GLFWWindowConfig_8ixx_source.html">helios.ext.glfw.window.GLFWWindowConfig</a>;</code><br />
 <code>import <a class="el" href="EventManager_8ixx_source.html">helios.event.EventManager</a>;</code><br />
 <code>import <a class="el" href="RenderingDevice_8ixx_source.html">helios.rendering.RenderingDevice</a>;</code><br />
-<code>import <a class="el" href="GLFWWindow_8ixx_source.html">helios.ext.glfw.window.GLFWWindow</a>;</code><br />
-<code>import <a class="el" href="WindowConfig_8ixx_source.html">helios.window.WindowConfig</a>;</code><br />
-<code>import <a class="el" href="GLFWRAIIGuard_8ixx_source.html">helios.ext.glfw.app.GLFWRAIIGuard</a>;</code><br />
 <code>import <a class="el" href="InputManager_8ixx_source.html">helios.input.InputManager</a>;</code><br />
+<code>import <a class="el" href="WindowConfig_8ixx_source.html">helios.window.WindowConfig</a>;</code><br />
+<code>import <a class="el" href="RenderTarget_8ixx_source.html">helios.rendering.RenderTarget</a>;</code><br />
 <code>import <a class="el" href="Window_8ixx_source.html">helios.window.Window</a>;</code><br />
+<code>import <a class="el" href="GLFWWindow_8ixx_source.html">helios.ext.glfw.window.GLFWWindow</a>;</code><br />
 <code>import <a class="el" href="Application_8ixx_source.html">helios.app.Application</a>;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for GLFWApplication.ixx:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -135,13 +139,17 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:helios" id="r_helios"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios.html">helios</a></td></tr>
 <tr class="memitem:helios_3A_3Aext" id="r_helios_3A_3Aext"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios_1_1ext.html">helios::ext</a></td></tr>
-<tr class="memdesc:namespacehelios_1_1ext"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific extensions and implementations. <br /></td></tr>
+<tr class="memdesc:namespacehelios_1_1ext"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific extensions and backend implementations. <br /></td></tr>
 <tr class="memitem:helios_3A_3Aext_3A_3Aglfw" id="r_helios_3A_3Aext_3A_3Aglfw"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios_1_1ext_1_1glfw.html">helios::ext::glfw</a></td></tr>
 <tr class="memdesc:namespacehelios_1_1ext_1_1glfw"><td class="mdescLeft">&#160;</td><td class="mdescRight">GLFW-specific implementations. <br /></td></tr>
 <tr class="memitem:helios_3A_3Aext_3A_3Aglfw_3A_3Aapp" id="r_helios_3A_3Aext_3A_3Aglfw_3A_3Aapp"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios_1_1ext_1_1glfw_1_1app.html">helios::ext::glfw::app</a></td></tr>
 <tr class="memdesc:namespacehelios_1_1ext_1_1glfw_1_1app"><td class="mdescLeft">&#160;</td><td class="mdescRight">GLFW application infrastructure. <br /></td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>GLFW-specific Application implementation. </p>
+
+<p class="definition">Definition in file <a class="el" href="GLFWApplication_8ixx_source.html">GLFWApplication.ixx</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

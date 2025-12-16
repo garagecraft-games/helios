@@ -2,15 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="module__helios_8math_8types" kind="module">
     <compoundname>helios.math.types</compoundname>
-    <innerfile refid="math_2types_2__module_8ixx">_module.ixx</innerfile>
+    <innerfile refid="helios_2math_2types_2__module_8ixx">_module.ixx</innerfile>
+    <innerfile refid="aabb_8ixx">aabb.ixx</innerfile>
     <innerfile refid="mat4_8ixx">mat4.ixx</innerfile>
     <innerfile refid="vec2_8ixx">vec2.ixx</innerfile>
     <innerfile refid="vec3_8ixx">vec3.ixx</innerfile>
     <innerfile refid="vec4_8ixx">vec4.ixx</innerfile>
     <innerclass refid="structhelios_1_1math_1_1mat4" prot="public">helios::math::mat4</innerclass>
-    <innerclass refid="structhelios_1_1math_1_1vec2" prot="public">helios::math::vec2</innerclass>
     <innerclass refid="structhelios_1_1math_1_1vec3" prot="public">helios::math::vec3</innerclass>
+    <innerclass refid="structhelios_1_1math_1_1vec2" prot="public">helios::math::vec2</innerclass>
     <innerclass refid="structhelios_1_1math_1_1vec4" prot="public">helios::math::vec4</innerclass>
+    <innerclass refid="structhelios_1_1math_1_1aabb" prot="public">helios::math::aabb</innerclass>
     <sectiondef kind="var">
       <memberdef kind="variable" id="structhelios_1_1math_1_1mat4_1aeca084336768a1ffb7f8c9e5e093161c" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -26,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="35" column="11" bodyfile="include/helios/math/types/mat4.ixx" bodystart="35" bodyend="-1"/>
+        <location file="include/helios/math/types/mat4.ixx" line="44" column="11" bodyfile="include/helios/math/types/mat4.ixx" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhelios_1_1math_1_1vec2_1a27c76024d0a33a2e8166abb8248352df" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -41,22 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec2.ixx" line="32" column="11" bodyfile="include/helios/math/types/vec2.ixx" bodystart="32" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structhelios_1_1math_1_1vec3_1aff80fce744473fc0ec94b2ea7cb3ea1a" prot="private" static="no" mutable="no">
-        <type>T</type>
-        <definition>T helios::math::vec3&lt; T &gt;::v[3]</definition>
-        <argsstring>[3]</argsstring>
-        <name>v</name>
-        <qualifiedname>helios::math::vec3::v</qualifiedname>
-        <briefdescription>
-<para>Internal array storing the vector components. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="31" column="11" bodyfile="include/helios/math/types/vec3.ixx" bodystart="31" bodyend="-1"/>
+        <location file="include/helios/math/types/vec2.ixx" line="38" column="11" bodyfile="include/helios/math/types/vec2.ixx" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhelios_1_1math_1_1vec4_1a74c386d3972234057071df985738962a" prot="private" static="no" mutable="no">
         <type>T</type>
@@ -71,7 +58,54 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="35" column="11" bodyfile="include/helios/math/types/vec4.ixx" bodystart="35" bodyend="-1"/>
+        <location file="include/helios/math/types/vec4.ixx" line="39" column="11" bodyfile="include/helios/math/types/vec4.ixx" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhelios_1_1math_1_1vec3_1aff80fce744473fc0ec94b2ea7cb3ea1a" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T helios::math::vec3&lt; T &gt;::v[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>v</name>
+        <qualifiedname>helios::math::vec3::v</qualifiedname>
+        <briefdescription>
+<para>Internal array storing the vector components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="38" column="11" bodyfile="include/helios/math/types/vec3.ixx" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhelios_1_1math_1_1aabb_1a3649ba1b1b848f3cce6eba5647ef557f" prot="private" static="no" mutable="no">
+        <type><ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt;</type>
+        <definition>helios::math::vec3&lt;T&gt; helios::math::aabb&lt; T &gt;::min_</definition>
+        <argsstring></argsstring>
+        <name>min_</name>
+        <qualifiedname>helios::math::aabb::min_</qualifiedname>
+        <briefdescription>
+<para>Minimum corner point of the bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Contains the smallest x, y, and z coordinates across all points within the AABB. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="42" column="28" bodyfile="include/helios/math/types/aabb.ixx" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhelios_1_1math_1_1aabb_1a5ed36f911a5ff17e2bfc629bcb6eee27" prot="private" static="no" mutable="no">
+        <type><ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt;</type>
+        <definition>helios::math::vec3&lt;T&gt; helios::math::aabb&lt; T &gt;::max_</definition>
+        <argsstring></argsstring>
+        <name>max_</name>
+        <qualifiedname>helios::math::aabb::max_</qualifiedname>
+        <briefdescription>
+<para>Maximum corner point of the bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Contains the largest x, y, and z coordinates across all points within the AABB. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="50" column="28" bodyfile="include/helios/math/types/aabb.ixx" bodystart="50" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -88,8 +122,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="41" column="28" bodyfile="include/helios/math/types/mat4.ixx" bodystart="41" bodyend="41"/>
-        <referencedby refid="structhelios_1_1math_1_1mat4_1ad856b4652346ff475b653e257d64428d" compoundref="mat4_8ixx" startline="95" endline="97">helios::math::mat4&lt; float &gt;::identity</referencedby>
+        <location file="include/helios/math/types/mat4.ixx" line="50" column="28" bodyfile="include/helios/math/types/mat4.ixx" bodystart="50" bodyend="50"/>
+        <referencedby refid="structhelios_1_1math_1_1mat4_1ad856b4652346ff475b653e257d64428d" compoundref="mat4_8ixx" startline="104" endline="106">helios::math::mat4&lt; float &gt;::identity</referencedby>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1a38b8e3efcc5733814107f5e01498fcaf" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -118,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="49" column="28" bodyfile="include/helios/math/types/mat4.ixx" bodystart="49" bodyend="53"/>
+        <location file="include/helios/math/types/mat4.ixx" line="58" column="28" bodyfile="include/helios/math/types/mat4.ixx" bodystart="58" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1adb3a273b2c9fe0ca2bc7ad33af87a416" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -147,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="61" column="28" bodyfile="include/helios/math/types/mat4.ixx" bodystart="61" bodyend="65"/>
+        <location file="include/helios/math/types/mat4.ixx" line="70" column="28" bodyfile="include/helios/math/types/mat4.ixx" bodystart="70" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1a23dba42c9b3192c6c559333092d5f08a" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -236,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="75" column="19" bodyfile="include/helios/math/types/mat4.ixx" bodystart="75" bodyend="85"/>
+        <location file="include/helios/math/types/mat4.ixx" line="84" column="19" bodyfile="include/helios/math/types/mat4.ixx" bodystart="84" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1ad856b4652346ff475b653e257d64428d" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>mat4&lt; T &gt;</type>
@@ -263,7 +297,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="95" column="21" bodyfile="include/helios/math/types/mat4.ixx" bodystart="95" bodyend="97"/>
+        <location file="include/helios/math/types/mat4.ixx" line="104" column="21" bodyfile="include/helios/math/types/mat4.ixx" bodystart="104" bodyend="106"/>
+        <referencedby refid="structhelios_1_1math_1_1mat4_1a9c19cb795b7d8a032dd4cb415803f163" compoundref="mat4_8ixx" startline="313" endline="357">helios::math::mat4&lt; float &gt;::decompose</referencedby>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1a025319de588d6c29c57c92413a4a51b3" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const T &amp;</type>
@@ -280,9 +315,12 @@
           <declname>col</declname>
         </param>
         <briefdescription>
-<para>Provides read-only access to a matrix component. Elements are accessed in column major order: `m[row + col * 4]`. Bounds checking is performed via `assert` in debug builds. </para>
+<para>Provides read-only access to a matrix component. </para>
         </briefdescription>
         <detaileddescription>
+<para>Elements are _accessed_ in column major order: `m[row + col * 4]`, while the specified indices represent an usual mxn-matrix access, i.e. for a given 2x4-matrix [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]</para>
+<para>a call to row(0, 2) returns &quot;2&quot;, while the matrix is internally stored as (1, 4, 8, 12, 1, 5, 9, 13, 2, 6, 10, 14, 3, 7, 11, 15).</para>
+<para>Bounds checking is performed via `assert` in debug builds.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>row</parametername>
@@ -306,7 +344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="110" column="27" bodyfile="include/helios/math/types/mat4.ixx" bodystart="110" bodyend="113"/>
+        <location file="include/helios/math/types/mat4.ixx" line="130" column="27" bodyfile="include/helios/math/types/mat4.ixx" bodystart="130" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1aecc9104aa657ee1df754a8d5cefd60a0" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>T &amp;</type>
@@ -323,9 +361,12 @@
           <declname>col</declname>
         </param>
         <briefdescription>
-<para>Provides read-write access to a matrix component. Elements are accessed in column major order: `m[row + col * 4]`. Bounds checking is performed via `assert` in debug builds. </para>
+<para>Provides read-write access to a matrix component. </para>
         </briefdescription>
         <detaileddescription>
+<para>Elements are _accessed_ in column major order: `m[row + col * 4]`, while the specified indices represent an usual mxn-matrix access, i.e. for a given 2x4-matrix [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]</para>
+<para>a call to row(0, 2) returns &quot;2&quot;, while the matrix is internally stored as (0, 4, 8, 12, 1, 5, 9, 13, 2, 6, 10, 14, 3, 7, 11, 15).</para>
+<para>Bounds checking is performed via `assert` in debug builds.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>row</parametername>
@@ -349,7 +390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="126" column="21" bodyfile="include/helios/math/types/mat4.ixx" bodystart="126" bodyend="129"/>
+        <location file="include/helios/math/types/mat4.ixx" line="157" column="21" bodyfile="include/helios/math/types/mat4.ixx" bodystart="157" bodyend="160"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1a11484773381edf083309360d6c940d3f" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -379,12 +420,12 @@
 </simplesect>
 <simplesect kind="see"><para><ulink url="https://realtimecollisiondetection.net/blog/?p=89">https://realtimecollisiondetection.net/blog/?p=89</ulink></para>
 </simplesect>
-<xrefsect id="todo_1_todo000007"><xreftitle>Todo</xreftitle><xrefdescription><para>account for abs (values close to zero) and rel (larger values), move EPSILON to global constant </para>
+<xrefsect id="todo_1_todo000009"><xreftitle>Todo</xreftitle><xrefdescription><para>account for abs (values close to zero) and rel (larger values), move EPSILON to global constant </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="150" column="24" bodyfile="include/helios/math/types/mat4.ixx" bodystart="150" bodyend="164"/>
+        <location file="include/helios/math/types/mat4.ixx" line="181" column="24" bodyfile="include/helios/math/types/mat4.ixx" bodystart="181" bodyend="195"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1a33c47f9920f5e88b98caca96a889d0aa" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -409,13 +450,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Trie if all elements are equal (==), false otherwise. </para>
+<simplesect kind="return"><para>True if all elements are equal (==), false otherwise. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="175" column="24" bodyfile="include/helios/math/types/mat4.ixx" bodystart="175" bodyend="187"/>
+        <location file="include/helios/math/types/mat4.ixx" line="206" column="24" bodyfile="include/helios/math/types/mat4.ixx" bodystart="206" bodyend="218"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1a1a4063671f96b4e127f18ae6453afda9" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>mat4&lt; T &gt;</type>
@@ -446,7 +487,124 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="198" column="24" bodyfile="include/helios/math/types/mat4.ixx" bodystart="198" bodyend="212"/>
+        <location file="include/helios/math/types/mat4.ixx" line="229" column="24" bodyfile="include/helios/math/types/mat4.ixx" bodystart="229" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1a23a55beb9005b24b1e50ae2bf8a71ad8" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vec4&lt; T &gt;</type>
+        <definition>vec4&lt; T &gt; helios::math::mat4&lt; T &gt;::operator*</definition>
+        <argsstring>(const vec4&lt; T &gt; &amp;v) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>helios::math::mat4::operator*</qualifiedname>
+        <param>
+          <type>const vec4&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Performs matrix-vector-multiplication with a `vec4&lt;T&gt; v`. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This matrix is the left operand, while `v` is the right operand.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right-hand side `vec4&lt;T&gt;` for multiplication.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new `vec4&lt;T&gt;`, representing the result of the matrix-vector-multiplication. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/mat4.ixx" line="255" column="24" bodyfile="include/helios/math/types/mat4.ixx" bodystart="255" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1aa5940ba880eb6ac1c64ca4f7117d7cc2" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1math_1_1mat4" kindref="compound">helios::math::mat4</ref>&lt; T &gt;</type>
+        <definition>helios::math::mat4&lt; T &gt; helios::math::mat4&lt; T &gt;::transpose</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>transpose</name>
+        <qualifiedname>helios::math::mat4::transpose</qualifiedname>
+        <briefdescription>
+<para>Computes the transpose of a 4x4 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function swaps rows and columns: M^T_{ij} = M_{ji}</para>
+<para><simplesect kind="note"><para>This is **not** a general-purpose inverse function. For matrices containing non-uniform scale or shear, use a full inverse calculation instead.</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the matrix elements.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transposed matrix. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/mat4.ixx" line="277" column="28" bodyfile="include/helios/math/types/mat4.ixx" bodystart="277" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1mat4_1a9c19cb795b7d8a032dd4cb415803f163" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1math_1_1mat4" kindref="compound">helios::math::mat4</ref>&lt; T &gt;</type>
+        <definition>helios::math::mat4&lt; T &gt; helios::math::mat4&lt; T &gt;::decompose</definition>
+        <argsstring>(const helios::math::TransformType type) const noexcept</argsstring>
+        <name>decompose</name>
+        <qualifiedname>helios::math::mat4::decompose</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacehelios_1_1math_1a27682cda52181a23edab8c0249fa531d" kindref="member">helios::math::TransformType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Decomposes this matrix, extracting only specified components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function extracts Translation, Rotation, and/or Scale components from this 4x4 matrix based on the provided `TransformType` mask. Components not included in the mask are replaced with identity values.</para>
+<para>The decomposition supports the following cases:<itemizedlist>
+<listitem><para>**TransformType::All**: Returns the original matrix unchanged.</para>
+</listitem><listitem><para>**TransformType::Translation**: Extracts only the translation (column 3).</para>
+</listitem><listitem><para>**TransformType::Rotation**: Extracts the normalized rotation from the upper-left 3x3.</para>
+</listitem><listitem><para>**TransformType::Scale**: Extracts the scale factors (column vector lengths).</para>
+</listitem><listitem><para>**Combined flags**: Extracts multiple components as specified.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="note"><para>For combined Rotation + Scale without Translation, the upper-left 3x3 is copied directly. For Rotation-only, scale is removed by normalizing columns.</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the matrix elements.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bitmask specifying which components to extract.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new matrix containing only the requested transform components.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacehelios_1_1math_1a27682cda52181a23edab8c0249fa531d" kindref="member">helios::math::TransformType</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="namespacehelios_1_1math_1a21fb88902bc365300cd88dad37e1d123" kindref="member">helios::math::transformTypeMatch()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/mat4.ixx" line="313" column="28" bodyfile="include/helios/math/types/mat4.ixx" bodystart="313" bodyend="357"/>
       </memberdef>
       <memberdef kind="function" id="namespacehelios_1_1math_1a0e37b93487d103aa6588ba44bdb1a0b6" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <templateparamlist>
@@ -494,9 +652,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="228" column="13" bodyfile="include/helios/math/types/mat4.ixx" bodystart="228" bodyend="230"/>
-        <referencedby refid="structhelios_1_1math_1_1mat4_1a33c47f9920f5e88b98caca96a889d0aa" compoundref="mat4_8ixx" startline="175" endline="187">helios::math::mat4&lt; float &gt;::operator==</referencedby>
-        <referencedby refid="structhelios_1_1math_1_1mat4_1a11484773381edf083309360d6c940d3f" compoundref="mat4_8ixx" startline="150" endline="164">helios::math::mat4&lt; float &gt;::same</referencedby>
+        <location file="include/helios/math/types/mat4.ixx" line="374" column="13" bodyfile="include/helios/math/types/mat4.ixx" bodystart="374" bodyend="376"/>
+        <referencedby refid="structhelios_1_1math_1_1mat4_1a33c47f9920f5e88b98caca96a889d0aa" compoundref="mat4_8ixx" startline="206" endline="218">helios::math::mat4&lt; float &gt;::operator==</referencedby>
+        <referencedby refid="structhelios_1_1math_1_1mat4_1a11484773381edf083309360d6c940d3f" compoundref="mat4_8ixx" startline="181" endline="195">helios::math::mat4&lt; float &gt;::same</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespacehelios_1_1math_1a581fd38f8554d49c33a42b46255cc983" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <templateparamlist>
@@ -544,7 +702,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="245" column="7" bodyfile="include/helios/math/types/mat4.ixx" bodystart="245" bodyend="247"/>
+        <location file="include/helios/math/types/mat4.ixx" line="391" column="7" bodyfile="include/helios/math/types/mat4.ixx" bodystart="391" bodyend="393"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1vec2_1ae14c89b58084eae49a7d3b9e0f9c345d" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -559,7 +717,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec2.ixx" line="39" column="19" bodyfile="include/helios/math/types/vec2.ixx" bodystart="39" bodyend="39"/>
+        <location file="include/helios/math/types/vec2.ixx" line="45" column="19" bodyfile="include/helios/math/types/vec2.ixx" bodystart="45" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1vec2_1a88f13d33d43006d524cc6ae628d41c05" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -600,7 +758,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec2.ixx" line="48" column="19" bodyfile="include/helios/math/types/vec2.ixx" bodystart="48" bodyend="48"/>
+        <location file="include/helios/math/types/vec2.ixx" line="54" column="19" bodyfile="include/helios/math/types/vec2.ixx" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec2_1ac19445fb20c189286c9e94634aa6b099" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt;</type>
+        <definition>helios::math::vec3&lt; T &gt; helios::math::vec2&lt; T &gt;::toVec3</definition>
+        <argsstring>() const</argsstring>
+        <name>toVec3</name>
+        <qualifiedname>helios::math::vec2::toVec3</qualifiedname>
+        <briefdescription>
+<para>Converts the current vec2&lt;T&gt; into a 3D vector representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A 3D vector corresponding to the converted representation of the object or input. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec2.ixx" line="61" column="38" bodyfile="include/helios/math/types/vec2.ixx" bodystart="61" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1vec2_1ac437228c5e3d92b646a4699cd1b5f5e3" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const T &amp;</type>
@@ -631,7 +807,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec2.ixx" line="59" column="27" bodyfile="include/helios/math/types/vec2.ixx" bodystart="59" bodyend="62"/>
+        <location file="include/helios/math/types/vec2.ixx" line="73" column="27" bodyfile="include/helios/math/types/vec2.ixx" bodystart="73" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1vec2_1a0ecdb26abcac9606abcccb14ee69e28f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>T &amp;</type>
@@ -662,7 +838,181 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec2.ixx" line="73" column="21" bodyfile="include/helios/math/types/vec2.ixx" bodystart="73" bodyend="76"/>
+        <location file="include/helios/math/types/vec2.ixx" line="86" column="21" bodyfile="include/helios/math/types/vec2.ixx" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec2_1a865490c9a5afdf0f5121c45b2157f1ff" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>FloatingPointType&lt; T &gt;</type>
+        <definition>FloatingPointType&lt; T &gt; helios::math::vec2&lt; T &gt;::length</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>length</name>
+        <qualifiedname>helios::math::vec2::length</qualifiedname>
+        <briefdescription>
+<para>Returns the magnitude of this vec2&lt;T&gt;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The magnitude of this vector as type <ref refid="namespacehelios_1_1math_1a4c90766d59f3c1ce32821bbbd3cdd62b" kindref="member">FloatingPointType&lt;T&gt;</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec2.ixx" line="96" column="34" bodyfile="include/helios/math/types/vec2.ixx" bodystart="96" bodyend="106"/>
+        <referencedby refid="structhelios_1_1math_1_1vec2_1a4f47bd1a12c6a4461761f26ffabfb439" compoundref="vec2_8ixx" startline="113" endline="124">helios::math::vec2&lt; float &gt;::normalize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec2_1a4f47bd1a12c6a4461761f26ffabfb439" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vec2&lt; FloatingPointType&lt; T &gt; &gt;</type>
+        <definition>vec2&lt; FloatingPointType&lt; T &gt; &gt; helios::math::vec2&lt; T &gt;::normalize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>normalize</name>
+        <qualifiedname>helios::math::vec2::normalize</qualifiedname>
+        <briefdescription>
+<para>Normalizes this vec2&lt;T&gt;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The normalized <ref refid="namespacehelios_1_1math_1a4c90766d59f3c1ce32821bbbd3cdd62b" kindref="member">FloatingPointType&lt;T&gt;</ref> vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec2.ixx" line="113" column="21" bodyfile="include/helios/math/types/vec2.ixx" bodystart="113" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec2_1ab24f5fbc1f2cc9b0eb50626b7a8f69b0" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::math::vec2&lt; T &gt;::operator==</definition>
+        <argsstring>(const vec2&lt; T &gt; &amp;rgt) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>helios::math::vec2::operator==</qualifiedname>
+        <param>
+          <type>const vec2&lt; T &gt; &amp;</type>
+          <declname>rgt</declname>
+        </param>
+        <briefdescription>
+<para>Strictly compares the elements of this vector with the elements of the rgt vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rgt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right vector to compare for equal values</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if all elements are equal (==), false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec2.ixx" line="134" column="24" bodyfile="include/helios/math/types/vec2.ixx" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec2_1a14a40e171d65f8df56deab0b80a6c800" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::math::vec2&lt; T &gt;::same</definition>
+        <argsstring>(const vec2&lt; T &gt; &amp;rgt, T epsilon=0.0001) const</argsstring>
+        <name>same</name>
+        <qualifiedname>helios::math::vec2::same</qualifiedname>
+        <param>
+          <type>const vec2&lt; T &gt; &amp;</type>
+          <declname>rgt</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>epsilon</declname>
+          <defval>0.0001</defval>
+        </param>
+        <briefdescription>
+<para>Compares this vector&apos;s elements with the rgt vector considering an epsilon value. Returns true if for all elements the equation |a-b| &lt;= epsilon holds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rgt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other vector to compare with this vector for equality. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The epsilon value to use for comparison. If omitted, the default epsilon (0.0001) is used.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the elements of the vectors are considered equal, otherwise false.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://realtimecollisiondetection.net/blog/?p=89">https://realtimecollisiondetection.net/blog/?p=89</ulink></para>
+</simplesect>
+<xrefsect id="todo_1_todo000010"><xreftitle>Todo</xreftitle><xrefdescription><para>account for abs (values close to zero) and rel (larger values), move epsilon to global constant? </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec2.ixx" line="155" column="24" bodyfile="include/helios/math/types/vec2.ixx" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehelios_1_1math_1a3aa0fd063dbb05fb49b6e82621fedfed" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>vec2&lt; T &gt;</type>
+        <definition>vec2&lt; T &gt; helios::math::operator*</definition>
+        <argsstring>(const vec2&lt; T &gt; &amp;v, const T n) noexcept</argsstring>
+        <name>operator*</name>
+        <qualifiedname>helios::math::operator*</qualifiedname>
+        <param>
+          <type>const vec2&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies a 2D vector by a scalar value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the vector components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">vec2&lt;T&gt;</ref> vector to be multiplied. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar vector to multiplay the vector by.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a new <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">vec2&lt;T&gt;</ref> instance representing the result of the scalar multiplication. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec2.ixx" line="173" column="20" bodyfile="include/helios/math/types/vec2.ixx" bodystart="173" bodyend="175"/>
       </memberdef>
       <memberdef kind="function" id="namespacehelios_1_1math_1a7523e1a120cccd29674cf428bfdeb86c" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <templateparamlist>
@@ -721,539 +1071,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec2.ixx" line="90" column="17" bodyfile="include/helios/math/types/vec2.ixx" bodystart="90" bodyend="92"/>
-      </memberdef>
-      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a6a604e51ca84090aa8e8d7f46bd02009" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr</type>
-        <definition>helios::math::vec3&lt; T &gt;::vec3</definition>
-        <argsstring>() noexcept</argsstring>
-        <name>vec3</name>
-        <qualifiedname>helios::math::vec3::vec3</qualifiedname>
-        <briefdescription>
-<para>Creates a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> with its values initialized to (0, 0, 0). </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="39" column="19" bodyfile="include/helios/math/types/vec3.ixx" bodystart="39" bodyend="39"/>
-        <referencedby refid="structhelios_1_1math_1_1vec3_1a195b94e87045e27531c186b3afd7e3e5" compoundref="vec3_8ixx" startline="157" endline="157">helios::math::vec3&lt; T &gt;::normalize</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a6db16504ac2287d0bfb8909075248b49" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr</type>
-        <definition>helios::math::vec3&lt; T &gt;::vec3</definition>
-        <argsstring>(const T x, const T y, const T z) noexcept</argsstring>
-        <name>vec3</name>
-        <qualifiedname>helios::math::vec3::vec3</qualifiedname>
-        <param>
-          <type>const T</type>
-          <declname>x</declname>
-        </param>
-        <param>
-          <type>const T</type>
-          <declname>y</declname>
-        </param>
-        <param>
-          <type>const T</type>
-          <declname>z</declname>
-        </param>
-        <briefdescription>
-<para>Constructs a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> with the specified x, y, z components. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>x</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The value for the x component. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>y</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The value for the y component. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>z</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The value for the z component. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="50" column="19" bodyfile="include/helios/math/types/vec3.ixx" bodystart="50" bodyend="50"/>
-      </memberdef>
-      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1aea1446780f03b9fff2a92bb3e2be46ea" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr</type>
-        <definition>helios::math::vec3&lt; T &gt;::vec3</definition>
-        <argsstring>(const T v) noexcept</argsstring>
-        <name>vec3</name>
-        <qualifiedname>helios::math::vec3::vec3</qualifiedname>
-        <param>
-          <type>const T</type>
-          <declname>v</declname>
-        </param>
-        <briefdescription>
-<para>Constructs a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> with the specified value as the x,y,z components. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>v</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The value for the components. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="59" column="28" bodyfile="include/helios/math/types/vec3.ixx" bodystart="59" bodyend="59"/>
-      </memberdef>
-      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1ad5b3fc19ed8d790d8f2bce38b1c3a5fd" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>constexpr</type>
-        <definition>helios::math::vec3&lt; T &gt;::vec3</definition>
-        <argsstring>(const helios::math::vec2&lt; T &gt; v) noexcept</argsstring>
-        <name>vec3</name>
-        <qualifiedname>helios::math::vec3::vec3</qualifiedname>
-        <param>
-          <type>const <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">helios::math::vec2</ref>&lt; T &gt;</type>
-          <declname>v</declname>
-        </param>
-        <briefdescription>
-<para>Constructs a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> with x,y components initialized to those of the <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">vec2</ref> and <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> set to 0. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>v</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">vec2</ref> to use for the x,y components. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="68" column="28" bodyfile="include/helios/math/types/vec3.ixx" bodystart="68" bodyend="68"/>
-      </memberdef>
-      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a8e8e639bd8db44dd1112eedef81b9972" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>const T &amp;</type>
-        <definition>const T &amp; helios::math::vec3&lt; T &gt;::operator[]</definition>
-        <argsstring>(const size_t i) const noexcept</argsstring>
-        <name>operator[]</name>
-        <qualifiedname>helios::math::vec3::operator[]</qualifiedname>
-        <param>
-          <type>const size_t</type>
-          <declname>i</declname>
-        </param>
-        <briefdescription>
-<para>Provides read only access to the vector components. Bounds checking is performed via `assert` in debug builds. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>i</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The index to query</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A const ref to the requested component. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="78" column="27" bodyfile="include/helios/math/types/vec3.ixx" bodystart="78" bodyend="81"/>
-      </memberdef>
-      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1af422a99f5c24f8b57edd8f6e0a007152" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>T &amp;</type>
-        <definition>T &amp; helios::math::vec3&lt; T &gt;::operator[]</definition>
-        <argsstring>(const size_t i) noexcept</argsstring>
-        <name>operator[]</name>
-        <qualifiedname>helios::math::vec3::operator[]</qualifiedname>
-        <param>
-          <type>const size_t</type>
-          <declname>i</declname>
-        </param>
-        <briefdescription>
-<para>Provides read-write access to the vector components. Bounds checking is performed via `assert` in debug builds. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>i</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The index to query</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A const ref to the requested component. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="92" column="21" bodyfile="include/helios/math/types/vec3.ixx" bodystart="92" bodyend="95"/>
-      </memberdef>
-      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a634150a5ce28ebfb3c09fa63226f0b3f" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>T</type>
-        <definition>T helios::math::vec3&lt; T &gt;::norm</definition>
-        <argsstring>() const noexcept</argsstring>
-        <name>norm</name>
-        <qualifiedname>helios::math::vec3::norm</qualifiedname>
-        <briefdescription>
-<para>Computes the Euclidean norm (magnitude) of this vector and returns it. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>The norm (magnitude) of this vector as a value of type T. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="103" column="11" bodyfile="include/helios/math/types/vec3.ixx" bodystart="103" bodyend="109"/>
-        <referencedby refid="structhelios_1_1math_1_1vec3_1a195b94e87045e27531c186b3afd7e3e5" compoundref="vec3_8ixx" startline="157" endline="157">helios::math::vec3&lt; T &gt;::normalize</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a195b94e87045e27531c186b3afd7e3e5" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
-        <type>vec3&lt; T &gt;</type>
-        <definition>vec3&lt; T &gt; helios::math::vec3&lt; T &gt;::normalize</definition>
-        <argsstring>() const noexcept</argsstring>
-        <name>normalize</name>
-        <qualifiedname>helios::math::vec3::normalize</qualifiedname>
-        <briefdescription>
-<para>Returns a normalized version of this vector. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The numeric type of the vector components.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A new vec3&lt;T&gt; instance representing the normalized vector. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="113" column="14" bodyfile="include/helios/math/types/vec3.ixx" bodystart="157" bodyend="157"/>
-        <references refid="structhelios_1_1math_1_1vec3_1a634150a5ce28ebfb3c09fa63226f0b3f" compoundref="vec3_8ixx" startline="103" endline="109">helios::math::vec3&lt; T &gt;::norm</references>
-        <references refid="structhelios_1_1math_1_1vec3_1a6a604e51ca84090aa8e8d7f46bd02009" compoundref="vec3_8ixx" startline="39" endline="39">helios::math::vec3&lt; T &gt;::vec3</references>
-      </memberdef>
-      <memberdef kind="function" id="namespacehelios_1_1math_1ae21f80815ae495b8d521d6ad829ee7b6" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
-            <declname>T</declname>
-            <defname>T</defname>
-          </param>
-        </templateparamlist>
-        <type>vec3&lt; T &gt;</type>
-        <definition>vec3&lt; T &gt; helios::math::operator*</definition>
-        <argsstring>(const vec3&lt; T &gt; &amp;v, const T n) noexcept</argsstring>
-        <name>operator*</name>
-        <qualifiedname>helios::math::operator*</qualifiedname>
-        <param>
-          <type>const vec3&lt; T &gt; &amp;</type>
-          <declname>v</declname>
-        </param>
-        <param>
-          <type>const T</type>
-          <declname>n</declname>
-        </param>
-        <briefdescription>
-<para>Multiplies a 3D vector by a scalar value. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The numeric type of the vector components. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>v</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector to be multiplied. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>n</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The scalar vector to multiplay the vector by.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the result of the scalar multiplication. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="128" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="128" bodyend="130"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacehelios_1_1math_1a81d43c532316a12782bef5db9230ff84" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
-            <declname>T</declname>
-            <defname>T</defname>
-          </param>
-        </templateparamlist>
-        <type>vec3&lt; T &gt;</type>
-        <definition>vec3&lt; T &gt; helios::math::operator*</definition>
-        <argsstring>(const T n, const vec3&lt; T &gt; &amp;v) noexcept</argsstring>
-        <name>operator*</name>
-        <qualifiedname>helios::math::operator*</qualifiedname>
-        <param>
-          <type>const T</type>
-          <declname>n</declname>
-        </param>
-        <param>
-          <type>const vec3&lt; T &gt; &amp;</type>
-          <declname>v</declname>
-        </param>
-        <briefdescription>
-<para>Multiplies a scalar value by a 3D vector. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The numeric type of the vector components. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>n</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The scalar value to multiply the vector by. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector to be multiplied.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the result of the scalar multiplication. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="144" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="144" bodyend="146"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacehelios_1_1math_1a82d2ab8d8240be4606a885c554b93fb5" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
-            <declname>T</declname>
-            <defname>T</defname>
-          </param>
-        </templateparamlist>
-        <type>vec3&lt; T &gt;</type>
-        <definition>vec3&lt; T &gt; helios::math::cross</definition>
-        <argsstring>(const vec3&lt; T &gt; &amp;v1, const vec3&lt; T &gt; &amp;v2) noexcept</argsstring>
-        <name>cross</name>
-        <qualifiedname>helios::math::cross</qualifiedname>
-        <param>
-          <type>const vec3&lt; T &gt; &amp;</type>
-          <declname>v1</declname>
-        </param>
-        <param>
-          <type>const vec3&lt; T &gt; &amp;</type>
-          <declname>v2</declname>
-        </param>
-        <briefdescription>
-<para>Computes the cross product of two 3D vectors. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The numeric type of the vector components. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>v1</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The first <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v2</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The second <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the cross product. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="170" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="170" bodyend="176"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacehelios_1_1math_1a076c3e1ea3dd5beb87bc701e87cd4f1a" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
-            <declname>T</declname>
-            <defname>T</defname>
-          </param>
-        </templateparamlist>
-        <type>T</type>
-        <definition>T helios::math::dot</definition>
-        <argsstring>(const vec3&lt; T &gt; &amp;v1, const vec3&lt; T &gt; &amp;v2) noexcept</argsstring>
-        <name>dot</name>
-        <qualifiedname>helios::math::dot</qualifiedname>
-        <param>
-          <type>const vec3&lt; T &gt; &amp;</type>
-          <declname>v1</declname>
-        </param>
-        <param>
-          <type>const vec3&lt; T &gt; &amp;</type>
-          <declname>v2</declname>
-        </param>
-        <briefdescription>
-<para>Computes the dot product of two 3D vectors. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The numeric type of the vector components. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>v1</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The first <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v2</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The second <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>The dot product as a value of type T. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="189" column="17" bodyfile="include/helios/math/types/vec3.ixx" bodystart="189" bodyend="191"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacehelios_1_1math_1a7a21ef269927b19863a1eae2d87666ee" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
-            <declname>T</declname>
-            <defname>T</defname>
-          </param>
-        </templateparamlist>
-        <type>vec3&lt; T &gt;</type>
-        <definition>vec3&lt; T &gt; helios::math::operator-</definition>
-        <argsstring>(const vec3&lt; T &gt; &amp;v1, const vec3&lt; T &gt; &amp;v2) noexcept</argsstring>
-        <name>operator-</name>
-        <qualifiedname>helios::math::operator-</qualifiedname>
-        <param>
-          <type>const vec3&lt; T &gt; &amp;</type>
-          <declname>v1</declname>
-        </param>
-        <param>
-          <type>const vec3&lt; T &gt; &amp;</type>
-          <declname>v2</declname>
-        </param>
-        <briefdescription>
-<para>Computes the difference between two vectors (vector subtraction). </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>T</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The numeric type of the vector components. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>v1</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The first <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v2</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The second <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the difference between v1 and v2. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="204" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="204" bodyend="206"/>
+        <location file="include/helios/math/types/vec2.ixx" line="188" column="17" bodyfile="include/helios/math/types/vec2.ixx" bodystart="188" bodyend="190"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1vec4_1a7aada403c03c25295707865aae3f12d2" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -1268,7 +1086,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="42" column="19" bodyfile="include/helios/math/types/vec4.ixx" bodystart="42" bodyend="42"/>
+        <location file="include/helios/math/types/vec4.ixx" line="46" column="19" bodyfile="include/helios/math/types/vec4.ixx" bodystart="46" bodyend="46"/>
+        <referencedby refid="structhelios_1_1math_1_1vec4_1a056635c2dbac4b1c1d006727f08af80c" compoundref="vec4_8ixx" startline="117" endline="119">helios::math::vec4&lt; T &gt;::toVec3</referencedby>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1vec4_1a5b05dad91f30e5af5a58f4d9a8a69775" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -1333,7 +1152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="53" column="19" bodyfile="include/helios/math/types/vec4.ixx" bodystart="53" bodyend="53"/>
+        <location file="include/helios/math/types/vec4.ixx" line="57" column="19" bodyfile="include/helios/math/types/vec4.ixx" bodystart="57" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1vec4_1a80329ce41bcee4317cae5b2d205c8c98" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -1374,7 +1193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="62" column="19" bodyfile="include/helios/math/types/vec4.ixx" bodystart="62" bodyend="62"/>
+        <location file="include/helios/math/types/vec4.ixx" line="66" column="19" bodyfile="include/helios/math/types/vec4.ixx" bodystart="66" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1vec4_1a7ae260acbad904d6cafb2375976783b9" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr</type>
@@ -1403,7 +1222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="70" column="28" bodyfile="include/helios/math/types/vec4.ixx" bodystart="70" bodyend="70"/>
+        <location file="include/helios/math/types/vec4.ixx" line="74" column="28" bodyfile="include/helios/math/types/vec4.ixx" bodystart="74" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1vec4_1a6737f82dfb6d4b5afc3eee979715a500" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const T &amp;</type>
@@ -1434,7 +1253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="81" column="27" bodyfile="include/helios/math/types/vec4.ixx" bodystart="81" bodyend="84"/>
+        <location file="include/helios/math/types/vec4.ixx" line="85" column="27" bodyfile="include/helios/math/types/vec4.ixx" bodystart="85" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1math_1_1vec4_1aaa35ca824a53010bc2191cfa6a0ada9f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>T &amp;</type>
@@ -1465,7 +1284,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="95" column="21" bodyfile="include/helios/math/types/vec4.ixx" bodystart="95" bodyend="98"/>
+        <location file="include/helios/math/types/vec4.ixx" line="99" column="21" bodyfile="include/helios/math/types/vec4.ixx" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec4_1a056635c2dbac4b1c1d006727f08af80c" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vec3&lt; T &gt;</type>
+        <definition>vec3&lt; T &gt; helios::math::vec4&lt; T &gt;::toVec3</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>toVec3</name>
+        <qualifiedname>helios::math::vec4::toVec3</qualifiedname>
+        <briefdescription>
+<para>Converts this 4D vector to a 3D vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Extracts the x, y, z components from this <ref refid="structhelios_1_1math_1_1vec4" kindref="compound">vec4</ref>, discarding the w component. This is useful when converting from homogeneous coordinates back to 3D space.</para>
+<para><simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance with components (x, y, z). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec4.ixx" line="112" column="15" bodyfile="include/helios/math/types/vec4.ixx" bodystart="117" bodyend="119"/>
+        <references refid="structhelios_1_1math_1_1vec4_1a056635c2dbac4b1c1d006727f08af80c" compoundref="vec4_8ixx" startline="117" endline="119">helios::math::vec4&lt; T &gt;::toVec3</references>
+        <references refid="structhelios_1_1math_1_1vec4_1a7aada403c03c25295707865aae3f12d2" compoundref="vec4_8ixx" startline="46" endline="46">helios::math::vec4&lt; T &gt;::vec4</references>
+        <referencedby refid="structhelios_1_1math_1_1vec4_1a056635c2dbac4b1c1d006727f08af80c" compoundref="vec4_8ixx" startline="117" endline="119">helios::math::vec4&lt; T &gt;::toVec3</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespacehelios_1_1math_1afba89a2aa6938d85fd8be3974a9aed36" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <templateparamlist>
@@ -1488,7 +1329,488 @@
 <para>Returns a const pointer to the first element of the vector&apos;s components. </para>
         </briefdescription>
         <detaileddescription>
-<para>Useful for APIs that expect a pointer to vector data, like OpenGL.</para>
+<para>Useful for APIs that expect a pointer to vector data, like OpenGL <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the `vec4&lt;T&gt;` vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the vector components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec4.ixx" line="129" column="13" bodyfile="include/helios/math/types/vec4.ixx" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a6a604e51ca84090aa8e8d7f46bd02009" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>helios::math::vec3&lt; T &gt;::vec3</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>vec3</name>
+        <qualifiedname>helios::math::vec3::vec3</qualifiedname>
+        <briefdescription>
+<para>Creates a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> with its values initialized to (0, 0, 0). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="46" column="19" bodyfile="include/helios/math/types/vec3.ixx" bodystart="46" bodyend="46"/>
+        <referencedby refid="structhelios_1_1math_1_1vec3_1ae59861132e8e9d8cde196eeebec0faae" compoundref="vec3_8ixx" startline="330" endline="336">helios::math::vec3&lt; T &gt;::cross</referencedby>
+        <referencedby refid="structhelios_1_1math_1_1vec3_1ad64bf63ac24905fed6d397d59088340d" compoundref="vec3_8ixx" startline="344" endline="346">helios::math::vec3&lt; T &gt;::dot</referencedby>
+        <referencedby refid="structhelios_1_1math_1_1vec3_1a3bbdd06a78770b9dadc233e0acca4295" compoundref="vec3_8ixx" startline="350" endline="364">helios::math::vec3&lt; T &gt;::normalize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a6db16504ac2287d0bfb8909075248b49" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>helios::math::vec3&lt; T &gt;::vec3</definition>
+        <argsstring>(const T x, const T y, const T z) noexcept</argsstring>
+        <name>vec3</name>
+        <qualifiedname>helios::math::vec3::vec3</qualifiedname>
+        <param>
+          <type>const T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> with the specified x, y, z components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value for the x component. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value for the y component. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value for the z component. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="57" column="19" bodyfile="include/helios/math/types/vec3.ixx" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1aea1446780f03b9fff2a92bb3e2be46ea" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>helios::math::vec3&lt; T &gt;::vec3</definition>
+        <argsstring>(const T v) noexcept</argsstring>
+        <name>vec3</name>
+        <qualifiedname>helios::math::vec3::vec3</qualifiedname>
+        <param>
+          <type>const T</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> with the specified value as the x,y,z components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value for the components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="66" column="28" bodyfile="include/helios/math/types/vec3.ixx" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1ad5b3fc19ed8d790d8f2bce38b1c3a5fd" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>helios::math::vec3&lt; T &gt;::vec3</definition>
+        <argsstring>(const helios::math::vec2&lt; T &gt; v) noexcept</argsstring>
+        <name>vec3</name>
+        <qualifiedname>helios::math::vec3::vec3</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">helios::math::vec2</ref>&lt; T &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> with x,y components initialized to those of the <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">vec2</ref> and <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> set to 0. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">vec2</ref> to use for the x,y components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="75" column="28" bodyfile="include/helios/math/types/vec3.ixx" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a0bb6c73069ea0c4e2578720e5eca21ca" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>helios::math::vec3&lt; T &gt;::vec3</definition>
+        <argsstring>(const helios::math::vec2&lt; T &gt; v, T f) noexcept</argsstring>
+        <name>vec3</name>
+        <qualifiedname>helios::math::vec3::vec3</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">helios::math::vec2</ref>&lt; T &gt;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3</ref> with x,y components initialized to those of the <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">vec2</ref> and the z component set to the specified value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="structhelios_1_1math_1_1vec2" kindref="compound">vec2</ref> to use for the x,y components. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value for the z component. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="84" column="28" bodyfile="include/helios/math/types/vec3.ixx" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a8e8e639bd8db44dd1112eedef81b9972" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; helios::math::vec3&lt; T &gt;::operator[]</definition>
+        <argsstring>(const size_t i) const noexcept</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>helios::math::vec3::operator[]</qualifiedname>
+        <param>
+          <type>const size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Provides read only access to the vector components. Bounds checking is performed via `assert` in debug builds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index to query</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A const ref to the requested component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="94" column="27" bodyfile="include/helios/math/types/vec3.ixx" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1af422a99f5c24f8b57edd8f6e0a007152" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; helios::math::vec3&lt; T &gt;::operator[]</definition>
+        <argsstring>(const size_t i) noexcept</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>helios::math::vec3::operator[]</qualifiedname>
+        <param>
+          <type>const size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Provides read-write access to the vector components. Bounds checking is performed via `assert` in debug builds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index to query</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A const ref to the requested component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="108" column="21" bodyfile="include/helios/math/types/vec3.ixx" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a6146713ae785c06b31121c953357dda4" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>FloatingPointType&lt; T &gt;</type>
+        <definition>FloatingPointType&lt; T &gt; helios::math::vec3&lt; T &gt;::length</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>length</name>
+        <qualifiedname>helios::math::vec3::length</qualifiedname>
+        <briefdescription>
+<para>Computes the Euclidean norm (magnitude) of this vector and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The norm (magnitude) of this vector as a value of type <ref refid="namespacehelios_1_1math_1a4c90766d59f3c1ce32821bbbd3cdd62b" kindref="member">FloatingPointType&lt;T&gt;</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="119" column="27" bodyfile="include/helios/math/types/vec3.ixx" bodystart="119" bodyend="125"/>
+        <referencedby refid="classhelios_1_1ext_1_1imgui_1_1widgets_1_1CameraWidget_1a07fc0fbbf52e97d447e2f3177980dd00" compoundref="CameraWidget_8ixx" startline="213" endline="424">helios::ext::imgui::widgets::CameraWidget::draw</referencedby>
+        <referencedby refid="structhelios_1_1math_1_1vec3_1a3bbdd06a78770b9dadc233e0acca4295" compoundref="vec3_8ixx" startline="350" endline="364">helios::math::vec3&lt; T &gt;::normalize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1ae59861132e8e9d8cde196eeebec0faae" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vec3&lt; T &gt;</type>
+        <definition>vec3&lt; T &gt; helios::math::vec3&lt; T &gt;::cross</definition>
+        <argsstring>(const helios::math::vec3&lt; T &gt; &amp;v2) const noexcept</argsstring>
+        <name>cross</name>
+        <qualifiedname>helios::math::vec3::cross</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Computes the cross product of this vector and v2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second vec3&lt;T&gt; vector.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cross product as a value of type vec3&lt;T&gt;. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="134" column="15" bodyfile="include/helios/math/types/vec3.ixx" bodystart="330" bodyend="336"/>
+        <references refid="structhelios_1_1math_1_1vec3_1a6a604e51ca84090aa8e8d7f46bd02009" compoundref="vec3_8ixx" startline="46" endline="46">helios::math::vec3&lt; T &gt;::vec3</references>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1ad64bf63ac24905fed6d397d59088340d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T helios::math::vec3&lt; T &gt;::dot</definition>
+        <argsstring>(const helios::math::vec3&lt; T &gt; &amp;v2) const noexcept</argsstring>
+        <name>dot</name>
+        <qualifiedname>helios::math::vec3::dot</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Computes the dot product of this vector and v2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second vec3&lt;T&gt; vector.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The dot product as a value of type T. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="143" column="12" bodyfile="include/helios/math/types/vec3.ixx" bodystart="344" bodyend="346"/>
+        <references refid="structhelios_1_1math_1_1vec3_1a6a604e51ca84090aa8e8d7f46bd02009" compoundref="vec3_8ixx" startline="46" endline="46">helios::math::vec3&lt; T &gt;::vec3</references>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a98db2375fe3de090655548f4d29c8192" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vec4&lt; T &gt;</type>
+        <definition>vec4&lt; T &gt; helios::math::vec3&lt; T &gt;::toVec4</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>toVec4</name>
+        <qualifiedname>helios::math::vec3::toVec4</qualifiedname>
+        <briefdescription>
+<para>Converts this 3D vector to a 4D homogeneous vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="structhelios_1_1math_1_1vec4" kindref="compound">vec4</ref> with the x, y, z components from this vector and sets the w component to 0, representing a direction in homogeneous coordinates. For position vectors (w = 1), construct the <ref refid="structhelios_1_1math_1_1vec4" kindref="compound">vec4</ref> directly.</para>
+<para><simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec4" kindref="compound">vec4&lt;T&gt;</ref> instance with components (x, y, z, 0). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="155" column="15" bodyfile="include/helios/math/types/vec3.ixx" bodystart="339" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a3bbdd06a78770b9dadc233e0acca4295" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>vec3&lt; FloatingPointType&lt; T &gt; &gt;</type>
+        <definition>vec3&lt; FloatingPointType&lt; T &gt; &gt; helios::math::vec3&lt; T &gt;::normalize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>normalize</name>
+        <qualifiedname>helios::math::vec3::normalize</qualifiedname>
+        <briefdescription>
+<para>Returns a normalized version of this vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A new vec3&lt;FloatingPointType&lt;T&gt;&gt; instance representing the normalized vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="162" column="15" bodyfile="include/helios/math/types/vec3.ixx" bodystart="350" bodyend="364"/>
+        <references refid="structhelios_1_1math_1_1vec3_1a6146713ae785c06b31121c953357dda4" compoundref="vec3_8ixx" startline="119" endline="125">helios::math::vec3&lt; T &gt;::length</references>
+        <references refid="structhelios_1_1math_1_1vec3_1a6a604e51ca84090aa8e8d7f46bd02009" compoundref="vec3_8ixx" startline="46" endline="46">helios::math::vec3&lt; T &gt;::vec3</references>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1aa551f170f2cba46c0b50cf48fdfb326b" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::math::vec3&lt; T &gt;::operator==</definition>
+        <argsstring>(const vec3&lt; T &gt; &amp;rgt) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>helios::math::vec3::operator==</qualifiedname>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>rgt</declname>
+        </param>
+        <briefdescription>
+<para>Strictly compares the elements of this vector with the elements of the rgt vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rgt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right vector to compare for equal values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if all elements are equal (==), false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="172" column="24" bodyfile="include/helios/math/types/vec3.ixx" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1vec3_1a38d076eec3ebd34f4353d99e3f58ad1e" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::math::vec3&lt; T &gt;::same</definition>
+        <argsstring>(const vec3&lt; T &gt; &amp;rgt, T epsilon=0.0001) const</argsstring>
+        <name>same</name>
+        <qualifiedname>helios::math::vec3::same</qualifiedname>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>rgt</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>epsilon</declname>
+          <defval>0.0001</defval>
+        </param>
+        <briefdescription>
+<para>Compares this vector&apos;s elements with the rgt vector considering an epsilon value. Returns true if for all elements the equation |a-b| &lt;= epsilon holds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rgt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other vector to compare with this vector for equality. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The epsilon value to use for comparison. If omitted, the default epsilon (0.0001) is used.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the elements of the vectors are considered equal, otherwise false.</para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://realtimecollisiondetection.net/blog/?p=89">https://realtimecollisiondetection.net/blog/?p=89</ulink></para>
+</simplesect>
+<xrefsect id="todo_1_todo000011"><xreftitle>Todo</xreftitle><xrefdescription><para>account for abs (values close to zero) and rel (larger values), move epsilon to global constant? </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="194" column="24" bodyfile="include/helios/math/types/vec3.ixx" bodystart="194" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehelios_1_1math_1ae21f80815ae495b8d521d6ad829ee7b6" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>vec3&lt; T &gt;</type>
+        <definition>vec3&lt; T &gt; helios::math::operator*</definition>
+        <argsstring>(const vec3&lt; T &gt; &amp;v, const T n) noexcept</argsstring>
+        <name>operator*</name>
+        <qualifiedname>helios::math::operator*</qualifiedname>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies a 3D vector by a scalar value. </para>
+        </briefdescription>
+        <detaileddescription>
 <para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>T</parametername>
@@ -1500,20 +1822,731 @@
 </parameterlist>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>m</parametername>
+<parametername>v</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to the `vec4&lt;T&gt;` vector. </para>
+<para>The <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector to be multiplied. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar value to multiply the vector by.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>A const pointer to the element at index 0. </para>
+<simplesect kind="return"><para>a new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the result of the scalar multiplication. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="112" column="13" bodyfile="include/helios/math/types/vec4.ixx" bodystart="112" bodyend="114"/>
+        <location file="include/helios/math/types/vec3.ixx" line="213" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="213" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehelios_1_1math_1accf7fb22d70fc125b56f230c6c6cc8d5" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>vec3&lt; T &gt;</type>
+        <definition>vec3&lt; T &gt; helios::math::operator/</definition>
+        <argsstring>(const vec3&lt; T &gt; &amp;v, T s) noexcept</argsstring>
+        <name>operator/</name>
+        <qualifiedname>helios::math::operator/</qualifiedname>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Divides a 3D vector by a scalar value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the vector components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector to be divided. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar divisor. Must not be zero.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the result of the scalar division.</para>
+</simplesect>
+<simplesect kind="pre"><para>s != 0 (asserted in debug builds). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="229" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="229" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehelios_1_1math_1a81d43c532316a12782bef5db9230ff84" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>vec3&lt; T &gt;</type>
+        <definition>vec3&lt; T &gt; helios::math::operator*</definition>
+        <argsstring>(const T n, const vec3&lt; T &gt; &amp;v) noexcept</argsstring>
+        <name>operator*</name>
+        <qualifiedname>helios::math::operator*</qualifiedname>
+        <param>
+          <type>const T</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies a scalar value by a 3D vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the vector components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar value to multiply the vector by. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector to be multiplied.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the result of the scalar multiplication. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="246" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="246" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehelios_1_1math_1a6bca908e940499722f0a3af6447ad719" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>vec3&lt; T &gt;</type>
+        <definition>vec3&lt; T &gt; helios::math::operator*</definition>
+        <argsstring>(const vec3&lt; T &gt; &amp;v1, const vec3&lt; T &gt; &amp;v2) noexcept</argsstring>
+        <name>operator*</name>
+        <qualifiedname>helios::math::operator*</qualifiedname>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies two vectors componentwise. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the vector components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left-hand <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector to be multiplied. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right-hand <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector to be multiplied.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the result of the componentwise multiplication of the two vectors. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="261" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehelios_1_1math_1a01625d8968c400bd7e812715d7f1941f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>vec3&lt; T &gt;</type>
+        <definition>vec3&lt; T &gt; helios::math::operator+</definition>
+        <argsstring>(const vec3&lt; T &gt; &amp;v1, const vec3&lt; T &gt; &amp;v2) noexcept</argsstring>
+        <name>operator+</name>
+        <qualifiedname>helios::math::operator+</qualifiedname>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the componentwise sum of the two vectors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the vector components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left-hand <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector to be added. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right-hand <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector to be added.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the sum of the two vectors. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="276" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="276" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehelios_1_1math_1a82d2ab8d8240be4606a885c554b93fb5" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>vec3&lt; T &gt;</type>
+        <definition>vec3&lt; T &gt; helios::math::cross</definition>
+        <argsstring>(const vec3&lt; T &gt; &amp;v1, const vec3&lt; T &gt; &amp;v2) noexcept</argsstring>
+        <name>cross</name>
+        <qualifiedname>helios::math::cross</qualifiedname>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Computes the cross product of two 3D vectors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the vector components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the cross product. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="291" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="291" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehelios_1_1math_1a076c3e1ea3dd5beb87bc701e87cd4f1a" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T helios::math::dot</definition>
+        <argsstring>(const vec3&lt; T &gt; &amp;v1, const vec3&lt; T &gt; &amp;v2) noexcept</argsstring>
+        <name>dot</name>
+        <qualifiedname>helios::math::dot</qualifiedname>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Computes the dot product of two 3D vectors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the vector components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The dot product as a value of type T. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="310" column="17" bodyfile="include/helios/math/types/vec3.ixx" bodystart="310" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehelios_1_1math_1a7a21ef269927b19863a1eae2d87666ee" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="concepthelios_1_1math_1_1Numeric" kindref="compound">helios::math::Numeric</ref></type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>vec3&lt; T &gt;</type>
+        <definition>vec3&lt; T &gt; helios::math::operator-</definition>
+        <argsstring>(const vec3&lt; T &gt; &amp;v1, const vec3&lt; T &gt; &amp;v2) noexcept</argsstring>
+        <name>operator-</name>
+        <qualifiedname>helios::math::operator-</qualifiedname>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const vec3&lt; T &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Computes the difference between two vectors (vector subtraction). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numeric type of the vector components. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> vector.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">vec3&lt;T&gt;</ref> instance representing the difference between v1 and v2. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="325" column="20" bodyfile="include/helios/math/types/vec3.ixx" bodystart="325" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1aabb_1aa503a6e73ae299cc5e2cef2fe2513857" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>helios::math::aabb&lt; T &gt;::aabb</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>aabb</name>
+        <qualifiedname>helios::math::aabb::aabb</qualifiedname>
+        <briefdescription>
+<para>Constructs an empty AABB with inverted min/max values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The AABB is initialized with min set to the maximum representable value and max set to the minimum representable value. This allows the first `add()` call to properly establish the initial bounds. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="62" column="19" bodyfile="include/helios/math/types/aabb.ixx" bodystart="62" bodyend="65"/>
+        <referencedby refid="structhelios_1_1math_1_1aabb_1a22eaa32ee9d9c415e4d3ce5b9ddcec74" compoundref="aabb_8ixx" startline="166" endline="194">helios::math::aabb&lt; float &gt;::transform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1aabb_1acc52c66b5209d36c8cf2e9d034f4595f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>helios::math::aabb&lt; T &gt;::aabb</definition>
+        <argsstring>(const T minX, const T minY, const T minZ, const T maxX, const T maxY, const T maxZ) noexcept</argsstring>
+        <name>aabb</name>
+        <qualifiedname>helios::math::aabb::aabb</qualifiedname>
+        <param>
+          <type>const T</type>
+          <declname>minX</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>minY</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>minZ</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>maxX</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>maxY</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>maxZ</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an AABB from individual component values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum X coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum Y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum Z coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum X coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum Y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum Z coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="77" column="19" bodyfile="include/helios/math/types/aabb.ixx" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1aabb_1a85ec864e5d6f50b7126ba22eb1a6c15a" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>helios::math::aabb&lt; T &gt;::aabb</definition>
+        <argsstring>(const helios::math::vec3&lt; T &gt; min, const helios::math::vec3&lt; T &gt; max) noexcept</argsstring>
+        <name>aabb</name>
+        <qualifiedname>helios::math::aabb::aabb</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an AABB from two corner points. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum corner point (smallest x, y, z). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum corner point (largest x, y, z). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="88" column="19" bodyfile="include/helios/math/types/aabb.ixx" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1aabb_1ab53ba0c88b465fb3f9e6ae410c3f0b70" prot="public" static="no" nodiscard="yes" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt; &amp;</type>
+        <definition>const helios::math::vec3&lt; T &gt; &amp; helios::math::aabb&lt; T &gt;::min</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>min</name>
+        <qualifiedname>helios::math::aabb::min</qualifiedname>
+        <briefdescription>
+<para>Returns the minimum corner point of the AABB. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Const reference to the minimum corner point. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="98" column="45" bodyfile="include/helios/math/types/aabb.ixx" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1aabb_1aa5836a6c13c4a5ddd421adb3a168970e" prot="public" static="no" nodiscard="yes" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt; &amp;</type>
+        <definition>const helios::math::vec3&lt; T &gt; &amp; helios::math::aabb&lt; T &gt;::max</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>max</name>
+        <qualifiedname>helios::math::aabb::max</qualifiedname>
+        <briefdescription>
+<para>Returns the maximum corner point of the AABB. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Const reference to the maximum corner point. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="107" column="45" bodyfile="include/helios/math/types/aabb.ixx" bodystart="107" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1aabb_1a885dcd6e532de6aacddc24256247e588" prot="public" static="no" nodiscard="yes" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt;</type>
+        <definition>helios::math::vec3&lt; T &gt; helios::math::aabb&lt; T &gt;::getCenter</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getCenter</name>
+        <qualifiedname>helios::math::aabb::getCenter</qualifiedname>
+        <briefdescription>
+<para>Computes the center point of the AABB. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The center point, calculated as `(min + max) / 2`. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="116" column="39" bodyfile="include/helios/math/types/aabb.ixx" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1aabb_1ad9d08175f5cacc839bd28476cf1bc4e0" prot="public" static="no" nodiscard="yes" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt;</type>
+        <definition>helios::math::vec3&lt; T &gt; helios::math::aabb&lt; T &gt;::getSize</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>getSize</name>
+        <qualifiedname>helios::math::aabb::getSize</qualifiedname>
+        <briefdescription>
+<para>Computes the size of the AABB over all axes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A vector representing the width, height, and depth of the AABB. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="125" column="39" bodyfile="include/helios/math/types/aabb.ixx" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1aabb_1a92106c4efc1b1aae8466956903020665" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::math::aabb&lt; T &gt;::add</definition>
+        <argsstring>(const helios::math::vec3&lt; T &gt; &amp;point) noexcept</argsstring>
+        <name>add</name>
+        <qualifiedname>helios::math::aabb::add</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1math_1_1vec3" kindref="compound">helios::math::vec3</ref>&lt; T &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Expands the AABB to include a given point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates the minimum and maximum bounds to ensure the specified point lies within the AABB. Each component is compared independently:<itemizedlist>
+<listitem><para>If a component of the point is smaller than the current minimum, the minimum is updated.</para>
+</listitem><listitem><para>If a component of the point is larger than the current maximum, the maximum is updated.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 3D point to include in the bounding box. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="139" column="14" bodyfile="include/helios/math/types/aabb.ixx" bodystart="139" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="structhelios_1_1math_1_1aabb_1a22eaa32ee9d9c415e4d3ce5b9ddcec74" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>aabb&lt; T &gt;</type>
+        <definition>aabb&lt; T &gt; helios::math::aabb&lt; T &gt;::transform</definition>
+        <argsstring>(const mat4&lt; T &gt; &amp;mat) const noexcept</argsstring>
+        <name>transform</name>
+        <qualifiedname>helios::math::aabb::transform</qualifiedname>
+        <param>
+          <type>const mat4&lt; T &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+<para>Transforms the AABB by a 4x4 transformation matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies a transformation matrix to the AABB and returns a new axis-aligned bounding box that fully contains the transformed original. This method preserves the axis-aligned property by computing new min/max bounds from the transformed corners.</para>
+<para>The algorithm efficiently transforms only the min/max corners instead of all 8 vertices, using Arvo&apos;s optimization technique from Graphics Gems.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 4x4 transformation matrix to apply.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new AABB that fully contains the transformed bounding box.</para>
+</simplesect>
+<simplesect kind="see"><para>[Gla95, pp. 548-550] &quot;Transforming Axis-Aligned Bounding Boxes&quot; by James Arvo </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="166" column="15" bodyfile="include/helios/math/types/aabb.ixx" bodystart="166" bodyend="194"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="typedef">
@@ -1529,7 +2562,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="249" column="5" bodyfile="include/helios/math/types/mat4.ixx" bodystart="249" bodyend="-1"/>
+        <location file="include/helios/math/types/mat4.ixx" line="395" column="5" bodyfile="include/helios/math/types/mat4.ixx" bodystart="395" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacehelios_1_1math_1a058bd8629e8b9fdd7914ec513cf515f5" prot="public" static="no">
         <type>mat4&lt; double &gt;</type>
@@ -1543,7 +2576,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="250" column="5" bodyfile="include/helios/math/types/mat4.ixx" bodystart="250" bodyend="-1"/>
+        <location file="include/helios/math/types/mat4.ixx" line="396" column="5" bodyfile="include/helios/math/types/mat4.ixx" bodystart="396" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacehelios_1_1math_1abfde83491c8def2cca7e8816bb9a0075" prot="public" static="no">
         <type>mat4&lt; int &gt;</type>
@@ -1557,7 +2590,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/mat4.ixx" line="251" column="5" bodyfile="include/helios/math/types/mat4.ixx" bodystart="251" bodyend="-1"/>
+        <location file="include/helios/math/types/mat4.ixx" line="397" column="5" bodyfile="include/helios/math/types/mat4.ixx" bodystart="397" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacehelios_1_1math_1aeab5c7e555a142f8f763a3317460d5c0" prot="public" static="no">
         <type>vec2&lt; float &gt;</type>
@@ -1571,7 +2604,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec2.ixx" line="94" column="5" bodyfile="include/helios/math/types/vec2.ixx" bodystart="94" bodyend="-1"/>
+        <location file="include/helios/math/types/vec2.ixx" line="192" column="5" bodyfile="include/helios/math/types/vec2.ixx" bodystart="192" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacehelios_1_1math_1acb8f1b0c5acc937254f38e27787db452" prot="public" static="no">
         <type>vec2&lt; double &gt;</type>
@@ -1585,7 +2618,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec2.ixx" line="95" column="5" bodyfile="include/helios/math/types/vec2.ixx" bodystart="95" bodyend="-1"/>
+        <location file="include/helios/math/types/vec2.ixx" line="193" column="5" bodyfile="include/helios/math/types/vec2.ixx" bodystart="193" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacehelios_1_1math_1aff32bafe25abeda0bb858b51ae46bff8" prot="public" static="no">
         <type>vec2&lt; int &gt;</type>
@@ -1599,49 +2632,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec2.ixx" line="96" column="5" bodyfile="include/helios/math/types/vec2.ixx" bodystart="96" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" prot="public" static="no">
-        <type>vec3&lt; float &gt;</type>
-        <definition>using helios::math::vec3f =  vec3&lt;float&gt;</definition>
-        <argsstring></argsstring>
-        <name>vec3f</name>
-        <qualifiedname>helios::math::vec3f</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="209" column="5" bodyfile="include/helios/math/types/vec3.ixx" bodystart="209" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="namespacehelios_1_1math_1a0fd329cdb93d866fad284b88f7acb4f4" prot="public" static="no">
-        <type>vec3&lt; int &gt;</type>
-        <definition>using helios::math::vec3i =  vec3&lt;int&gt;</definition>
-        <argsstring></argsstring>
-        <name>vec3i</name>
-        <qualifiedname>helios::math::vec3i</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="210" column="5" bodyfile="include/helios/math/types/vec3.ixx" bodystart="210" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="namespacehelios_1_1math_1a57c950d4cb887c103dc2423f3ea81ce4" prot="public" static="no">
-        <type>vec3&lt; double &gt;</type>
-        <definition>using helios::math::vec3d =  vec3&lt;double&gt;</definition>
-        <argsstring></argsstring>
-        <name>vec3d</name>
-        <qualifiedname>helios::math::vec3d</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/math/types/vec3.ixx" line="211" column="5" bodyfile="include/helios/math/types/vec3.ixx" bodystart="211" bodyend="-1"/>
+        <location file="include/helios/math/types/vec2.ixx" line="194" column="5" bodyfile="include/helios/math/types/vec2.ixx" bodystart="194" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacehelios_1_1math_1a08252f81850c5902e3c8dead272f3332" prot="public" static="no">
         <type>vec4&lt; float &gt;</type>
@@ -1650,12 +2641,13 @@
         <name>vec4f</name>
         <qualifiedname>helios::math::vec4f</qualifiedname>
         <briefdescription>
+<para>Single-precision floating-point 4D vector. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="116" column="5" bodyfile="include/helios/math/types/vec4.ixx" bodystart="116" bodyend="-1"/>
+        <location file="include/helios/math/types/vec4.ixx" line="136" column="5" bodyfile="include/helios/math/types/vec4.ixx" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacehelios_1_1math_1a78a0f495523b71681b549f098f994126" prot="public" static="no">
         <type>vec4&lt; double &gt;</type>
@@ -1664,12 +2656,13 @@
         <name>vec4d</name>
         <qualifiedname>helios::math::vec4d</qualifiedname>
         <briefdescription>
+<para>Double-precision floating-point 4D vector. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="117" column="5" bodyfile="include/helios/math/types/vec4.ixx" bodystart="117" bodyend="-1"/>
+        <location file="include/helios/math/types/vec4.ixx" line="141" column="5" bodyfile="include/helios/math/types/vec4.ixx" bodystart="141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespacehelios_1_1math_1a9ce6ecf5869b53d92a26354e2c48d0b4" prot="public" static="no">
         <type>vec4&lt; int &gt;</type>
@@ -1678,12 +2671,103 @@
         <name>vec4i</name>
         <qualifiedname>helios::math::vec4i</qualifiedname>
         <briefdescription>
+<para>Integer 4D vector. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/math/types/vec4.ixx" line="118" column="5" bodyfile="include/helios/math/types/vec4.ixx" bodystart="118" bodyend="-1"/>
+        <location file="include/helios/math/types/vec4.ixx" line="146" column="5" bodyfile="include/helios/math/types/vec4.ixx" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" prot="public" static="no">
+        <type>vec3&lt; float &gt;</type>
+        <definition>using helios::math::vec3f =  vec3&lt;float&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec3f</name>
+        <qualifiedname>helios::math::vec3f</qualifiedname>
+        <briefdescription>
+<para>Single-precision floating-point 3D vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="369" column="5" bodyfile="include/helios/math/types/vec3.ixx" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehelios_1_1math_1a0fd329cdb93d866fad284b88f7acb4f4" prot="public" static="no">
+        <type>vec3&lt; int &gt;</type>
+        <definition>using helios::math::vec3i =  vec3&lt;int&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec3i</name>
+        <qualifiedname>helios::math::vec3i</qualifiedname>
+        <briefdescription>
+<para>Integer 3D vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="374" column="5" bodyfile="include/helios/math/types/vec3.ixx" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehelios_1_1math_1a57c950d4cb887c103dc2423f3ea81ce4" prot="public" static="no">
+        <type>vec3&lt; double &gt;</type>
+        <definition>using helios::math::vec3d =  vec3&lt;double&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec3d</name>
+        <qualifiedname>helios::math::vec3d</qualifiedname>
+        <briefdescription>
+<para>Double-precision floating-point 3D vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/vec3.ixx" line="379" column="5" bodyfile="include/helios/math/types/vec3.ixx" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehelios_1_1math_1a124c0492430aeecedc1c1a5ece4ba488" prot="public" static="no">
+        <type>aabb&lt; float &gt;</type>
+        <definition>using helios::math::aabbf =  aabb&lt;float&gt;</definition>
+        <argsstring></argsstring>
+        <name>aabbf</name>
+        <qualifiedname>helios::math::aabbf</qualifiedname>
+        <briefdescription>
+<para>Single-precision floating-point AABB. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="202" column="5" bodyfile="include/helios/math/types/aabb.ixx" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehelios_1_1math_1a3c63775a7d6ff09058288223291660b7" prot="public" static="no">
+        <type>aabb&lt; int &gt;</type>
+        <definition>using helios::math::aabbi =  aabb&lt;int&gt;</definition>
+        <argsstring></argsstring>
+        <name>aabbi</name>
+        <qualifiedname>helios::math::aabbi</qualifiedname>
+        <briefdescription>
+<para>Integer AABB. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="207" column="5" bodyfile="include/helios/math/types/aabb.ixx" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehelios_1_1math_1a8cdcd5dfceca20081416ef7ac3374e01" prot="public" static="no">
+        <type>aabb&lt; double &gt;</type>
+        <definition>using helios::math::aabbd =  aabb&lt;double&gt;</definition>
+        <argsstring></argsstring>
+        <name>aabbd</name>
+        <qualifiedname>helios::math::aabbd</qualifiedname>
+        <briefdescription>
+<para>Double-precision floating-point AABB. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/helios/math/types/aabb.ixx" line="212" column="5" bodyfile="include/helios/math/types/aabb.ixx" bodystart="212" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -1692,6 +2776,6 @@
     <detaileddescription>
 <para>This module provides fundamental mathematical types including 2D, 3D, and 4D vectors, as well as 4x4 matrices used for graphics transformations and spatial computations. </para>
     </detaileddescription>
-    <location file="include/helios/math/types/_module.ixx" line="10" column="15"/>
+    <location file="include/helios/math/types/_module.ixx" line="13" column="15"/>
   </compounddef>
 </doxygen>

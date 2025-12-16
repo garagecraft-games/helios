@@ -1,10 +1,25 @@
 var module__helios_8scene_8Camera =
 [
     [ "Camera", "classhelios_1_1scene_1_1Camera.html", "classhelios_1_1scene_1_1Camera" ],
-    [ "helios::scene::Camera::Camera", "module__helios_8scene_8Camera.html#adb65c6af2c10921ccd7a5088a48adcf8", null ],
-    [ "helios::scene::Camera::addChild", "module__helios_8scene_8Camera.html#a08c74a826af54a6de82dd64516df4017", null ],
+    [ "helios::scene::Camera::update", "module__helios_8scene_8Camera.html#a949fcc8b4e43f2a9afdad8eaafaeb07b", null ],
+    [ "helios::scene::Camera::Camera", "module__helios_8scene_8Camera.html#a6d1911bccc03c847625153d58cc49e99", null ],
     [ "helios::scene::Camera::projectionMatrix", "module__helios_8scene_8Camera.html#a1dc42ba642ae41f7028a4cb927a6feb0", null ],
     [ "helios::scene::Camera::viewMatrix", "module__helios_8scene_8Camera.html#a920bac1e84b874d725027e37d091cb34", null ],
+    [ "helios::scene::Camera::setViewMatrix", "module__helios_8scene_8Camera.html#aa4db3f9ad22b14be836f3f5ba42576b7", null ],
+    [ "helios::scene::Camera::setAspectRatio", "module__helios_8scene_8Camera.html#a865085d03e951123b7560d68f5eca056", null ],
+    [ "helios::scene::Camera::setPerspective", "module__helios_8scene_8Camera.html#a956f0190d0bd24ad8960d3e6a94b82db", null ],
+    [ "helios::scene::Camera::setZNear", "module__helios_8scene_8Camera.html#a162c8f353ae0ec96b0b8371a90b99064", null ],
+    [ "helios::scene::Camera::setZFar", "module__helios_8scene_8Camera.html#a2fcf4ad5e74f95606f6d6ec5184b6d1f", null ],
+    [ "helios::scene::Camera::setFovY", "module__helios_8scene_8Camera.html#a1fb02da77bd02b2c88f974ceccab7ce9", null ],
+    [ "helios::scene::Camera::fovY", "module__helios_8scene_8Camera.html#a70b386e4c1f91bd4cca152d5efb4ed76", null ],
+    [ "helios::scene::Camera::aspectRatio", "module__helios_8scene_8Camera.html#a949e8c04f22ca2a1ace596e6e859bee3", null ],
+    [ "helios::scene::Camera::zNear", "module__helios_8scene_8Camera.html#a11e3916a50eb417e8924ccea8fee56cd", null ],
+    [ "helios::scene::Camera::zFar", "module__helios_8scene_8Camera.html#ab6f32b1cf60371dfa764adfb13d4141e", null ],
     [ "helios::scene::Camera::projectionMatrix_", "module__helios_8scene_8Camera.html#a73a85eb4966fb4524dc6b87736500f62", null ],
-    [ "helios::scene::Camera::viewMatrix_", "module__helios_8scene_8Camera.html#a5c915d9ba00c11dcef1885f02e32945c", null ]
+    [ "helios::scene::Camera::viewMatrix_", "module__helios_8scene_8Camera.html#a5c915d9ba00c11dcef1885f02e32945c", null ],
+    [ "helios::scene::Camera::aspectRatio_", "module__helios_8scene_8Camera.html#a95f643525bd276faa7edcd1401f47850", null ],
+    [ "helios::scene::Camera::zNear_", "module__helios_8scene_8Camera.html#a50a2b217510dda5e0e75224a0fc3d624", null ],
+    [ "helios::scene::Camera::zFar_", "module__helios_8scene_8Camera.html#a3a433ba5fa99dc88e12f63c8750d0a5e", null ],
+    [ "helios::scene::Camera::fovY_", "module__helios_8scene_8Camera.html#a93d6f69ba20a464ad2de8b6233321870", null ],
+    [ "helios::scene::Camera::needsUpdate_", "module__helios_8scene_8Camera.html#af1b0b6d8716871661a66609b5bed1255", null ]
 ];

@@ -1,23 +1,32 @@
 <map id="include/helios/util/io/BasicStringFileReader.ixx" name="include/helios/util/io/BasicStringFileReader.ixx">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,212,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="95,328,154,353"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,45,117,133,126,314,121,314,111,133,107,46"/>
-<area shape="rect" id="Node000003" href="$StringFileReader_8ixx.html" title=" " alt="" coords="127,93,293,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,44,179,82,175,86,129,48"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="204,134,153,256,134,315,129,314,147,254,199,132"/>
-<area shape="rect" id="Node000004" href="$LogManager_8ixx.html" title=" " alt="" coords="207,181,402,207"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="235,131,281,170,278,174,231,136"/>
-<area shape="rect" id="Node000008" href="$Logger_8ixx.html" title=" " alt="" coords="527,255,685,280"/>
-<area shape="poly" id="edge12_Node000003_Node000008" title=" " alt="" coords="273,131,415,179,571,246,569,251,413,184,272,136"/>
-<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="265,209,220,228,177,257,153,285,137,316,132,313,149,282,174,253,218,223,263,204"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="188,255,312,280"/>
-<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="298,209,269,245,265,242,294,205"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="337,255,414,280"/>
-<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="318,205,356,243,352,247,314,209"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="438,255,502,280"/>
-<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="332,204,432,247,429,252,330,209"/>
-<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="354,204,545,249,544,254,352,209"/>
-<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="529,283,168,336,168,330,528,277"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="566,328,646,353"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="609,280,609,314,603,314,603,280"/>
+<area shape="rect" id="Node000001" title="Basic file&#45;to&#45;string reader implementation." alt="" coords="512,5,719,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="482,401,541,427"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="640,44,668,70,696,105,718,146,725,169,727,193,727,269,723,298,709,324,689,345,664,363,608,390,555,407,554,401,606,385,662,359,685,341,705,320,717,296,722,268,722,193,720,170,713,148,691,108,664,73,637,47"/>
+<area shape="rect" id="Node000003" href="$StringFileReader_8ixx.html" title="Abstract base class for reading file contents into a string." alt="" coords="472,93,639,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="604,47,579,84,574,81,600,44"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="576,132,609,174,642,231,654,262,659,294,657,325,644,355,626,375,603,390,555,408,553,403,601,386,623,371,640,352,652,324,654,294,649,263,637,233,604,177,571,136"/>
+<area shape="rect" id="Node000004" href="$LogManager_8ixx.html" title="Central manager for scoped loggers with configurable sinks." alt="" coords="197,181,391,207"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="494,136,346,180,345,175,492,131"/>
+<area shape="rect" id="Node000010" href="$Logger_8ixx.html" title="Simple synchronous logger with configurable output sinks." alt="" coords="427,255,585,280"/>
+<area shape="poly" id="edge19_Node000003_Node000010" title=" " alt="" coords="552,135,517,242,512,241,547,133"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="197,206,141,213,88,224,43,238,27,247,16,256,10,267,8,279,14,306,29,332,48,351,80,368,126,381,244,398,369,407,468,410,468,415,368,412,243,404,125,386,78,373,45,355,24,335,9,308,3,279,5,265,12,253,24,242,41,233,86,219,141,208,196,200"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="37,255,161,280"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="264,209,145,252,143,247,262,204"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="237,255,351,280"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="297,207,297,241,291,241,291,207"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="553,328,630,353"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="392,199,454,206,515,216,566,232,585,241,599,253,607,268,609,284,604,316,598,315,604,284,601,269,595,256,582,246,564,237,513,222,453,211,391,204"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="58,328,122,353"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="197,207,94,225,52,239,27,256,22,272,28,288,43,304,61,318,57,323,39,308,24,291,16,272,23,253,50,234,93,220,196,201"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="193,328,256,353"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="274,209,248,228,227,256,221,285,222,314,217,314,215,285,222,254,244,225,271,205"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="329,204,460,248,458,253,327,209"/>
+<area shape="rect" id="Node000011" href="$LogSink_8ixx.html" title="Abstract interface for log output destinations." alt="" coords="309,328,474,353"/>
+<area shape="poly" id="edge18_Node000004_Node000011" title=" " alt="" coords="314,205,341,225,366,253,381,284,389,314,384,315,376,286,361,256,337,229,311,209"/>
+<area shape="poly" id="edge12_Node000010_Node000002" title=" " alt="" coords="509,280,513,388,508,388,504,281"/>
+<area shape="poly" id="edge14_Node000010_Node000007" title=" " alt="" coords="521,278,569,317,565,321,518,282"/>
+<area shape="poly" id="edge15_Node000010_Node000008" title=" " alt="" coords="440,283,136,334,135,329,439,277"/>
+<area shape="poly" id="edge13_Node000010_Node000009" title=" " alt="" coords="462,283,270,331,269,326,460,277"/>
+<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="489,282,423,323,420,318,486,278"/>
+<area shape="poly" id="edge17_Node000011_Node000002" title=" " alt="" coords="412,351,481,392,478,396,409,356"/>
 </map>

@@ -1,0 +1,8 @@
+<map id="include/helios/util/log/ConsoleSink.ixx" name="include/helios/util/log/ConsoleSink.ixx">
+<area shape="rect" id="Node000001" title="Log sink that writes to stdout." alt="" coords="5,5,160,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="53,167,112,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,47,53,80,49,99,51,118,68,154,63,157,45,119,44,99,48,78,66,44"/>
+<area shape="rect" id="Node000003" href="$LogSink_8ixx.html" title="Abstract interface for log output destinations." alt="" coords="60,93,225,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,44,128,81,123,84,95,47"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="135,121,103,158,99,154,131,117"/>
+</map>

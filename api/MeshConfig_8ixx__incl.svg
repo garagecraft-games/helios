@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Mesh configuration including primitive type.">
 <polygon fill="#999999" stroke="#666666" points="162.5,-96 1.5,-96 1.5,-66 162.5,-66 162.5,-96"/>
 <text text-anchor="start" x="9.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">include/helios/rendering</text>
 <text text-anchor="middle" x="82" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">/model/config/MeshConfig.ixx</text>
@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="PrimitiveType_8ixx.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="PrimitiveType_8ixx.html" target="_top" xlink:title="Enum of primitive types for mesh rendering.">
 <polygon fill="white" stroke="#666666" points="164,-30 0,-30 0,0 164,0 164,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">helios.rendering.model.config.</text>
 <text text-anchor="middle" x="82" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">PrimitiveType</text>

@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/scene/SnapshotItem.ixx" line="52" column="23" bodyfile="include/helios/scene/SnapshotItem.ixx" bodystart="52" bodyend="-1"/>
+        <location file="include/helios/scene/SnapshotItem.ixx" line="53" column="23" bodyfile="include/helios/scene/SnapshotItem.ixx" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhelios_1_1scene_1_1SnapshotItem_1afddf6a24f88bbcac3a553112ce261d25" prot="private" static="no" mutable="no">
         <type>const <ref refid="namespacehelios_1_1math_1ad422120d6e1f106140808f16e348f0b3" kindref="member">helios::math::mat4f</ref></type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/scene/SnapshotItem.ixx" line="57" column="35" bodyfile="include/helios/scene/SnapshotItem.ixx" bodystart="57" bodyend="-1"/>
+        <location file="include/helios/scene/SnapshotItem.ixx" line="58" column="35" bodyfile="include/helios/scene/SnapshotItem.ixx" bodystart="58" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/scene/SnapshotItem.ixx" line="63" column="9"/>
+        <location file="include/helios/scene/SnapshotItem.ixx" line="64" column="9"/>
         <references refid="structhelios_1_1scene_1_1SnapshotItem_1a896b2a4f5c6bf92b2dd560281cd0b3f6">helios::scene::SnapshotItem::SnapshotItem</references>
         <referencedby refid="structhelios_1_1scene_1_1SnapshotItem_1a10f299edb3444212e2837607f7cba4b9">helios::scene::SnapshotItem::operator=</referencedby>
         <referencedby refid="structhelios_1_1scene_1_1SnapshotItem_1a896b2a4f5c6bf92b2dd560281cd0b3f6">helios::scene::SnapshotItem::SnapshotItem</referencedby>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/scene/SnapshotItem.ixx" line="64" column="22"/>
+        <location file="include/helios/scene/SnapshotItem.ixx" line="65" column="22"/>
         <references refid="structhelios_1_1scene_1_1SnapshotItem_1a896b2a4f5c6bf92b2dd560281cd0b3f6">helios::scene::SnapshotItem::SnapshotItem</references>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1scene_1_1SnapshotItem_1a6eab653f8e9aca29ddbbf1d147df23b3" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/scene/SnapshotItem.ixx" line="70" column="9"/>
+        <location file="include/helios/scene/SnapshotItem.ixx" line="71" column="9"/>
         <references refid="structhelios_1_1scene_1_1SnapshotItem_1a896b2a4f5c6bf92b2dd560281cd0b3f6">helios::scene::SnapshotItem::SnapshotItem</references>
       </memberdef>
       <memberdef kind="function" id="structhelios_1_1scene_1_1SnapshotItem_1a3d91e9c3e4e5529eb95aee6ca15c3c98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -139,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/scene/SnapshotItem.ixx" line="79" column="9"/>
+        <location file="include/helios/scene/SnapshotItem.ixx" line="80" column="9"/>
         <references refid="structhelios_1_1scene_1_1SnapshotItem_1a3145126ee37604f07f27f3f8ed8d30e2">helios::scene::SnapshotItem::renderable</references>
         <references refid="structhelios_1_1scene_1_1SnapshotItem_1a896b2a4f5c6bf92b2dd560281cd0b3f6">helios::scene::SnapshotItem::SnapshotItem</references>
         <references refid="structhelios_1_1scene_1_1SnapshotItem_1a9b1e4c1e12d5c92284036256995442f5">helios::scene::SnapshotItem::worldMatrix</references>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/scene/SnapshotItem.ixx" line="92" column="24"/>
+        <location file="include/helios/scene/SnapshotItem.ixx" line="93" column="24"/>
         <references refid="structhelios_1_1scene_1_1SnapshotItem_1a3145126ee37604f07f27f3f8ed8d30e2">helios::scene::SnapshotItem::renderable</references>
         <referencedby refid="structhelios_1_1scene_1_1SnapshotItem_1a3145126ee37604f07f27f3f8ed8d30e2">helios::scene::SnapshotItem::renderable</referencedby>
         <referencedby refid="structhelios_1_1scene_1_1SnapshotItem_1a3d91e9c3e4e5529eb95aee6ca15c3c98">helios::scene::SnapshotItem::SnapshotItem</referencedby>
@@ -181,17 +181,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/scene/SnapshotItem.ixx" line="101" column="36"/>
+        <location file="include/helios/scene/SnapshotItem.ixx" line="102" column="36"/>
         <references refid="structhelios_1_1scene_1_1SnapshotItem_1a9b1e4c1e12d5c92284036256995442f5">helios::scene::SnapshotItem::worldMatrix</references>
         <referencedby refid="structhelios_1_1scene_1_1SnapshotItem_1a3d91e9c3e4e5529eb95aee6ca15c3c98">helios::scene::SnapshotItem::SnapshotItem</referencedby>
         <referencedby refid="structhelios_1_1scene_1_1SnapshotItem_1a9b1e4c1e12d5c92284036256995442f5">helios::scene::SnapshotItem::worldMatrix</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Snapshot item bundling a Renderable reference and its world matrix. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/scene/SnapshotItem.ixx" line="8" column="15"/>
+    <location file="include/helios/scene/SnapshotItem.ixx" line="9" column="15"/>
   </compounddef>
 </doxygen>

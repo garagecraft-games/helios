@@ -94,14 +94,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/model/config/PrimitiveType.ixx" line="35" column="5" bodyfile="include/helios/rendering/model/config/PrimitiveType.ixx" bodystart="35" bodyend="75"/>
+        <location file="include/helios/rendering/model/config/PrimitiveType.ixx" line="36" column="5" bodyfile="include/helios/rendering/model/config/PrimitiveType.ixx" bodystart="36" bodyend="76"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Primitive assembly types used by rendering backends. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/rendering/model/config/PrimitiveType.ixx" line="6" column="15"/>
+    <location file="include/helios/rendering/model/config/PrimitiveType.ixx" line="7" column="15"/>
   </compounddef>
 </doxygen>

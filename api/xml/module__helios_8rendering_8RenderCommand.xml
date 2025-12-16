@@ -5,35 +5,20 @@
     <innerfile refid="RenderCommand_8ixx">RenderCommand.ixx</innerfile>
     <innerclass refid="classhelios_1_1rendering_1_1RenderCommand" prot="public">helios::rendering::RenderCommand</innerclass>
     <sectiondef kind="var">
-      <memberdef kind="variable" id="classhelios_1_1rendering_1_1RenderCommand_1af76d40bdd6c2f8a443a3111443d0472d" prot="private" static="no" mutable="no">
-        <type>std::weak_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1shader_1_1Shader" kindref="compound">helios::rendering::shader::Shader</ref> &gt;</type>
-        <definition>std::weak_ptr&lt;const helios::rendering::shader::Shader&gt; helios::rendering::RenderCommand::shader_</definition>
+      <memberdef kind="variable" id="classhelios_1_1rendering_1_1RenderCommand_1a63492ab4e3849e708277db00436e0f42" prot="private" static="no" mutable="no">
+        <type>std::weak_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1RenderPrototype" kindref="compound">helios::rendering::RenderPrototype</ref> &gt;</type>
+        <definition>std::weak_ptr&lt;const helios::rendering::RenderPrototype&gt; helios::rendering::RenderCommand::renderPrototype_</definition>
         <argsstring></argsstring>
-        <name>shader_</name>
-        <qualifiedname>helios::rendering::RenderCommand::shader_</qualifiedname>
+        <name>renderPrototype_</name>
+        <qualifiedname>helios::rendering::RenderCommand::renderPrototype_</qualifiedname>
         <briefdescription>
-<para>A non-owning, weak reference to the shader program to be used. </para>
+<para>A non-owning, weak reference to the <ref refid="classhelios_1_1rendering_1_1RenderPrototype" kindref="compound">RenderPrototype</ref> to be used. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="include/helios/rendering/RenderCommand.ixx" line="29" column="23" bodyfile="include/helios/rendering/RenderCommand.ixx" bodystart="29" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classhelios_1_1rendering_1_1RenderCommand_1acdd94401787525c18c9049ec267ec3f8" prot="private" static="no" mutable="no">
-        <type>std::weak_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1model_1_1Mesh" kindref="compound">helios::rendering::model::Mesh</ref> &gt;</type>
-        <definition>std::weak_ptr&lt;const helios::rendering::model::Mesh&gt; helios::rendering::RenderCommand::mesh_</definition>
-        <argsstring></argsstring>
-        <name>mesh_</name>
-        <qualifiedname>helios::rendering::RenderCommand::mesh_</qualifiedname>
-        <briefdescription>
-<para>A non-owning, weak reference to the mesh this command uses. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="34" column="23" bodyfile="include/helios/rendering/RenderCommand.ixx" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhelios_1_1rendering_1_1RenderCommand_1a8ab1bc458f350972d5f44575d4a36c60" prot="private" static="no" mutable="no">
         <type>std::unique_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1shader_1_1UniformValueMap" kindref="compound">helios::rendering::shader::UniformValueMap</ref> &gt;</type>
@@ -48,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="41" column="25" bodyfile="include/helios/rendering/RenderCommand.ixx" bodystart="41" bodyend="-1"/>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="36" column="25" bodyfile="include/helios/rendering/RenderCommand.ixx" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhelios_1_1rendering_1_1RenderCommand_1aee7b7bb0dd7acab1712991683434054d" prot="private" static="no" mutable="no">
         <type>std::unique_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1shader_1_1UniformValueMap" kindref="compound">helios::rendering::shader::UniformValueMap</ref> &gt;</type>
@@ -63,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="47" column="25" bodyfile="include/helios/rendering/RenderCommand.ixx" bodystart="47" bodyend="-1"/>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="42" column="25" bodyfile="include/helios/rendering/RenderCommand.ixx" bodystart="42" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -83,13 +68,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="54" column="9"/>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="49" column="9"/>
         <references refid="classhelios_1_1rendering_1_1RenderCommand_1ab99843dfddf77202869e685426d0d759">helios::rendering::RenderCommand::RenderCommand</references>
         <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a615073c6f93784f04c4852d7543a3bd4">helios::rendering::RenderCommand::operator=</referencedby>
         <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a0c749574b95603ba4b17df9b9692a628">helios::rendering::RenderCommand::operator=</referencedby>
         <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1ab99843dfddf77202869e685426d0d759">helios::rendering::RenderCommand::RenderCommand</referencedby>
         <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a4ae067558ed2b245ef93b9fa5e4ab3ac">helios::rendering::RenderCommand::RenderCommand</referencedby>
-        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a26b8f9e5e6422bdda7ca626002c7d2a3">helios::rendering::RenderCommand::RenderCommand</referencedby>
+        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a964f958022fd5794082c60552a7ad946">helios::rendering::RenderCommand::RenderCommand</referencedby>
         <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1abdcb8135fa8f6bed19a52c0a98404288">helios::rendering::RenderCommand::~RenderCommand</referencedby>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1a615073c6f93784f04c4852d7543a3bd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -108,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="60" column="23"/>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="55" column="23"/>
         <references refid="classhelios_1_1rendering_1_1RenderCommand_1ab99843dfddf77202869e685426d0d759">helios::rendering::RenderCommand::RenderCommand</references>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1a4ae067558ed2b245ef93b9fa5e4ab3ac" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
@@ -127,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="65" column="9"/>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="60" column="9"/>
         <references refid="classhelios_1_1rendering_1_1RenderCommand_1ab99843dfddf77202869e685426d0d759">helios::rendering::RenderCommand::RenderCommand</references>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1a0c749574b95603ba4b17df9b9692a628" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
@@ -146,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="70" column="23"/>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="65" column="23"/>
         <references refid="classhelios_1_1rendering_1_1RenderCommand_1ab99843dfddf77202869e685426d0d759">helios::rendering::RenderCommand::RenderCommand</references>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1abdcb8135fa8f6bed19a52c0a98404288" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -161,22 +146,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="72" column="9"/>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="67" column="9"/>
         <references refid="classhelios_1_1rendering_1_1RenderCommand_1ab99843dfddf77202869e685426d0d759">helios::rendering::RenderCommand::RenderCommand</references>
       </memberdef>
-      <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1a26b8f9e5e6422bdda7ca626002c7d2a3" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1a964f958022fd5794082c60552a7ad946" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
         <definition>helios::rendering::RenderCommand::RenderCommand</definition>
-        <argsstring>(std::weak_ptr&lt; const helios::rendering::shader::Shader &gt; shader, std::weak_ptr&lt; const helios::rendering::model::Mesh &gt; mesh, std::unique_ptr&lt; const helios::rendering::shader::UniformValueMap &gt; objectUniformValues, std::unique_ptr&lt; const helios::rendering::shader::UniformValueMap &gt; materialUniformValues) noexcept</argsstring>
+        <argsstring>(std::weak_ptr&lt; const helios::rendering::RenderPrototype &gt; renderPrototype, std::unique_ptr&lt; const helios::rendering::shader::UniformValueMap &gt; objectUniformValues, std::unique_ptr&lt; const helios::rendering::shader::UniformValueMap &gt; materialUniformValues) noexcept</argsstring>
         <name>RenderCommand</name>
         <qualifiedname>helios::rendering::RenderCommand::RenderCommand</qualifiedname>
         <param>
-          <type>std::weak_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1shader_1_1Shader" kindref="compound">helios::rendering::shader::Shader</ref> &gt;</type>
-          <declname>shader</declname>
-        </param>
-        <param>
-          <type>std::weak_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1model_1_1Mesh" kindref="compound">helios::rendering::model::Mesh</ref> &gt;</type>
-          <declname>mesh</declname>
+          <type>std::weak_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1RenderPrototype" kindref="compound">helios::rendering::RenderPrototype</ref> &gt;</type>
+          <declname>renderPrototype</declname>
         </param>
         <param>
           <type>std::unique_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1shader_1_1UniformValueMap" kindref="compound">helios::rendering::shader::UniformValueMap</ref> &gt;</type>
@@ -192,18 +173,10 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>shader</parametername>
+<parametername>renderPrototype</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A weak_ptr to the `Shader` to be associated with this command. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>mesh</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A weak_ptr to the `Mesh` to be associated with this command. </para>
+<para>A weak_ptr to the `RenderPrototype` to be associated with this command. </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -227,21 +200,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="86" column="9"/>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="80" column="9"/>
         <references refid="classhelios_1_1rendering_1_1RenderCommand_1a12393226183cacaf5335beac7bffb6ab">helios::rendering::RenderCommand::materialUniformValues</references>
-        <references refid="classhelios_1_1rendering_1_1RenderCommand_1ac09956f2f80434aebcf20bedad2859d5">helios::rendering::RenderCommand::mesh</references>
         <references refid="classhelios_1_1rendering_1_1RenderCommand_1ad4a8aa4a94a4abbd21e984ac47c60c04">helios::rendering::RenderCommand::objectUniformValues</references>
         <references refid="classhelios_1_1rendering_1_1RenderCommand_1ab99843dfddf77202869e685426d0d759">helios::rendering::RenderCommand::RenderCommand</references>
-        <references refid="classhelios_1_1rendering_1_1RenderCommand_1a529b8d2ad25ab718c490b6a7c77afa88">helios::rendering::RenderCommand::shader</references>
+        <references refid="classhelios_1_1rendering_1_1RenderCommand_1a40e3e87c38bd9d0d6aca469cfad4a0c2">helios::rendering::RenderCommand::renderPrototype</references>
       </memberdef>
-      <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1a529b8d2ad25ab718c490b6a7c77afa88" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <type>std::weak_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1shader_1_1Shader" kindref="compound">helios::rendering::shader::Shader</ref> &gt;</type>
-        <definition>std::weak_ptr&lt; const helios::rendering::shader::Shader &gt; helios::rendering::RenderCommand::shader</definition>
+      <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1a40e3e87c38bd9d0d6aca469cfad4a0c2" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::weak_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1RenderPrototype" kindref="compound">helios::rendering::RenderPrototype</ref> &gt;</type>
+        <definition>std::weak_ptr&lt; const helios::rendering::RenderPrototype &gt; helios::rendering::RenderCommand::renderPrototype</definition>
         <argsstring>() const noexcept</argsstring>
-        <name>shader</name>
-        <qualifiedname>helios::rendering::RenderCommand::shader</qualifiedname>
+        <name>renderPrototype</name>
+        <qualifiedname>helios::rendering::RenderCommand::renderPrototype</qualifiedname>
         <briefdescription>
-<para>Returns a weak ptr to the shader associated with this command. Use `shader.lock()` on the return value to lock the shader into a shared ptr. If `lock()` returns a nullptr, the Shader is no longer available. </para>
+<para>Returns a weak ptr to the <ref refid="classhelios_1_1rendering_1_1RenderPrototype" kindref="compound">RenderPrototype</ref> associated with this command. Use `renderPrototype.lock()` on the return value to lock the <ref refid="classhelios_1_1rendering_1_1RenderPrototype" kindref="compound">RenderPrototype</ref> into a shared ptr. If `lock()` returns a nullptr, the <ref refid="classhelios_1_1rendering_1_1RenderPrototype" kindref="compound">RenderPrototype</ref> is no longer available. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="return"><para>A weak ptr to this command&apos;s Shader. </para>
@@ -250,33 +222,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="100" column="24"/>
-        <references refid="classhelios_1_1rendering_1_1RenderCommand_1a529b8d2ad25ab718c490b6a7c77afa88">helios::rendering::RenderCommand::shader</references>
-        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a12393226183cacaf5335beac7bffb6ab">helios::rendering::RenderCommand::materialUniformValues</referencedby>
-        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1ad4a8aa4a94a4abbd21e984ac47c60c04">helios::rendering::RenderCommand::objectUniformValues</referencedby>
-        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a26b8f9e5e6422bdda7ca626002c7d2a3">helios::rendering::RenderCommand::RenderCommand</referencedby>
-        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a529b8d2ad25ab718c490b6a7c77afa88">helios::rendering::RenderCommand::shader</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1ac09956f2f80434aebcf20bedad2859d5" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <type>std::weak_ptr&lt; const <ref refid="classhelios_1_1rendering_1_1model_1_1Mesh" kindref="compound">helios::rendering::model::Mesh</ref> &gt;</type>
-        <definition>std::weak_ptr&lt; const helios::rendering::model::Mesh &gt; helios::rendering::RenderCommand::mesh</definition>
-        <argsstring>() const noexcept</argsstring>
-        <name>mesh</name>
-        <qualifiedname>helios::rendering::RenderCommand::mesh</qualifiedname>
-        <briefdescription>
-<para>Returns a weak ptr to the mesh associated with this command. Use `mesh.lock()` on the return value to lock the mesh into a shared ptr. If `lock()` returns a nullptr, the Mesh is no longer available. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A weak ptr to this command&apos;s Mesh. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="109" column="24"/>
-        <references refid="classhelios_1_1rendering_1_1RenderCommand_1ac09956f2f80434aebcf20bedad2859d5">helios::rendering::RenderCommand::mesh</references>
-        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1ac09956f2f80434aebcf20bedad2859d5">helios::rendering::RenderCommand::mesh</referencedby>
-        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a26b8f9e5e6422bdda7ca626002c7d2a3">helios::rendering::RenderCommand::RenderCommand</referencedby>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="93" column="24"/>
+        <references refid="classhelios_1_1rendering_1_1RenderCommand_1a40e3e87c38bd9d0d6aca469cfad4a0c2">helios::rendering::RenderCommand::renderPrototype</references>
+        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a964f958022fd5794082c60552a7ad946">helios::rendering::RenderCommand::RenderCommand</referencedby>
+        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a40e3e87c38bd9d0d6aca469cfad4a0c2">helios::rendering::RenderCommand::renderPrototype</referencedby>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1ad4a8aa4a94a4abbd21e984ac47c60c04" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const <ref refid="classhelios_1_1rendering_1_1shader_1_1UniformValueMap" kindref="compound">helios::rendering::shader::UniformValueMap</ref> &amp;</type>
@@ -294,11 +243,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="116" column="59"/>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="100" column="59"/>
         <references refid="classhelios_1_1rendering_1_1RenderCommand_1ad4a8aa4a94a4abbd21e984ac47c60c04">helios::rendering::RenderCommand::objectUniformValues</references>
-        <references refid="classhelios_1_1rendering_1_1RenderCommand_1a529b8d2ad25ab718c490b6a7c77afa88">helios::rendering::RenderCommand::shader</references>
         <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1ad4a8aa4a94a4abbd21e984ac47c60c04">helios::rendering::RenderCommand::objectUniformValues</referencedby>
-        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a26b8f9e5e6422bdda7ca626002c7d2a3">helios::rendering::RenderCommand::RenderCommand</referencedby>
+        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a964f958022fd5794082c60552a7ad946">helios::rendering::RenderCommand::RenderCommand</referencedby>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1rendering_1_1RenderCommand_1a12393226183cacaf5335beac7bffb6ab" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const <ref refid="classhelios_1_1rendering_1_1shader_1_1UniformValueMap" kindref="compound">helios::rendering::shader::UniformValueMap</ref> &amp;</type>
@@ -316,18 +264,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/RenderCommand.ixx" line="123" column="59"/>
+        <location file="include/helios/rendering/RenderCommand.ixx" line="107" column="59"/>
         <references refid="classhelios_1_1rendering_1_1RenderCommand_1a12393226183cacaf5335beac7bffb6ab">helios::rendering::RenderCommand::materialUniformValues</references>
-        <references refid="classhelios_1_1rendering_1_1RenderCommand_1a529b8d2ad25ab718c490b6a7c77afa88">helios::rendering::RenderCommand::shader</references>
         <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a12393226183cacaf5335beac7bffb6ab">helios::rendering::RenderCommand::materialUniformValues</referencedby>
-        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a26b8f9e5e6422bdda7ca626002c7d2a3">helios::rendering::RenderCommand::RenderCommand</referencedby>
+        <referencedby refid="classhelios_1_1rendering_1_1RenderCommand_1a964f958022fd5794082c60552a7ad946">helios::rendering::RenderCommand::RenderCommand</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Data-transfer object describing a single render command. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/rendering/RenderCommand.ixx" line="8" column="15"/>
+    <location file="include/helios/rendering/RenderCommand.ixx" line="9" column="15"/>
   </compounddef>
 </doxygen>

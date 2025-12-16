@@ -18,9 +18,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/event/WindowEvent.ixx" line="43" column="34" bodyfile="include/helios/window/event/WindowEvent.ixx" bodystart="43" bodyend="-1"/>
-        <referencedby refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1ab820764c47c98cbadccf84316a9eb10e">helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</referencedby>
-        <referencedby refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a50baa7a32422bfb0458fa5c2c1554e65">helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</referencedby>
+        <location file="include/helios/window/event/WindowEvent.ixx" line="47" column="34" bodyfile="include/helios/window/event/WindowEvent.ixx" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a98c74267c445480534c46687d0646c7b">helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1event_1_1FrameBufferResizeEvent_1a48c03ab86ea3ba9358c6c9b95a810a8c">helios::window::event::FrameBufferResizeEvent::FrameBufferResizeEvent</referencedby>
         <referencedby refid="classhelios_1_1window_1_1event_1_1WindowEvent_1aaa39eed04b768d8daa5dc65b5e14bed8">helios::window::event::WindowEvent::WindowEvent</referencedby>
         <referencedby refid="classhelios_1_1window_1_1event_1_1WindowEvent_1ab5286107303e5071ac3d87ac9ba69202">helios::window::event::WindowEvent::WindowEvent</referencedby>
       </memberdef>
@@ -53,8 +53,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/event/WindowEvent.ixx" line="26" column="18"/>
-        <references refid="classhelios_1_1window_1_1event_1_1WindowEvent_1a8116ef9bcb82c44bbf6ee846abca9f00" compoundref="WindowEvent_8ixx" startline="43">helios::window::event::WindowEvent::sourceGuid</references>
+        <location file="include/helios/window/event/WindowEvent.ixx" line="30" column="18"/>
+        <references refid="classhelios_1_1window_1_1event_1_1WindowEvent_1a8116ef9bcb82c44bbf6ee846abca9f00" compoundref="WindowEvent_8ixx" startline="47">helios::window::event::WindowEvent::sourceGuid</references>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1window_1_1event_1_1WindowEvent_1ab5286107303e5071ac3d87ac9ba69202" prot="protected" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
@@ -95,8 +95,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/event/WindowEvent.ixx" line="35" column="18"/>
-        <references refid="classhelios_1_1window_1_1event_1_1WindowEvent_1a8116ef9bcb82c44bbf6ee846abca9f00" compoundref="WindowEvent_8ixx" startline="43">helios::window::event::WindowEvent::sourceGuid</references>
+        <location file="include/helios/window/event/WindowEvent.ixx" line="39" column="18"/>
+        <references refid="classhelios_1_1window_1_1event_1_1WindowEvent_1a8116ef9bcb82c44bbf6ee846abca9f00" compoundref="WindowEvent_8ixx" startline="47">helios::window::event::WindowEvent::sourceGuid</references>
         <references refid="classhelios_1_1event_1_1Event_1a6b7048ac1591c2decbbabbb2100e7db7">helios::event::Event::tag</references>
       </memberdef>
     </sectiondef>
@@ -104,6 +104,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/window/event/WindowEvent.ixx" line="5" column="15"/>
+    <location file="include/helios/window/event/WindowEvent.ixx" line="9" column="15"/>
   </compounddef>
 </doxygen>

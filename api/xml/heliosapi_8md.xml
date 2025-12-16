@@ -11,8 +11,6 @@
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Introduction</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Welcome<sp/>to<sp/>the<sp/>API<sp/>reference<sp/>for<sp/>the<sp/>`helios`<sp/>Framework.</highlight></codeline>
-<codeline></codeline>
 <codeline><highlight class="normal">`helios`<sp/>is<sp/>an<sp/>ongoing,<sp/>educational<sp/>project<sp/>and<sp/>strives<sp/>for<sp/>providing<sp/>a<sp/>foundational<sp/>and<sp/>modular<sp/>technical<sp/>backbone<sp/>for<sp/>game<sp/>development.<sp/>Designed<sp/>with<sp/>a<sp/>top-down,<sp/>prototype-oriented<sp/>approach,<sp/>it<sp/>emphasizes<sp/>a<sp/>clear<sp/>separation<sp/>of<sp/>concerns<sp/>and<sp/>robust<sp/>architectural<sp/>patterns<sp/>to<sp/>help<sp/>with<sp/>creating<sp/>maintainable<sp/>games.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Core<sp/>Purpose</highlight></codeline>
@@ -24,7 +22,509 @@
 <codeline><highlight class="normal">-<sp/>**Modern<sp/>C++<sp/>Practices:**<sp/>Leveraging<sp/>C++(23)<sp/>Modules<sp/>for<sp/>improved<sp/>dependency<sp/>management<sp/>and<sp/>compile-time<sp/>efficiency.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Architecture<sp/>Overview</highlight></codeline>
-<codeline><highlight class="normal">The<sp/>framework&apos;s<sp/>architecture<sp/>follows<sp/>a<sp/>component-based<sp/>philosophy,<sp/>providing<sp/>abstract<sp/>interfaces<sp/>that<sp/>decouple<sp/>high-level<sp/>scene<sp/>descriptions<sp/>from<sp/>underlying<sp/>hardware<sp/>implementations.<sp/>Further<sp/>details<sp/>on<sp/>specific<sp/>modules,<sp/>classes,<sp/>and<sp/>their<sp/>relationships<sp/>can<sp/>be<sp/>found<sp/>within<sp/>the<sp/>respective<sp/>namespace<sp/>and<sp/>class<sp/>documentation<sp/>sections.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>framework&apos;s<sp/>architecture<sp/>follows<sp/>a<sp/>component-based<sp/>philosophy,<sp/>providing<sp/>abstract<sp/>interfaces<sp/>that<sp/>decouple<sp/>high-level<sp/>scene<sp/>descriptions<sp/>from<sp/>underlying<sp/>hardware<sp/>implementations.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Core<sp/>Modules</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">helios</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>core<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Units<sp/>and<sp/>fundamental<sp/>constants</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>rendering<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Rendering<sp/>pipeline<sp/>and<sp/>render<sp/>commands</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>├──<sp/>model<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Mesh,<sp/>Material,<sp/>and<sp/>configuration</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>├──<sp/>shader<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Shader<sp/>programs<sp/>and<sp/>uniform<sp/>management</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>└──<sp/>asset<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Geometric<sp/>shapes<sp/>and<sp/>assets</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>scene<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Scene<sp/>graph,<sp/>camera,<sp/>and<sp/>culling</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>input<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Keyboard,<sp/>mouse,<sp/>and<sp/>gamepad<sp/>input</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>window<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Window<sp/>management<sp/>and<sp/>events</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>engine<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Frame<sp/>pacing<sp/>and<sp/>timing<sp/>control</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>└──<sp/>game<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Game<sp/>objects<sp/>and<sp/>command<sp/>pattern</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>math<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Vectors,<sp/>matrices,<sp/>transforms</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>util<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Logging,<sp/>file<sp/>I/O,<sp/>utilities</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>tooling<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Performance<sp/>metrics<sp/>and<sp/>profiling</highlight></codeline>
+<codeline><highlight class="normal">└──<sp/>app<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Application<sp/>lifecycle<sp/>and<sp/>event<sp/>management</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Extension<sp/>Modules</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">helios.ext</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>imgui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>ImGui<sp/>integration<sp/>for<sp/>debug<sp/>overlays</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>├──<sp/>widgets<sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Ready-to-use<sp/>debug<sp/>widgets</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>│<sp/><sp/><sp/>├──<sp/>LogWidget<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Log<sp/>console<sp/>with<sp/>filtering</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>│<sp/><sp/><sp/>├──<sp/>GamepadWidget<sp/><sp/><sp/><sp/><sp/>#<sp/>Gamepad<sp/>state<sp/>visualizer<sp/>with<sp/>settings</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>│<sp/><sp/><sp/>├──<sp/>CameraWidget<sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Camera<sp/>parameter<sp/>control</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>│<sp/><sp/><sp/>├──<sp/>FpsWidget<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Frame<sp/>rate<sp/>display</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>│<sp/><sp/><sp/>└──<sp/>MainMenuWidget<sp/><sp/><sp/><sp/>#<sp/>Application<sp/>settings<sp/>menu</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>├──<sp/>ImGuiOverlay<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Widget<sp/>manager<sp/>with<sp/>docking<sp/>support</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>├──<sp/>ImGuiLogSink<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Log<sp/>sink<sp/>for<sp/>ImGui<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>└──<sp/>backends<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Platform-specific<sp/>backends</highlight></codeline>
+<codeline><highlight class="normal">├──<sp/>glfw<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>GLFW-based<sp/>window<sp/>and<sp/>input<sp/>implementation</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>├──<sp/>window</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>├──<sp/>input</highlight></codeline>
+<codeline><highlight class="normal">│<sp/><sp/><sp/>└──<sp/>app</highlight></codeline>
+<codeline><highlight class="normal">└──<sp/>opengl<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>OpenGL<sp/>rendering<sp/>backend</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>├──<sp/>rendering</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>└──<sp/>shader</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Core<sp/>Concepts</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>1.<sp/>Scene<sp/>Graph</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>scene<sp/>graph<sp/>organizes<sp/>objects<sp/>hierarchically,<sp/>with<sp/>automatic<sp/>transform<sp/>propagation<sp/>from<sp/>parent<sp/>to<sp/>child<sp/>nodes.<sp/>Transform<sp/>inheritance<sp/>can<sp/>be<sp/>selectively<sp/>controlled<sp/>per<sp/>node.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Key<sp/>Classes:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`Scene`<sp/>-<sp/>Root<sp/>container<sp/>for<sp/>all<sp/>scene<sp/>objects</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`SceneNode`<sp/>-<sp/>Node<sp/>in<sp/>the<sp/>hierarchy<sp/>with<sp/>transform<sp/>and<sp/>optional<sp/>renderable</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`CameraSceneNode`<sp/>-<sp/>Specialized<sp/>node<sp/>for<sp/>cameras<sp/>with<sp/>view<sp/>matrix<sp/>computation</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`Camera`<sp/>-<sp/>Defines<sp/>projection<sp/>parameters<sp/>(FOV,<sp/>aspect<sp/>ratio,<sp/>near/far<sp/>planes)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`TransformType`<sp/>-<sp/>Bitmask<sp/>for<sp/>selective<sp/>transform<sp/>inheritance<sp/>(Translation,<sp/>Rotation,<sp/>Scale)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Example:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.scene.Scene;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.scene.SceneNode;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.scene.CameraSceneNode;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.math.transform;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">auto<sp/>scene<sp/>=<sp/>std::make_unique&lt;Scene&gt;(std::move(cullingStrategy));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Add<sp/>a<sp/>game<sp/>object</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>cubeNode<sp/>=<sp/>std::make_unique&lt;SceneNode&gt;(std::move(cubeRenderable));</highlight></codeline>
+<codeline><highlight class="normal">auto*<sp/>node<sp/>=<sp/>scene-&gt;addNode(std::move(cubeNode));</highlight></codeline>
+<codeline><highlight class="normal">node-&gt;setTranslation(vec3f(0.0f,<sp/>2.0f,<sp/>0.0f));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Add<sp/>a<sp/>camera<sp/>as<sp/>child<sp/>of<sp/>the<sp/>cube<sp/>(follows<sp/>cube<sp/>position)</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>camera<sp/>=<sp/>std::make_unique&lt;Camera&gt;();</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>cameraNode<sp/>=<sp/>std::make_unique&lt;CameraSceneNode&gt;(std::move(camera));</highlight></codeline>
+<codeline><highlight class="normal">auto*<sp/>camPtr<sp/>=<sp/>node-&gt;addNode(std::move(cameraNode));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Camera<sp/>inherits<sp/>only<sp/>translation<sp/>(not<sp/>rotation/scale)</highlight></codeline>
+<codeline><highlight class="normal">camPtr-&gt;setInheritance(helios::math::TransformType::Translation);</highlight></codeline>
+<codeline><highlight class="normal">camPtr-&gt;lookAt(vec3f(0.0f,<sp/>0.0f,<sp/>0.0f),<sp/>vec3f(0.0f,<sp/>1.0f,<sp/>0.0f));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>2.<sp/>Rendering<sp/>Pipeline</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>rendering<sp/>pipeline<sp/>uses<sp/>a<sp/>deferred<sp/>command<sp/>pattern<sp/>with<sp/>render<sp/>passes.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Flow:**</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Scene<sp/>→<sp/>Snapshot<sp/>→<sp/>RenderPass<sp/>→<sp/>RenderQueue<sp/>→<sp/>RenderCommand<sp/>→<sp/>GPU</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Key<sp/>Classes:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`RenderPrototype`<sp/>-<sp/>Immutable<sp/>combination<sp/>of<sp/>Mesh<sp/>+<sp/>Material</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`Renderable`<sp/>-<sp/>Instance<sp/>of<sp/>a<sp/>RenderPrototype<sp/>with<sp/>optional<sp/>overrides</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`RenderCommand`<sp/>-<sp/>Low-level<sp/>GPU<sp/>command</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`RenderQueue`<sp/>-<sp/>Collection<sp/>of<sp/>commands<sp/>for<sp/>a<sp/>pass</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`RenderPass`<sp/>-<sp/>Execution<sp/>unit<sp/>with<sp/>frame-specific<sp/>uniforms</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Example:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.rendering.RenderPrototype;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.rendering.Renderable;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Create<sp/>prototype<sp/>(shared)</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>prototype<sp/>=<sp/>std::make_shared&lt;RenderPrototype&gt;(material,<sp/>mesh);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Create<sp/>instance</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>renderable<sp/>=<sp/>std::make_shared&lt;Renderable&gt;(prototype);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Optional<sp/>per-instance<sp/>material<sp/>override</highlight></codeline>
+<codeline><highlight class="normal">renderable-&gt;materialOverride()<sp/>=<sp/>MaterialPropertiesOverride{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.baseColor<sp/>=<sp/>vec4f(1.0f,<sp/>0.0f,<sp/>0.0f,<sp/>1.0f)</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>3.<sp/>Material<sp/>System</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Materials<sp/>define<sp/>surface<sp/>appearance<sp/>with<sp/>shaders<sp/>and<sp/>properties.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Key<sp/>Classes:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`Material`<sp/>-<sp/>Shader<sp/>+<sp/>default<sp/>MaterialProperties</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`MaterialProperties`<sp/>-<sp/>Immutable<sp/>value<sp/>object<sp/>(baseColor,<sp/>roughness,<sp/>etc.)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`MaterialPropertiesOverride`<sp/>-<sp/>Per-instance<sp/>overrides</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Example:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.rendering.model.Material;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.rendering.model.config.MaterialProperties;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">auto<sp/>materialProps<sp/>=<sp/>MaterialProperties(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vec4f(1.0f,<sp/>0.0f,<sp/>1.0f,<sp/>1.0f),<sp/>//<sp/>Base<sp/>color<sp/>(magenta)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>0.5f<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Roughness</highlight></codeline>
+<codeline><highlight class="normal">);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">auto<sp/>material<sp/>=<sp/>std::make_shared&lt;Material&gt;(shader,<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::make_shared&lt;MaterialProperties&gt;(materialProps));</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>4.<sp/>Input<sp/>System</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Unified<sp/>input<sp/>handling<sp/>for<sp/>keyboard,<sp/>mouse,<sp/>and<sp/>gamepad.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Key<sp/>Classes:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`InputManager`<sp/>-<sp/>Central<sp/>input<sp/>coordinator</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`InputAdapter`<sp/>-<sp/>Platform-specific<sp/>input<sp/>implementation</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`GamepadState`<sp/>-<sp/>Current<sp/>state<sp/>of<sp/>a<sp/>gamepad</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`GamepadSettings`<sp/>-<sp/>Per-controller<sp/>configuration<sp/>(deadzone,<sp/>axis<sp/>inversion)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`DeadzoneStrategy`<sp/>-<sp/>Abstract<sp/>interface<sp/>for<sp/>input<sp/>normalization</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`RadialDeadzoneStrategy`<sp/>-<sp/>Circular<sp/>deadzone<sp/>implementation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Example:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.input.InputManager;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.input.types.Key;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.input.types.Gamepad;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">auto&amp;<sp/>inputManager<sp/>=<sp/>app-&gt;inputManager();</highlight></codeline>
+<codeline><highlight class="normal">inputManager.poll(deltaTime);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">if<sp/>(inputManager.isKeyPressed(Key::SPACE))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Handle<sp/>space<sp/>key</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">const<sp/>auto&amp;<sp/>state<sp/>=<sp/>inputManager.gamepadState(Gamepad::ONE);</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>(state.buttonA())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Handle<sp/>A<sp/>button</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Analog<sp/>sticks</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>leftStick<sp/>=<sp/>state.left();<sp/><sp/><sp/>//<sp/>vec2f</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>rightStick<sp/>=<sp/>state.right();<sp/>//<sp/>vec2f</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Gamepad<sp/>Configuration:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.input.gamepad;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Access<sp/>settings<sp/>through<sp/>InputManager</highlight></codeline>
+<codeline><highlight class="normal">auto&amp;<sp/>settings<sp/>=<sp/>inputManager.inputAdapter().gamepadSettings(Gamepad::ONE);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Configure<sp/>deadzone<sp/>(0.0<sp/>to<sp/>0.9)</highlight></codeline>
+<codeline><highlight class="normal">settings.setLeftStickDeadzone(0.15f)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.setRightStickDeadzone(0.10f);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Invert<sp/>axes<sp/>(useful<sp/>for<sp/>flight<sp/>controls)</highlight></codeline>
+<codeline><highlight class="normal">settings.setInvertLeftY(true);</highlight></codeline>
+<codeline><highlight class="normal">settings.setInvertRightY(true);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>5.<sp/>Logging<sp/>System</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Flexible<sp/>logging<sp/>with<sp/>configurable<sp/>output<sp/>destinations<sp/>(sinks).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Key<sp/>Classes:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`Logger`<sp/>-<sp/>Scoped<sp/>logger<sp/>for<sp/>categorized<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`LogManager`<sp/>-<sp/>Central<sp/>manager<sp/>for<sp/>loggers<sp/>and<sp/>sinks</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`LogSink`<sp/>-<sp/>Abstract<sp/>interface<sp/>for<sp/>output<sp/>destinations</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`ConsoleSink`<sp/>-<sp/>Outputs<sp/>to<sp/>stdout</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`ImGuiLogSink`<sp/>-<sp/>Outputs<sp/>to<sp/>ImGui<sp/>LogWidget</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Example:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.util.log;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Get<sp/>a<sp/>scoped<sp/>logger</highlight></codeline>
+<codeline><highlight class="normal">auto&amp;<sp/>logger<sp/>=<sp/>LogManager::loggerForScope(&quot;MyModule&quot;);</highlight></codeline>
+<codeline><highlight class="normal">logger.info(&quot;Application<sp/>started&quot;);</highlight></codeline>
+<codeline><highlight class="normal">logger.debug(&quot;Processing<sp/>frame&quot;);</highlight></codeline>
+<codeline><highlight class="normal">logger.warn(&quot;Resource<sp/>not<sp/>found&quot;);</highlight></codeline>
+<codeline><highlight class="normal">logger.error(&quot;Critical<sp/>failure&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Configure<sp/>sinks</highlight></codeline>
+<codeline><highlight class="normal">auto&amp;<sp/>mgr<sp/>=<sp/>LogManager::getInstance();</highlight></codeline>
+<codeline><highlight class="normal">mgr.registerSink(std::make_shared&lt;ConsoleSink&gt;());</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Enable/disable<sp/>sinks<sp/>by<sp/>type<sp/>identifier</highlight></codeline>
+<codeline><highlight class="normal">mgr.enableSink(&quot;console&quot;);</highlight></codeline>
+<codeline><highlight class="normal">mgr.disableSink(&quot;imgui&quot;);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>6.<sp/>ImGui<sp/>Debug<sp/>Overlay</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Integrated<sp/>debug<sp/>UI<sp/>with<sp/>docking<sp/>support<sp/>and<sp/>persistent<sp/>settings.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Key<sp/>Classes:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`ImGuiOverlay`<sp/>-<sp/>Widget<sp/>manager<sp/>with<sp/>DockSpace<sp/>support</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`LogWidget`<sp/>-<sp/>Scrollable<sp/>log<sp/>console<sp/>with<sp/>scope<sp/>filtering</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`GamepadWidget`<sp/>-<sp/>Real-time<sp/>gamepad<sp/>state<sp/>visualizer<sp/>with<sp/>integrated<sp/>settings<sp/>panel</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`MainMenuWidget`<sp/>-<sp/>Application<sp/>settings<sp/>(transparency,<sp/>docking,<sp/>style)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Example:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.ext.imgui.ImGuiOverlay;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.ext.imgui.ImGuiGlfwOpenGLBackend;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.ext.imgui.widgets.LogWidget;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.ext.imgui.widgets.MainMenuWidget;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.ext.imgui.ImGuiLogSink;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Setup<sp/>backend<sp/>and<sp/>overlay</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>backend<sp/>=<sp/>std::make_unique&lt;ImGuiGlfwOpenGLBackend&gt;(window);</highlight></codeline>
+<codeline><highlight class="normal">auto&amp;<sp/>overlay<sp/>=<sp/>ImGuiOverlay::forBackend(backend.get());</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Add<sp/>main<sp/>menu<sp/>with<sp/>settings<sp/>persistence<sp/>(saves<sp/>to<sp/>imgui.ini)</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>menu<sp/>=<sp/>std::make_shared&lt;MainMenuWidget&gt;();</highlight></codeline>
+<codeline><highlight class="normal">menu-&gt;setDockingCallback([&amp;overlay](bool<sp/>enabled)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>overlay.setDockSpaceEnabled(enabled);</highlight></codeline>
+<codeline><highlight class="normal">});</highlight></codeline>
+<codeline><highlight class="normal">overlay.addWidget(menu.get());</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Add<sp/>log<sp/>console<sp/>with<sp/>ImGui<sp/>sink</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>logWidget<sp/>=<sp/>std::make_shared&lt;LogWidget&gt;();</highlight></codeline>
+<codeline><highlight class="normal">overlay.addWidget(logWidget.get());</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">auto<sp/>imguiSink<sp/>=<sp/>std::make_shared&lt;ImGuiLogSink&gt;(logWidget.get());</highlight></codeline>
+<codeline><highlight class="normal">LogManager::getInstance().registerSink(imguiSink);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>In<sp/>render<sp/>loop</highlight></codeline>
+<codeline><highlight class="normal">overlay.render();</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**LogWidget<sp/>Features:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Per-scope<sp/>message<sp/>buffers<sp/>(1000<sp/>entries<sp/>each)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Filter<sp/>by<sp/>log<sp/>level<sp/>(Debug,<sp/>Info,<sp/>Warn,<sp/>Error)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Filter<sp/>by<sp/>scope<sp/>via<sp/>dropdown</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Text<sp/>search<sp/>filter</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Auto-scroll<sp/>with<sp/>pause<sp/>on<sp/>manual<sp/>scroll</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Dockable<sp/>to<sp/>window<sp/>edges</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**MainMenuWidget<sp/>Features:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Window<sp/>transparency<sp/>control<sp/>(slider<sp/>+<sp/>presets)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Docking<sp/>toggle</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Style<sp/>themes<sp/>(Dark,<sp/>Light,<sp/>Classic)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Style<sp/>Editor<sp/>access</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Settings<sp/>persistence<sp/>via<sp/>imgui.ini</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>8.<sp/>Game<sp/>System</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>lightweight<sp/>framework<sp/>for<sp/>game<sp/>object<sp/>management<sp/>and<sp/>input<sp/>handling.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Key<sp/>Classes:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`GameObject`<sp/>-<sp/>Base<sp/>class<sp/>for<sp/>game<sp/>entities<sp/>with<sp/>GUID<sp/>identification</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`GameWorld`<sp/>-<sp/>Container<sp/>for<sp/>game<sp/>objects<sp/>with<sp/>update<sp/>loop</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`CommandBuffer`<sp/>-<sp/>Deferred<sp/>command<sp/>execution<sp/>pattern</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`InputSnapshot`<sp/>-<sp/>Captures<sp/>input<sp/>state<sp/>for<sp/>a<sp/>single<sp/>frame</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`InputHandler`<sp/>-<sp/>Interface<sp/>for<sp/>translating<sp/>input<sp/>to<sp/>commands</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Example:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.engine.game.GameWorld;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.engine.game.GameObject;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.engine.game.CommandBuffer;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.engine.game.InputSnapshot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Create<sp/>game<sp/>world</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>gameWorld<sp/>=<sp/>GameWorld{};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Add<sp/>game<sp/>objects</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>spaceship<sp/>=<sp/>std::make_unique&lt;Spaceship&gt;(sceneNode);</highlight></codeline>
+<codeline><highlight class="normal">auto*<sp/>spaceshipPtr<sp/>=<sp/>gameWorld.addGameObject(std::move(spaceship));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Set<sp/>size<sp/>using<sp/>engine<sp/>units<sp/>(1<sp/>hu<sp/>=<sp/>1<sp/>meter)</highlight></codeline>
+<codeline><highlight class="normal">spaceshipPtr-&gt;setSize(5.0f,<sp/>5.0f,<sp/>0.0f,<sp/>helios::core::units::Unit::Meter);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Game<sp/>loop</highlight></codeline>
+<codeline><highlight class="normal">auto<sp/>commandBuffer<sp/>=<sp/>CommandBuffer{};</highlight></codeline>
+<codeline><highlight class="normal">while<sp/>(running)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Capture<sp/>input</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>snapshot<sp/>=<sp/>InputSnapshot(gamepadState);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Translate<sp/>input<sp/>to<sp/>commands</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>inputHandler.handleInput(snapshot,<sp/>spaceshipPtr-&gt;guid(),<sp/>commandBuffer);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Execute<sp/>commands</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>commandBuffer.flush(gameWorld);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Update<sp/>all<sp/>game<sp/>objects</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gameWorld.update(deltaTime);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>9.<sp/>Units<sp/>System</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Standardized<sp/>measurement<sp/>units<sp/>for<sp/>consistent<sp/>object<sp/>sizing<sp/>across<sp/>the<sp/>engine.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Key<sp/>Constants:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Standard<sp/>unit:<sp/>**Meter**<sp/>(1<sp/>hu<sp/>=<sp/>1<sp/>m)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Time<sp/>standard:<sp/>**Seconds**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Example:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.core.units;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">using<sp/>namespace<sp/>helios::core::units;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Set<sp/>object<sp/>size<sp/>in<sp/>meters<sp/>(1<sp/>hu<sp/>=<sp/>1<sp/>meter)</highlight></codeline>
+<codeline><highlight class="normal">gameObject-&gt;setSize(2.0f,<sp/>1.0f,<sp/>0.5f,<sp/>Unit::Meter);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>A<sp/>spaceship<sp/>5<sp/>meters<sp/>wide</highlight></codeline>
+<codeline><highlight class="normal">constexpr<sp/>float<sp/>SHIP_WIDTH<sp/>=<sp/>5.0f;<sp/><sp/>//<sp/>5<sp/>hu<sp/>=<sp/>5<sp/>meters</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>7.<sp/>Frame<sp/>Pacing<sp/>and<sp/>Performance<sp/>Metrics</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Control<sp/>frame<sp/>rate<sp/>and<sp/>monitor<sp/>performance<sp/>with<sp/>built-in<sp/>timing<sp/>tools.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Key<sp/>Classes:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`FramePacer`<sp/>-<sp/>Maintains<sp/>consistent<sp/>frame<sp/>rate<sp/>through<sp/>precise<sp/>timing</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`FrameStats`<sp/>-<sp/>Timing<sp/>statistics<sp/>for<sp/>a<sp/>single<sp/>frame</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`FpsMetrics`<sp/>-<sp/>Aggregates<sp/>frame<sp/>data<sp/>for<sp/>performance<sp/>analysis</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Example:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.engine.FramePacer;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.tooling.FpsMetrics;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Setup<sp/>frame<sp/>pacing</highlight></codeline>
+<codeline><highlight class="normal">FramePacer<sp/>pacer;</highlight></codeline>
+<codeline><highlight class="normal">pacer.setTargetFps(60.0f);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Setup<sp/>metrics<sp/>tracking</highlight></codeline>
+<codeline><highlight class="normal">FpsMetrics<sp/>metrics;</highlight></codeline>
+<codeline><highlight class="normal">metrics.setHistorySize(120);<sp/>//<sp/>2<sp/>seconds<sp/>at<sp/>60<sp/>FPS</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Main<sp/>loop</highlight></codeline>
+<codeline><highlight class="normal">while<sp/>(!window-&gt;shouldClose())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pacer.beginFrame();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Game<sp/>logic<sp/>and<sp/>rendering</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>stats<sp/>=<sp/>pacer.sync();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>metrics.addFrame(stats);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Display<sp/>metrics</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>float<sp/>currentFps<sp/>=<sp/>metrics.getFps();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>float<sp/>avgFrameTime<sp/>=<sp/>metrics.getFrameTimeMs();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Frame<sp/>Statistics:**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`totalFrameTime`<sp/>-<sp/>Complete<sp/>frame<sp/>duration<sp/>(work<sp/>+<sp/>wait)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`workTime`<sp/>-<sp/>Actual<sp/>CPU<sp/>processing<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`waitTime`<sp/>-<sp/>Time<sp/>spent<sp/>sleeping<sp/>to<sp/>maintain<sp/>target<sp/>FPS</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Performance<sp/>Monitoring:**</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Get<sp/>detailed<sp/>metrics</highlight></codeline>
+<codeline><highlight class="normal">float<sp/>fps<sp/>=<sp/>metrics.getFps();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Average<sp/>FPS</highlight></codeline>
+<codeline><highlight class="normal">float<sp/>frameTime<sp/>=<sp/>metrics.getFrameTimeMs();<sp/>//<sp/>Average<sp/>frame<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">float<sp/>workTime<sp/>=<sp/>metrics.getWorkTimeMs();<sp/><sp/><sp/>//<sp/>Last<sp/>frame<sp/>work<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">float<sp/>idleTime<sp/>=<sp/>metrics.getIdleTimeMs();<sp/><sp/><sp/>//<sp/>Last<sp/>frame<sp/>idle<sp/>time</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Access<sp/>history<sp/>for<sp/>graphs</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>auto&amp;<sp/>history<sp/>=<sp/>metrics.getHistory();</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Quick<sp/>Start</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Creating<sp/>a<sp/>Simple<sp/>Application</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.ext.glfw.app.GLFWFactory;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.scene.Scene;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.scene.CameraSceneNode;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>helios.rendering.Viewport;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>1.<sp/>Create<sp/>application</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>app<sp/>=<sp/>GLFWFactory::makeOpenGLApp(&quot;My<sp/>helios<sp/>App&quot;,<sp/>1920,<sp/>1080);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto*<sp/>window<sp/>=<sp/>app-&gt;current();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>2.<sp/>Setup<sp/>viewport</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>viewport<sp/>=<sp/>std::make_shared&lt;Viewport&gt;(0.0f,<sp/>0.0f,<sp/>1.0f,<sp/>1.0f);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;addViewport(viewport);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>3.<sp/>Create<sp/>scene</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>scene<sp/>=<sp/>std::make_unique&lt;Scene&gt;(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::make_unique&lt;CullNoneStrategy&gt;()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>4.<sp/>Add<sp/>camera<sp/>to<sp/>scene<sp/>graph</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>camera<sp/>=<sp/>std::make_unique&lt;Camera&gt;();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>camera-&gt;setPerspective(radians(90.0f),<sp/>16.0f/9.0f,<sp/>0.1f,<sp/>1000.0f);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>cameraNode<sp/>=<sp/>std::make_unique&lt;CameraSceneNode&gt;(std::move(camera));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto*<sp/>camPtr<sp/>=<sp/>scene-&gt;addNode(std::move(cameraNode));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>camPtr-&gt;setTranslation(vec3f(0.0f,<sp/>0.0f,<sp/>5.0f));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>camPtr-&gt;lookAt(vec3f(0.0f,<sp/>0.0f,<sp/>0.0f),<sp/>vec3f(0.0f,<sp/>1.0f,<sp/>0.0f));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Connect<sp/>viewport<sp/>to<sp/>camera</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>viewport-&gt;setCameraSceneNode(camPtr);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>5.<sp/>Create<sp/>and<sp/>add<sp/>renderable</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>prototype<sp/>=<sp/>std::make_shared&lt;RenderPrototype&gt;(material,<sp/>mesh);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>renderable<sp/>=<sp/>std::make_shared&lt;Renderable&gt;(prototype);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>node<sp/>=<sp/>std::make_unique&lt;SceneNode&gt;(std::move(renderable));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>scene-&gt;addNode(std::move(node));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>6.<sp/>Main<sp/>loop</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>while<sp/>(!window-&gt;shouldClose())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>app-&gt;eventManager().dispatchAll();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>snapshot<sp/>=<sp/>scene-&gt;createSnapshot(viewport);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(snapshot.has_value())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>renderPass<sp/>=<sp/>RenderPassFactory::getInstance()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.buildRenderPass(*snapshot);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>app-&gt;renderingDevice().render(renderPass);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window-&gt;swapBuffers();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Module<sp/>Details</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>detailed<sp/>information<sp/>about<sp/>each<sp/>module,<sp/>see:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**[Core](../include/helios/core/README.md)**<sp/>-<sp/>Units<sp/>and<sp/>fundamental<sp/>constants</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Rendering](../include/helios/rendering/README.md)**<sp/>-<sp/>Rendering<sp/>system<sp/>and<sp/>pipeline</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Scene](../include/helios/scene/README.md)**<sp/>-<sp/>Scene<sp/>graph<sp/>and<sp/>camera</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Game](../include/helios/engine/game/README.md)**<sp/>-<sp/>Game<sp/>objects<sp/>and<sp/>command<sp/>pattern</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Input](../include/helios/input/README.md)**<sp/>-<sp/>Input<sp/>handling</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Engine](../include/helios/engine/README.md)**<sp/>-<sp/>Frame<sp/>pacing<sp/>and<sp/>timing<sp/>control</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Tooling](../include/helios/tooling/README.md)**<sp/>-<sp/>Performance<sp/>metrics<sp/>and<sp/>profiling</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Math](../include/helios/math/README.md)**<sp/>-<sp/>Mathematical<sp/>operations</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Window](../include/helios/window/README.md)**<sp/>-<sp/>Window<sp/>management</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Utilities](../include/helios/util/README.md)**<sp/>-<sp/>Logging,<sp/>file<sp/>I/O</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[ImGui<sp/>Extension](../include/ext/imgui/README.md)**<sp/>-<sp/>Debug<sp/>overlay<sp/>and<sp/>widgets</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Advanced<sp/>Topics</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Custom<sp/>Rendering<sp/>Backend</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>implement<sp/>a<sp/>custom<sp/>rendering<sp/>backend:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Implement<sp/>`RenderingDevice`<sp/>interface</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Extend<sp/>`Mesh`<sp/>for<sp/>your<sp/>platform<sp/>(e.g.,<sp/>`VulkanMesh`)</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Extend<sp/>`Shader`<sp/>for<sp/>your<sp/>platform<sp/>(e.g.,<sp/>`VulkanShader`)</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Create<sp/>a<sp/>factory<sp/>(e.g.,<sp/>`VulkanFactory`)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Custom<sp/>Input<sp/>Adapter</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>implement<sp/>a<sp/>custom<sp/>input<sp/>adapter:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Implement<sp/>`InputAdapter`<sp/>interface</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Map<sp/>platform-specific<sp/>events<sp/>to<sp/>helios<sp/>types</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Update<sp/>`GamepadState`<sp/>on<sp/>polling</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>API<sp/>Documentation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>detailed<sp/>class-by-class<sp/>documentation,<sp/>see<sp/>the<sp/>[Doxygen-generated<sp/>API<sp/>reference](https://helios.garagecraft.games/docs/helios/).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Examples</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Check<sp/>the<sp/>[examples/](../examples/)<sp/>directory<sp/>for<sp/>complete<sp/>working<sp/>examples:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**[Simple<sp/>Cube<sp/>Rendering](../examples/simple_cube_rendering/README.md)**<sp/>-<sp/>Basic<sp/>rendering<sp/>tutorial</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Game<sp/>Controller<sp/>Input](../examples/game_controller_input/README.md)**<sp/>-<sp/>Gamepad<sp/>input<sp/>handling</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Spaceship<sp/>Control](../examples/spaceship_control/README.md)**<sp/>-<sp/>Complete<sp/>game<sp/>loop<sp/>with<sp/>input,<sp/>logging,<sp/>and<sp/>ImGui<sp/>overlay</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>License</highlight></codeline>
 <codeline></codeline>

@@ -1,0 +1,33 @@
+<map id="include/helios/util/log/_module.ixx" name="include/helios/util/log/_module.ixx">
+<area shape="rect" id="Node000001" title="Module exports for logging." alt="" coords="559,5,696,45"/>
+<area shape="rect" id="Node000002" href="$LogManager_8ixx.html" title="Central manager for scoped loggers with configurable sinks." alt="" coords="237,93,431,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="559,48,391,92,389,87,558,42"/>
+<area shape="rect" id="Node000009" href="$Logger_8ixx.html" title="Simple synchronous logger with configurable output sinks." alt="" coords="423,167,581,192"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="614,48,522,158,518,154,609,44"/>
+<area shape="rect" id="Node000010" href="$LogSink_8ixx.html" title="Abstract interface for log output destinations." alt="" coords="539,240,705,265"/>
+<area shape="poly" id="edge20_Node000001_Node000010" title=" " alt="" coords="630,45,625,226,620,226,624,45"/>
+<area shape="rect" id="Node000011" href="$ConsoleSink_8ixx.html" title="Log sink that writes to stdout." alt="" coords="707,167,902,192"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="651,43,782,155,779,159,648,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="533,313,591,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="237,114,170,121,103,131,46,147,26,157,12,168,8,179,12,191,25,217,39,235,57,249,83,263,119,276,168,287,291,304,418,315,519,320,518,326,417,320,290,309,167,292,118,281,81,268,54,254,35,239,21,220,8,193,3,179,8,165,23,153,45,142,102,126,169,116,236,109"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="33,167,157,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="296,121,148,165,146,160,295,116"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="182,167,297,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="320,121,267,160,264,156,317,117"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="94,240,171,265"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="237,115,173,122,109,132,55,148,36,157,23,168,17,178,17,187,29,204,53,220,83,233,81,238,51,225,25,208,12,188,12,177,19,165,33,153,53,143,108,127,172,117,236,110"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="305,240,369,265"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="337,119,339,226,334,226,332,119"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="396,240,459,265"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="344,118,415,227,410,230,339,121"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="362,116,463,159,461,164,360,121"/>
+<area shape="poly" id="edge15_Node000002_Node000010" title=" " alt="" coords="425,116,524,135,566,149,594,165,606,178,614,194,622,225,617,227,609,196,601,181,591,169,564,154,523,141,424,121"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="507,192,516,225,530,264,549,301,545,303,525,266,511,227,502,193"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="443,195,185,244,184,239,442,189"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="476,194,377,237,375,232,474,190"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="492,194,451,232,448,229,488,190"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="523,190,592,230,589,235,520,194"/>
+<area shape="poly" id="edge14_Node000010_Node000003" title=" " alt="" coords="614,267,583,305,578,301,610,264"/>
+<area shape="poly" id="edge18_Node000011_Node000003" title=" " alt="" coords="797,194,765,229,718,268,661,297,605,316,604,311,659,292,715,263,761,226,794,190"/>
+<area shape="poly" id="edge19_Node000011_Node000010" title=" " alt="" coords="776,195,666,237,664,232,774,190"/>
+</map>

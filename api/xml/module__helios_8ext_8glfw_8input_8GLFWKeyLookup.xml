@@ -33,14 +33,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/ext/glfw/input/GLFWKeyLookup.ixx" line="19" column="16" bodyfile="include/ext/glfw/input/GLFWKeyLookup.ixx" bodystart="19" bodyend="30"/>
-        <references refid="namespacehelios_1_1input_1_1types_1a963e220296531c047308439c3425bcc5aec4d00988f117bae026eab04ddfa7f33" compoundref="Key_8ixx" startline="20">helios::input::types::ESC</references>
+        <location file="include/ext/glfw/input/GLFWKeyLookup.ixx" line="23" column="16" bodyfile="include/ext/glfw/input/GLFWKeyLookup.ixx" bodystart="23" bodyend="34"/>
+        <references refid="namespacehelios_1_1input_1_1types_1a963e220296531c047308439c3425bcc5aec4d00988f117bae026eab04ddfa7f33" compoundref="Key_8ixx" startline="21">helios::input::types::ESC</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/ext/glfw/input/GLFWKeyLookup.ixx" line="6" column="15"/>
+    <location file="include/ext/glfw/input/GLFWKeyLookup.ixx" line="10" column="15"/>
   </compounddef>
 </doxygen>

@@ -106,17 +106,26 @@ $(function() {
   <div class="headertitle"><div class="title">InputAdapter.ixx File Reference<div class="ingroups">module <a class="el" href="module__helios_8input_8InputAdapter.html">helios.input.InputAdapter</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>import <a class="el" href="Key_8ixx_source.html">helios.input.types.Key</a>;</code><br />
-<code>import <a class="el" href="LogManager_8ixx_source.html">helios.util.log.LogManager</a>;</code><br />
-<code>import <a class="el" href="Window_8ixx_source.html">helios.window.Window</a>;</code><br />
-<code>import <a class="el" href="GamepadState_8ixx_source.html">helios.input.GamepadState</a>;</code><br />
+
+<p>Abstract interface for platform-specific input adapters.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;bit&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>import <a class="el" href="Logger_8ixx_source.html">helios.util.log.Logger</a>;</code><br />
+<code>import <a class="el" href="Key_8ixx_source.html">helios.input.types.Key</a>;</code><br />
+<code>import <a class="el" href="DeadzoneStrategy_8ixx_source.html">helios.input.gamepad.DeadzoneStrategy</a>;</code><br />
+<code>import <a class="el" href="GamepadSettings_8ixx_source.html">helios.input.gamepad.GamepadSettings</a>;</code><br />
+<code>import <a class="el" href="LogManager_8ixx_source.html">helios.util.log.LogManager</a>;</code><br />
+<code>import <a class="el" href="GamepadState_8ixx_source.html">helios.input.gamepad.GamepadState</a>;</code><br />
+<code>import <a class="el" href="Window_8ixx_source.html">helios.window.Window</a>;</code><br />
 <code>import <a class="el" href="Gamepad_8ixx_source.html">helios.input.types.Gamepad</a>;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for InputAdapter.ixx:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="InputAdapter_8ixx__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="InputAdapter_8ixx__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="InputAdapter_8ixx_source.html">Go to the source code of this file.</a></p>
@@ -136,7 +145,11 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:acbc04f24078582c7d42b2085be5d5750" id="r_acbc04f24078582c7d42b2085be5d5750"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbc04f24078582c7d42b2085be5d5750">HELIOS_LOG_SCOPE</a>&#160;&#160;&#160;&quot;helios::input::InputAdapter&quot;</td></tr>
 </table>
-<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Abstract interface for platform-specific input adapters. </p>
+
+<p class="definition">Definition in file <a class="el" href="InputAdapter_8ixx_source.html">InputAdapter.ixx</a>.</p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="acbc04f24078582c7d42b2085be5d5750" name="acbc04f24078582c7d42b2085be5d5750"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbc04f24078582c7d42b2085be5d5750">&#9670;&#160;</a></span>HELIOS_LOG_SCOPE</h2>
 
@@ -149,7 +162,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="InputAdapter_8ixx_source.html#l00016">16</a> of file <a class="el" href="InputAdapter_8ixx_source.html">InputAdapter.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InputAdapter_8ixx_source.html#l00023">23</a> of file <a class="el" href="InputAdapter_8ixx_source.html">InputAdapter.ixx</a>.</p>
 
 </div>
 </div>

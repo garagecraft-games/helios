@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/event/DequeEventQueue.ixx" line="29" column="20" bodyfile="include/helios/event/DequeEventQueue.ixx" bodystart="29" bodyend="-1"/>
+        <location file="include/helios/event/DequeEventQueue.ixx" line="33" column="20" bodyfile="include/helios/event/DequeEventQueue.ixx" bodystart="33" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/event/DequeEventQueue.ixx" line="40" column="20"/>
+        <location file="include/helios/event/DequeEventQueue.ixx" line="44" column="20"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1event_1_1DequeEventQueue_1a3fe351df50c4bb50d575471cc0bc195b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="classhelios_1_1event_1_1EventQueue" kindref="compound">EventQueue</ref> &amp;</type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/event/DequeEventQueue.ixx" line="52" column="20"/>
+        <location file="include/helios/event/DequeEventQueue.ixx" line="56" column="20"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1event_1_1DequeEventQueue_1a594ade70466608e86045c4b1679772fc" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="virtual">
         <type>bool</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/event/DequeEventQueue.ixx" line="63" column="15"/>
+        <location file="include/helios/event/DequeEventQueue.ixx" line="67" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1event_1_1DequeEventQueue_1a400f3c1111c28d503e64464922147505" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::unique_ptr&lt; const <ref refid="classhelios_1_1event_1_1Event" kindref="compound">Event</ref> &gt;</type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/event/DequeEventQueue.ixx" line="72" column="25"/>
+        <location file="include/helios/event/DequeEventQueue.ixx" line="76" column="25"/>
         <references refid="classhelios_1_1event_1_1DequeEventQueue_1a400f3c1111c28d503e64464922147505">helios::event::DequeEventQueue::next</references>
         <referencedby refid="classhelios_1_1event_1_1DequeEventQueue_1a400f3c1111c28d503e64464922147505">helios::event::DequeEventQueue::next</referencedby>
       </memberdef>
@@ -143,6 +143,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/event/DequeEventQueue.ixx" line="7" column="15"/>
+    <location file="include/helios/event/DequeEventQueue.ixx" line="11" column="15"/>
   </compounddef>
 </doxygen>

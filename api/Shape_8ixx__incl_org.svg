@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Interface for simple geometric shapes used for testing and debugging.">
 <polygon fill="#999999" stroke="#666666" points="229,-153.17 95,-153.17 95,-123.17 229,-123.17 229,-153.17"/>
 <text text-anchor="start" x="103" y="-141.17" font-family="Helvetica,sans-Serif" font-size="10.00">include/helios/rendering</text>
 <text text-anchor="middle" x="162" y="-130.17" font-family="Helvetica,sans-Serif" font-size="10.00">/asset/shape/Shape.ixx</text>
@@ -57,7 +57,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="PrimitiveType_8ixx.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="PrimitiveType_8ixx.html" target="_top" xlink:title="Enum of primitive types for mesh rendering.">
 <polygon fill="white" stroke="#666666" points="306,-87.17 142,-87.17 142,-57.17 306,-57.17 306,-87.17"/>
 <text text-anchor="start" x="150" y="-75.17" font-family="Helvetica,sans-Serif" font-size="10.00">helios.rendering.model.config.</text>
 <text text-anchor="middle" x="224" y="-64.17" font-family="Helvetica,sans-Serif" font-size="10.00">PrimitiveType</text>
@@ -76,7 +76,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="Vertex_8ixx.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="Vertex_8ixx.html" target="_top" xlink:title="Vertex description and utilities for rendering.">
 <polygon fill="white" stroke="#666666" points="454,-81.67 324,-81.67 324,-62.67 454,-62.67 454,-81.67"/>
 <text text-anchor="middle" x="389" y="-69.67" font-family="Helvetica,sans-Serif" font-size="10.00">helios.rendering.Vertex</text>
 </a>
@@ -94,7 +94,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="math_2types_2__module_8ixx.html" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="helios_2math_2types_2__module_8ixx.html" target="_top" xlink:title="Module exports for vector and matrix type definitions.">
 <polygon fill="white" stroke="#666666" points="441,-21.17 337,-21.17 337,-2.17 441,-2.17 441,-21.17"/>
 <text text-anchor="middle" x="389" y="-9.17" font-family="Helvetica,sans-Serif" font-size="10.00">helios.math.types</text>
 </a>
