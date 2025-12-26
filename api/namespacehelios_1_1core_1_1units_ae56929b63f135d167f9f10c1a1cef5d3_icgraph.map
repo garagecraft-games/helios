@@ -1,5 +1,9 @@
 <map id="helios::core::units::fromS" name="helios::core::units::fromS">
-<area shape="rect" id="Node000001" title="Converts seconds to seconds (identity helper)." alt="" coords="191,5,328,45"/>
-<area shape="rect" id="Node000002" href="$namespacehelios_1_1core_1_1units.html#a9c75f83e0476f8560ef6b20129582381" title="Converts a value from a given unit to helios units." alt="" coords="5,5,143,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,28,143,28,143,23,177,23"/>
+<area shape="rect" id="Node000001" title="Converts seconds to seconds (identity helper)." alt="" coords="473,41,611,81"/>
+<area shape="rect" id="Node000002" href="$namespacehelios_1_1core_1_1units.html#a9c75f83e0476f8560ef6b20129582381" title="Converts a value from a given unit to helios units." alt="" coords="288,41,425,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="460,64,426,64,426,59,460,59"/>
+<area shape="rect" id="Node000003" href="$classhelios_1_1engine_1_1game_1_1Level.html#a884afabf62c77c8daa874bae386a0a42" title="Sets the spatial boundaries of the level." alt="" coords="43,5,202,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="274,51,202,40,203,35,275,46"/>
+<area shape="rect" id="Node000004" href="$classhelios_1_1engine_1_1game_1_1systems_1_1physics_1_1ScaleSystem.html#a4edab0f66d98332c9142a13881aa6639" title="Updates scale for all entities with dirty ScaleComponents." alt="" coords="5,70,240,125"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="275,77,241,82,240,77,274,71"/>
 </map>

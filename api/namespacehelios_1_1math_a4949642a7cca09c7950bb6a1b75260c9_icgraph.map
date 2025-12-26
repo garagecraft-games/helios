@@ -1,9 +1,11 @@
 <map id="helios::math::radians" name="helios::math::radians">
-<area shape="rect" id="Node000001" title="Converts an angle from degrees to radians." alt="" coords="280,63,439,88"/>
-<area shape="rect" id="Node000002" href="$namespacehelios_1_1math.html#a73c58ac1ac41973b9927ab6893662104" title="Converts an angle from radians to degrees." alt="" coords="37,5,200,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,62,231,46,177,33,178,28,233,41,297,57"/>
-<area shape="rect" id="Node000003" href="$classhelios_1_1ext_1_1imgui_1_1widgets_1_1CameraWidget.html#a07fc0fbbf52e97d447e2f3177980dd00" title="Renders the widget using ImGui immediate&#45;mode API." alt="" coords="5,55,232,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,78,232,78,232,73,266,73"/>
-<area shape="rect" id="Node000004" href="$namespacehelios_1_1math.html#a643691235959c2f53d144a4ee9a0e251" title="Creates an affine rotation matrix R&#39; = M * R by &quot;baking&quot; the rotation part into the model matrix...." alt="" coords="43,120,194,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="297,94,233,110,178,123,177,117,231,105,295,89"/>
+<area shape="rect" id="Node000001" title="Converts an angle from degrees to radians." alt="" coords="532,77,691,103"/>
+<area shape="rect" id="Node000002" href="$namespacehelios_1_1math.html#a73c58ac1ac41973b9927ab6893662104" title="Converts an angle from radians to degrees." alt="" coords="289,20,452,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="547,77,483,61,429,48,430,43,485,55,549,71"/>
+<area shape="rect" id="Node000004" href="$classhelios_1_1ext_1_1imgui_1_1widgets_1_1CameraWidget.html#a07fc0fbbf52e97d447e2f3177980dd00" title="Renders the widget using ImGui immediate&#45;mode API." alt="" coords="257,70,484,110"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="518,93,484,93,484,87,518,87"/>
+<area shape="rect" id="Node000005" href="$namespacehelios_1_1math.html#a643691235959c2f53d144a4ee9a0e251" title="Creates an affine rotation matrix R&#39; = M * R by &quot;baking&quot; the rotation part into the model matrix...." alt="" coords="295,135,446,160"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="549,109,485,125,430,137,429,132,483,119,547,103"/>
+<area shape="rect" id="Node000003" href="$classhelios_1_1engine_1_1game_1_1components_1_1physics_1_1Move2DComponent.html#aca8a4ccdd4bdedc05bb52c2b931cfc7a" title="Sets the movement direction and throttle." alt="" coords="5,5,209,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,35,209,35,209,30,275,30"/>
 </map>
