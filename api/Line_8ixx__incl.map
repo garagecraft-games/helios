@@ -1,19 +1,19 @@
-<map id="include/helios/rendering/asset/shape/basic/Line.ixx" name="include/helios/rendering/asset/shape/basic/Line.ixx">
-<area shape="rect" id="Node000001" title="Basic line shape for rendering." alt="" coords="153,5,350,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,189,68,214"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,48,63,182,60,178,226,43"/>
-<area shape="rect" id="Node000003" href="$Vertex_8ixx.html" title="Vertex description and utilities for rendering." alt="" coords="93,189,266,214"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,47,221,69,207,94,193,136,185,175,180,174,188,135,202,92,217,66,233,44"/>
-<area shape="rect" id="Node000005" href="$PrimitiveType_8ixx.html" title="Enum of primitive types for mesh rendering." alt="" coords="391,181,610,221"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="348,43,398,62,444,91,460,108,474,128,493,167,488,169,469,131,456,112,440,95,396,67,346,48"/>
-<area shape="rect" id="Node000006" href="$Shape_8ixx.html" title="Interface for simple geometric shapes used for testing and debugging." alt="" coords="217,93,430,133"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="269,44,301,81,297,85,265,47"/>
-<area shape="rect" id="Node000004" href="$helios_2math_2types_2__module_8ixx.html" title="Module exports for vector and matrix type definitions." alt="" coords="110,269,249,295"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,214,182,255,177,255,177,214"/>
-<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="214,267,254,266,269,271,275,282,271,291,260,297,227,299,227,294,258,292,267,288,270,282,266,275,254,271,214,272"/>
-<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="246,136,166,157,82,184,76,186,74,181,80,179,164,152,244,131"/>
-<area shape="poly" id="edge10_Node000006_Node000003" title=" " alt="" coords="293,136,211,184,209,179,290,131"/>
-<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="363,131,451,173,448,178,361,136"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="290,189,367,214"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="327,133,330,175,324,175,322,134"/>
+<map id="Line.ixx" name="Line.ixx">
+<area shape="rect" id="Node000001" title="Basic line shape for rendering." alt="" coords="257,5,331,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,167,68,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,33,68,162,65,157,274,28"/>
+<area shape="rect" id="Node000003" href="$PrimitiveType_8ixx.html" title="Enum of primitive types for mesh rendering." alt="" coords="92,167,352,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="284,33,266,54,250,80,236,118,228,154,223,153,231,116,245,77,262,51,280,29"/>
+<area shape="rect" id="Node000004" href="$Vertex_8ixx.html" title="Vertex description and utilities for rendering." alt="" coords="477,167,650,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="332,22,406,39,448,55,486,76,507,94,525,114,553,153,548,156,521,117,503,98,483,81,445,60,404,44,330,27"/>
+<area shape="rect" id="Node000006" href="$Shape_8ixx.html" title="Interface for simple geometric shapes used for testing and debugging." alt="" coords="259,79,473,119"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="307,29,341,67,337,70,303,33"/>
+<area shape="rect" id="Node000005" href="$helios_2math_2types_2__module_8ixx.html" title="Module exports for vector and matrix type definitions." alt="" coords="494,240,633,265"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="566,192,566,226,561,226,561,192"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="607,237,642,238,654,244,659,253,656,260,647,265,621,269,620,264,645,260,652,257,654,253,651,248,641,244,607,243"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="283,121,82,169,81,164,282,116"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="333,121,256,162,254,158,330,116"/>
+<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="414,116,522,159,520,164,412,121"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="375,167,453,192"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="380,117,402,153,397,156,375,120"/>
 </map>

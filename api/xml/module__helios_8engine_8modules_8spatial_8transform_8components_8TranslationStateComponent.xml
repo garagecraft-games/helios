@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8engine_8modules_8spatial_8transform_8components_8TranslationStateComponent" kind="module">
+    <compoundname>helios.engine.modules.spatial.transform.components.TranslationStateComponent</compoundname>
+    <innerfile refid="TranslationStateComponent_8ixx">TranslationStateComponent.ixx</innerfile>
+    <innerclass refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent" prot="public">helios::engine::modules::spatial::transform::components::TranslationStateComponent</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1aee87dd9a4a4848e22b997d8ebaa1b6e9" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+        <definition>helios::math::vec3f helios::engine::modules::spatial::transform::components::TranslationStateComponent::translation_</definition>
+        <argsstring></argsstring>
+        <name>translation_</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::translation_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>The current translation vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="30" column="29" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a0b36816e9012f47362d5a0ec5e9e4f2d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::spatial::transform::components::TranslationStateComponent::isEnabled_</definition>
+        <argsstring></argsstring>
+        <name>isEnabled_</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::isEnabled_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="35" column="14" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a8083a32a52a30c1f0e0299bba85ca4f9" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::spatial::transform::components::TranslationStateComponent::isEnabled</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::isEnabled</qualifiedname>
+        <briefdescription>
+<para>Checks whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if enabled, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="44" column="15" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a166347db1242889b6eb65709e4a76287" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::spatial::transform::components::TranslationStateComponent::enable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>enable</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::enable</qualifiedname>
+        <briefdescription>
+<para>Enables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="51" column="14" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a666e8943402d22d24aff420c52ce6057" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::spatial::transform::components::TranslationStateComponent::disable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>disable</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::disable</qualifiedname>
+        <briefdescription>
+<para>Disables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="58" column="14" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1ab0933f607f793c60d66162160afab026" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</definition>
+        <argsstring>()=default</argsstring>
+        <name>TranslationStateComponent</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="65" column="9"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a5289d60d43a4931a587707918da15e69">helios::engine::modules::spatial::transform::components::TranslationStateComponent::operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a5ac1343f17dd8a4d392b476ec3b511fe">helios::engine::modules::spatial::transform::components::TranslationStateComponent::operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a04c362d88ccfd57bfe298f99826dadd4" compoundref="TranslationStateComponent_8ixx" startline="96" endline="97">helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1ad01f024d5f84e94dd223f36c4d5b2a6c" compoundref="TranslationStateComponent_8ixx" startline="72" endline="74">helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1aabdd6849aa51267d2b2eab3c8f9bd52e">helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1ad01f024d5f84e94dd223f36c4d5b2a6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</definition>
+        <argsstring>(const TranslationStateComponent &amp;other)</argsstring>
+        <name>TranslationStateComponent</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</qualifiedname>
+        <param>
+          <type>const TranslationStateComponent &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component to copy from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="72" column="9" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="72" bodyend="74"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1ab0933f607f793c60d66162160afab026">helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a5289d60d43a4931a587707918da15e69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TranslationStateComponent &amp;</type>
+        <definition>TranslationStateComponent &amp; helios::engine::modules::spatial::transform::components::TranslationStateComponent::operator=</definition>
+        <argsstring>(const TranslationStateComponent &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::operator=</qualifiedname>
+        <param>
+          <type>const TranslationStateComponent &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="79" column="35"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1ab0933f607f793c60d66162160afab026">helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1aabdd6849aa51267d2b2eab3c8f9bd52e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</definition>
+        <argsstring>(TranslationStateComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>TranslationStateComponent</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</qualifiedname>
+        <param>
+          <type>TranslationStateComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="84" column="9"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1ab0933f607f793c60d66162160afab026">helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a5ac1343f17dd8a4d392b476ec3b511fe" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>TranslationStateComponent &amp;</type>
+        <definition>TranslationStateComponent &amp; helios::engine::modules::spatial::transform::components::TranslationStateComponent::operator=</definition>
+        <argsstring>(TranslationStateComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::operator=</qualifiedname>
+        <param>
+          <type>TranslationStateComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="89" column="35"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1ab0933f607f793c60d66162160afab026">helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a04c362d88ccfd57bfe298f99826dadd4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</definition>
+        <argsstring>(const helios::math::vec3f translation)</argsstring>
+        <name>TranslationStateComponent</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+          <declname>translation</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new <ref refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent" kindref="compound">TranslationStateComponent</ref> with the specified translation vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The translation vector this component should be initialized with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="96" column="18" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="96" bodyend="97"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a1f7f42f2f5bca1af05e04db397d0634f" compoundref="TranslationStateComponent_8ixx" startline="137" endline="139">helios::engine::modules::spatial::transform::components::TranslationStateComponent::translation</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1ab0933f607f793c60d66162160afab026">helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a9b1a52d913c599d84735ded422cf8e0c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::spatial::transform::components::TranslationStateComponent::onAcquire</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>onAcquire</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::onAcquire</qualifiedname>
+        <briefdescription>
+<para>Resets the translation vector to 0-vector when acquired. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="102" column="14" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a68e8d01e8fea07882dfd17679c1eb4d6" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::spatial::transform::components::TranslationStateComponent::onRelease</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>onRelease</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::onRelease</qualifiedname>
+        <briefdescription>
+<para>Resets the translation vector to 0-vector when released. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="110" column="14" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a8ae982a3595774dc048377929efafdbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::spatial::transform::components::TranslationStateComponent::setTranslation</definition>
+        <argsstring>(helios::math::vec3f translation)</argsstring>
+        <name>setTranslation</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::setTranslation</qualifiedname>
+        <param>
+          <type><ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+          <declname>translation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the absolute translation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new position vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="119" column="14" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="119" bodyend="121"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a1f7f42f2f5bca1af05e04db397d0634f" compoundref="TranslationStateComponent_8ixx" startline="137" endline="139">helios::engine::modules::spatial::transform::components::TranslationStateComponent::translation</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a4e55b0da5a113b640c0f5d835114ceae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::spatial::transform::components::TranslationStateComponent::translateBy</definition>
+        <argsstring>(helios::math::vec3f translation)</argsstring>
+        <name>translateBy</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::translateBy</qualifiedname>
+        <param>
+          <type><ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+          <declname>translation</declname>
+        </param>
+        <briefdescription>
+<para>Translates the current position by a delta vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector to add to the current position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="128" column="14" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="128" bodyend="130"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a1f7f42f2f5bca1af05e04db397d0634f" compoundref="TranslationStateComponent_8ixx" startline="137" endline="139">helios::engine::modules::spatial::transform::components::TranslationStateComponent::translation</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a1f7f42f2f5bca1af05e04db397d0634f" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+        <definition>helios::math::vec3f helios::engine::modules::spatial::transform::components::TranslationStateComponent::translation</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>translation</name>
+        <qualifiedname>helios::engine::modules::spatial::transform::components::TranslationStateComponent::translation</qualifiedname>
+        <briefdescription>
+<para>Returns the current translation vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="137" column="30" bodyfile="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" bodystart="137" bodyend="139"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a8ae982a3595774dc048377929efafdbe" compoundref="TranslationStateComponent_8ixx" startline="119" endline="121">helios::engine::modules::spatial::transform::components::TranslationStateComponent::setTranslation</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a4e55b0da5a113b640c0f5d835114ceae" compoundref="TranslationStateComponent_8ixx" startline="128" endline="130">helios::engine::modules::spatial::transform::components::TranslationStateComponent::translateBy</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1spatial_1_1transform_1_1components_1_1TranslationStateComponent_1a04c362d88ccfd57bfe298f99826dadd4" compoundref="TranslationStateComponent_8ixx" startline="96" endline="97">helios::engine::modules::spatial::transform::components::TranslationStateComponent::TranslationStateComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1ai_1_1systems_1_1ChaseSystem_1aaab8ecd626b5c5d562bad888e868295a" compoundref="ChaseSystem_8ixx" startline="52" endline="92">helios::engine::modules::ai::systems::ChaseSystem::update</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/modules/spatial/transform/components/TranslationStateComponent.ixx" line="9" column="15"/>
+  </compounddef>
+</doxygen>

@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['of_20concerns_0',['Separation of Concerns',['../dir_106756a8ee71bdde7f7b779a3a0a52e4.html#autotoc_md25',1,'']]],
-  ['opengl_1',['Quick Start with GLFW + OpenGL',['../dir_106756a8ee71bdde7f7b779a3a0a52e4.html#autotoc_md27',1,'']]],
-  ['opengl_2',['&lt;span class=&quot;tt&quot;&gt;helios.ext.opengl&lt;/span&gt;',['../dir_106756a8ee71bdde7f7b779a3a0a52e4.html#autotoc_md30',1,'']]],
-  ['overlay_3',['6. ImGui Debug Overlay',['../index.html#autotoc_md131',1,'']]],
-  ['overview_4',['Overview',['../index.html#autotoc_md122',1,'Architecture Overview'],['../dir_106756a8ee71bdde7f7b779a3a0a52e4.html#autotoc_md21',1,'Overview']]]
+  ['new_20backend_0',['Creating a New Backend',['../dir_c65593c1e2ce5122a06a0735d96badb1.html#autotoc_md31',1,'']]],
+  ['new_20gameobject_1',['Creating a New GameObject',['../dir_a8f8c4b70d3587fcf7159bd2d30de216.html#autotoc_md96',1,'']]],
+  ['no_5finit_20in_20custom_20types_2',['Supporting no_init in Custom Types',['../dir_4e12247f2bbe360a59cd98a83515e8f1.html#autotoc_md54',1,'']]]
 ];

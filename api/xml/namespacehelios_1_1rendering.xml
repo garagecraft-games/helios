@@ -3,7 +3,6 @@
   <compounddef id="namespacehelios_1_1rendering" kind="namespace" language="Markdown">
     <compoundname>helios::rendering</compoundname>
     <innerclass refid="classhelios_1_1rendering_1_1Renderable" prot="public">helios::rendering::Renderable</innerclass>
-    <innerclass refid="classhelios_1_1rendering_1_1RenderCommand" prot="public">helios::rendering::RenderCommand</innerclass>
     <innerclass refid="classhelios_1_1rendering_1_1RenderingDevice" prot="public">helios::rendering::RenderingDevice</innerclass>
     <innerclass refid="classhelios_1_1rendering_1_1RenderPass" prot="public">helios::rendering::RenderPass</innerclass>
     <innerclass refid="classhelios_1_1rendering_1_1RenderPassFactory" prot="public">helios::rendering::RenderPassFactory</innerclass>
@@ -13,9 +12,13 @@
     <innerclass refid="structhelios_1_1rendering_1_1Vertex" prot="public">helios::rendering::Vertex</innerclass>
     <innerclass refid="structhelios_1_1rendering_1_1ViewportKey" prot="public">helios::rendering::ViewportKey</innerclass>
     <innerclass refid="classhelios_1_1rendering_1_1Viewport" prot="public">helios::rendering::Viewport</innerclass>
+    <innerclass refid="structhelios_1_1rendering_1_1ViewportSnapshot" prot="public">helios::rendering::ViewportSnapshot</innerclass>
     <innernamespace refid="namespacehelios_1_1rendering_1_1asset">helios::rendering::asset</innernamespace>
+    <innernamespace refid="namespacehelios_1_1rendering_1_1material">helios::rendering::material</innernamespace>
     <innernamespace refid="namespacehelios_1_1rendering_1_1model">helios::rendering::model</innernamespace>
+    <innernamespace refid="namespacehelios_1_1rendering_1_1mesh">helios::rendering::mesh</innernamespace>
     <innernamespace refid="namespacehelios_1_1rendering_1_1shader">helios::rendering::shader</innernamespace>
+    <innernamespace refid="namespacehelios_1_1rendering_1_1text">helios::rendering::text</innernamespace>
     <sectiondef kind="enum">
       <memberdef kind="enum" id="namespacehelios_1_1rendering_1aad4b10dc2924beaf3680fb245505290c" prot="public" static="no" strong="yes">
         <type></type>
@@ -69,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/rendering/ClearFlags.ixx" line="27" column="5" bodyfile="include/helios/rendering/ClearFlags.ixx" bodystart="27" bodyend="47"/>
+        <location file="/tmp/h/include/helios/rendering/ClearFlags.ixx" line="27" column="5" bodyfile="/tmp/h/include/helios/rendering/ClearFlags.ixx" bodystart="27" bodyend="47"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -78,6 +81,6 @@
     <detaileddescription>
 <para>This namespace provides the core rendering system including rendering devices, render commands, queues, passes, and vertex definitions. Encompasses asset, model, and shader management functionality for comprehensive 3D graphics rendering. Provides a platform-independent rendering abstraction that can be implemented by various graphics APIs (OpenGL, Vulkan, DirectX). </para>
     </detaileddescription>
-    <location file="include/helios/rendering/asset/shape/basic/Circle.ixx" line="20" column="1"/>
+    <location file="/tmp/h/include/helios/rendering/asset/shape/basic/Circle.ixx" line="20" column="1"/>
   </compounddef>
 </doxygen>

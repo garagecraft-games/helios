@@ -6,9 +6,10 @@ var classhelios_1_1input_1_1InputManager =
     [ "inputAdapter", "classhelios_1_1input_1_1InputManager.html#a572c0a1172916da778df50383c475e97", null ],
     [ "isConnected", "classhelios_1_1input_1_1InputManager.html#aabc1c034f222ef983272ac4145575458", null ],
     [ "isKeyPressed", "classhelios_1_1input_1_1InputManager.html#a9cdcf0b8c5ca77db5cba2498132479f1", null ],
+    [ "isKeyReleased", "classhelios_1_1input_1_1InputManager.html#aabbbcaa0938a51cc0cd6621b5ba9dee9", null ],
     [ "observe", "classhelios_1_1input_1_1InputManager.html#a0ad681204f4b9f65189340a0e3b87f28", null ],
     [ "observedWindow", "classhelios_1_1input_1_1InputManager.html#a73ff092ed6634db2dc52d8224700d35f", null ],
     [ "poll", "classhelios_1_1input_1_1InputManager.html#ab46c4ce60870839d557ba3d141964f01", null ],
-    [ "registerGamepads", "classhelios_1_1input_1_1InputManager.html#a138047fd0784a90715758d5e44afea3d", null ],
+    [ "registerGamepads", "classhelios_1_1input_1_1InputManager.html#a50c3854c194f5f40d1e5a724f5512c0c", null ],
     [ "logger_", "classhelios_1_1input_1_1InputManager.html#a29a9dd828ced10e5ddf6cbe757debf97", null ]
 ];

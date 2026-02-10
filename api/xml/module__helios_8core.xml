@@ -2,15 +2,18 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="module__helios_8core" kind="module">
     <compoundname>helios.core</compoundname>
-    <innerfile refid="helios_2core_2__module_8ixx">_module.ixx</innerfile>
+    <innerfile refid="helios_2core_2__module_8ixx">helios/core/_module.ixx</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <exports>
-      <export refid="module__helios_8core_8units">helios.core.units</export>
-      <export refid="module__helios_8core_8Transform">helios.core.Transform</export>
+      <export refid="module__helios_8core_8buffer">helios.core.buffer</export>
+      <export refid="module__helios_8core_8data">helios.core.data</export>
+      <export refid="module__helios_8core_8spatial">helios.core.spatial</export>
+      <export refid="module__helios_8core_8types">helios.core.types</export>
+      <export refid="module__helios_8core_8algorithms">helios.core.algorithms</export>
     </exports>
-    <location file="include/helios/core/_module.ixx" line="5" column="15"/>
+    <location file="/tmp/h/include/helios/core/_module.ixx" line="6" column="15"/>
   </compounddef>
 </doxygen>

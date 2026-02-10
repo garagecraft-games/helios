@@ -1,0 +1,16 @@
+<map id="_module.ixx" name="_module.ixx">
+<area shape="rect" id="Node000001" title="Aggregate module for helios::engine::mechanics::bounds::components namespace." alt="" coords="209,5,311,31"/>
+<area shape="rect" id="Node000002" href="$LevelBoundsBehaviorComponent_8ixx.html" title="Component defining behavior when an entity interacts with level boundaries." alt="" coords="99,79,421,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,31,263,65,257,65,257,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,174,91,199"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,121,90,171,88,166,212,116"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="115,174,184,199"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="237,121,177,167,174,163,234,117"/>
+<area shape="rect" id="Node000005" href="$CollisionResponse_8ixx.html" title="Enum for defining collision response behaviors." alt="" coords="209,167,533,207"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="286,117,337,156,334,160,283,121"/>
+<area shape="rect" id="Node000007" href="$CollisionBehavior_8ixx.html" title="Enumeration of collision response behaviors." alt="" coords="557,167,881,207"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="361,116,605,162,605,167,360,121"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="511,255,577,280"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="413,204,507,246,505,251,411,209"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="678,209,583,251,581,246,676,204"/>
+</map>

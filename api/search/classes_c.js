@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['projectileobject_0',['ProjectileObject',['../structhelios_1_1engine_1_1game_1_1systems_1_1gameplay_1_1ProjectilePoolSystem_1_1ProjectileObject.html',1,'helios::engine::game::systems::gameplay::ProjectilePoolSystem']]],
-  ['projectilepoolsystem_1',['ProjectilePoolSystem',['../classhelios_1_1engine_1_1game_1_1systems_1_1gameplay_1_1ProjectilePoolSystem.html',1,'helios::engine::game::systems::gameplay']]]
+  ['no_5finit_5ft_0',['no_init_t',['../structhelios_1_1core_1_1types_1_1no__init__t.html',1,'helios::core::types']]]
 ];

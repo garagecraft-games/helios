@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent" kind="class" language="C++" prot="public">
+    <compoundname>helios::engine::mechanics::scoring::components::ScoreObserverComponent</compoundname>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ac61ed4347036721e97541a07e2935973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class helios::engine::mechanics::scoring::systems::ScoreObserverClearSystem</definition>
+        <argsstring></argsstring>
+        <name>helios::engine::mechanics::scoring::systems::ScoreObserverClearSystem</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::ScoreObserverClearSystem</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1systems_1_1ScoreObserverClearSystem" kindref="compound">helios::engine::mechanics::scoring::systems::ScoreObserverClearSystem</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="34" column="22" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="34" bodyend="-1"/>
+        <references refid="namespacehelios_1_1core_1_1types_1a209d373c4d42ac831d2f6bfd1c4165ad" compoundref="types_8ixx" startline="60">helios::core::types::no_init</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a005c69338b543f19384b1bf4df755272" prot="private" static="no" mutable="no">
+        <type><ref refid="structhelios_1_1engine_1_1core_1_1data_1_1ScorePoolId" kindref="compound">helios::engine::core::data::ScorePoolId</ref></type>
+        <definition>helios::engine::core::data::ScorePoolId helios::engine::mechanics::scoring::components::ScoreObserverComponent::scorePoolId_</definition>
+        <argsstring></argsstring>
+        <name>scorePoolId_</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::scorePoolId_</qualifiedname>
+        <initializer>{<ref refid="namespacehelios_1_1core_1_1types_1a209d373c4d42ac831d2f6bfd1c4165ad" kindref="member">helios::core::types::no_init</ref>}</initializer>
+        <briefdescription>
+<para>ID of the score pool to observe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="41" column="49" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a9b412c8578c8a1858119354e9ff9da76" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::mechanics::scoring::components::ScoreObserverComponent::hasUpdate_</definition>
+        <argsstring></argsstring>
+        <name>hasUpdate_</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::hasUpdate_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Flag indicating whether the value changed this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleared by ScoreObserverClearSystem at frame end. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="49" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a2bb12b58eef359b6e2f054202b4b6492" prot="private" static="no" mutable="no">
+        <type><ref refid="structhelios_1_1engine_1_1mechanics_1_1scoring_1_1ScorePoolSnapshot" kindref="compound">helios::engine::mechanics::scoring::ScorePoolSnapshot</ref></type>
+        <definition>helios::engine::mechanics::scoring::ScorePoolSnapshot helios::engine::mechanics::scoring::components::ScoreObserverComponent::snapshot_</definition>
+        <argsstring></argsstring>
+        <name>snapshot_</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::snapshot_</qualifiedname>
+        <briefdescription>
+<para>the current snapshot saved by this observer component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="54" column="63" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ad7df93d38eac30fc7d31343efcf8756a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::mechanics::scoring::components::ScoreObserverComponent::isEnabled_</definition>
+        <argsstring></argsstring>
+        <name>isEnabled_</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::isEnabled_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="59" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ad5a8d85aca45c026cdb34542f7c7da1e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::scoring::components::ScoreObserverComponent::clearUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>clearUpdate</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::clearUpdate</qualifiedname>
+        <briefdescription>
+<para>Clears the update flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by ScoreObserverClearSystem. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="66" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="66" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1acf741891abf3e9105d67fef34e9ad3af" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::mechanics::scoring::components::ScoreObserverComponent::isEnabled</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::isEnabled</qualifiedname>
+        <briefdescription>
+<para>Checks whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if enabled, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="77" column="15" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a8f03b7538b0ea1ee2f4da140e5618c58" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::scoring::components::ScoreObserverComponent::enable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>enable</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::enable</qualifiedname>
+        <briefdescription>
+<para>Enables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="84" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a53456c3b46afab50bc7e73be506f6b10" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::scoring::components::ScoreObserverComponent::disable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>disable</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::disable</qualifiedname>
+        <briefdescription>
+<para>Disables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="91" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af86abb09308871a3df2b6820826821bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::mechanics::scoring::components::ScoreObserverComponent::ScoreObserverComponent</definition>
+        <argsstring>()=default</argsstring>
+        <name>ScoreObserverComponent</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::ScoreObserverComponent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="95" column="9"/>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a3a976d99d16b2288741c70932acbbe19">operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a49727660a92125da1bcff6a866560ade">operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ae18982da3fd112a329aa0395f1c0bf9c" compoundref="ScoreObserverComponent_8ixx" startline="102" endline="103">ScoreObserverComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a4bf683ea1d985b8cfe26475f8311a13d">ScoreObserverComponent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ae18982da3fd112a329aa0395f1c0bf9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::mechanics::scoring::components::ScoreObserverComponent::ScoreObserverComponent</definition>
+        <argsstring>(const ScoreObserverComponent &amp;other)</argsstring>
+        <name>ScoreObserverComponent</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::ScoreObserverComponent</qualifiedname>
+        <param>
+          <type>const ScoreObserverComponent &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component to copy from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="102" column="9" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="102" bodyend="103"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af86abb09308871a3df2b6820826821bb">ScoreObserverComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a3a976d99d16b2288741c70932acbbe19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af86abb09308871a3df2b6820826821bb" kindref="member">ScoreObserverComponent</ref> &amp;</type>
+        <definition>ScoreObserverComponent &amp; helios::engine::mechanics::scoring::components::ScoreObserverComponent::operator=</definition>
+        <argsstring>(const ScoreObserverComponent &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af86abb09308871a3df2b6820826821bb" kindref="member">ScoreObserverComponent</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="105" column="32"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af86abb09308871a3df2b6820826821bb">ScoreObserverComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a4bf683ea1d985b8cfe26475f8311a13d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::mechanics::scoring::components::ScoreObserverComponent::ScoreObserverComponent</definition>
+        <argsstring>(ScoreObserverComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>ScoreObserverComponent</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::ScoreObserverComponent</qualifiedname>
+        <param>
+          <type>ScoreObserverComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="106" column="9"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af86abb09308871a3df2b6820826821bb">ScoreObserverComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a49727660a92125da1bcff6a866560ade" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af86abb09308871a3df2b6820826821bb" kindref="member">ScoreObserverComponent</ref> &amp;</type>
+        <definition>ScoreObserverComponent &amp; helios::engine::mechanics::scoring::components::ScoreObserverComponent::operator=</definition>
+        <argsstring>(ScoreObserverComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af86abb09308871a3df2b6820826821bb" kindref="member">ScoreObserverComponent</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="107" column="32"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af86abb09308871a3df2b6820826821bb">ScoreObserverComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a1571994d96790d16efe5e4611e1a97d2" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::scoring::components::ScoreObserverComponent::setScorePoolId</definition>
+        <argsstring>(const helios::engine::core::data::ScorePoolId scorePoolId) noexcept</argsstring>
+        <name>setScorePoolId</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::setScorePoolId</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1core_1_1data_1_1ScorePoolId" kindref="compound">helios::engine::core::data::ScorePoolId</ref></type>
+          <declname>scorePoolId</declname>
+        </param>
+        <briefdescription>
+<para>Sets the score pool to observe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scorePoolId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the pool to observe. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="114" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="114" bodyend="116"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a92a711a93784d5bbd462aece58da0dad" compoundref="ScoreObserverComponent_8ixx" startline="123" endline="125">scorePoolId</references>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a1571994d96790d16efe5e4611e1a97d2" compoundref="ScoreObserverComponent_8ixx" startline="114" endline="116">setScorePoolId</references>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a1571994d96790d16efe5e4611e1a97d2" compoundref="ScoreObserverComponent_8ixx" startline="114" endline="116">setScorePoolId</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a92a711a93784d5bbd462aece58da0dad" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1engine_1_1core_1_1data_1_1ScorePoolId" kindref="compound">helios::engine::core::data::ScorePoolId</ref></type>
+        <definition>helios::engine::core::data::ScorePoolId helios::engine::mechanics::scoring::components::ScoreObserverComponent::scorePoolId</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>scorePoolId</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::scorePoolId</qualifiedname>
+        <briefdescription>
+<para>Returns the observed score pool ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The ScorePoolId. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="123" column="50" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="123" bodyend="125"/>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a1571994d96790d16efe5e4611e1a97d2" compoundref="ScoreObserverComponent_8ixx" startline="114" endline="116">setScorePoolId</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1aba4421274ffeb127ab809c35d622758f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::scoring::components::ScoreObserverComponent::update</definition>
+        <argsstring>(const helios::engine::mechanics::scoring::ScorePoolSnapshot &amp;snapshot) noexcept</argsstring>
+        <name>update</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::update</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1mechanics_1_1scoring_1_1ScorePoolSnapshot" kindref="compound">helios::engine::mechanics::scoring::ScorePoolSnapshot</ref> &amp;</type>
+          <declname>snapshot</declname>
+        </param>
+        <briefdescription>
+<para>Sets the cached snapshot value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets hasUpdate to true if the value changes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>snapshot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The snapshot to use for the next update.. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="134" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="134" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1aa92c10a959ff82174b223f32c6cadea5" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double helios::engine::mechanics::scoring::components::ScoreObserverComponent::totalScore</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>totalScore</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::totalScore</qualifiedname>
+        <briefdescription>
+<para>Returns the cached total score. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current score value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="147" column="17" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a051435b677a09b10e1b81caed5e20f6f" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::mechanics::scoring::components::ScoreObserverComponent::hasUpdate</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>hasUpdate</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::hasUpdate</qualifiedname>
+        <briefdescription>
+<para>Checks if the value changed since last clear. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the value was updated this frame. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="156" column="15" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af355b6883c56f06505786cbf2d7a40bd" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::scoring::components::ScoreObserverComponent::onAcquire</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>onAcquire</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::onAcquire</qualifiedname>
+        <briefdescription>
+<para>Called when this entity is acquired from a pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears the update flag and resets the cached snapshot. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="165" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ac61174db9d659b3b67935d68212be6f9" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::scoring::components::ScoreObserverComponent::onRelease</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>onRelease</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScoreObserverComponent::onRelease</qualifiedname>
+        <briefdescription>
+<para>Called when this entity is released back to a pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears the update flag and resets the cached snapshot. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="175" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="175" bodyend="178"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Component that observes and caches the score value from a <ref refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1ScorePool" kindref="compound">ScorePool</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Attached to UI entities to display score values. The ScoreObserverSystem updates this component&apos;s value from the referenced <ref refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1ScorePool" kindref="compound">ScorePool</ref> each frame. The hasUpdate flag indicates when the value has changed. </para>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" line="32" column="5" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScoreObserverComponent.ixx" bodystart="32" bodyend="179"/>
+    <listofallmembers>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ad5a8d85aca45c026cdb34542f7c7da1e" prot="private" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>clearUpdate</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a53456c3b46afab50bc7e73be506f6b10" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>disable</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a8f03b7538b0ea1ee2f4da140e5618c58" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>enable</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a051435b677a09b10e1b81caed5e20f6f" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>hasUpdate</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a9b412c8578c8a1858119354e9ff9da76" prot="private" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>hasUpdate_</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ac61ed4347036721e97541a07e2935973" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>helios::engine::mechanics::scoring::systems::ScoreObserverClearSystem</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1acf741891abf3e9105d67fef34e9ad3af" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>isEnabled</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ad7df93d38eac30fc7d31343efcf8756a" prot="private" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>isEnabled_</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af355b6883c56f06505786cbf2d7a40bd" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>onAcquire</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ac61174db9d659b3b67935d68212be6f9" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>onRelease</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a3a976d99d16b2288741c70932acbbe19" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>operator=</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a49727660a92125da1bcff6a866560ade" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>operator=</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1af86abb09308871a3df2b6820826821bb" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>ScoreObserverComponent</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ae18982da3fd112a329aa0395f1c0bf9c" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>ScoreObserverComponent</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a4bf683ea1d985b8cfe26475f8311a13d" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>ScoreObserverComponent</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a92a711a93784d5bbd462aece58da0dad" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>scorePoolId</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a005c69338b543f19384b1bf4df755272" prot="private" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>scorePoolId_</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a1571994d96790d16efe5e4611e1a97d2" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>setScorePoolId</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1a2bb12b58eef359b6e2f054202b4b6492" prot="private" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>snapshot_</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1aa92c10a959ff82174b223f32c6cadea5" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>totalScore</name></member>
+      <member refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1aba4421274ffeb127ab809c35d622758f" prot="public" virt="non-virtual"><scope>helios::engine::mechanics::scoring::components::ScoreObserverComponent</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

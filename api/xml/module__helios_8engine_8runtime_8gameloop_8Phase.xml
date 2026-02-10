@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8engine_8runtime_8gameloop_8Phase" kind="module">
+    <compoundname>helios.engine.runtime.gameloop.Phase</compoundname>
+    <innerfile refid="Phase_8ixx">Phase.ixx</innerfile>
+    <innerclass refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase" prot="public">helios::engine::runtime::gameloop::Phase</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacehelios_1_1engine_1_1runtime_1_1gameloop_1aa57e7c5caf8850bd2c56ef8d345afa71" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>PhaseType</name>
+        <qualifiedname>helios::engine::runtime::gameloop::PhaseType</qualifiedname>
+        <enumvalue id="namespacehelios_1_1engine_1_1runtime_1_1gameloop_1aa57e7c5caf8850bd2c56ef8d345afa71afb55a965b77791b31ffd2bb548f71080" prot="public">
+          <name>Pre</name>
+          <briefdescription>
+<para>Pre-update phase for input and command processing. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehelios_1_1engine_1_1runtime_1_1gameloop_1aa57e7c5caf8850bd2c56ef8d345afa71aa02c83a7dbd96295beaefb72c2bee2de" prot="public">
+          <name>Main</name>
+          <briefdescription>
+<para>Main update phase for core gameplay systems. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehelios_1_1engine_1_1runtime_1_1gameloop_1aa57e7c5caf8850bd2c56ef8d345afa71a03d947a2158373c3b9d74325850cb8b9" prot="public">
+          <name>Post</name>
+          <briefdescription>
+<para>Post-update phase for cleanup and scene synchronization. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of game loop phase types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The game loop is divided into three sequential phases:<itemizedlist>
+<listitem><para>**Pre:** Input processing and command generation.</para>
+</listitem><listitem><para>**Main:** Core gameplay simulation (physics, AI, game logic).</para>
+</listitem><listitem><para>**Post:** Synchronization, cleanup, and preparation for rendering. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="33" column="5" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="33" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1a9ec5de8259e918395a1bc3764c767c20" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; PassCommitListener * &gt;</type>
+        <definition>std::vector&lt;PassCommitListener*&gt; helios::engine::runtime::gameloop::Phase::passCommitListeners_</definition>
+        <argsstring></argsstring>
+        <name>passCommitListeners_</name>
+        <qualifiedname>helios::engine::runtime::gameloop::Phase::passCommitListeners_</qualifiedname>
+        <briefdescription>
+<para>Collection of listeners to be notified when a pass commits. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Listeners are notified after each pass completes, receiving the pass&apos;s configured <ref refid="namespacehelios_1_1engine_1_1runtime_1_1gameloop_1abdb94a899ecc215ffa46e24880ebd8ec" kindref="member">CommitPoint</ref> flags. The <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1GameLoop" kindref="compound">GameLoop</ref> registers itself as a listener to handle event buffer swapping, command flushing, and manager processing based on the commit point configuration.</para>
+<para><simplesect kind="see"><para><ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1PassCommitListener" kindref="compound">PassCommitListener</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>notifyPassCommitListeners() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="82" column="21" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1aadc2fd19cd13b71cbc618188b961e3a7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; Pass &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;Pass&gt; &gt; helios::engine::runtime::gameloop::Phase::passEntries_</definition>
+        <argsstring></argsstring>
+        <name>passEntries_</name>
+        <qualifiedname>helios::engine::runtime::gameloop::Phase::passEntries_</qualifiedname>
+        <briefdescription>
+<para>Collection of passes belonging to this phase. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="147" column="21" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1aed3eee28baff6d029330c136a3e955c6" prot="private" static="no" mutable="no">
+        <type><ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1GameLoop" kindref="compound">helios::engine::runtime::gameloop::GameLoop</ref> &amp;</type>
+        <definition>helios::engine::runtime::gameloop::GameLoop&amp; helios::engine::runtime::gameloop::Phase::gameloop_</definition>
+        <argsstring></argsstring>
+        <name>gameloop_</name>
+        <qualifiedname>helios::engine::runtime::gameloop::Phase::gameloop_</qualifiedname>
+        <briefdescription>
+<para>Reference to the owning <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1GameLoop" kindref="compound">GameLoop</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="152" column="53" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="152" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1ac49bea223326274a00c50e559712400c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::runtime::gameloop::Phase::init</definition>
+        <argsstring>(helios::engine::runtime::world::GameWorld &amp;gameWorld)</argsstring>
+        <name>init</name>
+        <qualifiedname>helios::engine::runtime::gameloop::Phase::init</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1world_1_1GameWorld" kindref="compound">helios::engine::runtime::world::GameWorld</ref> &amp;</type>
+          <declname>gameWorld</declname>
+        </param>
+        <briefdescription>
+<para>Initializes all passes within this phase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameWorld</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the game world. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="91" column="14" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="91" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1a9a5b87fa679e89d3c0b840131fe21242" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::runtime::gameloop::Phase::update</definition>
+        <argsstring>(helios::engine::runtime::world::UpdateContext &amp;updateContext)</argsstring>
+        <name>update</name>
+        <qualifiedname>helios::engine::runtime::gameloop::Phase::update</qualifiedname>
+        <param>
+          <type><ref refid="structhelios_1_1engine_1_1runtime_1_1world_1_1UpdateContext" kindref="compound">helios::engine::runtime::world::UpdateContext</ref> &amp;</type>
+          <declname>updateContext</declname>
+        </param>
+        <briefdescription>
+<para>Updates all passes within this phase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterates through all passes, updating their systems and then invoking the commit action based on the pass&apos;s configured <ref refid="namespacehelios_1_1engine_1_1runtime_1_1gameloop_1abdb94a899ecc215ffa46e24880ebd8ec" kindref="member">CommitPoint</ref>. The commit point determines whether pass-level events are synchronized, the command buffer is flushed, or managers are processed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>updateContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current update context.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacehelios_1_1engine_1_1runtime_1_1gameloop_1abdb94a899ecc215ffa46e24880ebd8ec" kindref="member">CommitPoint</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Pass_1a36ee909a78fabac1cf997d98b0f8438c" kindref="member">Pass::addCommitPoint()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="111" column="14" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="111" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1a6ecad6809df781bd527d80573a7782bd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::runtime::gameloop::Phase::notifyPassCommitListeners</definition>
+        <argsstring>(CommitPoint commitPoint, helios::engine::runtime::world::UpdateContext &amp;updateContext)</argsstring>
+        <name>notifyPassCommitListeners</name>
+        <qualifiedname>helios::engine::runtime::gameloop::Phase::notifyPassCommitListeners</qualifiedname>
+        <param>
+          <type>CommitPoint</type>
+          <declname>commitPoint</declname>
+        </param>
+        <param>
+          <type><ref refid="structhelios_1_1engine_1_1runtime_1_1world_1_1UpdateContext" kindref="compound">helios::engine::runtime::world::UpdateContext</ref> &amp;</type>
+          <declname>updateContext</declname>
+        </param>
+        <briefdescription>
+<para>Notifies all registered listeners about a pass commit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called after each pass completes its update cycle. Each registered <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1PassCommitListener" kindref="compound">PassCommitListener</ref> receives the commit point flags, allowing it to perform the appropriate synchronization actions (event swapping, command flushing, manager processing).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>commitPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="namespacehelios_1_1engine_1_1runtime_1_1gameloop_1abdb94a899ecc215ffa46e24880ebd8ec" kindref="member">CommitPoint</ref> flags from the completed pass. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>updateContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current update context.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Always returns true.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1PassCommitListener_1ad8b56d62719d7fd9849cc9eaa44b9679" kindref="member">PassCommitListener::onPassCommit()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1a6b4a1f29d5eafcbb8f86e6bc867d3d11" kindref="member">addPassCommitListener()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="136" column="14" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="136" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1a1c22609dfb21151cb2c60db9c1a4c196" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::runtime::gameloop::Phase::Phase</definition>
+        <argsstring>(helios::engine::runtime::gameloop::GameLoop &amp;gameloop)</argsstring>
+        <name>Phase</name>
+        <qualifiedname>helios::engine::runtime::gameloop::Phase::Phase</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1GameLoop" kindref="compound">helios::engine::runtime::gameloop::GameLoop</ref> &amp;</type>
+          <declname>gameloop</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase" kindref="compound">Phase</ref> with a reference to its owning <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1GameLoop" kindref="compound">GameLoop</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameloop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the parent <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1GameLoop" kindref="compound">GameLoop</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="161" column="18" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="161" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1a6b4a1f29d5eafcbb8f86e6bc867d3d11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::runtime::gameloop::Phase::addPassCommitListener</definition>
+        <argsstring>(PassCommitListener *passCommitListener)</argsstring>
+        <name>addPassCommitListener</name>
+        <qualifiedname>helios::engine::runtime::gameloop::Phase::addPassCommitListener</qualifiedname>
+        <param>
+          <type>PassCommitListener *</type>
+          <declname>passCommitListener</declname>
+        </param>
+        <briefdescription>
+<para>Registers a listener to be notified when passes commit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The listener will receive notifications for all passes within this phase. The <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1GameLoop" kindref="compound">GameLoop</ref> typically registers itself to handle event synchronization, command buffer flushing, and manager processing based on commit point flags.</para>
+<para>Duplicate registrations are prevented; attempting to add the same listener twice will return false and leave the listener list unchanged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>passCommitListener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the listener to register. Must remain valid for the lifetime of this <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase" kindref="compound">Phase</ref> or until removed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the listener was added, false if it was already registered.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1PassCommitListener" kindref="compound">PassCommitListener</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>notifyPassCommitListeners() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="184" column="14" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="184" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1ab6843bc03abe3867cd46c4888f88176f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Pass &amp;</type>
+        <definition>Pass &amp; helios::engine::runtime::gameloop::Phase::addPass</definition>
+        <argsstring>()</argsstring>
+        <name>addPass</name>
+        <qualifiedname>helios::engine::runtime::gameloop::Phase::addPass</qualifiedname>
+        <briefdescription>
+<para>Creates and adds a new pass to this phase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to the newly created <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Pass" kindref="compound">Pass</ref> for method chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="202" column="14" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="202" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1Phase_1a792bbe1e6cdc378bccc7234c2e57b295" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1GameLoop" kindref="compound">helios::engine::runtime::gameloop::GameLoop</ref> &amp;</type>
+        <definition>helios::engine::runtime::gameloop::GameLoop &amp; helios::engine::runtime::gameloop::Phase::gameLoop</definition>
+        <argsstring>()</argsstring>
+        <name>gameLoop</name>
+        <qualifiedname>helios::engine::runtime::gameloop::Phase::gameLoop</qualifiedname>
+        <briefdescription>
+<para>Returns a reference to the owning <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1GameLoop" kindref="compound">GameLoop</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to the parent <ref refid="classhelios_1_1engine_1_1runtime_1_1gameloop_1_1GameLoop" kindref="compound">GameLoop</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="216" column="54" bodyfile="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" bodystart="216" bodyend="218"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/runtime/gameloop/Phase.ixx" line="10" column="15"/>
+  </compounddef>
+</doxygen>

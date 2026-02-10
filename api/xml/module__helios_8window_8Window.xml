@@ -12,12 +12,13 @@
         <name>guid_</name>
         <qualifiedname>helios::window::Window::guid_</qualifiedname>
         <briefdescription>
+<para>Unique identifier for this window instance. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="34" column="20" bodyfile="include/helios/window/Window.ixx" bodystart="34" bodyend="-1"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="40" column="20" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhelios_1_1window_1_1Window_1a6b70ab4bbf999583b306297859e074cc" prot="protected" static="yes" mutable="no">
         <type>const <ref refid="classhelios_1_1util_1_1log_1_1Logger" kindref="compound">helios::util::log::Logger</ref> &amp;</type>
@@ -33,7 +34,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="41" column="55" bodyfile="include/helios/window/Window.ixx" bodystart="41" bodyend="-1"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="47" column="55" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1ext_1_1glfw_1_1window_1_1GLFWWindow_1a29029e93c4fe4a789c3c8353a339261f" compoundref="GLFWWindow_8ixx" startline="91" endline="111">helios::ext::glfw::window::GLFWWindow::show</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classhelios_1_1window_1_1Window_1a82e3d26ab8aeb610b1c92a6130802f11" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -48,7 +50,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="46" column="13" bodyfile="include/helios/window/Window.ixx" bodystart="46" bodyend="-1"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="52" column="13" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1ext_1_1glfw_1_1window_1_1GLFWWindow_1a29029e93c4fe4a789c3c8353a339261f" compoundref="GLFWWindow_8ixx" startline="91" endline="111">helios::ext::glfw::window::GLFWWindow::show</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1ade8ac18a3735ff647842042a061be1af" compoundref="Window_8ixx" startline="193" endline="195">helios::window::Window::width</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" compoundref="Window_8ixx" startline="106" endline="121">helios::window::Window::Window</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classhelios_1_1window_1_1Window_1ae04994b1582ad5d5a1e9a5b9f4b12304" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -63,7 +68,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="51" column="13" bodyfile="include/helios/window/Window.ixx" bodystart="51" bodyend="-1"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="57" column="13" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a36cf16dcb794e5cc07a363673e4787a5" compoundref="Window_8ixx" startline="203" endline="205">helios::window::Window::height</referencedby>
+        <referencedby refid="classhelios_1_1ext_1_1glfw_1_1window_1_1GLFWWindow_1a29029e93c4fe4a789c3c8353a339261f" compoundref="GLFWWindow_8ixx" startline="91" endline="111">helios::ext::glfw::window::GLFWWindow::show</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" compoundref="Window_8ixx" startline="106" endline="121">helios::window::Window::Window</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classhelios_1_1window_1_1Window_1a27dc6e221464e5675b20816130a0e948" prot="protected" static="no" mutable="no">
         <type>std::string</type>
@@ -78,7 +86,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="56" column="21" bodyfile="include/helios/window/Window.ixx" bodystart="56" bodyend="-1"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="62" column="21" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1ext_1_1glfw_1_1window_1_1GLFWWindow_1a29029e93c4fe4a789c3c8353a339261f" compoundref="GLFWWindow_8ixx" startline="91" endline="111">helios::ext::glfw::window::GLFWWindow::show</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" compoundref="Window_8ixx" startline="106" endline="121">helios::window::Window::Window</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classhelios_1_1window_1_1Window_1a2ba87c8f3140da0087ac0a4cf849b10b" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -95,7 +105,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="63" column="13" bodyfile="include/helios/window/Window.ixx" bodystart="63" bodyend="-1"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="69" column="13" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1ext_1_1glfw_1_1window_1_1GLFWWindow_1a29029e93c4fe4a789c3c8353a339261f" compoundref="GLFWWindow_8ixx" startline="91" endline="111">helios::ext::glfw::window::GLFWWindow::show</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" compoundref="Window_8ixx" startline="106" endline="121">helios::window::Window::Window</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classhelios_1_1window_1_1Window_1a3a4a6fcd73d8632f3368e98acc338c85" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -112,7 +124,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="70" column="13" bodyfile="include/helios/window/Window.ixx" bodystart="70" bodyend="-1"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="76" column="13" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1ext_1_1glfw_1_1window_1_1GLFWWindow_1a29029e93c4fe4a789c3c8353a339261f" compoundref="GLFWWindow_8ixx" startline="91" endline="111">helios::ext::glfw::window::GLFWWindow::show</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" compoundref="Window_8ixx" startline="106" endline="121">helios::window::Window::Window</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classhelios_1_1window_1_1Window_1a3aadafde86d1cf52080eda7a8209b8ba" prot="protected" static="no" mutable="no">
         <type>std::unique_ptr&lt; <ref refid="classhelios_1_1rendering_1_1RenderTarget" kindref="compound">helios::rendering::RenderTarget</ref> &gt;</type>
@@ -127,7 +141,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="76" column="25" bodyfile="include/helios/window/Window.ixx" bodystart="76" bodyend="-1"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="82" column="25" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a27293cbb3681a49f31960ac9487c7f92" compoundref="Window_8ixx" startline="224" endline="226">helios::window::Window::addViewport</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a6bf6b252e26575dfced4453a3184994d" compoundref="Window_8ixx" startline="213" endline="215">helios::window::Window::renderTarget</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a31513e45ce3613916d9995bad121d8c8" compoundref="Window_8ixx" startline="237" endline="245">helios::window::Window::viewportSnapshots</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" compoundref="Window_8ixx" startline="106" endline="121">helios::window::Window::Window</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
@@ -143,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="79" column="17"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="85" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1window_1_1Window_1ae93d386b3c4293fd5c8ec3ff80003343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -160,13 +178,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="82" column="9"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="88" column="9"/>
         <references refid="classhelios_1_1window_1_1Window_1ae93d386b3c4293fd5c8ec3ff80003343">helios::window::Window::Window</references>
+        <referencedby refid="classhelios_1_1ext_1_1glfw_1_1window_1_1GLFWWindow_1a84dddea91bf91d467587888d9c28b55d" compoundref="GLFWWindow_8ixx" startline="71" endline="77">helios::ext::glfw::window::GLFWWindow::GLFWWindow</referencedby>
         <referencedby refid="classhelios_1_1window_1_1Window_1a88c1b862df250edf1d7f4b0c662b9770">helios::window::Window::operator=</referencedby>
         <referencedby refid="classhelios_1_1window_1_1Window_1ae29fdde83651998bc644fc150e8e3edb">helios::window::Window::operator=</referencedby>
-        <referencedby refid="classhelios_1_1window_1_1Window_1aa5192a6c6fbaf5938b5e73515d66f4d9">helios::window::Window::operator==</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1aa5192a6c6fbaf5938b5e73515d66f4d9" compoundref="Window_8ixx" startline="255" endline="257">helios::window::Window::operator==</referencedby>
         <referencedby refid="classhelios_1_1window_1_1Window_1ae93d386b3c4293fd5c8ec3ff80003343">helios::window::Window::Window</referencedby>
-        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8">helios::window::Window::Window</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" compoundref="Window_8ixx" startline="106" endline="121">helios::window::Window::Window</referencedby>
         <referencedby refid="classhelios_1_1window_1_1Window_1af053410db30c38792d85b6ce5d7e8b78">helios::window::Window::Window</referencedby>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a88c1b862df250edf1d7f4b0c662b9770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -184,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="83" column="16"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="89" column="16"/>
         <references refid="classhelios_1_1window_1_1Window_1ae93d386b3c4293fd5c8ec3ff80003343">helios::window::Window::Window</references>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1window_1_1Window_1af053410db30c38792d85b6ce5d7e8b78" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
@@ -202,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="86" column="9"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="92" column="9"/>
         <references refid="classhelios_1_1window_1_1Window_1ae93d386b3c4293fd5c8ec3ff80003343">helios::window::Window::Window</references>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1window_1_1Window_1ae29fdde83651998bc644fc150e8e3edb" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
@@ -220,10 +239,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="87" column="16"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="93" column="16"/>
         <references refid="classhelios_1_1window_1_1Window_1ae93d386b3c4293fd5c8ec3ff80003343">helios::window::Window::Window</references>
       </memberdef>
-      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
         <definition>helios::window::Window::Window</definition>
         <argsstring>(std::unique_ptr&lt; helios::rendering::RenderTarget &gt; renderTarget, const WindowConfig &amp;cfg)</argsstring>
@@ -247,7 +266,7 @@
 <parametername>renderTarget</parametername>
 </parameternamelist>
 <parameterdescription>
-<para></para>
+<para>The RenderTarget for this window. Ownership is transferred. </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -264,7 +283,7 @@
 <parametername>std::invalid_argument</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>if renderTarget is a nullptr </para>
+<para>if renderTarget is a nullptr. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -272,8 +291,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="100" column="18"/>
-        <references refid="classhelios_1_1window_1_1Window_1a6bf6b252e26575dfced4453a3184994d">helios::window::Window::renderTarget</references>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="106" column="18" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="106" bodyend="121"/>
+        <references refid="classhelios_1_1window_1_1Window_1a3a4a6fcd73d8632f3368e98acc338c85" compoundref="Window_8ixx" startline="76">helios::window::Window::aspectRatioDenom_</references>
+        <references refid="classhelios_1_1window_1_1Window_1a2ba87c8f3140da0087ac0a4cf849b10b" compoundref="Window_8ixx" startline="69">helios::window::Window::aspectRatioNumer_</references>
+        <references refid="classhelios_1_1window_1_1Window_1a36cf16dcb794e5cc07a363673e4787a5" compoundref="Window_8ixx" startline="203" endline="205">helios::window::Window::height</references>
+        <references refid="classhelios_1_1window_1_1Window_1ae04994b1582ad5d5a1e9a5b9f4b12304" compoundref="Window_8ixx" startline="57">helios::window::Window::height_</references>
+        <references refid="classhelios_1_1window_1_1Window_1a6bf6b252e26575dfced4453a3184994d" compoundref="Window_8ixx" startline="213" endline="215">helios::window::Window::renderTarget</references>
+        <references refid="classhelios_1_1window_1_1Window_1a3aadafde86d1cf52080eda7a8209b8ba" compoundref="Window_8ixx" startline="82">helios::window::Window::renderTarget_</references>
+        <references refid="classhelios_1_1window_1_1Window_1a27dc6e221464e5675b20816130a0e948" compoundref="Window_8ixx" startline="62">helios::window::Window::title_</references>
+        <references refid="classhelios_1_1window_1_1Window_1ade8ac18a3735ff647842042a061be1af" compoundref="Window_8ixx" startline="193" endline="195">helios::window::Window::width</references>
+        <references refid="classhelios_1_1window_1_1Window_1a82e3d26ab8aeb610b1c92a6130802f11" compoundref="Window_8ixx" startline="52">helios::window::Window::width_</references>
         <references refid="classhelios_1_1window_1_1Window_1ae93d386b3c4293fd5c8ec3ff80003343">helios::window::Window::Window</references>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1window_1_1Window_1abed0df1852a80062b9bca7bfce0e5cb9" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" virt="pure-virtual">
@@ -296,9 +323,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="116" column="23"/>
-        <references refid="classhelios_1_1window_1_1Window_1abed0df1852a80062b9bca7bfce0e5cb9">helios::window::Window::shouldClose</references>
-        <referencedby refid="classhelios_1_1window_1_1Window_1abed0df1852a80062b9bca7bfce0e5cb9">helios::window::Window::shouldClose</referencedby>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="134" column="23"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1window_1_1Window_1ada05902a9b90086e205eaa252ced0da7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -330,11 +355,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="127" column="22"/>
-        <references refid="classhelios_1_1window_1_1Window_1ada05902a9b90086e205eaa252ced0da7">helios::window::Window::setShouldClose</references>
-        <referencedby refid="classhelios_1_1window_1_1Window_1ada05902a9b90086e205eaa252ced0da7">helios::window::Window::setShouldClose</referencedby>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="145" column="22"/>
       </memberdef>
-      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1aa79cbb2b38cc1418eba3b3bd3cfdaae4" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1aa79cbb2b38cc1418eba3b3bd3cfdaae4" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const util::Guid &amp;</type>
         <definition>const util::Guid &amp; helios::window::Window::guid</definition>
         <argsstring>() const noexcept</argsstring>
@@ -350,9 +373,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="135" column="27"/>
-        <references refid="classhelios_1_1window_1_1Window_1aa79cbb2b38cc1418eba3b3bd3cfdaae4">helios::window::Window::guid</references>
-        <referencedby refid="classhelios_1_1window_1_1Window_1aa79cbb2b38cc1418eba3b3bd3cfdaae4">helios::window::Window::guid</referencedby>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="153" column="27" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="153" bodyend="155"/>
+        <referencedby refid="classhelios_1_1ext_1_1glfw_1_1app_1_1GLFWApplication_1aec402bfa5500772acb4d47752e80fd3e" compoundref="GLFWApplication_8ixx" startline="163" endline="190">helios::ext::glfw::app::GLFWApplication::setCurrent</referencedby>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1window_1_1Window_1adf3f589fca082cb28d6bad3df4ae9253" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
         <type>bool</type>
@@ -372,9 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="146" column="22"/>
-        <references refid="classhelios_1_1window_1_1Window_1adf3f589fca082cb28d6bad3df4ae9253">helios::window::Window::show</references>
-        <referencedby refid="classhelios_1_1window_1_1Window_1adf3f589fca082cb28d6bad3df4ae9253">helios::window::Window::show</referencedby>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="166" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a18ba5cfd5634ce27b162f17c9564ea97" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
         <type>void</type>
@@ -391,7 +411,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="155" column="22"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="175" column="22"/>
         <references refid="classhelios_1_1window_1_1Window_1a18ba5cfd5634ce27b162f17c9564ea97">helios::window::Window::swapBuffers</references>
         <referencedby refid="classhelios_1_1window_1_1Window_1a18ba5cfd5634ce27b162f17c9564ea97">helios::window::Window::swapBuffers</referencedby>
       </memberdef>
@@ -410,11 +430,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="165" column="22"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="185" column="22"/>
         <references refid="classhelios_1_1window_1_1Window_1a73a3d8254862bfa531304a45afe31189">helios::window::Window::pollEvents</references>
         <referencedby refid="classhelios_1_1window_1_1Window_1a73a3d8254862bfa531304a45afe31189">helios::window::Window::pollEvents</referencedby>
       </memberdef>
-      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1ade8ac18a3735ff647842042a061be1af" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1ade8ac18a3735ff647842042a061be1af" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int helios::window::Window::width</definition>
         <argsstring>() const noexcept</argsstring>
@@ -430,11 +450,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="173" column="14"/>
-        <references refid="classhelios_1_1window_1_1Window_1ade8ac18a3735ff647842042a061be1af">helios::window::Window::width</references>
-        <referencedby refid="classhelios_1_1window_1_1Window_1ade8ac18a3735ff647842042a061be1af">helios::window::Window::width</referencedby>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="193" column="14" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="193" bodyend="195"/>
+        <references refid="classhelios_1_1window_1_1Window_1ade8ac18a3735ff647842042a061be1af" compoundref="Window_8ixx" startline="193" endline="195">helios::window::Window::width</references>
+        <references refid="classhelios_1_1window_1_1Window_1a82e3d26ab8aeb610b1c92a6130802f11" compoundref="Window_8ixx" startline="52">helios::window::Window::width_</references>
+        <referencedby refid="classhelios_1_1window_1_1Window_1ade8ac18a3735ff647842042a061be1af" compoundref="Window_8ixx" startline="193" endline="195">helios::window::Window::width</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" compoundref="Window_8ixx" startline="106" endline="121">helios::window::Window::Window</referencedby>
       </memberdef>
-      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a36cf16dcb794e5cc07a363673e4787a5" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a36cf16dcb794e5cc07a363673e4787a5" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int helios::window::Window::height</definition>
         <argsstring>() const noexcept</argsstring>
@@ -450,11 +472,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="181" column="14"/>
-        <references refid="classhelios_1_1window_1_1Window_1a36cf16dcb794e5cc07a363673e4787a5">helios::window::Window::height</references>
-        <referencedby refid="classhelios_1_1window_1_1Window_1a36cf16dcb794e5cc07a363673e4787a5">helios::window::Window::height</referencedby>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="203" column="14" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="203" bodyend="205"/>
+        <references refid="classhelios_1_1window_1_1Window_1ae04994b1582ad5d5a1e9a5b9f4b12304" compoundref="Window_8ixx" startline="57">helios::window::Window::height_</references>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" compoundref="Window_8ixx" startline="106" endline="121">helios::window::Window::Window</referencedby>
       </memberdef>
-      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a6bf6b252e26575dfced4453a3184994d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a6bf6b252e26575dfced4453a3184994d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type><ref refid="classhelios_1_1rendering_1_1RenderTarget" kindref="compound">helios::rendering::RenderTarget</ref> &amp;</type>
         <definition>helios::rendering::RenderTarget &amp; helios::window::Window::renderTarget</definition>
         <argsstring>() const noexcept</argsstring>
@@ -470,13 +492,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="189" column="42"/>
-        <references refid="classhelios_1_1window_1_1Window_1a6bf6b252e26575dfced4453a3184994d">helios::window::Window::renderTarget</references>
-        <referencedby refid="classhelios_1_1ext_1_1glfw_1_1window_1_1GLFWWindow_1a84dddea91bf91d467587888d9c28b55d">helios::ext::glfw::window::GLFWWindow::GLFWWindow</referencedby>
-        <referencedby refid="classhelios_1_1window_1_1Window_1a6bf6b252e26575dfced4453a3184994d">helios::window::Window::renderTarget</referencedby>
-        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8">helios::window::Window::Window</referencedby>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="213" column="42" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="213" bodyend="215"/>
+        <references refid="classhelios_1_1window_1_1Window_1a3aadafde86d1cf52080eda7a8209b8ba" compoundref="Window_8ixx" startline="82">helios::window::Window::renderTarget_</references>
+        <referencedby refid="classhelios_1_1ext_1_1glfw_1_1window_1_1GLFWWindow_1a84dddea91bf91d467587888d9c28b55d" compoundref="GLFWWindow_8ixx" startline="71" endline="77">helios::ext::glfw::window::GLFWWindow::GLFWWindow</referencedby>
+        <referencedby refid="classhelios_1_1window_1_1Window_1a703abe43c865e2dd20708751493750d8" compoundref="Window_8ixx" startline="106" endline="121">helios::window::Window::Window</referencedby>
       </memberdef>
-      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a27293cbb3681a49f31960ac9487c7f92" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a27293cbb3681a49f31960ac9487c7f92" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classhelios_1_1rendering_1_1Viewport" kindref="compound">helios::rendering::Viewport</ref> &gt;</type>
         <definition>std::shared_ptr&lt; helios::rendering::Viewport &gt; helios::window::Window::addViewport</definition>
         <argsstring>(std::shared_ptr&lt; helios::rendering::Viewport &gt; viewport) const</argsstring>
@@ -505,11 +526,30 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="198" column="25"/>
-        <references refid="classhelios_1_1window_1_1Window_1a27293cbb3681a49f31960ac9487c7f92">helios::window::Window::addViewport</references>
-        <referencedby refid="classhelios_1_1window_1_1Window_1a27293cbb3681a49f31960ac9487c7f92">helios::window::Window::addViewport</referencedby>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="224" column="25" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="224" bodyend="226"/>
+        <references refid="classhelios_1_1window_1_1Window_1a3aadafde86d1cf52080eda7a8209b8ba" compoundref="Window_8ixx" startline="82">helios::window::Window::renderTarget_</references>
       </memberdef>
-      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1aa5192a6c6fbaf5938b5e73515d66f4d9" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="virtual">
+      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1a31513e45ce3613916d9995bad121d8c8" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structhelios_1_1rendering_1_1ViewportSnapshot" kindref="compound">helios::rendering::ViewportSnapshot</ref> &gt;</type>
+        <definition>std::vector&lt; helios::rendering::ViewportSnapshot &gt; helios::window::Window::viewportSnapshots</definition>
+        <argsstring>()</argsstring>
+        <name>viewportSnapshots</name>
+        <qualifiedname>helios::window::Window::viewportSnapshots</qualifiedname>
+        <briefdescription>
+<para>Returns snapshots of all viewports with assigned IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Collects immutable ViewportSnapshot objects from all viewports that have a valid ViewportId. Useful for passing viewport state to systems that need frame-consistent viewport data.</para>
+<para><simplesect kind="return"><para>A vector of ViewportSnapshot objects. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="237" column="22" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="237" bodyend="245"/>
+        <references refid="classhelios_1_1window_1_1Window_1a3aadafde86d1cf52080eda7a8209b8ba" compoundref="Window_8ixx" startline="82">helios::window::Window::renderTarget_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1window_1_1Window_1aa5192a6c6fbaf5938b5e73515d66f4d9" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
         <type>bool</type>
         <definition>virtual bool helios::window::Window::operator==</definition>
         <argsstring>(const Window &amp;win) const noexcept</argsstring>
@@ -539,7 +579,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/helios/window/Window.ixx" line="208" column="22"/>
+        <location file="/tmp/h/include/helios/window/Window.ixx" line="255" column="22" bodyfile="/tmp/h/include/helios/window/Window.ixx" bodystart="255" bodyend="257"/>
         <references refid="classhelios_1_1window_1_1Window_1ae93d386b3c4293fd5c8ec3ff80003343">helios::window::Window::Window</references>
       </memberdef>
     </sectiondef>
@@ -547,6 +587,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/helios/window/Window.ixx" line="10" column="15"/>
+    <location file="/tmp/h/include/helios/window/Window.ixx" line="12" column="15"/>
   </compounddef>
 </doxygen>

@@ -134,6 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad64bf63ac24905fed6d397d59088340d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the dot product of this vector and v2.  <br /></td></tr>
 <tr class="memitem:a98db2375fe3de090655548f4d29c8192" id="r_a98db2375fe3de090655548f4d29c8192"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1math_1_1vec4.html">vec4</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98db2375fe3de090655548f4d29c8192">toVec4</a> () const noexcept</td></tr>
 <tr class="memdesc:a98db2375fe3de090655548f4d29c8192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this 3D vector to a 4D homogeneous vector.  <br /></td></tr>
+<tr class="memitem:a899d8b0cba0d969fd32333ec739c3a61" id="r_a899d8b0cba0d969fd32333ec739c3a61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a899d8b0cba0d969fd32333ec739c3a61">toVec2</a> () const noexcept</td></tr>
+<tr class="memdesc:a899d8b0cba0d969fd32333ec739c3a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this 3D vector to a 2D vector by discarding the z-component.  <br /></td></tr>
 <tr class="memitem:a9b2414714b83f54d12c67f4d90a19145" id="r_a9b2414714b83f54d12c67f4d90a19145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1math_1_1vec4.html">vec4</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b2414714b83f54d12c67f4d90a19145">toVec4</a> (T w) const noexcept</td></tr>
 <tr class="memdesc:a9b2414714b83f54d12c67f4d90a19145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this 3D vector to a 4D homogeneous vector.  <br /></td></tr>
 <tr class="memitem:a3bbdd06a78770b9dadc233e0acca4295" id="r_a3bbdd06a78770b9dadc233e0acca4295"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a6a604e51ca84090aa8e8d7f46bd02009">vec3</a>&lt; <a class="el" href="namespacehelios_1_1math.html#a4c90766d59f3c1ce32821bbbd3cdd62b">FloatingPointType</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bbdd06a78770b9dadc233e0acca4295">normalize</a> () const noexcept</td></tr>
@@ -150,6 +152,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a09cdd10bca94c120bfcdc466a75b1306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new vector with the x-component negated.  <br /></td></tr>
 <tr class="memitem:a7550ffe108477acac430f4a3e97fab66" id="r_a7550ffe108477acac430f4a3e97fab66"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structhelios_1_1math_1_1vec3.html">helios::math::vec3</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7550ffe108477acac430f4a3e97fab66">withX</a> (T x) const noexcept</td></tr>
 <tr class="memdesc:a7550ffe108477acac430f4a3e97fab66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new vector with the x-component replaced by the given value.  <br /></td></tr>
+<tr class="memitem:a0daa995449d160d7a618e7055c3f31c8" id="r_a0daa995449d160d7a618e7055c3f31c8"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0daa995449d160d7a618e7055c3f31c8">isNormalized</a> () const noexcept</td></tr>
+<tr class="memdesc:a0daa995449d160d7a618e7055c3f31c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this vector is normalized (unit length).  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt;<br />
@@ -162,7 +166,7 @@ struct helios::math::vec3&lt; T &gt;</div><p>Represents a 3-dimensional vector o
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00032">32</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00033">33</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6a604e51ca84090aa8e8d7f46bd02009" name="a6a604e51ca84090aa8e8d7f46bd02009"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a604e51ca84090aa8e8d7f46bd02009">&#9670;&#160;</a></span>vec3() <span class="overload">[1/5]</span></h2>
@@ -191,14 +195,14 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 
 <p>Creates a new <a class="el" href="structhelios_1_1math_1_1vec3.html" title="Represents a 3-dimensional vector of the generic type &lt;T&gt;.">vec3</a> with its values initialized to (0, 0, 0). </p>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00046">46</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00047">47</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vec3_8ixx_source.html#l00379">cross()</a>, <a class="el" href="vec3_8ixx_source.html#l00398">dot()</a>, and <a class="el" href="vec3_8ixx_source.html#l00404">normalize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vec3_8ixx_source.html#l00404">cross()</a>, <a class="el" href="vec3_8ixx_source.html#l00428">dot()</a>, and <a class="el" href="vec3_8ixx_source.html#l00434">normalize()</a>.</p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structhelios_1_1math_1_1vec3_a6a604e51ca84090aa8e8d7f46bd02009_icgraph.svg" width="372" height="166"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structhelios_1_1math_1_1vec3_a6a604e51ca84090aa8e8d7f46bd02009_icgraph.svg" width="626" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -247,7 +251,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00057">57</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00058">58</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -284,7 +288,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00066">66</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00067">67</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -321,7 +325,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00075">75</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00076">76</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -363,7 +367,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00084">84</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00085">85</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -402,9 +406,9 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The cross product as a value of type vec3&lt;T&gt;. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00379">379</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00404">404</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
-<p class="reference">References <a class="el" href="vec3_8ixx_source.html#l00046">vec3()</a>.</p>
+<p class="reference">References <a class="el" href="vec3_8ixx_source.html#l00047">vec3()</a>.</p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
@@ -448,9 +452,9 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The dot product as a value of type T. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00398">398</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00428">428</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
-<p class="reference">References <a class="el" href="vec3_8ixx_source.html#l00046">vec3()</a>.</p>
+<p class="reference">References <a class="el" href="vec3_8ixx_source.html#l00047">vec3()</a>.</p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
@@ -488,7 +492,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 <p>Returns a new vector with the x-component negated. </p>
 <dl class="section return"><dt>Returns</dt><dd>A new vec3&lt;T&gt; with (-x, y, z). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00236">236</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00244">244</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -520,7 +524,48 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 <p>Returns a new vector with the y-component negated. </p>
 <dl class="section return"><dt>Returns</dt><dd>A new vec3&lt;T&gt; with (x, -y, z). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00217">217</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00225">225</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a0daa995449d160d7a618e7055c3f31c8" name="a0daa995449d160d7a618e7055c3f31c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0daa995449d160d7a618e7055c3f31c8">&#9670;&#160;</a></span>isNormalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="structhelios_1_1math_1_1vec3.html">helios::math::vec3</a>&lt; T &gt;::isNormalized </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if this vector is normalized (unit length). </p>
+<p>A vector is considered normalized if its squared length equals 1 within the tolerance defined by EPSILON_LENGTH.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the vector is approximately unit length, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00266">266</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="AxisSpawnPlacer_8ixx_source.html#l00083">helios::engine::runtime::spawn::behavior::placements::AxisSpawnPlacer::AxisSpawnPlacer()</a>, and <a class="el" href="SteeringComponent_8ixx_source.html#l00247">helios::engine::modules::physics::motion::components::SteeringComponent::setSteeringIntent()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="structhelios_1_1math_1_1vec3_a0daa995449d160d7a618e7055c3f31c8_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 
 </div>
 </div>
@@ -552,14 +597,14 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 <p>Computes the Euclidean norm (magnitude) of this vector and returns it. </p>
 <dl class="section return"><dt>Returns</dt><dd>The norm (magnitude) of this vector as a value of type <a class="el" href="namespacehelios_1_1math.html#a4c90766d59f3c1ce32821bbbd3cdd62b" title="Type trait that promotes integral types to double, while preserving floating-point types.">FloatingPointType&lt;T&gt;</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00119">119</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00120">120</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CameraWidget_8ixx_source.html#l00213">helios::ext::imgui::widgets::CameraWidget::draw()</a>, and <a class="el" href="vec3_8ixx_source.html#l00404">normalize()</a>.</p>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="CameraWidget_8ixx_source.html#l00213">helios::ext::imgui::widgets::CameraWidget::draw()</a>, and <a class="el" href="vec3_8ixx_source.html#l00434">normalize()</a>.</p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structhelios_1_1math_1_1vec3_a6146713ae785c06b31121c953357dda4_icgraph.svg" width="428" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="structhelios_1_1math_1_1vec3_a6146713ae785c06b31121c953357dda4_icgraph.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -592,14 +637,22 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 <p>Returns a normalized version of this vector. </p>
 <dl class="section return"><dt>Returns</dt><dd>A new vec3&lt;FloatingPointType&lt;T&gt;&gt; instance representing the normalized vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00404">404</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00434">434</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
-<p class="reference">References <a class="el" href="vec3_8ixx_source.html#l00119">length()</a>, and <a class="el" href="vec3_8ixx_source.html#l00046">vec3()</a>.</p>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="vec3_8ixx_source.html#l00120">length()</a>, and <a class="el" href="vec3_8ixx_source.html#l00047">vec3()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="CameraSceneNode_8ixx_source.html#l00112">helios::scene::CameraSceneNode::lookAt()</a>, <a class="el" href="CameraSceneNode_8ixx_source.html#l00162">helios::scene::CameraSceneNode::lookAtLocal()</a>, and <a class="el" href="ChaseSystem_8ixx_source.html#l00052">helios::engine::modules::ai::systems::ChaseSystem::update()</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structhelios_1_1math_1_1vec3_a3bbdd06a78770b9dadc233e0acca4295_cgraph.svg" width="344" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structhelios_1_1math_1_1vec3_a3bbdd06a78770b9dadc233e0acca4295_icgraph.svg" width="407" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -638,7 +691,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if all elements are equal (==), false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00184">184</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00192">192</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -676,7 +729,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A const ref to the requested component. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00094">94</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00095">95</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -714,7 +767,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A const ref to the requested component. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00108">108</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00109">109</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -757,9 +810,41 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the elements of the vectors are considered equal, otherwise false.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://realtimecollisiondetection.net/blog/?p=89">https://realtimecollisiondetection.net/blog/?p=89</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo</a></b></dt><dd>account for abs (values close to zero) and rel (larger values), move epsilon to global constant? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo</a></b></dt><dd>account for abs (values close to zero) and rel (larger values), move epsilon to global constant? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00206">206</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00214">214</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+
+</div>
+</div>
+<a id="a899d8b0cba0d969fd32333ec739c3a61" name="a899d8b0cba0d969fd32333ec739c3a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a899d8b0cba0d969fd32333ec739c3a61">&#9670;&#160;</a></span>toVec2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::math::Numeric</a> T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1math_1_1vec2.html">vec2</a>&lt; T &gt; <a class="el" href="structhelios_1_1math_1_1vec3.html">helios::math::vec3</a>&lt; T &gt;::toVec2 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel export">export</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts this 3D vector to a 2D vector by discarding the z-component. </p>
+<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structhelios_1_1math_1_1vec2.html" title="Represents a 2-dimensional vector of the generic type &lt;T&gt;.">vec2&lt;T&gt;</a> instance with components (x, y). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00418">418</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -792,7 +877,15 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 <p>Creates a <a class="el" href="structhelios_1_1math_1_1vec4.html" title="Represents a 4-dimensional vector of the generic type &lt;T&gt;.">vec4</a> with the x, y, z components from this vector and sets the w component to 0, representing a direction in homogeneous coordinates.</p>
 <dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structhelios_1_1math_1_1vec4.html" title="Represents a 4-dimensional vector of the generic type &lt;T&gt;.">vec4&lt;T&gt;</a> instance with components (x, y, z, 0). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00388">388</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00413">413</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="LevelBoundsBehaviorSystem_8ixx_source.html#l00085">helios::engine::mechanics::bounds::systems::LevelBoundsBehaviorSystem::update()</a>.</p>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structhelios_1_1math_1_1vec3_a98db2375fe3de090655548f4d29c8192_icgraph.svg" width="432" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -831,7 +924,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structhelios_1_1math_1_1vec4.html" title="Represents a 4-dimensional vector of the generic type &lt;T&gt;.">vec4&lt;T&gt;</a> instance with components (x, y, z, w). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00393">393</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00423">423</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -869,7 +962,7 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new vec3&lt;T&gt; with (x, y, z). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00246">246</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00254">254</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
@@ -907,13 +1000,13 @@ template&lt;<a class="el" href="concepthelios_1_1math_1_1Numeric.html">helios::m
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new vec3&lt;T&gt; with (x, y, z). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00227">227</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vec3_8ixx_source.html#l00235">235</a> of file <a class="el" href="vec3_8ixx_source.html">vec3.ixx</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>include/helios/math/types/<a class="el" href="vec2_8ixx_source.html">vec2.ixx</a></li>
-<li>include/helios/math/types/<a class="el" href="vec3_8ixx_source.html">vec3.ixx</a></li>
+<li><a class="el" href="vec2_8ixx_source.html">vec2.ixx</a></li>
+<li><a class="el" href="vec3_8ixx_source.html">vec3.ixx</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

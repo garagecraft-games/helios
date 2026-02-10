@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent" kind="class" language="C++" prot="public">
+    <compoundname>helios::engine::modules::physics::collision::events::SolidCollisionEvent</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a8e76c0313fcc31dc251cb7d5fee668e3" prot="private" static="no" mutable="no">
+        <type><ref refid="structhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1_1CollisionContext" kindref="compound">collision::types::CollisionContext</ref></type>
+        <definition>collision::types::CollisionContext helios::engine::modules::physics::collision::events::SolidCollisionEvent::collisionContext_</definition>
+        <argsstring></argsstring>
+        <name>collisionContext_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::events::SolidCollisionEvent::collisionContext_</qualifiedname>
+        <briefdescription>
+<para>Context data describing the collision. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" line="29" column="44" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a2eb99e31a94f442ee111ac957e0d778b" prot="private" static="no" mutable="no">
+        <type><ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref></type>
+        <definition>helios::engine::ecs::EntityHandle helios::engine::modules::physics::collision::events::SolidCollisionEvent::source_</definition>
+        <argsstring></argsstring>
+        <name>source_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::events::SolidCollisionEvent::source_</qualifiedname>
+        <briefdescription>
+<para>Handle of the entity that reported the collision. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" line="34" column="43" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a9495a041857609a75b2d971036300620" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::physics::collision::events::SolidCollisionEvent::SolidCollisionEvent</definition>
+        <argsstring>(const helios::engine::ecs::EntityHandle source, const collision::types::CollisionContext &amp;collisionContext)</argsstring>
+        <name>SolidCollisionEvent</name>
+        <qualifiedname>helios::engine::modules::physics::collision::events::SolidCollisionEvent::SolidCollisionEvent</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref></type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1_1CollisionContext" kindref="compound">collision::types::CollisionContext</ref> &amp;</type>
+          <declname>collisionContext</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent" kindref="compound">SolidCollisionEvent</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle of the reporting entity. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>collisionContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Context data describing the collision. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" line="44" column="18" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" bodystart="44" bodyend="47"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a4972a93ca46cd1a4c53a276140b004b5" compoundref="SolidCollisionEvent_8ixx" startline="54" endline="56">collisionContext</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a087b084be4efe41b4fd397a0e9ab1b2b" compoundref="SolidCollisionEvent_8ixx" startline="63" endline="65">source</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a4972a93ca46cd1a4c53a276140b004b5" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="structhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1_1CollisionContext" kindref="compound">collision::types::CollisionContext</ref> &amp;</type>
+        <definition>const collision::types::CollisionContext &amp; helios::engine::modules::physics::collision::events::SolidCollisionEvent::collisionContext</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>collisionContext</name>
+        <qualifiedname>helios::engine::modules::physics::collision::events::SolidCollisionEvent::collisionContext</qualifiedname>
+        <briefdescription>
+<para>Returns the collision context. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to the collision context data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" line="54" column="51" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" bodystart="54" bodyend="56"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a9495a041857609a75b2d971036300620" compoundref="SolidCollisionEvent_8ixx" startline="44" endline="47">SolidCollisionEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a087b084be4efe41b4fd397a0e9ab1b2b" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref></type>
+        <definition>helios::engine::ecs::EntityHandle helios::engine::modules::physics::collision::events::SolidCollisionEvent::source</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>source</name>
+        <qualifiedname>helios::engine::modules::physics::collision::events::SolidCollisionEvent::source</qualifiedname>
+        <briefdescription>
+<para>Returns the source entity handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Handle of the entity that reported the collision. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" line="63" column="44" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" bodystart="63" bodyend="65"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a9495a041857609a75b2d971036300620" compoundref="SolidCollisionEvent_8ixx" startline="44" endline="47">SolidCollisionEvent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Event emitted when a solid collision is detected. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Solid collisions represent physical interactions between entities that can block movement or trigger physics responses. This event is published to the event bus when an entity with PassEvent behavior detects a solid collision. </para>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" line="24" column="5" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/events/SolidCollisionEvent.ixx" bodystart="24" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a4972a93ca46cd1a4c53a276140b004b5" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::events::SolidCollisionEvent</scope><name>collisionContext</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a8e76c0313fcc31dc251cb7d5fee668e3" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::events::SolidCollisionEvent</scope><name>collisionContext_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a9495a041857609a75b2d971036300620" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::events::SolidCollisionEvent</scope><name>SolidCollisionEvent</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a087b084be4efe41b4fd397a0e9ab1b2b" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::events::SolidCollisionEvent</scope><name>source</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1events_1_1SolidCollisionEvent_1a2eb99e31a94f442ee111ac957e0d778b" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::events::SolidCollisionEvent</scope><name>source_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

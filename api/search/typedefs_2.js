@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['mat4d_0',['mat4d',['../namespacehelios_1_1math.html#a058bd8629e8b9fdd7914ec513cf515f5',1,'helios::math']]],
-  ['mat4f_1',['mat4f',['../namespacehelios_1_1math.html#ad422120d6e1f106140808f16e348f0b3',1,'helios::math']]],
-  ['mat4i_2',['mat4i',['../namespacehelios_1_1math.html#abfde83491c8def2cca7e8816bb9a0075',1,'helios::math']]]
+  ['datait_0',['DataIt',['../structhelios_1_1engine_1_1ecs_1_1SparseSet_1_1Iterator.html#a4b128df5220830867ac736b5abb85e93',1,'helios::engine::ecs::SparseSet::Iterator::DataIt'],['../structhelios_1_1engine_1_1ecs_1_1SparseSet_1_1ConstIterator.html#ac4e98f9617f52e80b3918c29a673ff8b',1,'helios::engine::ecs::SparseSet::ConstIterator::DataIt']]],
+  ['difference_5ftype_1',['difference_type',['../structhelios_1_1engine_1_1ecs_1_1SparseSet_1_1Iterator.html#a6be0874ed027d26e369183445a93a7f0',1,'helios::engine::ecs::SparseSet::Iterator::difference_type'],['../structhelios_1_1engine_1_1ecs_1_1SparseSet_1_1ConstIterator.html#a9dd46fecb69a0307e7263f2e862d8627',1,'helios::engine::ecs::SparseSet::ConstIterator::difference_type']]],
+  ['disablefn_2',['DisableFn',['../structhelios_1_1engine_1_1ecs_1_1ComponentOps.html#a0eb575ae7e6bb01b9f1bf4569828c768',1,'helios::engine::ecs::ComponentOps']]]
 ];

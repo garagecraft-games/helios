@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['material_20system_0',['3. Material System',['../index.html#autotoc_md128',1,'']]],
-  ['metrics_1',['7. Frame Pacing and Performance Metrics',['../index.html#autotoc_md134',1,'']]],
-  ['module_20details_2',['Module Details',['../index.html#autotoc_md137',1,'']]],
-  ['module_20structure_3',['3. Follow Module Structure',['../dir_106756a8ee71bdde7f7b779a3a0a52e4.html#autotoc_md34',1,'']]],
-  ['modules_4',['Modules',['../index.html#autotoc_md123',1,'Core Modules'],['../dir_106756a8ee71bdde7f7b779a3a0a52e4.html#autotoc_md28',1,'Extension Modules'],['../index.html#autotoc_md124',1,'Extension Modules']]]
+  ['lastattackercomponent_0',['LastAttackerComponent',['../dir_991442008f2dac028067584555d54581.html#autotoc_md145',1,'']]],
+  ['license_1',['License',['../index.html#autotoc_md636',1,'']]],
+  ['lifecycle_2',['Lifecycle',['../dir_c01646dfa756089b07ac7b4e7ae63e35.html#autotoc_md67',1,'']]],
+  ['list_3',['List',['../deprecated.html',1,'Deprecated List'],['../todo.html',1,'Todo List']]],
+  ['logging_20system_4',['5. Logging System',['../index.html#autotoc_md621',1,'']]]
 ];

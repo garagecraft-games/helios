@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="helios_2core_2data_2__module_8ixx" kind="file" language="C++">
+    <compoundname>helios/core/data/_module.ixx</compoundname>
+    <includes refid="TypeIndexer_8ixx" local="no">helios.core.data.TypeIndexer</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>helios.core.data.TypeIndexer</label>
+        <link refid="TypeIndexer_8ixx"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_module.ixx</label>
+        <link refid="helios_2core_2data_2__module_8ixx"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>atomic</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Aggregate module for <ref refid="namespacehelios_1_1core_1_1data" kindref="compound">helios::core::data</ref> namespace. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>@file<sp/>_module.ixx</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>@brief<sp/>Aggregate<sp/>module<sp/>for<sp/>helios::core::data<sp/>namespace.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">export</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">module</highlight><highlight class="normal"><sp/><ref refid="module__helios_8core_8data" kindref="compound">helios.core.data</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">export</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="module__helios_8core_8data_8TypeIndexer" kindref="compound">helios.core.data.TypeIndexer</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/tmp/h/include/helios/core/data/_module.ixx"/>
+  </compounddef>
+</doxygen>

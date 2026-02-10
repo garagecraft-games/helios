@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent" kind="class" language="C++" prot="public">
+    <compoundname>helios::engine::modules::physics::motion::components::DirectionComponent</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a491eebd546816327dcbee4c475995330" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+        <definition>helios::math::vec3f helios::engine::modules::physics::motion::components::DirectionComponent::direction_</definition>
+        <argsstring></argsstring>
+        <name>direction_</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::direction_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>The stored normalized direction vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="31" column="29" bodyfile="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a57e75dedeb659037902816278ff3739b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::motion::components::DirectionComponent::isEnabled_</definition>
+        <argsstring></argsstring>
+        <name>isEnabled_</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::isEnabled_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="36" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a648e0f776e7e3043ab8dbf3bdd1784eb" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::motion::components::DirectionComponent::isEnabled</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::isEnabled</qualifiedname>
+        <briefdescription>
+<para>Checks whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if enabled, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="45" column="15" bodyfile="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1af1d923fce5c5746b37fe3481b0b2f0b1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::motion::components::DirectionComponent::enable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>enable</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::enable</qualifiedname>
+        <briefdescription>
+<para>Enables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="52" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a28b0bb0cbf5fabd3babb449637def50f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::motion::components::DirectionComponent::disable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>disable</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::disable</qualifiedname>
+        <briefdescription>
+<para>Disables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="59" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a6cc839b8dcba184000ebc2580294b650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::physics::motion::components::DirectionComponent::DirectionComponent</definition>
+        <argsstring>()=default</argsstring>
+        <name>DirectionComponent</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::DirectionComponent</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="66" column="9"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1aea2139d16bf31830e61d3a025ad50e85" compoundref="DirectionComponent_8ixx" startline="73" endline="73">DirectionComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1aef6ef78928918b3d3f37da7ec795cb0a">DirectionComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1acd6d800727c5ec8a7823e82e911d0894">operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1aae6cc61d0e14dff65fc77178c1a0a2eb">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1aea2139d16bf31830e61d3a025ad50e85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::physics::motion::components::DirectionComponent::DirectionComponent</definition>
+        <argsstring>(const DirectionComponent &amp;other)</argsstring>
+        <name>DirectionComponent</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::DirectionComponent</qualifiedname>
+        <param>
+          <type>const DirectionComponent &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component to copy from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="73" column="9" bodyfile="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" bodystart="73" bodyend="73"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a141733adfa5f623df918e4c81a2178c0" compoundref="DirectionComponent_8ixx" startline="98" endline="100">direction</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a6cc839b8dcba184000ebc2580294b650">DirectionComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1acd6d800727c5ec8a7823e82e911d0894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a6cc839b8dcba184000ebc2580294b650" kindref="member">DirectionComponent</ref> &amp;</type>
+        <definition>DirectionComponent &amp; helios::engine::modules::physics::motion::components::DirectionComponent::operator=</definition>
+        <argsstring>(const DirectionComponent &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a6cc839b8dcba184000ebc2580294b650" kindref="member">DirectionComponent</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="75" column="28"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a6cc839b8dcba184000ebc2580294b650">DirectionComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1aef6ef78928918b3d3f37da7ec795cb0a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::physics::motion::components::DirectionComponent::DirectionComponent</definition>
+        <argsstring>(DirectionComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>DirectionComponent</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::DirectionComponent</qualifiedname>
+        <param>
+          <type>DirectionComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="76" column="9"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a6cc839b8dcba184000ebc2580294b650">DirectionComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1aae6cc61d0e14dff65fc77178c1a0a2eb" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a6cc839b8dcba184000ebc2580294b650" kindref="member">DirectionComponent</ref> &amp;</type>
+        <definition>DirectionComponent &amp; helios::engine::modules::physics::motion::components::DirectionComponent::operator=</definition>
+        <argsstring>(DirectionComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a6cc839b8dcba184000ebc2580294b650" kindref="member">DirectionComponent</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="77" column="28"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a6cc839b8dcba184000ebc2580294b650">DirectionComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1ab3d2b9c571f237e23d1a32b2d45011a4" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::motion::components::DirectionComponent::setDirection</definition>
+        <argsstring>(const helios::math::vec3f direction) noexcept</argsstring>
+        <name>setDirection</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::setDirection</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Sets the direction vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The provided vector must be normalized. An assertion checks this in debug builds.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new normalized direction vector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="87" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" bodystart="87" bodyend="91"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a141733adfa5f623df918e4c81a2178c0" compoundref="DirectionComponent_8ixx" startline="98" endline="100">direction</references>
+        <references refid="namespacehelios_1_1math_1af25d93f23f91acae02abfd7706b2e36d" compoundref="utils_8ixx" startline="22">helios::math::EPSILON_LENGTH</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1ab3d2b9c571f237e23d1a32b2d45011a4" compoundref="DirectionComponent_8ixx" startline="87" endline="91">setDirection</references>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1ab3d2b9c571f237e23d1a32b2d45011a4" compoundref="DirectionComponent_8ixx" startline="87" endline="91">setDirection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a141733adfa5f623df918e4c81a2178c0" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+        <definition>helios::math::vec3f helios::engine::modules::physics::motion::components::DirectionComponent::direction</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>direction</name>
+        <qualifiedname>helios::engine::modules::physics::motion::components::DirectionComponent::direction</qualifiedname>
+        <briefdescription>
+<para>Retrieves the stored direction vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current normalized direction vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="98" column="30" bodyfile="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" bodystart="98" bodyend="100"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1aea2139d16bf31830e61d3a025ad50e85" compoundref="DirectionComponent_8ixx" startline="73" endline="73">DirectionComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1ab3d2b9c571f237e23d1a32b2d45011a4" compoundref="DirectionComponent_8ixx" startline="87" endline="91">setDirection</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Component that holds a normalized direction vector. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This component is used to store a direction for various purposes, such as movement direction, facing direction, or other vector-based properties. It enforces normalization of the stored vector. </para>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" line="26" column="5" bodyfile="/tmp/h/include/helios/engine/modules/physics/motion/components/DirectionComponent.ixx" bodystart="26" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a141733adfa5f623df918e4c81a2178c0" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>direction</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a491eebd546816327dcbee4c475995330" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>direction_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a6cc839b8dcba184000ebc2580294b650" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>DirectionComponent</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1aea2139d16bf31830e61d3a025ad50e85" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>DirectionComponent</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1aef6ef78928918b3d3f37da7ec795cb0a" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>DirectionComponent</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a28b0bb0cbf5fabd3babb449637def50f" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>disable</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1af1d923fce5c5746b37fe3481b0b2f0b1" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>enable</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a648e0f776e7e3043ab8dbf3bdd1784eb" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>isEnabled</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1a57e75dedeb659037902816278ff3739b" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>isEnabled_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1acd6d800727c5ec8a7823e82e911d0894" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>operator=</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1aae6cc61d0e14dff65fc77178c1a0a2eb" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>operator=</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1motion_1_1components_1_1DirectionComponent_1ab3d2b9c571f237e23d1a32b2d45011a4" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::motion::components::DirectionComponent</scope><name>setDirection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

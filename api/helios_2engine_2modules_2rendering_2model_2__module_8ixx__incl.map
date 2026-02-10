@@ -1,0 +1,16 @@
+<map id="_module.ixx" name="_module.ixx">
+<area shape="rect" id="Node000001" title="Aggregate module for helios::engine::modules::model namespace." alt="" coords="167,5,269,31"/>
+<area shape="rect" id="Node000002" href="$helios_2engine_2modules_2rendering_2model_2components_2__module_8ixx.html" title="Aggregate module for helios::engine::modules::model::components namespace." alt="" coords="36,79,400,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,31,221,65,215,65,215,31"/>
+<area shape="rect" id="Node000003" href="$ModelAabbComponent_8ixx.html" title="Component for storing the canonical AABB of a model." alt="" coords="34,152,402,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,104,221,138,215,138,215,104"/>
+<area shape="rect" id="Node000004" href="$Transform_8ixx.html" title="Represents a 3D transformation consisting of translation, rotation and scale." alt="" coords="42,240,253,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="203,194,169,232,165,228,199,190"/>
+<area shape="rect" id="Node000006" href="$helios_2math_2types_2__module_8ixx.html" title="Module exports for vector and matrix type definitions." alt="" coords="221,313,359,339"/>
+<area shape="poly" id="edge8_Node000003_Node000006" title=" " alt="" coords="236,191,267,239,279,270,287,299,282,301,274,272,262,241,231,194"/>
+<area shape="rect" id="Node000005" href="$helios_2math_2transform_2__module_8ixx.html" title="Module exports for transformation utilities." alt="" coords="5,313,172,339"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="140,267,109,305,105,301,136,264"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="171,263,256,305,253,309,169,268"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="139,311,179,312,193,317,199,326,194,334,184,339,153,342,152,337,182,334,191,330,193,326,190,321,178,317,139,316"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="334,311,369,312,381,317,386,326,382,334,374,339,348,342,347,337,372,334,379,330,381,326,377,321,368,317,334,316"/>
+</map>

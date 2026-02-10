@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8engine_8mechanics_8scoring_8components_8ScorePoolComponent" kind="module">
+    <compoundname>helios.engine.mechanics.scoring.components.ScorePoolComponent</compoundname>
+    <innerfile refid="ScorePoolComponent_8ixx">ScorePoolComponent.ixx</innerfile>
+    <innerclass refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent" prot="public">helios::engine::mechanics::scoring::components::ScorePoolComponent</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a63b998d534e6c7a0027be08bb63392fb" prot="private" static="no" mutable="no">
+        <type><ref refid="structhelios_1_1engine_1_1core_1_1data_1_1ScorePoolId" kindref="compound">helios::engine::core::data::ScorePoolId</ref></type>
+        <definition>helios::engine::core::data::ScorePoolId helios::engine::mechanics::scoring::components::ScorePoolComponent::scorePoolId_</definition>
+        <argsstring></argsstring>
+        <name>scorePoolId_</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::scorePoolId_</qualifiedname>
+        <initializer>{<ref refid="namespacehelios_1_1core_1_1types_1a209d373c4d42ac831d2f6bfd1c4165ad" kindref="member">helios::core::types::no_init</ref>}</initializer>
+        <briefdescription>
+<para>ID of the associated score pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="31" column="49" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a5dd2e8282b8f354da53324a948536fe2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::mechanics::scoring::components::ScorePoolComponent::isEnabled_</definition>
+        <argsstring></argsstring>
+        <name>isEnabled_</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::isEnabled_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="36" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a42e4c782585aee0ff9f682a899122e28" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::mechanics::scoring::components::ScorePoolComponent::isEnabled</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::isEnabled</qualifiedname>
+        <briefdescription>
+<para>Checks whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if enabled, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="46" column="15" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a318b30a7ac510524537b4b915ec61c65" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::scoring::components::ScorePoolComponent::enable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>enable</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::enable</qualifiedname>
+        <briefdescription>
+<para>Enables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="53" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a0c7b1c54f2aab48a987f29f21494975c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::scoring::components::ScorePoolComponent::disable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>disable</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::disable</qualifiedname>
+        <briefdescription>
+<para>Disables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="60" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1ad0cb5b6d26d4bcbf88a43b0f5ebfbf23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</definition>
+        <argsstring>()=default</argsstring>
+        <name>ScorePoolComponent</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="64" column="9"/>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a654b2e1353f1f2a4e4312aab2614fe3c">helios::engine::mechanics::scoring::components::ScorePoolComponent::operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1aafed477c9468f666c636c4c290da882b">helios::engine::mechanics::scoring::components::ScorePoolComponent::operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a523321b7583d58add4a1804dfbfed7b1" compoundref="ScorePoolComponent_8ixx" startline="71" endline="71">helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a15dbc024562aeb7d18c8fcb0e53b18fe">helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a523321b7583d58add4a1804dfbfed7b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</definition>
+        <argsstring>(const ScorePoolComponent &amp;other)</argsstring>
+        <name>ScorePoolComponent</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</qualifiedname>
+        <param>
+          <type>const ScorePoolComponent &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component to copy from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="71" column="9" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" bodystart="71" bodyend="71"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1ad0cb5b6d26d4bcbf88a43b0f5ebfbf23">helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a654b2e1353f1f2a4e4312aab2614fe3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ScorePoolComponent &amp;</type>
+        <definition>ScorePoolComponent &amp; helios::engine::mechanics::scoring::components::ScorePoolComponent::operator=</definition>
+        <argsstring>(const ScorePoolComponent &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::operator=</qualifiedname>
+        <param>
+          <type>const ScorePoolComponent &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="73" column="28"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1ad0cb5b6d26d4bcbf88a43b0f5ebfbf23">helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a15dbc024562aeb7d18c8fcb0e53b18fe" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</definition>
+        <argsstring>(ScorePoolComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>ScorePoolComponent</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</qualifiedname>
+        <param>
+          <type>ScorePoolComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="74" column="9"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1ad0cb5b6d26d4bcbf88a43b0f5ebfbf23">helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1aafed477c9468f666c636c4c290da882b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>ScorePoolComponent &amp;</type>
+        <definition>ScorePoolComponent &amp; helios::engine::mechanics::scoring::components::ScorePoolComponent::operator=</definition>
+        <argsstring>(ScorePoolComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::operator=</qualifiedname>
+        <param>
+          <type>ScorePoolComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="75" column="28"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1ad0cb5b6d26d4bcbf88a43b0f5ebfbf23">helios::engine::mechanics::scoring::components::ScorePoolComponent::ScorePoolComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1acdb892d91627499a69e3f7c79d39221c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::scoring::components::ScorePoolComponent::setScorePoolId</definition>
+        <argsstring>(const helios::engine::core::data::ScorePoolId scorePoolId) noexcept</argsstring>
+        <name>setScorePoolId</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::setScorePoolId</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1core_1_1data_1_1ScorePoolId" kindref="compound">helios::engine::core::data::ScorePoolId</ref></type>
+          <declname>scorePoolId</declname>
+        </param>
+        <briefdescription>
+<para>Sets the associated score pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scorePoolId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the score pool. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="82" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" bodystart="82" bodyend="84"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a67de85ab06c8bd29807b221512a8d84c" compoundref="ScorePoolComponent_8ixx" startline="91" endline="93">helios::engine::mechanics::scoring::components::ScorePoolComponent::scorePoolId</references>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1acdb892d91627499a69e3f7c79d39221c" compoundref="ScorePoolComponent_8ixx" startline="82" endline="84">helios::engine::mechanics::scoring::components::ScorePoolComponent::setScorePoolId</references>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1acdb892d91627499a69e3f7c79d39221c" compoundref="ScorePoolComponent_8ixx" startline="82" endline="84">helios::engine::mechanics::scoring::components::ScorePoolComponent::setScorePoolId</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1a67de85ab06c8bd29807b221512a8d84c" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1engine_1_1core_1_1data_1_1ScorePoolId" kindref="compound">helios::engine::core::data::ScorePoolId</ref></type>
+        <definition>helios::engine::core::data::ScorePoolId helios::engine::mechanics::scoring::components::ScorePoolComponent::scorePoolId</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>scorePoolId</name>
+        <qualifiedname>helios::engine::mechanics::scoring::components::ScorePoolComponent::scorePoolId</qualifiedname>
+        <briefdescription>
+<para>Returns the associated score pool ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The ScorePoolId. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="91" column="50" bodyfile="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" bodystart="91" bodyend="93"/>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScorePoolComponent_1acdb892d91627499a69e3f7c79d39221c" compoundref="ScorePoolComponent_8ixx" startline="82" endline="84">helios::engine::mechanics::scoring::components::ScorePoolComponent::setScorePoolId</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/mechanics/scoring/components/ScorePoolComponent.ixx" line="8" column="15"/>
+  </compounddef>
+</doxygen>

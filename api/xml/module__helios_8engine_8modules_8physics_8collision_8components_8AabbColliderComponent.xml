@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8engine_8modules_8physics_8collision_8components_8AabbColliderComponent" kind="module">
+    <compoundname>helios.engine.modules.physics.collision.components.AabbColliderComponent</compoundname>
+    <innerfile refid="AabbColliderComponent_8ixx">AabbColliderComponent.ixx</innerfile>
+    <innerclass refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent" prot="public">helios::engine::modules::physics::collision::components::AabbColliderComponent</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a3142718954d1dadd708a560f14e230b6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehelios_1_1math_1a124c0492430aeecedc1c1a5ece4ba488" kindref="member">helios::math::aabbf</ref></type>
+        <definition>helios::math::aabbf helios::engine::modules::physics::collision::components::AabbColliderComponent::bounds_</definition>
+        <argsstring></argsstring>
+        <name>bounds_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::bounds_</qualifiedname>
+        <briefdescription>
+<para>The local bounds of the collider. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="28" column="29" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a9c413ecfdd5cba475f96e7e40377cd1a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::AabbColliderComponent::isEnabled_</definition>
+        <argsstring></argsstring>
+        <name>isEnabled_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::isEnabled_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="33" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a99855abed1fe94dd2eaa97d4cbf33295" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::AabbColliderComponent::isEnabled</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::isEnabled</qualifiedname>
+        <briefdescription>
+<para>Checks whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if enabled, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="42" column="15" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1ad42ec5dc438f158bb65af30bc1aa0d89" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::collision::components::AabbColliderComponent::enable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>enable</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::enable</qualifiedname>
+        <briefdescription>
+<para>Enables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="49" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a670634bf302a0e78d00088d308fde4c6" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::collision::components::AabbColliderComponent::disable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>disable</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::disable</qualifiedname>
+        <briefdescription>
+<para>Disables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="56" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a57fc319a1b95db29d19ee2f51013064a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</definition>
+        <argsstring>()=default</argsstring>
+        <name>AabbColliderComponent</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="63" column="18"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1aa85d82fe716cc3794e62fa066f40316f">helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a841be0726e0accd776e33a929e1d5279" compoundref="AabbColliderComponent_8ixx" startline="70" endline="71">helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1af759a6892c6b8a2d1c33f60deb21c30a">helios::engine::modules::physics::collision::components::AabbColliderComponent::operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1add91b65e9f7f31510e62223a13f2cb2e">helios::engine::modules::physics::collision::components::AabbColliderComponent::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a841be0726e0accd776e33a929e1d5279" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</definition>
+        <argsstring>(const AabbColliderComponent &amp;other)</argsstring>
+        <name>AabbColliderComponent</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</qualifiedname>
+        <param>
+          <type>const AabbColliderComponent &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Preserves the bounds of this component. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="70" column="9" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="70" bodyend="71"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a57fc319a1b95db29d19ee2f51013064a">helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1add91b65e9f7f31510e62223a13f2cb2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AabbColliderComponent &amp;</type>
+        <definition>AabbColliderComponent &amp; helios::engine::modules::physics::collision::components::AabbColliderComponent::operator=</definition>
+        <argsstring>(const AabbColliderComponent &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::operator=</qualifiedname>
+        <param>
+          <type>const AabbColliderComponent &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="73" column="31"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a57fc319a1b95db29d19ee2f51013064a">helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1aa85d82fe716cc3794e62fa066f40316f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</definition>
+        <argsstring>(AabbColliderComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>AabbColliderComponent</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</qualifiedname>
+        <param>
+          <type>AabbColliderComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="74" column="9"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a57fc319a1b95db29d19ee2f51013064a">helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1af759a6892c6b8a2d1c33f60deb21c30a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>AabbColliderComponent &amp;</type>
+        <definition>AabbColliderComponent &amp; helios::engine::modules::physics::collision::components::AabbColliderComponent::operator=</definition>
+        <argsstring>(AabbColliderComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::operator=</qualifiedname>
+        <param>
+          <type>AabbColliderComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="75" column="31"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a57fc319a1b95db29d19ee2f51013064a">helios::engine::modules::physics::collision::components::AabbColliderComponent::AabbColliderComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a32097d5597968f534787ce7e355bd0d1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::collision::components::AabbColliderComponent::onAcquire</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>onAcquire</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::onAcquire</qualifiedname>
+        <briefdescription>
+<para>Resets the bounds to invalidate state when this Component is acquired. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="80" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="80" bodyend="82"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a32097d5597968f534787ce7e355bd0d1" compoundref="AabbColliderComponent_8ixx" startline="80" endline="82">helios::engine::modules::physics::collision::components::AabbColliderComponent::onAcquire</references>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a32097d5597968f534787ce7e355bd0d1" compoundref="AabbColliderComponent_8ixx" startline="80" endline="82">helios::engine::modules::physics::collision::components::AabbColliderComponent::onAcquire</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1af3140ef1a7e83a52408261fbd8dbfa75" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::collision::components::AabbColliderComponent::onRelease</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>onRelease</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::onRelease</qualifiedname>
+        <briefdescription>
+<para>Resets the bounds to invalidate state when this Component is released. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="87" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a93f83ca5d202bb41487ca1c1c21b5465" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacehelios_1_1math_1a124c0492430aeecedc1c1a5ece4ba488" kindref="member">helios::math::aabbf</ref> &amp;</type>
+        <definition>const helios::math::aabbf &amp; helios::engine::modules::physics::collision::components::AabbColliderComponent::bounds</definition>
+        <argsstring>()</argsstring>
+        <name>bounds</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::bounds</qualifiedname>
+        <briefdescription>
+<para>Retrieves the bounds of the collider. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A const reference to the AABB. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="96" column="36" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="96" bodyend="98"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1af60b6555f674c0e2dfc55ca4288618b4" compoundref="AabbColliderComponent_8ixx" startline="105" endline="107">helios::engine::modules::physics::collision::components::AabbColliderComponent::setBounds</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1systems_1_1GridCollisionDetectionSystem_1aeb615f2b8547602d0ee61d776fefa9e8" compoundref="GridCollisionDetectionSystem_8ixx" startline="570" endline="644">helios::engine::modules::physics::collision::systems::GridCollisionDetectionSystem::solveCell</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1af60b6555f674c0e2dfc55ca4288618b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::collision::components::AabbColliderComponent::setBounds</definition>
+        <argsstring>(const helios::math::aabbf &amp;bounds)</argsstring>
+        <name>setBounds</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::setBounds</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacehelios_1_1math_1a124c0492430aeecedc1c1a5ece4ba488" kindref="member">helios::math::aabbf</ref> &amp;</type>
+          <declname>bounds</declname>
+        </param>
+        <briefdescription>
+<para>Sets the bounds of the collider. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new AABB to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="105" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="105" bodyend="107"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a93f83ca5d202bb41487ca1c1c21b5465" compoundref="AabbColliderComponent_8ixx" startline="96" endline="98">helios::engine::modules::physics::collision::components::AabbColliderComponent::bounds</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1AabbColliderComponent_1a4b64ae323632b21dfa67164b8b77adfb" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::AabbColliderComponent::boundsInitialized</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>boundsInitialized</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::AabbColliderComponent::boundsInitialized</qualifiedname>
+        <briefdescription>
+<para>Checks whether the bounds of the collider have been initialized. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1Bounds" kindref="compound">Bounds</ref> of the collider component are considered to be initialized if the minimum X coordinate is less or equal to the maximum X coordinate.</para>
+<para><simplesect kind="return"><para>true if the bounds are considered to be initialized; otherwise, false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="117" column="15" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" bodystart="117" bodyend="119"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/AabbColliderComponent.ixx" line="9" column="15"/>
+  </compounddef>
+</doxygen>

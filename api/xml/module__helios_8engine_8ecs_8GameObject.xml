@@ -1,0 +1,600 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8engine_8ecs_8GameObject" kind="module">
+    <compoundname>helios.engine.ecs.GameObject</compoundname>
+    <innerfile refid="GameObject_8ixx">GameObject.ixx</innerfile>
+    <innerclass refid="classhelios_1_1engine_1_1ecs_1_1GameObject" prot="public">helios::engine::ecs::GameObject</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a5e50e0779d5e5ed7b048bbd523025c28" prot="private" static="no" mutable="no">
+        <type><ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref></type>
+        <definition>helios::engine::ecs::EntityHandle helios::engine::ecs::GameObject::entityHandle_</definition>
+        <argsstring></argsstring>
+        <name>entityHandle_</name>
+        <qualifiedname>helios::engine::ecs::GameObject::entityHandle_</qualifiedname>
+        <initializer>{0,0}</initializer>
+        <briefdescription>
+<para>The underlying entity identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="82" column="43" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1ab8759c23731a3799152a6b6fe3b92dbb" prot="private" static="no" mutable="no">
+        <type><ref refid="classhelios_1_1engine_1_1ecs_1_1EntityManager" kindref="compound">helios::engine::ecs::EntityManager</ref> *</type>
+        <definition>helios::engine::ecs::EntityManager* helios::engine::ecs::GameObject::entityManager_</definition>
+        <argsstring></argsstring>
+        <name>entityManager_</name>
+        <qualifiedname>helios::engine::ecs::GameObject::entityManager_</qualifiedname>
+        <briefdescription>
+<para>Non-owning pointer to the <ref refid="classhelios_1_1engine_1_1ecs_1_1EntityManager" kindref="compound">EntityManager</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="87" column="44" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a1f382e1049da10b3c07f6d05e4424a6b" prot="public" static="no" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::ecs::GameObject::GameObject</definition>
+        <argsstring>(const helios::engine::ecs::EntityHandle entityHandle, helios::engine::ecs::EntityManager *entityManager) noexcept</argsstring>
+        <name>GameObject</name>
+        <qualifiedname>helios::engine::ecs::GameObject::GameObject</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref></type>
+          <declname>entityHandle</declname>
+        </param>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1ecs_1_1EntityManager" kindref="compound">helios::engine::ecs::EntityManager</ref> *</type>
+          <declname>entityManager</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classhelios_1_1engine_1_1ecs_1_1GameObject" kindref="compound">GameObject</ref> wrapper. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entityHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The entity handle to wrap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entityManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classhelios_1_1engine_1_1ecs_1_1EntityManager" kindref="compound">EntityManager</ref>. Must not be null. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="98" column="18" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="98" bodyend="104"/>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1abd1f621c0ff1399530712ee7facfe02a" compoundref="GameObject_8ixx" startline="121" endline="123">helios::engine::ecs::GameObject::entityHandle</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a4f04eb1029e742649a0018361b0ff7b2" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::generator&lt; <ref refid="classhelios_1_1engine_1_1core_1_1data_1_1ComponentTypeId" kindref="compound">helios::engine::core::data::ComponentTypeId</ref> &gt;</type>
+        <definition>std::generator&lt; helios::engine::core::data::ComponentTypeId &gt; helios::engine::ecs::GameObject::componentTypeIds</definition>
+        <argsstring>() const</argsstring>
+        <name>componentTypeIds</name>
+        <qualifiedname>helios::engine::ecs::GameObject::componentTypeIds</qualifiedname>
+        <briefdescription>
+<para>Returns a generator over all component type IDs attached to this entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Generator yielding <ref refid="classhelios_1_1engine_1_1core_1_1data_1_1ComponentTypeId" kindref="compound">ComponentTypeId</ref> for each attached component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="112" column="9" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="112" bodyend="114"/>
+        <referencedby refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1behavior_1_1initializers_1_1DelayedComponentEnablerInitializer_1aa62271db362f6450fb7a9e53c9346313" compoundref="DelayedComponentEnablerInitializer_8ixx" startline="97" endline="124">helios::engine::runtime::spawn::behavior::initializers::DelayedComponentEnablerInitializer&lt; ComponentTypes &gt;::initialize</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1ad1a7a9e6853925618d4aa9170409f072" compoundref="GameObject_8ixx" startline="337" endline="346">helios::engine::ecs::GameObject::onAcquire</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1a2a7b9dc93c0a360e83ed33534742b7ae" compoundref="GameObject_8ixx" startline="320" endline="329">helios::engine::ecs::GameObject::onRelease</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1a5b86c188307f1f2e8500509708d60d93" compoundref="GameObject_8ixx" startline="284" endline="303">helios::engine::ecs::GameObject::setActive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1abd1f621c0ff1399530712ee7facfe02a" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref></type>
+        <definition>helios::engine::ecs::EntityHandle helios::engine::ecs::GameObject::entityHandle</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>entityHandle</name>
+        <qualifiedname>helios::engine::ecs::GameObject::entityHandle</qualifiedname>
+        <briefdescription>
+<para>Returns the underlying entity handle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">EntityHandle</ref> for this <ref refid="classhelios_1_1engine_1_1ecs_1_1GameObject" kindref="compound">GameObject</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="121" column="44" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="121" bodyend="123"/>
+        <referencedby refid="classhelios_1_1engine_1_1runtime_1_1world_1_1GameWorld_1abcc2243a9cb4b493634a63932434bcaf" compoundref="GameWorld_8ixx" startline="501" endline="511">helios::engine::runtime::world::GameWorld::clone</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1a1f382e1049da10b3c07f6d05e4424a6b" compoundref="GameObject_8ixx" startline="98" endline="104">helios::engine::ecs::GameObject::GameObject</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1systems_1_1GridCollisionDetectionSystem_1aeb615f2b8547602d0ee61d776fefa9e8" compoundref="GridCollisionDetectionSystem_8ixx" startline="570" endline="644">helios::engine::modules::physics::collision::systems::GridCollisionDetectionSystem::solveCell</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a7135aa7138d11abfe995def238555b1d" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref></type>
+        <definition>helios::engine::ecs::EntityHandle helios::engine::ecs::GameObject::entityHandle</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>entityHandle</name>
+        <qualifiedname>helios::engine::ecs::GameObject::entityHandle</qualifiedname>
+        <briefdescription>
+<para>Returns the underlying entity handle (const). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">EntityHandle</ref> for this <ref refid="classhelios_1_1engine_1_1ecs_1_1GameObject" kindref="compound">GameObject</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="130" column="44" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a0447ff56cdd329a2db5436096f8353ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename ...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T &amp; helios::engine::ecs::GameObject::add</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>add</name>
+        <qualifiedname>helios::engine::ecs::GameObject::add</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Constructs and attaches a component to this entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the entity is active, calls `onActivate()` on the new component. If inactive, calls `onDeactivate()`.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type to add. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Constructor argument types.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments forwarded to the component constructor.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to the newly created component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="148" column="11" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="148" bodyend="171"/>
+        <references refid="classhelios_1_1engine_1_1core_1_1data_1_1ComponentTypeId_1ae2b1610edbd9844c96d65f5572fa6db9" compoundref="ComponentTypeId_8ixx" startline="97" endline="100">helios::engine::core::data::ComponentTypeId::id</references>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1ComponentOpsRegistry_1a4f41db7b6ae7e83ba8092343d8620e59" compoundref="ComponentOpsRegistry_8ixx" startline="82" endline="89">helios::engine::ecs::ComponentOpsRegistry::ops</references>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1ab1c1f6b81c4965b76967c29a6af7f713" compoundref="GameObject_8ixx" startline="198" endline="200">helios::engine::ecs::GameObject::raw</references>
+        <referencedby refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1ad6fbab6897f2899f0e6f98c37ba294e8" compoundref="GameObject_8ixx" startline="184" endline="189">helios::engine::ecs::GameObject::getOrAdd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1ad6fbab6897f2899f0e6f98c37ba294e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename ...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T &amp; helios::engine::ecs::GameObject::getOrAdd</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>getOrAdd</name>
+        <qualifiedname>helios::engine::ecs::GameObject::getOrAdd</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Returns existing component or creates a new one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Constructor argument types.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments forwarded to the constructor if creating.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to the existing or newly created component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="184" column="11" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="184" bodyend="189"/>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1a0447ff56cdd329a2db5436096f8353ae" compoundref="GameObject_8ixx" startline="148" endline="171">helios::engine::ecs::GameObject::add</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1ab1c1f6b81c4965b76967c29a6af7f713" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * helios::engine::ecs::GameObject::raw</definition>
+        <argsstring>(const helios::engine::core::data::ComponentTypeId typeId)</argsstring>
+        <name>raw</name>
+        <qualifiedname>helios::engine::ecs::GameObject::raw</qualifiedname>
+        <param>
+          <type>const <ref refid="classhelios_1_1engine_1_1core_1_1data_1_1ComponentTypeId" kindref="compound">helios::engine::core::data::ComponentTypeId</ref></type>
+          <declname>typeId</declname>
+        </param>
+        <briefdescription>
+<para>Returns raw pointer to component by type ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>typeId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Raw void pointer to the component, or nullptr if not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="198" column="14" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="198" bodyend="200"/>
+        <referencedby refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1a0447ff56cdd329a2db5436096f8353ae" compoundref="GameObject_8ixx" startline="148" endline="171">helios::engine::ecs::GameObject::add</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1ad1a7a9e6853925618d4aa9170409f072" compoundref="GameObject_8ixx" startline="337" endline="346">helios::engine::ecs::GameObject::onAcquire</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1a2a7b9dc93c0a360e83ed33534742b7ae" compoundref="GameObject_8ixx" startline="320" endline="329">helios::engine::ecs::GameObject::onRelease</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1a5b86c188307f1f2e8500509708d60d93" compoundref="GameObject_8ixx" startline="284" endline="303">helios::engine::ecs::GameObject::setActive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a2229cd5bbcce0a3504519ed979ccdeb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * helios::engine::ecs::GameObject::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <qualifiedname>helios::engine::ecs::GameObject::get</qualifiedname>
+        <briefdescription>
+<para>Returns pointer to a component. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the component, or nullptr if not attached. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="210" column="11" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="210" bodyend="212"/>
+        <referencedby refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1behavior_1_1initializers_1_1DelayedComponentEnablerInitializer_1aa62271db362f6450fb7a9e53c9346313" compoundref="DelayedComponentEnablerInitializer_8ixx" startline="97" endline="124">helios::engine::runtime::spawn::behavior::initializers::DelayedComponentEnablerInitializer&lt; ComponentTypes &gt;::initialize</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1behavior_1_1initializers_1_1EmitterInitializer_1a4fea97ad277deeefa09cae4d735de17b" compoundref="EmitterInitializer_8ixx" startline="51" endline="74">helios::engine::runtime::spawn::behavior::initializers::EmitterInitializer::initialize</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1behavior_1_1initializers_1_1RandomDirectionInitializer_1acc5c6d430c92ca5523aec5dabe4f8207" compoundref="RandomDirectionInitializer_8ixx" startline="46" endline="64">helios::engine::runtime::spawn::behavior::initializers::RandomDirectionInitializer::initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a2afb01851bc29d6f5d69b0e13a448dce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const T *</type>
+        <definition>const T * helios::engine::ecs::GameObject::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <qualifiedname>helios::engine::ecs::GameObject::get</qualifiedname>
+        <briefdescription>
+<para>Returns const pointer to a component. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Const pointer to the component, or nullptr if not attached. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="222" column="17" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="222" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a48e5d5ad5f29072db8f736628d57103c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool helios::engine::ecs::GameObject::has</definition>
+        <argsstring>()</argsstring>
+        <name>has</name>
+        <qualifiedname>helios::engine::ecs::GameObject::has</qualifiedname>
+        <briefdescription>
+<para>Checks if this entity has a specific component type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the component is attached, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="234" column="14" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="234" bodyend="236"/>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1lifecycle_1_1components_1_1DelayedComponentEnabler_1acdffc14071644f325c8c08bd999dc6b3" compoundref="DelayedComponentEnabler_8ixx" startline="120" endline="140">helios::engine::mechanics::lifecycle::components::DelayedComponentEnabler::defer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1ab81181f32386dacc35659869c317da9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::ecs::GameObject::has</definition>
+        <argsstring>(helios::engine::core::data::ComponentTypeId typeId)</argsstring>
+        <name>has</name>
+        <qualifiedname>helios::engine::ecs::GameObject::has</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1core_1_1data_1_1ComponentTypeId" kindref="compound">helios::engine::core::data::ComponentTypeId</ref></type>
+          <declname>typeId</declname>
+        </param>
+        <briefdescription>
+<para>Checks if this entity has a component by type ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>typeId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the component is attached, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="245" column="14" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="245" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a7f52a024349c472966d8d16c102b0cb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::ecs::GameObject::enableComponent</definition>
+        <argsstring>(const helios::engine::core::data::ComponentTypeId typeId)</argsstring>
+        <name>enableComponent</name>
+        <qualifiedname>helios::engine::ecs::GameObject::enableComponent</qualifiedname>
+        <param>
+          <type>const <ref refid="classhelios_1_1engine_1_1core_1_1data_1_1ComponentTypeId" kindref="compound">helios::engine::core::data::ComponentTypeId</ref></type>
+          <declname>typeId</declname>
+        </param>
+        <briefdescription>
+<para>Enables a specific component by type ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>typeId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="254" column="14" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="254" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1aaf8a34b2fb8daed88c1d363dd82eb81f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::ecs::GameObject::disableComponent</definition>
+        <argsstring>(const helios::engine::core::data::ComponentTypeId typeId)</argsstring>
+        <name>disableComponent</name>
+        <qualifiedname>helios::engine::ecs::GameObject::disableComponent</qualifiedname>
+        <param>
+          <type>const <ref refid="classhelios_1_1engine_1_1core_1_1data_1_1ComponentTypeId" kindref="compound">helios::engine::core::data::ComponentTypeId</ref></type>
+          <declname>typeId</declname>
+        </param>
+        <briefdescription>
+<para>Disables a specific component by type ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>typeId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component type identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="263" column="14" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="263" bodyend="265"/>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1lifecycle_1_1components_1_1DelayedComponentEnabler_1acdffc14071644f325c8c08bd999dc6b3" compoundref="DelayedComponentEnabler_8ixx" startline="120" endline="140">helios::engine::mechanics::lifecycle::components::DelayedComponentEnabler::defer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a5b86c188307f1f2e8500509708d60d93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::ecs::GameObject::setActive</definition>
+        <argsstring>(const bool active)</argsstring>
+        <name>setActive</name>
+        <qualifiedname>helios::engine::ecs::GameObject::setActive</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+<para>Sets the activation state of this <ref refid="classhelios_1_1engine_1_1ecs_1_1GameObject" kindref="compound">GameObject</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When deactivated:<itemizedlist>
+<listitem><para>An `Inactive` tag component is added</para>
+</listitem><listitem><para>The `Active` tag component is removed</para>
+</listitem><listitem><para>`onDeactivate()` is called on components that support it</para>
+</listitem></itemizedlist>
+</para>
+<para>When activated:<itemizedlist>
+<listitem><para>The `Inactive` tag component is removed</para>
+</listitem><listitem><para>An `Active` tag component is added</para>
+</listitem><listitem><para>`onActivate()` is called on components that support it</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="note"><para>Does **not** call `enable()`/`disable()` on components.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>active</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to activate, false to deactivate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="284" column="14" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="284" bodyend="303"/>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1a4f04eb1029e742649a0018361b0ff7b2" compoundref="GameObject_8ixx" startline="112" endline="114">helios::engine::ecs::GameObject::componentTypeIds</references>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1ComponentOpsRegistry_1a4f41db7b6ae7e83ba8092343d8620e59" compoundref="ComponentOpsRegistry_8ixx" startline="82" endline="89">helios::engine::ecs::ComponentOpsRegistry::ops</references>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1ab1c1f6b81c4965b76967c29a6af7f713" compoundref="GameObject_8ixx" startline="198" endline="200">helios::engine::ecs::GameObject::raw</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a3b2fdacd0144acb72a94f1c541bf9e99" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::ecs::GameObject::isActive</definition>
+        <argsstring>() const</argsstring>
+        <name>isActive</name>
+        <qualifiedname>helios::engine::ecs::GameObject::isActive</qualifiedname>
+        <briefdescription>
+<para>Returns whether this <ref refid="classhelios_1_1engine_1_1ecs_1_1GameObject" kindref="compound">GameObject</ref> is active. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the entity has the Active tag component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="310" column="15" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="310" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1a2a7b9dc93c0a360e83ed33534742b7ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::ecs::GameObject::onRelease</definition>
+        <argsstring>()</argsstring>
+        <name>onRelease</name>
+        <qualifiedname>helios::engine::ecs::GameObject::onRelease</qualifiedname>
+        <briefdescription>
+<para>Notifies all components that the entity is being released to a pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterates through all attached components and calls `onRelease()` on those that implement it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="320" column="14" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="320" bodyend="329"/>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1a4f04eb1029e742649a0018361b0ff7b2" compoundref="GameObject_8ixx" startline="112" endline="114">helios::engine::ecs::GameObject::componentTypeIds</references>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1ComponentOpsRegistry_1a4f41db7b6ae7e83ba8092343d8620e59" compoundref="ComponentOpsRegistry_8ixx" startline="82" endline="89">helios::engine::ecs::ComponentOpsRegistry::ops</references>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1ab1c1f6b81c4965b76967c29a6af7f713" compoundref="GameObject_8ixx" startline="198" endline="200">helios::engine::ecs::GameObject::raw</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1ecs_1_1GameObject_1ad1a7a9e6853925618d4aa9170409f072" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::ecs::GameObject::onAcquire</definition>
+        <argsstring>()</argsstring>
+        <name>onAcquire</name>
+        <qualifiedname>helios::engine::ecs::GameObject::onAcquire</qualifiedname>
+        <briefdescription>
+<para>Notifies all components that the entity is being acquired from a pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterates through all attached components and calls `onAcquire()` on those that implement it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="337" column="14" bodyfile="/tmp/h/include/helios/engine/ecs/GameObject.ixx" bodystart="337" bodyend="346"/>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1a4f04eb1029e742649a0018361b0ff7b2" compoundref="GameObject_8ixx" startline="112" endline="114">helios::engine::ecs::GameObject::componentTypeIds</references>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1ComponentOpsRegistry_1a4f41db7b6ae7e83ba8092343d8620e59" compoundref="ComponentOpsRegistry_8ixx" startline="82" endline="89">helios::engine::ecs::ComponentOpsRegistry::ops</references>
+        <references refid="classhelios_1_1engine_1_1ecs_1_1GameObject_1ab1c1f6b81c4965b76967c29a6af7f713" compoundref="GameObject_8ixx" startline="198" endline="200">helios::engine::ecs::GameObject::raw</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/ecs/GameObject.ixx" line="13" column="15"/>
+  </compounddef>
+</doxygen>

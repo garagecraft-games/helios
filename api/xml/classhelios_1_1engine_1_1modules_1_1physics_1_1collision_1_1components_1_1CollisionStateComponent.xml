@@ -1,0 +1,736 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent" kind="class" language="C++" prot="public">
+    <compoundname>helios::engine::modules::physics::collision::components::CollisionStateComponent</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a36663aba128e3aee8f133a395bd970ac" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+        <definition>helios::math::vec3f helios::engine::modules::physics::collision::components::CollisionStateComponent::contact_</definition>
+        <argsstring></argsstring>
+        <name>contact_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::contact_</qualifiedname>
+        <briefdescription>
+<para>World-space contact point of the collision. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="39" column="29" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1ad6481e18548f73fe48c8ac9c6fb9be4f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::isSolid_</definition>
+        <argsstring></argsstring>
+        <name>isSolid_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::isSolid_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether this collision is a solid (physical) collision. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="44" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a3ed423cf54bb10f7ca82fda1ecf43b90" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::isTrigger_</definition>
+        <argsstring></argsstring>
+        <name>isTrigger_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::isTrigger_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether this collision is a trigger (non-physical) collision. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="49" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a8cc9ed2ea8a4462340c4f4b2ead3dd17" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::isCollisionReporter_</definition>
+        <argsstring></argsstring>
+        <name>isCollisionReporter_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::isCollisionReporter_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether this entity is the collision reporter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="54" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a61b8dbf02c8cfe29ec73892156b01c2e" prot="private" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref> &gt;</type>
+        <definition>std::optional&lt;helios::engine::ecs::EntityHandle&gt; helios::engine::modules::physics::collision::components::CollisionStateComponent::other_</definition>
+        <argsstring></argsstring>
+        <name>other_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::other_</qualifiedname>
+        <briefdescription>
+<para>Handle of the other entity involved in the collision. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="59" column="23" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a33eb8bf70b5881c627771fdc7288efbb" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdc" kindref="member">helios::engine::modules::physics::collision::types::CollisionBehavior</ref></type>
+        <definition>helios::engine::modules::physics::collision::types::CollisionBehavior helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionBehavior_</definition>
+        <argsstring></argsstring>
+        <name>collisionBehavior_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionBehavior_</qualifiedname>
+        <initializer>= <ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdca6adf97f83acf6453d4a6a4b1070f3754" kindref="member">types::CollisionBehavior::None</ref></initializer>
+        <briefdescription>
+<para>The collision behavior to apply. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="64" column="79" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af82a67ea8cc25cf5acceb51724b439f8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::hasCollision_</definition>
+        <argsstring></argsstring>
+        <name>hasCollision_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::hasCollision_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Flag indicating whether a collision was detected this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="69" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a8307f0184f7e5fdad13f011ad5e2fb1a" prot="private" static="no" mutable="no">
+        <type><ref refid="structhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1_1CollisionContext" kindref="compound">helios::engine::modules::physics::collision::types::CollisionContext</ref></type>
+        <definition>helios::engine::modules::physics::collision::types::CollisionContext helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionContext_</definition>
+        <argsstring></argsstring>
+        <name>collisionContext_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionContext_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Full collision context data for event publishing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="74" column="78" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1d386ebcef74a0dad1db90fd3ae8d638" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionLayer_</definition>
+        <argsstring></argsstring>
+        <name>collisionLayer_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionLayer_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Collision layer ID of this entity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="79" column="18" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a283a579df249e05e75441fadc52b9081" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t helios::engine::modules::physics::collision::components::CollisionStateComponent::otherCollisionLayer_</definition>
+        <argsstring></argsstring>
+        <name>otherCollisionLayer_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::otherCollisionLayer_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Collision layer ID of the other entity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="84" column="18" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a61255d9f68b4eb8111e1cf6d2b777646" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::isEnabled_</definition>
+        <argsstring></argsstring>
+        <name>isEnabled_</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::isEnabled_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="89" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a54d8511ecd7d2b9786407ce53c7282b9" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::isEnabled</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::isEnabled</qualifiedname>
+        <briefdescription>
+<para>Checks whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if enabled, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="98" column="15" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a3f5af92f0bbf88933a24148de020c717" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::collision::components::CollisionStateComponent::enable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>enable</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::enable</qualifiedname>
+        <briefdescription>
+<para>Enables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="105" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1aa5f110e54bc350f129134f35dabc3b97" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::collision::components::CollisionStateComponent::disable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>disable</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::disable</qualifiedname>
+        <briefdescription>
+<para>Disables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="112" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f1628cd045f7ebad789fe3e4906dac3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::physics::collision::components::CollisionStateComponent::CollisionStateComponent</definition>
+        <argsstring>()=default</argsstring>
+        <name>CollisionStateComponent</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::CollisionStateComponent</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="119" column="9"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f99982539f4ed53c9413d0a719fa9d7">CollisionStateComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a7fc8b0d35bc28f4d7794d342fad796b1" compoundref="CollisionStateComponent_8ixx" startline="126" endline="126">CollisionStateComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1ac08e227ebb3aa2c26745596321e4518d">operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1ab35f3c05a1988edfedc8a46eced0c6b4">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a7fc8b0d35bc28f4d7794d342fad796b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::physics::collision::components::CollisionStateComponent::CollisionStateComponent</definition>
+        <argsstring>(const CollisionStateComponent &amp;other)</argsstring>
+        <name>CollisionStateComponent</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::CollisionStateComponent</qualifiedname>
+        <param>
+          <type>const CollisionStateComponent &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor (creates empty state). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component to copy from (state is not copied). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="126" column="9" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="126" bodyend="126"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f1628cd045f7ebad789fe3e4906dac3">CollisionStateComponent</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a3b0dc08b73112cfa9cd07d7e3a51a845" compoundref="CollisionStateComponent_8ixx" startline="249" endline="251">other</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1ab35f3c05a1988edfedc8a46eced0c6b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f1628cd045f7ebad789fe3e4906dac3" kindref="member">CollisionStateComponent</ref> &amp;</type>
+        <definition>CollisionStateComponent &amp; helios::engine::modules::physics::collision::components::CollisionStateComponent::operator=</definition>
+        <argsstring>(const CollisionStateComponent &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f1628cd045f7ebad789fe3e4906dac3" kindref="member">CollisionStateComponent</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="128" column="33"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f1628cd045f7ebad789fe3e4906dac3">CollisionStateComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f99982539f4ed53c9413d0a719fa9d7" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::physics::collision::components::CollisionStateComponent::CollisionStateComponent</definition>
+        <argsstring>(CollisionStateComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>CollisionStateComponent</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::CollisionStateComponent</qualifiedname>
+        <param>
+          <type>CollisionStateComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="129" column="9"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f1628cd045f7ebad789fe3e4906dac3">CollisionStateComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1ac08e227ebb3aa2c26745596321e4518d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f1628cd045f7ebad789fe3e4906dac3" kindref="member">CollisionStateComponent</ref> &amp;</type>
+        <definition>CollisionStateComponent &amp; helios::engine::modules::physics::collision::components::CollisionStateComponent::operator=</definition>
+        <argsstring>(CollisionStateComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f1628cd045f7ebad789fe3e4906dac3" kindref="member">CollisionStateComponent</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="130" column="33"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f1628cd045f7ebad789fe3e4906dac3">CollisionStateComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::setState</definition>
+        <argsstring>(helios::engine::ecs::GameObject gameObject, helios::math::vec3f contact, const bool isSolid, const bool isTrigger, const helios::engine::modules::physics::collision::types::CollisionBehavior collisionBehavior, const bool isCollisionReporter, std::optional&lt; helios::engine::ecs::EntityHandle &gt; other=std::nullopt, const uint32_t collisionLayer=0, const uint32_t otherCollisionLayer=0)</argsstring>
+        <name>setState</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::setState</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1ecs_1_1GameObject" kindref="compound">helios::engine::ecs::GameObject</ref></type>
+          <declname>gameObject</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+          <declname>contact</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>isSolid</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>isTrigger</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdc" kindref="member">helios::engine::modules::physics::collision::types::CollisionBehavior</ref></type>
+          <declname>collisionBehavior</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>isCollisionReporter</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; <ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref> &gt;</type>
+          <declname>other</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>collisionLayer</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>otherCollisionLayer</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Sets the collision state for this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called by the collision detection system when a collision is detected. Only the first collision per frame is recorded.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>World-space contact point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isSolid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this is a solid collision. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isTrigger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this is a trigger collision. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>collisionBehavior</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The behavior to apply for this collision. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isCollisionReporter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this entity reports the collision. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUID of the other entity (optional). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>collisionLayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Collision layer ID of this entity. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>otherCollisionLayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Collision layer ID of the other entity.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the state was set, false if a collision was already recorded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="149" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="149" bodyend="190"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a2341716744fe5af40ac4c03a63675fc9" compoundref="CollisionStateComponent_8ixx" startline="285" endline="287">collisionBehavior</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a854b230a67d8f45e5bb76d15d378db42" compoundref="CollisionStateComponent_8ixx" startline="303" endline="305">collisionLayer</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1aa66bf1be65fab683b7fb2257d0ac8b16" compoundref="CollisionStateComponent_8ixx" startline="294" endline="296">contact</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af4b5fde1607653df601427d35184bbb1" compoundref="CollisionStateComponent_8ixx" startline="258" endline="260">isCollisionReporter</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af0d3aee0b603de9882992c5afa56cf44" compoundref="CollisionStateComponent_8ixx" startline="267" endline="269">isSolid</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1a343dd456d5d3b8a87f1dfa339b6819" compoundref="CollisionStateComponent_8ixx" startline="276" endline="278">isTrigger</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a3b0dc08b73112cfa9cd07d7e3a51a845" compoundref="CollisionStateComponent_8ixx" startline="249" endline="251">other</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1adb711d04c86133b90272a1631eb3e54f" compoundref="CollisionStateComponent_8ixx" startline="312" endline="314">otherCollisionLayer</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" compoundref="CollisionStateComponent_8ixx" startline="149" endline="190">setState</references>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" compoundref="CollisionStateComponent_8ixx" startline="149" endline="190">setState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af63da619acae217d135251cb78c6a1b1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::collision::components::CollisionStateComponent::reset</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>reset</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::reset</qualifiedname>
+        <briefdescription>
+<para>Resets the collision state for a new frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears all collision flags and data. Called at the start of each frame or when the owning GameObject is acquired from a pool. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="198" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="198" bodyend="214"/>
+        <references refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdca6adf97f83acf6453d4a6a4b1070f3754" compoundref="CollisionBehavior_8ixx" startline="35">helios::engine::modules::physics::collision::types::None</references>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a7afa9428a664c33875e5c42106f1bfa2" compoundref="CollisionStateComponent_8ixx" startline="221" endline="223">onAcquire</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a7afa9428a664c33875e5c42106f1bfa2" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::physics::collision::components::CollisionStateComponent::onAcquire</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>onAcquire</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::onAcquire</qualifiedname>
+        <briefdescription>
+<para>Called when the owning GameObject is acquired from a pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Resets all collision state to prepare for a new lifecycle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="221" column="14" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="221" bodyend="223"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af63da619acae217d135251cb78c6a1b1" compoundref="CollisionStateComponent_8ixx" startline="198" endline="214">reset</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a57cb27c12cb41723339dc460bd5cd91e" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="structhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1_1CollisionContext" kindref="compound">types::CollisionContext</ref> &amp;</type>
+        <definition>const types::CollisionContext &amp; helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionContext</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>collisionContext</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionContext</qualifiedname>
+        <briefdescription>
+<para>Returns the full collision context data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to the CollisionContext struct containing all collision details. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="230" column="40" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="230" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a7f2ebca7c59024b0f917efe701428dc5" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::hasCollision</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>hasCollision</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::hasCollision</qualifiedname>
+        <briefdescription>
+<para>Checks whether a collision was detected this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if a collision occurred, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="240" column="15" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="240" bodyend="242"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1systems_1_1GridCollisionDetectionSystem_1aeb615f2b8547602d0ee61d776fefa9e8" compoundref="GridCollisionDetectionSystem_8ixx" startline="570" endline="644">helios::engine::modules::physics::collision::systems::GridCollisionDetectionSystem::solveCell</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a3b0dc08b73112cfa9cd07d7e3a51a845" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref> &gt;</type>
+        <definition>std::optional&lt; helios::engine::ecs::EntityHandle &gt; helios::engine::modules::physics::collision::components::CollisionStateComponent::other</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>other</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::other</qualifiedname>
+        <briefdescription>
+<para>Returns the handle of the other entity involved in the collision. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Optional handle of the other entity, or nullopt if not set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="249" column="24" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="249" bodyend="251"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a7fc8b0d35bc28f4d7794d342fad796b1" compoundref="CollisionStateComponent_8ixx" startline="126" endline="126">CollisionStateComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" compoundref="CollisionStateComponent_8ixx" startline="149" endline="190">setState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af4b5fde1607653df601427d35184bbb1" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::isCollisionReporter</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isCollisionReporter</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::isCollisionReporter</qualifiedname>
+        <briefdescription>
+<para>Checks whether this entity is the collision reporter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if this entity reported the collision. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="258" column="15" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="258" bodyend="260"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" compoundref="CollisionStateComponent_8ixx" startline="149" endline="190">setState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af0d3aee0b603de9882992c5afa56cf44" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::isSolid</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isSolid</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::isSolid</qualifiedname>
+        <briefdescription>
+<para>Checks whether this is a solid (physical) collision. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the collision is solid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="267" column="15" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="267" bodyend="269"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" compoundref="CollisionStateComponent_8ixx" startline="149" endline="190">setState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1a343dd456d5d3b8a87f1dfa339b6819" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::physics::collision::components::CollisionStateComponent::isTrigger</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isTrigger</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::isTrigger</qualifiedname>
+        <briefdescription>
+<para>Checks whether this is a trigger (non-physical) collision. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the collision is a trigger. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="276" column="15" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="276" bodyend="278"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" compoundref="CollisionStateComponent_8ixx" startline="149" endline="190">setState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a2341716744fe5af40ac4c03a63675fc9" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdc" kindref="member">helios::engine::modules::physics::collision::types::CollisionBehavior</ref></type>
+        <definition>helios::engine::modules::physics::collision::types::CollisionBehavior helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionBehavior</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>collisionBehavior</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionBehavior</qualifiedname>
+        <briefdescription>
+<para>Returns the collision behavior for this collision. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The CollisionBehavior enum value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="285" column="80" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="285" bodyend="287"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" compoundref="CollisionStateComponent_8ixx" startline="149" endline="190">setState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1aa66bf1be65fab683b7fb2257d0ac8b16" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="namespacehelios_1_1math_1a71f1e40e636f47229c3122bdb63099d5" kindref="member">helios::math::vec3f</ref></type>
+        <definition>helios::math::vec3f helios::engine::modules::physics::collision::components::CollisionStateComponent::contact</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>contact</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::contact</qualifiedname>
+        <briefdescription>
+<para>Returns the world-space contact point of the collision. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The contact point as a 3D vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="294" column="30" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="294" bodyend="296"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" compoundref="CollisionStateComponent_8ixx" startline="149" endline="190">setState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a854b230a67d8f45e5bb76d15d378db42" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionLayer</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>collisionLayer</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::collisionLayer</qualifiedname>
+        <briefdescription>
+<para>Returns the collision layer ID of this entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The collision layer ID. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="303" column="19" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="303" bodyend="305"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" compoundref="CollisionStateComponent_8ixx" startline="149" endline="190">setState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1adb711d04c86133b90272a1631eb3e54f" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t helios::engine::modules::physics::collision::components::CollisionStateComponent::otherCollisionLayer</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>otherCollisionLayer</name>
+        <qualifiedname>helios::engine::modules::physics::collision::components::CollisionStateComponent::otherCollisionLayer</qualifiedname>
+        <briefdescription>
+<para>Returns the collision layer ID of the other entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The other entity&apos;s collision layer ID. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="312" column="19" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="312" bodyend="314"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" compoundref="CollisionStateComponent_8ixx" startline="149" endline="190">setState</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Stores per-frame collision state for a GameObject. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This component is written by the collision detection system each frame to record whether a collision occurred and provide details about the collision. Game logic can query this component to react to collisions.</para>
+<para>The state should be reset at the start of each frame by the collision system or when the owning GameObject is acquired from a pool. </para>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" line="35" column="5" bodyfile="/tmp/h/include/helios/engine/modules/physics/collision/components/CollisionStateComponent.ixx" bodystart="35" bodyend="316"/>
+    <listofallmembers>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a2341716744fe5af40ac4c03a63675fc9" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>collisionBehavior</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a33eb8bf70b5881c627771fdc7288efbb" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>collisionBehavior_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a57cb27c12cb41723339dc460bd5cd91e" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>collisionContext</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a8307f0184f7e5fdad13f011ad5e2fb1a" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>collisionContext_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a854b230a67d8f45e5bb76d15d378db42" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>collisionLayer</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1d386ebcef74a0dad1db90fd3ae8d638" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>collisionLayer_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f1628cd045f7ebad789fe3e4906dac3" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>CollisionStateComponent</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a7fc8b0d35bc28f4d7794d342fad796b1" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>CollisionStateComponent</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1f99982539f4ed53c9413d0a719fa9d7" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>CollisionStateComponent</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1aa66bf1be65fab683b7fb2257d0ac8b16" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>contact</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a36663aba128e3aee8f133a395bd970ac" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>contact_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1aa5f110e54bc350f129134f35dabc3b97" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>disable</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a3f5af92f0bbf88933a24148de020c717" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>enable</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a7f2ebca7c59024b0f917efe701428dc5" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>hasCollision</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af82a67ea8cc25cf5acceb51724b439f8" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>hasCollision_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af4b5fde1607653df601427d35184bbb1" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>isCollisionReporter</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a8cc9ed2ea8a4462340c4f4b2ead3dd17" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>isCollisionReporter_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a54d8511ecd7d2b9786407ce53c7282b9" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>isEnabled</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a61255d9f68b4eb8111e1cf6d2b777646" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>isEnabled_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af0d3aee0b603de9882992c5afa56cf44" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>isSolid</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1ad6481e18548f73fe48c8ac9c6fb9be4f" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>isSolid_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a1a343dd456d5d3b8a87f1dfa339b6819" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>isTrigger</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a3ed423cf54bb10f7ca82fda1ecf43b90" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>isTrigger_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a7afa9428a664c33875e5c42106f1bfa2" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>onAcquire</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1ab35f3c05a1988edfedc8a46eced0c6b4" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>operator=</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1ac08e227ebb3aa2c26745596321e4518d" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>operator=</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a3b0dc08b73112cfa9cd07d7e3a51a845" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>other</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a61b8dbf02c8cfe29ec73892156b01c2e" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>other_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1adb711d04c86133b90272a1631eb3e54f" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>otherCollisionLayer</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a283a579df249e05e75441fadc52b9081" prot="private" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>otherCollisionLayer_</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1af63da619acae217d135251cb78c6a1b1" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>reset</name></member>
+      <member refid="classhelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1components_1_1CollisionStateComponent_1a35e22cbc72a4f5797dd4dd42d6933f09" prot="public" virt="non-virtual"><scope>helios::engine::modules::physics::collision::components::CollisionStateComponent</scope><name>setState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

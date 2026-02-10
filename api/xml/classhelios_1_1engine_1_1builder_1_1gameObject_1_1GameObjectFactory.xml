@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory" kind="class" language="C++" prot="public">
+    <compoundname>helios::engine::builder::gameObject::GameObjectFactory</compoundname>
+    <innerclass refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype" prot="private">helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype</innerclass>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1a3e1f2fd66b4f091ccbaa98b494240d64" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory" kindref="compound">GameObjectFactory</ref> &amp;</type>
+        <definition>static GameObjectFactory &amp; helios::engine::builder::gameObject::GameObjectFactory::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::instance</qualifiedname>
+        <briefdescription>
+<para>Returns the singleton instance of the factory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to the singleton factory. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="380" column="34" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1ac6d64b614d8d67bce93033dbcb1fd58d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype</type>
+        <definition>static GameObjectPrototype helios::engine::builder::gameObject::GameObjectFactory::gameObject</definition>
+        <argsstring>(helios::engine::runtime::world::GameWorld &amp;gameWorld)</argsstring>
+        <name>gameObject</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::gameObject</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1world_1_1GameWorld" kindref="compound">helios::engine::runtime::world::GameWorld</ref> &amp;</type>
+          <declname>gameWorld</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new empty GameObject prototype. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameWorld</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The world where the GameObject lives.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A prototype for fluent configuration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="392" column="36" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="392" bodyend="394"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Factory class for creating and cloning GameObjects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Provides static methods for constructing new GameObjects or creating copies from existing templates. Uses the builder pattern internally via `GameObjectPrototype` for fluent component configuration.</para>
+<para>Example usage: ```cpp auto player = <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1ac6d64b614d8d67bce93033dbcb1fd58d" kindref="member">GameObjectFactory::gameObject()</ref> .withMotion([](auto&amp; m) { m.move2D().speed(5.0f); }) .withRendering([&amp;](auto&amp; r) { r.renderable().shape(shape).shader(shader).build(); }) .make(true); ``` </para>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="41" column="5" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="41" bodyend="396"/>
+    <listofallmembers>
+      <member refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1ac6d64b614d8d67bce93033dbcb1fd58d" prot="public" virt="non-virtual"><scope>helios::engine::builder::gameObject::GameObjectFactory</scope><name>gameObject</name></member>
+      <member refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1a3e1f2fd66b4f091ccbaa98b494240d64" prot="public" virt="non-virtual"><scope>helios::engine::builder::gameObject::GameObjectFactory</scope><name>instance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

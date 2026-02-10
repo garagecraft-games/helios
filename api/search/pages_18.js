@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['reference_0',['helios - API Reference',['../index.html',1,'']]],
-  ['rendering_20backend_1',['Custom Rendering Backend',['../index.html#autotoc_md139',1,'']]],
-  ['rendering_20pipeline_2',['2. Rendering Pipeline',['../index.html#autotoc_md127',1,'']]],
-  ['responsibilities_3',['Extension Responsibilities',['../dir_106756a8ee71bdde7f7b779a3a0a52e4.html#autotoc_md24',1,'']]]
+  ['query_0',['query/',['../dir_1ca916e0b9fbc882dbfbd9e6594e5e22.html#autotoc_md125',1,'']]],
+  ['quick_20start_1',['Quick Start',['../index.html#autotoc_md626',1,'']]],
+  ['quick_20start_20with_20glfw_20opengl_2',['Quick Start with GLFW + OpenGL',['../dir_c65593c1e2ce5122a06a0735d96badb1.html#autotoc_md27',1,'']]]
 ];

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="ext_2README_8md" kind="file" language="Markdown">
-    <compoundname>README.md</compoundname>
+    <compoundname>ext/README.md</compoundname>
     <innernamespace refid="namespacehelios_1_1ext">helios::ext</innernamespace>
     <briefdescription>
     </briefdescription>
@@ -109,7 +109,7 @@
 <codeline><highlight class="normal">-<sp/>`helios::window::Window`<sp/>(if<sp/>new<sp/>windowing<sp/>system)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>`helios::rendering::RenderingDevice`<sp/>(if<sp/>new<sp/>rendering<sp/>API)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>`helios::rendering::Shader`</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>`helios::rendering::model::Mesh`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`helios::rendering::mesh::Mesh`</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>`helios::input::InputAdapter`<sp/>(if<sp/>new<sp/>input<sp/>system)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>2.<sp/>Create<sp/>Factory</highlight></codeline>
@@ -185,6 +185,6 @@
 <codeline><highlight class="normal">&lt;/p&gt;&lt;/details&gt;</highlight></codeline>
 <codeline></codeline>
     </programlisting>
-    <location file="include/ext/README.md"/>
+    <location file="/tmp/h/include/ext/README.md"/>
   </compounddef>
 </doxygen>

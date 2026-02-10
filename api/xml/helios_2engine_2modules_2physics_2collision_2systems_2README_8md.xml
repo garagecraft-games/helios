@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="helios_2engine_2modules_2physics_2collision_2systems_2README_8md" kind="file" language="Markdown">
+    <compoundname>helios/engine/modules/physics/collision/systems/README.md</compoundname>
+    <innernamespace refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1systems">helios::engine::modules::physics::collision::systems</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>helios::engine::modules::physics::collision::systems</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Collision<sp/>detection<sp/>and<sp/>response<sp/>systems<sp/>for<sp/>the<sp/>helios<sp/>engine.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>namespace<sp/>contains<sp/>systems<sp/>for<sp/>spatial<sp/>partitioning,<sp/>collision<sp/>detection,<sp/>and<sp/>collision<sp/>response<sp/>handling.<sp/>The<sp/>systems<sp/>are<sp/>designed<sp/>to<sp/>run<sp/>in<sp/>a<sp/>specific<sp/>order<sp/>within<sp/>the<sp/>game<sp/>loop:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>**BoundsUpdateSystem**<sp/>-<sp/>Updates<sp/>world-space<sp/>AABB<sp/>colliders<sp/>from<sp/>entity<sp/>transforms.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>**GridCollisionDetectionSystem**<sp/>-<sp/>Performs<sp/>broad-phase<sp/>and<sp/>narrow-phase<sp/>collision<sp/>detection<sp/>using<sp/>uniform<sp/>spatial<sp/>partitioning.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>**CollisionStateResponseSystem**<sp/>-<sp/>Processes<sp/>collision<sp/>states<sp/>and<sp/>issues<sp/>response<sp/>commands<sp/>(e.g.,<sp/>despawn).</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>**CollisionStateClearSystem**<sp/>-<sp/>Clears<sp/>collision<sp/>state<sp/>components<sp/>at<sp/>frame<sp/>end<sp/>(post-phase).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>GridCollisionDetectionSystem</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Implements<sp/>grid-based<sp/>spatial<sp/>partitioning<sp/>for<sp/>efficient<sp/>collision<sp/>detection:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**Broadphase:**<sp/>Entities<sp/>are<sp/>inserted<sp/>into<sp/>grid<sp/>cells<sp/>based<sp/>on<sp/>their<sp/>AABB</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Narrowphase:**<sp/>AABB<sp/>intersection<sp/>tests<sp/>for<sp/>entities<sp/>sharing<sp/>the<sp/>same<sp/>cell</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Layer<sp/>Filtering:**<sp/>Uses<sp/>layer<sp/>masks<sp/>for<sp/>fine-grained<sp/>collision<sp/>pair<sp/>control</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Hit<sp/>Policy:**<sp/>Supports<sp/>`OneHit`<sp/>(first<sp/>collision<sp/>only)<sp/>or<sp/>`All`<sp/>(multi-target)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>CollisionStateResponseSystem</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Processes<sp/>collision<sp/>states<sp/>and<sp/>executes<sp/>configured<sp/>behaviors:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Reads<sp/>`CollisionStateComponent`<sp/>to<sp/>determine<sp/>collision<sp/>response</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Issues<sp/>`DespawnCommand`<sp/>for<sp/>entities<sp/>with<sp/>`Despawn`<sp/>behavior</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Publishes<sp/>`SolidCollisionEvent`<sp/>/<sp/>`TriggerCollisionEvent`<sp/>for<sp/>`PassEvent`<sp/>behavior</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;details&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;summary&gt;Doxygen&lt;/summary&gt;&lt;p&gt;</highlight></codeline>
+<codeline><highlight class="normal">@namespace<sp/>helios::engine::modules::physics::collision::systems</highlight></codeline>
+<codeline><highlight class="normal">@brief<sp/>Collision<sp/>detection<sp/>and<sp/>response<sp/>systems.</highlight></codeline>
+<codeline><highlight class="normal">@details<sp/>This<sp/>namespace<sp/>contains<sp/>systems<sp/>for<sp/>updating<sp/>collider<sp/>bounds,<sp/>performing<sp/>grid-based<sp/>spatial<sp/>partitioning<sp/>for<sp/>efficient<sp/>broad-phase<sp/>detection,<sp/>processing<sp/>collision<sp/>responses,<sp/>and<sp/>clearing<sp/>collision<sp/>state<sp/>at<sp/>frame<sp/>end.</highlight></codeline>
+<codeline><highlight class="normal">&lt;/p&gt;&lt;/details&gt;</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/tmp/h/include/helios/engine/modules/physics/collision/systems/README.md"/>
+  </compounddef>
+</doxygen>

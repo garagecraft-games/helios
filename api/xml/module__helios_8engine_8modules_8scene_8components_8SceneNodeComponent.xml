@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8engine_8modules_8scene_8components_8SceneNodeComponent" kind="module">
+    <compoundname>helios.engine.modules.scene.components.SceneNodeComponent</compoundname>
+    <innerfile refid="SceneNodeComponent_8ixx">SceneNodeComponent.ixx</innerfile>
+    <innerclass refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent" prot="public">helios::engine::modules::scene::components::SceneNodeComponent</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a5509658ed53abdc0ab12a6de2f24655a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classhelios_1_1scene_1_1SceneNode" kindref="compound">helios::scene::SceneNode</ref> *</type>
+        <definition>helios::scene::SceneNode* helios::engine::modules::scene::components::SceneNodeComponent::sceneNode_</definition>
+        <argsstring></argsstring>
+        <name>sceneNode_</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::sceneNode_</qualifiedname>
+        <briefdescription>
+<para>Non-owning pointer to the associated SceneNode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="42" column="34" bodyfile="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a4852bbd81099c00913905fb3fec7c06a" compoundref="SceneNodeComponent_8ixx" startline="79" endline="81">helios::engine::modules::scene::components::SceneNodeComponent::onActivate</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1ac12af941c8fdc00dd1e560dbb5ea3046" compoundref="SceneNodeComponent_8ixx" startline="137" endline="147">helios::engine::modules::scene::components::SceneNodeComponent::onClone</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1aed0539b3189c719a4d5a3cc868ed4847" compoundref="SceneNodeComponent_8ixx" startline="88" endline="90">helios::engine::modules::scene::components::SceneNodeComponent::onDeactivate</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a2d3a7cf3e112c9fab02b13bc099183f1" compoundref="SceneNodeComponent_8ixx" startline="155" endline="157">helios::engine::modules::scene::components::SceneNodeComponent::sceneNode</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a661dd175ad9614ef413c2366508d31fd" compoundref="SceneNodeComponent_8ixx" startline="99" endline="103">helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a91abbc4a2d4be17554c9802115546796" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::scene::components::SceneNodeComponent::isEnabled_</definition>
+        <argsstring></argsstring>
+        <name>isEnabled_</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::isEnabled_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="47" column="14" bodyfile="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a6914912c06cd811ede4df5e9bdbf2580" compoundref="SceneNodeComponent_8ixx" startline="70" endline="72">helios::engine::modules::scene::components::SceneNodeComponent::disable</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a79ae8e048f1adc32a1559d53d9469962" compoundref="SceneNodeComponent_8ixx" startline="63" endline="65">helios::engine::modules::scene::components::SceneNodeComponent::enable</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1aa089671f5906e6a5cfaaf7a6ed8e6822" compoundref="SceneNodeComponent_8ixx" startline="56" endline="58">helios::engine::modules::scene::components::SceneNodeComponent::isEnabled</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1aa089671f5906e6a5cfaaf7a6ed8e6822" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::modules::scene::components::SceneNodeComponent::isEnabled</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::isEnabled</qualifiedname>
+        <briefdescription>
+<para>Checks whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if enabled, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="56" column="15" bodyfile="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" bodystart="56" bodyend="58"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a91abbc4a2d4be17554c9802115546796" compoundref="SceneNodeComponent_8ixx" startline="47">helios::engine::modules::scene::components::SceneNodeComponent::isEnabled_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a79ae8e048f1adc32a1559d53d9469962" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::scene::components::SceneNodeComponent::enable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>enable</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::enable</qualifiedname>
+        <briefdescription>
+<para>Enables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="63" column="14" bodyfile="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" bodystart="63" bodyend="65"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a91abbc4a2d4be17554c9802115546796" compoundref="SceneNodeComponent_8ixx" startline="47">helios::engine::modules::scene::components::SceneNodeComponent::isEnabled_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a6914912c06cd811ede4df5e9bdbf2580" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::scene::components::SceneNodeComponent::disable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>disable</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::disable</qualifiedname>
+        <briefdescription>
+<para>Disables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="70" column="14" bodyfile="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" bodystart="70" bodyend="72"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a91abbc4a2d4be17554c9802115546796" compoundref="SceneNodeComponent_8ixx" startline="47">helios::engine::modules::scene::components::SceneNodeComponent::isEnabled_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a4852bbd81099c00913905fb3fec7c06a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::scene::components::SceneNodeComponent::onActivate</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>onActivate</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::onActivate</qualifiedname>
+        <briefdescription>
+<para>Called when the owning GameObject is activated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Activates the SceneNode, making it visible in the scene graph. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="79" column="14" bodyfile="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" bodystart="79" bodyend="81"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a5509658ed53abdc0ab12a6de2f24655a" compoundref="SceneNodeComponent_8ixx" startline="42">helios::engine::modules::scene::components::SceneNodeComponent::sceneNode_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1aed0539b3189c719a4d5a3cc868ed4847" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::scene::components::SceneNodeComponent::onDeactivate</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>onDeactivate</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::onDeactivate</qualifiedname>
+        <briefdescription>
+<para>Called when the owning GameObject is deactivated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Deactivates the SceneNode, hiding it from the scene graph. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="88" column="14" bodyfile="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" bodystart="88" bodyend="90"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a5509658ed53abdc0ab12a6de2f24655a" compoundref="SceneNodeComponent_8ixx" startline="42">helios::engine::modules::scene::components::SceneNodeComponent::sceneNode_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a661dd175ad9614ef413c2366508d31fd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</definition>
+        <argsstring>(helios::scene::SceneNode *sceneNode)</argsstring>
+        <name>SceneNodeComponent</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1scene_1_1SceneNode" kindref="compound">helios::scene::SceneNode</ref> *</type>
+          <declname>sceneNode</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent" kindref="compound">SceneNodeComponent</ref> linked to a SceneNode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sceneNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the SceneNode to control. Must not be nullptr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="99" column="18" bodyfile="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" bodystart="99" bodyend="103"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a2d3a7cf3e112c9fab02b13bc099183f1" compoundref="SceneNodeComponent_8ixx" startline="155" endline="157">helios::engine::modules::scene::components::SceneNodeComponent::sceneNode</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a5509658ed53abdc0ab12a6de2f24655a" compoundref="SceneNodeComponent_8ixx" startline="42">helios::engine::modules::scene::components::SceneNodeComponent::sceneNode_</references>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1ac12af941c8fdc00dd1e560dbb5ea3046" compoundref="SceneNodeComponent_8ixx" startline="137" endline="147">helios::engine::modules::scene::components::SceneNodeComponent::onClone</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a6775a7ec561c66226a0d3bbb16fe8568">helios::engine::modules::scene::components::SceneNodeComponent::operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a22ff0bcdf3577ce15b0295e7fd10d57b">helios::engine::modules::scene::components::SceneNodeComponent::operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1aece6dd4f4e9cf56e5e6fe20ded5a7ac5">helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a48866286eb64097483d3dd1ab8f437f6">helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1aece6dd4f4e9cf56e5e6fe20ded5a7ac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</definition>
+        <argsstring>(const SceneNodeComponent &amp;other)=default</argsstring>
+        <name>SceneNodeComponent</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</qualifiedname>
+        <param>
+          <type>const SceneNodeComponent &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Copies the SceneNode pointer. The actual SceneNode cloning is handled by <ref refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1ac12af941c8fdc00dd1e560dbb5ea3046" kindref="member">onClone()</ref> during entity cloning. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="111" column="9"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a661dd175ad9614ef413c2366508d31fd" compoundref="SceneNodeComponent_8ixx" startline="99" endline="103">helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a6775a7ec561c66226a0d3bbb16fe8568" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SceneNodeComponent &amp;</type>
+        <definition>SceneNodeComponent &amp; helios::engine::modules::scene::components::SceneNodeComponent::operator=</definition>
+        <argsstring>(const SceneNodeComponent &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::operator=</qualifiedname>
+        <param>
+          <type>const SceneNodeComponent &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="116" column="28"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a661dd175ad9614ef413c2366508d31fd" compoundref="SceneNodeComponent_8ixx" startline="99" endline="103">helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a48866286eb64097483d3dd1ab8f437f6" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</definition>
+        <argsstring>(SceneNodeComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>SceneNodeComponent</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</qualifiedname>
+        <param>
+          <type>SceneNodeComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="121" column="9"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a661dd175ad9614ef413c2366508d31fd" compoundref="SceneNodeComponent_8ixx" startline="99" endline="103">helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a22ff0bcdf3577ce15b0295e7fd10d57b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>SceneNodeComponent &amp;</type>
+        <definition>SceneNodeComponent &amp; helios::engine::modules::scene::components::SceneNodeComponent::operator=</definition>
+        <argsstring>(SceneNodeComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::operator=</qualifiedname>
+        <param>
+          <type>SceneNodeComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Move assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="126" column="28"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a661dd175ad9614ef413c2366508d31fd" compoundref="SceneNodeComponent_8ixx" startline="99" endline="103">helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1ac12af941c8fdc00dd1e560dbb5ea3046" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::modules::scene::components::SceneNodeComponent::onClone</definition>
+        <argsstring>(const SceneNodeComponent &amp;other)</argsstring>
+        <name>onClone</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::onClone</qualifiedname>
+        <param>
+          <type>const SceneNodeComponent &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Called after copy construction during entity cloning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new SceneNode for this entity by cloning the source&apos;s renderable and adding it to the same parent node. This ensures each cloned entity has its own SceneNode in the scene graph.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source component to clone from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="137" column="14" bodyfile="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" bodystart="137" bodyend="147"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1ac12af941c8fdc00dd1e560dbb5ea3046" compoundref="SceneNodeComponent_8ixx" startline="137" endline="147">helios::engine::modules::scene::components::SceneNodeComponent::onClone</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a2d3a7cf3e112c9fab02b13bc099183f1" compoundref="SceneNodeComponent_8ixx" startline="155" endline="157">helios::engine::modules::scene::components::SceneNodeComponent::sceneNode</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a5509658ed53abdc0ab12a6de2f24655a" compoundref="SceneNodeComponent_8ixx" startline="42">helios::engine::modules::scene::components::SceneNodeComponent::sceneNode_</references>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a661dd175ad9614ef413c2366508d31fd" compoundref="SceneNodeComponent_8ixx" startline="99" endline="103">helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</references>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1ac12af941c8fdc00dd1e560dbb5ea3046" compoundref="SceneNodeComponent_8ixx" startline="137" endline="147">helios::engine::modules::scene::components::SceneNodeComponent::onClone</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a2d3a7cf3e112c9fab02b13bc099183f1" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classhelios_1_1scene_1_1SceneNode" kindref="compound">helios::scene::SceneNode</ref> *</type>
+        <definition>helios::scene::SceneNode * helios::engine::modules::scene::components::SceneNodeComponent::sceneNode</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>sceneNode</name>
+        <qualifiedname>helios::engine::modules::scene::components::SceneNodeComponent::sceneNode</qualifiedname>
+        <briefdescription>
+<para>Returns the underlying SceneNode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Non-owning pointer to the associated SceneNode. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="155" column="35" bodyfile="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" bodystart="155" bodyend="157"/>
+        <references refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a5509658ed53abdc0ab12a6de2f24655a" compoundref="SceneNodeComponent_8ixx" startline="42">helios::engine::modules::scene::components::SceneNodeComponent::sceneNode_</references>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1ac12af941c8fdc00dd1e560dbb5ea3046" compoundref="SceneNodeComponent_8ixx" startline="137" endline="147">helios::engine::modules::scene::components::SceneNodeComponent::onClone</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1modules_1_1scene_1_1components_1_1SceneNodeComponent_1a661dd175ad9614ef413c2366508d31fd" compoundref="SceneNodeComponent_8ixx" startline="99" endline="103">helios::engine::modules::scene::components::SceneNodeComponent::SceneNodeComponent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/modules/scene/components/SceneNodeComponent.ixx" line="11" column="15"/>
+  </compounddef>
+</doxygen>

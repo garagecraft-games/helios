@@ -5,21 +5,21 @@
     <includes local="no">vector</includes>
     <includes local="no">cmath</includes>
     <includes local="no">numbers</includes>
-    <includes refid="PrimitiveType_8ixx" local="no">helios.rendering.model.config.PrimitiveType</includes>
-    <includes refid="Vertex_8ixx" local="no">helios.rendering.Vertex</includes>
+    <includes refid="PrimitiveType_8ixx" local="no">helios.rendering.mesh.PrimitiveType</includes>
     <includes refid="helios_2math_2types_2__module_8ixx" local="no">helios.math.types</includes>
+    <includes refid="Vertex_8ixx" local="no">helios.rendering.Vertex</includes>
     <includes refid="Shape_8ixx" local="no">helios.rendering.asset.shape.Shape</includes>
     <incdepgraph>
-      <node id="7">
+      <node id="6">
         <label>helios.math.types</label>
         <link refid="helios_2math_2types_2__module_8ixx"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="7">
         <label>helios.rendering.Vertex</label>
         <link refid="Vertex_8ixx"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
       <node id="8">
@@ -31,11 +31,11 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="1">
-        <label>include/helios/rendering/asset/shape/basic/Ellipse.ixx</label>
+        <label>Ellipse.ixx</label>
         <link refid="Ellipse_8ixx"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -53,7 +53,7 @@
         </childnode>
       </node>
       <node id="5">
-        <label>helios.rendering.model.config.PrimitiveType</label>
+        <label>helios.rendering.mesh.PrimitiveType</label>
         <link refid="PrimitiveType_8ixx"/>
       </node>
       <node id="3">
@@ -96,7 +96,7 @@
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="module__helios_8rendering_8asset_8shape_8Shape" kindref="compound">helios.rendering.asset.shape.Shape</ref>;</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="module__helios_8rendering_8Vertex" kindref="compound">helios.rendering.Vertex</ref>;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="module__helios_8math_8types" kindref="compound">helios.math.types</ref>;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="module__helios_8rendering_8model_8config_8PrimitiveType" kindref="compound">helios.rendering.model.config.PrimitiveType</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="module__helios_8rendering_8mesh_8PrimitiveType" kindref="compound">helios.rendering.mesh.PrimitiveType</ref>;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacehelios_1_1rendering" kindref="compound">helios::rendering</ref>;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
@@ -208,14 +208,14 @@
 <codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>Returns<sp/>the<sp/>primitive<sp/>type<sp/>used<sp/>for<sp/>rendering.</highlight></codeline>
 <codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>PrimitiveType::Triangles<sp/>for<sp/>triangle-based<sp/>rendering.</highlight></codeline>
 <codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128" refid="structhelios_1_1rendering_1_1asset_1_1shape_1_1basic_1_1Ellipse_1a3ab7f5b2bfb1ec5c011efb555ad2582d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="namespacehelios_1_1rendering_1_1model_1_1config_1a13a7711e9718d01b8f09dd183c6777d5" kindref="member">helios::rendering::model::config::PrimitiveType</ref><sp/><ref refid="structhelios_1_1rendering_1_1asset_1_1shape_1_1basic_1_1Ellipse_1a3ab7f5b2bfb1ec5c011efb555ad2582d" kindref="member">primitiveType</ref>()<sp/>const<sp/>noexcept</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacehelios_1_1rendering_1_1model_1_1config_1a13a7711e9718d01b8f09dd183c6777d5a7ca66fdfaad3eb33fc65d7490178f856" kindref="member">model::config::PrimitiveType::Triangles</ref>;</highlight></codeline>
+<codeline lineno="128" refid="structhelios_1_1rendering_1_1asset_1_1shape_1_1basic_1_1Ellipse_1ad401c4242eb7646038f39ff6f0ac4c2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="namespacehelios_1_1rendering_1_1mesh_1a6aff3084e2d307edec0051d9c379588c" kindref="member">helios::rendering::mesh::PrimitiveType</ref><sp/><ref refid="structhelios_1_1rendering_1_1asset_1_1shape_1_1basic_1_1Ellipse_1ad401c4242eb7646038f39ff6f0ac4c2c" kindref="member">primitiveType</ref>()<sp/>const<sp/>noexcept</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacehelios_1_1rendering_1_1mesh_1a6aff3084e2d307edec0051d9c379588ca7ca66fdfaad3eb33fc65d7490178f856" kindref="member">mesh::PrimitiveType::Triangles</ref>;</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight></codeline>
 <codeline lineno="133"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="include/helios/rendering/asset/shape/basic/Ellipse.ixx"/>
+    <location file="/tmp/h/include/helios/rendering/asset/shape/basic/Ellipse.ixx"/>
   </compounddef>
 </doxygen>

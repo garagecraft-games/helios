@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8engine_8mechanics_8bounds_8components_8LevelBoundsBehaviorComponent" kind="module">
+    <compoundname>helios.engine.mechanics.bounds.components.LevelBoundsBehaviorComponent</compoundname>
+    <innerfile refid="LevelBoundsBehaviorComponent_8ixx">LevelBoundsBehaviorComponent.ixx</innerfile>
+    <innerclass refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent" prot="public">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a60d3554be11ac352724a568f1ceb6c17" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::restitution_</definition>
+        <argsstring></argsstring>
+        <name>restitution_</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::restitution_</qualifiedname>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+<para>Coefficient of restitution (bounciness). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A value of 1.0 means a perfectly elastic collision (no energy lost). A value of 0.0 means a perfectly inelastic collision (no bounce). Default is 0.5. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="40" column="15" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a15403617b1a25cf31486d303c19d8933" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdc" kindref="member">helios::engine::modules::physics::collision::types::CollisionBehavior</ref></type>
+        <definition>helios::engine::modules::physics::collision::types::CollisionBehavior helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionBehavior_</definition>
+        <argsstring></argsstring>
+        <name>collisionBehavior_</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionBehavior_</qualifiedname>
+        <initializer>= <ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdcaeb9a56428f85bbdfd3846322baaffe6e" kindref="member">helios::engine::modules::physics::collision::types::CollisionBehavior::Bounce</ref></initializer>
+        <briefdescription>
+<para>The behavior type for boundary collisions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines how the entity reacts when hitting level bounds (e.g., Bounce, Reflect, Clamp, Despawn). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="48" column="79" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a5dda81c9efcd9eff0914a455f70ce0aa" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a6a9de8f399df76cc158f000a343f02a4" kindref="member">helios::engine::modules::physics::collision::types::CollisionResponse</ref></type>
+        <definition>helios::engine::modules::physics::collision::types::CollisionResponse helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionResponse_</definition>
+        <argsstring></argsstring>
+        <name>collisionResponse_</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionResponse_</qualifiedname>
+        <initializer>= <ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a6a9de8f399df76cc158f000a343f02a4a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">helios::engine::modules::physics::collision::types::CollisionResponse::None</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="50" column="79" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1abd3b98b87a3928ba6cec40ca5d2b7d54" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::isEnabled_</definition>
+        <argsstring></argsstring>
+        <name>isEnabled_</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::isEnabled_</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="55" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a0f58448205713539745599806c17c6fb" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::isEnabled</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::isEnabled</qualifiedname>
+        <briefdescription>
+<para>Checks whether this component is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if enabled, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="64" column="15" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a298639961bf47475e3d51fe5aa2f3c44" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::enable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>enable</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::enable</qualifiedname>
+        <briefdescription>
+<para>Enables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="71" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1ae30b277675ae2712f2cdbaae22539a11" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::disable</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>disable</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::disable</qualifiedname>
+        <briefdescription>
+<para>Disables this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="78" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1acae634ae702083c1e70cfd1c96403eb5" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</definition>
+        <argsstring>(const float restitution)</argsstring>
+        <name>LevelBoundsBehaviorComponent</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>restitution</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent" kindref="compound">LevelBoundsBehaviorComponent</ref> with a specified restitution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>restitution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coefficient of restitution (0.0 to 1.0). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="87" column="18" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="87" bodyend="88"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a577a3cecd645297d5f47278834551be1" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="122" endline="124">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::restitution</references>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a654cda8dbd3ca4e969a895afaa3f3bcf" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="107" endline="111">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a4efd3274ef6d7734ad56255f3730a2da">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a7f0a36f046089c288ce8b6be215ce1d2">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::operator=</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a71384b06daefe747947c417bdd3a201c">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a588e2eadcf0136ab31a333c11f5b1f91" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</definition>
+        <argsstring>(const helios::engine::modules::physics::collision::types::CollisionBehavior collisionBehavior=helios::engine::modules::physics::collision::types::CollisionBehavior::Reflect, const helios::engine::modules::physics::collision::types::CollisionResponse collisionResponse=helios::engine::modules::physics::collision::types::CollisionResponse::None)</argsstring>
+        <name>LevelBoundsBehaviorComponent</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdc" kindref="member">helios::engine::modules::physics::collision::types::CollisionBehavior</ref></type>
+          <declname>collisionBehavior</declname>
+          <defval><ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdca74de3e45e4491e956e8dc18d841d9b00" kindref="member">helios::engine::modules::physics::collision::types::CollisionBehavior::Reflect</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a6a9de8f399df76cc158f000a343f02a4" kindref="member">helios::engine::modules::physics::collision::types::CollisionResponse</ref></type>
+          <declname>collisionResponse</declname>
+          <defval><ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a6a9de8f399df76cc158f000a343f02a4a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">helios::engine::modules::physics::collision::types::CollisionResponse::None</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent" kindref="compound">LevelBoundsBehaviorComponent</ref> with a specified collision behavior. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>collisionBehavior</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The collision behavior type (default: Reflect). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="95" column="18" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="95" bodyend="100"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1af460c58e7b2e601856b24bbec6bf93da" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="131" endline="133">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionBehavior</references>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a2f7e26aa5b971d858d0a56be765141ad" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="140" endline="142">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionResponse</references>
+        <references refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a6a9de8f399df76cc158f000a343f02a4a6adf97f83acf6453d4a6a4b1070f3754" compoundref="CollisionResponse_8ixx" startline="28">helios::engine::modules::physics::collision::types::None</references>
+        <references refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdca74de3e45e4491e956e8dc18d841d9b00" compoundref="CollisionBehavior_8ixx" startline="43">helios::engine::modules::physics::collision::types::Reflect</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a654cda8dbd3ca4e969a895afaa3f3bcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</definition>
+        <argsstring>(const LevelBoundsBehaviorComponent &amp;other)</argsstring>
+        <name>LevelBoundsBehaviorComponent</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</qualifiedname>
+        <param>
+          <type>const LevelBoundsBehaviorComponent &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The component to copy from. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="107" column="9" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="107" bodyend="111"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1acae634ae702083c1e70cfd1c96403eb5" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="87" endline="88">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a7f0a36f046089c288ce8b6be215ce1d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LevelBoundsBehaviorComponent &amp;</type>
+        <definition>LevelBoundsBehaviorComponent &amp; helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::operator=</definition>
+        <argsstring>(const LevelBoundsBehaviorComponent &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::operator=</qualifiedname>
+        <param>
+          <type>const LevelBoundsBehaviorComponent &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="113" column="38"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1acae634ae702083c1e70cfd1c96403eb5" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="87" endline="88">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a4efd3274ef6d7734ad56255f3730a2da" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</definition>
+        <argsstring>(LevelBoundsBehaviorComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>LevelBoundsBehaviorComponent</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</qualifiedname>
+        <param>
+          <type>LevelBoundsBehaviorComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="114" column="9"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1acae634ae702083c1e70cfd1c96403eb5" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="87" endline="88">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a71384b06daefe747947c417bdd3a201c" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>LevelBoundsBehaviorComponent &amp;</type>
+        <definition>LevelBoundsBehaviorComponent &amp; helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::operator=</definition>
+        <argsstring>(LevelBoundsBehaviorComponent &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::operator=</qualifiedname>
+        <param>
+          <type>LevelBoundsBehaviorComponent &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="115" column="38"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1acae634ae702083c1e70cfd1c96403eb5" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="87" endline="88">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a577a3cecd645297d5f47278834551be1" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::restitution</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>restitution</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::restitution</qualifiedname>
+        <briefdescription>
+<para>Retrieves the restitution coefficient. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The restitution value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="122" column="16" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="122" bodyend="124"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a577a3cecd645297d5f47278834551be1" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="122" endline="124">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::restitution</references>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1acae634ae702083c1e70cfd1c96403eb5" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="87" endline="88">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a577a3cecd645297d5f47278834551be1" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="122" endline="124">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::restitution</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1abe0ab3bf391aa0a0b4e8a8b65a34c41f" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="168" endline="171">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::setRestitution</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1af460c58e7b2e601856b24bbec6bf93da" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdc" kindref="member">helios::engine::modules::physics::collision::types::CollisionBehavior</ref></type>
+        <definition>helios::engine::modules::physics::collision::types::CollisionBehavior helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionBehavior</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>collisionBehavior</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionBehavior</qualifiedname>
+        <briefdescription>
+<para>Retrieves the collision behavior type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The collision behavior (e.g., Bounce, Reflect, Clamp, Despawn). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="131" column="80" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="131" bodyend="133"/>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a588e2eadcf0136ab31a333c11f5b1f91" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="95" endline="100">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a4767bcd83cfc0749c50e0e851bece580" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="158" endline="160">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::setCollisionBehavior</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a2f7e26aa5b971d858d0a56be765141ad" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a6a9de8f399df76cc158f000a343f02a4" kindref="member">helios::engine::modules::physics::collision::types::CollisionResponse</ref></type>
+        <definition>helios::engine::modules::physics::collision::types::CollisionResponse helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionResponse</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>collisionResponse</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionResponse</qualifiedname>
+        <briefdescription>
+<para>Retrieves the collision response type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The collision response type (e.g., None, Event). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="140" column="80" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="140" bodyend="142"/>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a588e2eadcf0136ab31a333c11f5b1f91" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="95" endline="100">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::LevelBoundsBehaviorComponent</referencedby>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a6b3d153855c0d6f066413aa29006bf56" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="149" endline="151">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::setCollisionResponse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a6b3d153855c0d6f066413aa29006bf56" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::setCollisionResponse</definition>
+        <argsstring>(const helios::engine::modules::physics::collision::types::CollisionResponse collisionResponse) noexcept</argsstring>
+        <name>setCollisionResponse</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::setCollisionResponse</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a6a9de8f399df76cc158f000a343f02a4" kindref="member">helios::engine::modules::physics::collision::types::CollisionResponse</ref></type>
+          <declname>collisionResponse</declname>
+        </param>
+        <briefdescription>
+<para>Sets the collision response type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>collisionResponse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new collision response to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="149" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="149" bodyend="151"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a2f7e26aa5b971d858d0a56be765141ad" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="140" endline="142">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionResponse</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a4767bcd83cfc0749c50e0e851bece580" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::setCollisionBehavior</definition>
+        <argsstring>(const helios::engine::modules::physics::collision::types::CollisionBehavior collisionBehavior) noexcept</argsstring>
+        <name>setCollisionBehavior</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::setCollisionBehavior</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacehelios_1_1engine_1_1modules_1_1physics_1_1collision_1_1types_1a3c17ab6bf5f5cf9dc514ff7c5bf91bdc" kindref="member">helios::engine::modules::physics::collision::types::CollisionBehavior</ref></type>
+          <declname>collisionBehavior</declname>
+        </param>
+        <briefdescription>
+<para>Sets the collision behavior type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>collisionBehavior</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new collision behavior to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="158" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="158" bodyend="160"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1af460c58e7b2e601856b24bbec6bf93da" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="131" endline="133">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::collisionBehavior</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1abe0ab3bf391aa0a0b4e8a8b65a34c41f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::setRestitution</definition>
+        <argsstring>(const float restitution) noexcept</argsstring>
+        <name>setRestitution</name>
+        <qualifiedname>helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::setRestitution</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>restitution</declname>
+        </param>
+        <briefdescription>
+<para>Sets the coefficient of restitution (bounciness). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>restitution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new restitution value to set. Must be within the range [0.0, 1.0]. Values outside this range will be clamped. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="168" column="14" bodyfile="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" bodystart="168" bodyend="171"/>
+        <references refid="classhelios_1_1engine_1_1mechanics_1_1bounds_1_1components_1_1LevelBoundsBehaviorComponent_1a577a3cecd645297d5f47278834551be1" compoundref="LevelBoundsBehaviorComponent_8ixx" startline="122" endline="124">helios::engine::mechanics::bounds::components::LevelBoundsBehaviorComponent::restitution</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/mechanics/bounds/components/LevelBoundsBehaviorComponent.ixx" line="10" column="15"/>
+  </compounddef>
+</doxygen>

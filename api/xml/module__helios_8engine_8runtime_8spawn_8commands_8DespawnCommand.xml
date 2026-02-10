@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8engine_8runtime_8spawn_8commands_8DespawnCommand" kind="module">
+    <compoundname>helios.engine.runtime.spawn.commands.DespawnCommand</compoundname>
+    <innerfile refid="DespawnCommand_8ixx">DespawnCommand.ixx</innerfile>
+    <innerclass refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand" prot="public">helios::engine::runtime::spawn::commands::DespawnCommand</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a1633071412fb40e02b30afe095fa8f42" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref></type>
+        <definition>const helios::engine::ecs::EntityHandle helios::engine::runtime::spawn::commands::DespawnCommand::guid_</definition>
+        <argsstring></argsstring>
+        <name>guid_</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::DespawnCommand::guid_</qualifiedname>
+        <briefdescription>
+<para>The handle of the entity to despawn. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" line="42" column="49" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a469929f42d6cbe2e23e6a51c475f2734" prot="private" static="no" mutable="no">
+        <type><ref refid="structhelios_1_1engine_1_1core_1_1data_1_1SpawnProfileId" kindref="compound">helios::engine::core::data::SpawnProfileId</ref></type>
+        <definition>helios::engine::core::data::SpawnProfileId helios::engine::runtime::spawn::commands::DespawnCommand::spawnProfileId_</definition>
+        <argsstring></argsstring>
+        <name>spawnProfileId_</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::DespawnCommand::spawnProfileId_</qualifiedname>
+        <briefdescription>
+<para>The spawn profile ID for pool return. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" line="47" column="52" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a5c605c8768f970ed0b8e02510755c7f9" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::runtime::spawn::commands::DespawnCommand::DespawnCommand</definition>
+        <argsstring>(const helios::engine::ecs::EntityHandle &amp;entityHandle, const helios::engine::core::data::SpawnProfileId spawnProfileId)</argsstring>
+        <name>DespawnCommand</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::DespawnCommand::DespawnCommand</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref> &amp;</type>
+          <declname>entityHandle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1core_1_1data_1_1SpawnProfileId" kindref="compound">helios::engine::core::data::SpawnProfileId</ref></type>
+          <declname>spawnProfileId</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand" kindref="compound">DespawnCommand</ref> with a target profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entityHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the entity to despawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spawnProfileId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spawn profile ID for pool return. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" line="57" column="18" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" bodystart="57" bodyend="60"/>
+        <references refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a6d593df631aa5d5d2688213f3c7adc5a" compoundref="DespawnCommand_8ixx" startline="91" endline="93">helios::engine::runtime::spawn::commands::DespawnCommand::entityHandle</references>
+        <references refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a6078e9b0926d3fd2bca0f94a8c38565c" compoundref="DespawnCommand_8ixx" startline="100" endline="102">helios::engine::runtime::spawn::commands::DespawnCommand::spawnProfileId</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a27d6b601c1d80bd842c3d5b01b08bfad" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void helios::engine::runtime::spawn::commands::DespawnCommand::execute</definition>
+        <argsstring>(helios::engine::runtime::world::GameWorld &amp;gameWorld) const noexcept override</argsstring>
+        <name>execute</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::DespawnCommand::execute</qualifiedname>
+        <reimplements refid="classhelios_1_1engine_1_1runtime_1_1messaging_1_1command_1_1WorldCommand_1aca8697eac44a696ada96078626b0b103">execute</reimplements>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1world_1_1GameWorld" kindref="compound">helios::engine::runtime::world::GameWorld</ref> &amp;</type>
+          <declname>gameWorld</declname>
+        </param>
+        <briefdescription>
+<para>Direct execution is not supported; requires a dispatcher. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameWorld</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game world (unused).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Asserts in debug builds if called directly. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" line="69" column="14" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a9345f2a9f35dcdf2398d3e787e657269" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void helios::engine::runtime::spawn::commands::DespawnCommand::accept</definition>
+        <argsstring>(helios::engine::runtime::world::GameWorld &amp;gameWorld, helios::engine::runtime::messaging::command::WorldCommandDispatcher &amp;dispatcher) const noexcept override</argsstring>
+        <name>accept</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::DespawnCommand::accept</qualifiedname>
+        <reimplements refid="classhelios_1_1engine_1_1runtime_1_1messaging_1_1command_1_1WorldCommand_1a5cbe95921020642bfef379ec1bf97c53">accept</reimplements>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1world_1_1GameWorld" kindref="compound">helios::engine::runtime::world::GameWorld</ref> &amp;</type>
+          <declname>gameWorld</declname>
+        </param>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1messaging_1_1command_1_1WorldCommandDispatcher" kindref="compound">helios::engine::runtime::messaging::command::WorldCommandDispatcher</ref> &amp;</type>
+          <declname>dispatcher</declname>
+        </param>
+        <briefdescription>
+<para>Accepts a dispatcher for command routing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameWorld</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game world. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dispatcher</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dispatcher to route this command to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" line="79" column="14" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" bodystart="79" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a6d593df631aa5d5d2688213f3c7adc5a" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1engine_1_1ecs_1_1EntityHandle" kindref="compound">helios::engine::ecs::EntityHandle</ref></type>
+        <definition>helios::engine::ecs::EntityHandle helios::engine::runtime::spawn::commands::DespawnCommand::entityHandle</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>entityHandle</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::DespawnCommand::entityHandle</qualifiedname>
+        <briefdescription>
+<para>Returns the handle of the entity to despawn. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The entity handle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" line="91" column="44" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" bodystart="91" bodyend="93"/>
+        <referencedby refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a5c605c8768f970ed0b8e02510755c7f9" compoundref="DespawnCommand_8ixx" startline="57" endline="60">helios::engine::runtime::spawn::commands::DespawnCommand::DespawnCommand</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a6078e9b0926d3fd2bca0f94a8c38565c" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1engine_1_1core_1_1data_1_1SpawnProfileId" kindref="compound">helios::engine::core::data::SpawnProfileId</ref></type>
+        <definition>helios::engine::core::data::SpawnProfileId helios::engine::runtime::spawn::commands::DespawnCommand::spawnProfileId</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>spawnProfileId</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::DespawnCommand::spawnProfileId</qualifiedname>
+        <briefdescription>
+<para>Returns the spawn profile ID for pool return. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The spawn profile ID associated with this command. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" line="100" column="53" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" bodystart="100" bodyend="102"/>
+        <referencedby refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1DespawnCommand_1a5c605c8768f970ed0b8e02510755c7f9" compoundref="DespawnCommand_8ixx" startline="57" endline="60">helios::engine::runtime::spawn::commands::DespawnCommand::DespawnCommand</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/DespawnCommand.ixx" line="10" column="15"/>
+  </compounddef>
+</doxygen>

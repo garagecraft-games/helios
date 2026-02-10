@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="helios_2engine_2mechanics_2combat_2components_2README_8md" kind="file" language="Markdown">
+    <compoundname>helios/engine/mechanics/combat/components/README.md</compoundname>
+    <innernamespace refid="namespacehelios_1_1engine_1_1mechanics_1_1combat_1_1components">helios::engine::mechanics::combat::components</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>helios::engine::mechanics::combat::components</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Combat-specific<sp/>components<sp/>for<sp/>aiming,<sp/>shooting,<sp/>and<sp/>attack<sp/>tracking.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">These<sp/>components<sp/>implement<sp/>high-level<sp/>combat<sp/>behaviors<sp/>that<sp/>coordinate<sp/>between<sp/>input,<sp/>physics,<sp/>and<sp/>rendering<sp/>systems.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Components</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Component<sp/>|<sp/>Description<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-----------|-------------|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`Aim2DComponent`<sp/>|<sp/>Stores<sp/>2D<sp/>aim<sp/>direction<sp/>and<sp/>fire<sp/>frequency<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`ShootComponent`<sp/>|<sp/>Manages<sp/>projectile<sp/>shooting<sp/>with<sp/>cooldown<sp/>timer<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`LastAttackerComponent`<sp/>|<sp/>Tracks<sp/>the<sp/>last<sp/>entity<sp/>that<sp/>attacked<sp/>this<sp/>entity<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>LastAttackerComponent</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Stores<sp/>an<sp/>`AttackContext`<sp/>containing:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Source<sp/>entity<sp/>handle<sp/>(the<sp/>attacker)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Contact<sp/>point<sp/>(where<sp/>the<sp/>attack<sp/>landed)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Damage<sp/>applied</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Used<sp/>by<sp/>`HealthUpdateSystem`<sp/>to<sp/>include<sp/>attack<sp/>context<sp/>in<sp/>`DeathEvent`<sp/>for<sp/>kill<sp/>attribution<sp/>and<sp/>scoring.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;details&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;summary&gt;Doxygen&lt;/summary&gt;&lt;p&gt;</highlight></codeline>
+<codeline><highlight class="normal">@namespace<sp/>helios::engine::mechanics::combat::components</highlight></codeline>
+<codeline><highlight class="normal">@brief<sp/>Combat-specific<sp/>components<sp/>for<sp/>aiming,<sp/>shooting,<sp/>and<sp/>attack<sp/>tracking.</highlight></codeline>
+<codeline><highlight class="normal">@details<sp/>This<sp/>namespace<sp/>contains<sp/>components<sp/>that<sp/>implement<sp/>combat<sp/>behaviors<sp/>such<sp/>as<sp/>aiming<sp/>direction<sp/>tracking,<sp/>projectile<sp/>shooting<sp/>with<sp/>rate<sp/>limiting,<sp/>and<sp/>attack<sp/>attribution.</highlight></codeline>
+<codeline><highlight class="normal">&lt;/p&gt;&lt;/details&gt;</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/tmp/h/include/helios/engine/mechanics/combat/components/README.md"/>
+  </compounddef>
+</doxygen>

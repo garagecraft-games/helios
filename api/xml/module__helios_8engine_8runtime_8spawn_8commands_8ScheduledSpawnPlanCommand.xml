@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8engine_8runtime_8spawn_8commands_8ScheduledSpawnPlanCommand" kind="module">
+    <compoundname>helios.engine.runtime.spawn.commands.ScheduledSpawnPlanCommand</compoundname>
+    <innerfile refid="ScheduledSpawnPlanCommand_8ixx">ScheduledSpawnPlanCommand.ixx</innerfile>
+    <innerclass refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand" prot="public">helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a06b42c36c6869bae2c0f1654da931e16" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structhelios_1_1engine_1_1core_1_1data_1_1SpawnProfileId" kindref="compound">helios::engine::core::data::SpawnProfileId</ref></type>
+        <definition>const helios::engine::core::data::SpawnProfileId helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnProfileId_</definition>
+        <argsstring></argsstring>
+        <name>spawnProfileId_</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnProfileId_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" line="44" column="58" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a3f6ee0070820aa9bffd67ed2964f3697" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structhelios_1_1engine_1_1runtime_1_1spawn_1_1scheduling_1_1SpawnPlan" kindref="compound">helios::engine::runtime::spawn::scheduling::SpawnPlan</ref></type>
+        <definition>const helios::engine::runtime::spawn::scheduling::SpawnPlan helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnPlan_</definition>
+        <argsstring></argsstring>
+        <name>spawnPlan_</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnPlan_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" line="46" column="69" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a5b5e3e09a255aa61dff2999c1a321a4c" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structhelios_1_1engine_1_1runtime_1_1spawn_1_1SpawnContext" kindref="compound">helios::engine::runtime::spawn::SpawnContext</ref></type>
+        <definition>const helios::engine::runtime::spawn::SpawnContext helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnContext_</definition>
+        <argsstring></argsstring>
+        <name>spawnContext_</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnContext_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" line="48" column="60" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a0d20724300c2ecbf62cf8eca2f278b8d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::ScheduledSpawnPlanCommand</definition>
+        <argsstring>(const helios::engine::core::data::SpawnProfileId spawnProfileId, const helios::engine::runtime::spawn::scheduling::SpawnPlan spawnPlan, const helios::engine::runtime::spawn::SpawnContext &amp;spawnContext)</argsstring>
+        <name>ScheduledSpawnPlanCommand</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::ScheduledSpawnPlanCommand</qualifiedname>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1core_1_1data_1_1SpawnProfileId" kindref="compound">helios::engine::core::data::SpawnProfileId</ref></type>
+          <declname>spawnProfileId</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1runtime_1_1spawn_1_1scheduling_1_1SpawnPlan" kindref="compound">helios::engine::runtime::spawn::scheduling::SpawnPlan</ref></type>
+          <declname>spawnPlan</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhelios_1_1engine_1_1runtime_1_1spawn_1_1SpawnContext" kindref="compound">helios::engine::runtime::spawn::SpawnContext</ref> &amp;</type>
+          <declname>spawnContext</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a command with the given spawn plan. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spawnProfileId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The profile ID for spawning. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spawnPlan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spawn plan containing rule ID and amount. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spawnContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The context for spawn operations. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" line="59" column="18" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" bodystart="59" bodyend="67"/>
+        <references refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a0c12f5f7424245590dc058d5f14f70c8" compoundref="ScheduledSpawnPlanCommand_8ixx" startline="121" endline="123">helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnContext</references>
+        <references refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a786debdfc118c8fff0ce790eece91a7a" compoundref="ScheduledSpawnPlanCommand_8ixx" startline="111" endline="113">helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnPlan</references>
+        <references refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a39a05ef02b8449b0f3450c346a64640c" compoundref="ScheduledSpawnPlanCommand_8ixx" startline="102" endline="104">helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnProfileId</references>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1ac52d2b8e0f355b14e1a4777c9519b675" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::execute</definition>
+        <argsstring>(helios::engine::runtime::world::GameWorld &amp;gameWorld) const noexcept override</argsstring>
+        <name>execute</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::execute</qualifiedname>
+        <reimplements refid="classhelios_1_1engine_1_1runtime_1_1messaging_1_1command_1_1WorldCommand_1aca8697eac44a696ada96078626b0b103">execute</reimplements>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1world_1_1GameWorld" kindref="compound">helios::engine::runtime::world::GameWorld</ref> &amp;</type>
+          <declname>gameWorld</declname>
+        </param>
+        <briefdescription>
+<para>Direct execution is a no-op; dispatching is required. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This command requires a dispatcher to route it to the <ref refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1SpawnManager" kindref="compound">SpawnManager</ref>. Direct execution does nothing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameWorld</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game world (unused). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" line="77" column="14" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a78a32b69a8df38b4f4c543010467df0c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::accept</definition>
+        <argsstring>(helios::engine::runtime::world::GameWorld &amp;gameWorld, helios::engine::runtime::messaging::command::WorldCommandDispatcher &amp;dispatcher) const noexcept override</argsstring>
+        <name>accept</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::accept</qualifiedname>
+        <reimplements refid="classhelios_1_1engine_1_1runtime_1_1messaging_1_1command_1_1WorldCommand_1a5cbe95921020642bfef379ec1bf97c53">accept</reimplements>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1world_1_1GameWorld" kindref="compound">helios::engine::runtime::world::GameWorld</ref> &amp;</type>
+          <declname>gameWorld</declname>
+        </param>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1messaging_1_1command_1_1WorldCommandDispatcher" kindref="compound">helios::engine::runtime::messaging::command::WorldCommandDispatcher</ref> &amp;</type>
+          <declname>dispatcher</declname>
+        </param>
+        <briefdescription>
+<para>Accepts a dispatcher for command routing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Invokes the dispatcher&apos;s dispatch method, allowing it to handle this command type appropriately (typically routing to <ref refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1SpawnManager" kindref="compound">SpawnManager</ref>).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameWorld</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game world. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dispatcher</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dispatcher to route this command to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" line="90" column="14" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a39a05ef02b8449b0f3450c346a64640c" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1engine_1_1core_1_1data_1_1SpawnProfileId" kindref="compound">helios::engine::core::data::SpawnProfileId</ref></type>
+        <definition>helios::engine::core::data::SpawnProfileId helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnProfileId</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>spawnProfileId</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnProfileId</qualifiedname>
+        <briefdescription>
+<para>Retrieves the spawn profile identifier associated with the command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The spawn profile identifier encapsulated within the <ref refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand" kindref="compound">ScheduledSpawnPlanCommand</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" line="102" column="53" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" bodystart="102" bodyend="104"/>
+        <referencedby refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a0d20724300c2ecbf62cf8eca2f278b8d" compoundref="ScheduledSpawnPlanCommand_8ixx" startline="59" endline="67">helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::ScheduledSpawnPlanCommand</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a786debdfc118c8fff0ce790eece91a7a" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1engine_1_1runtime_1_1spawn_1_1scheduling_1_1SpawnPlan" kindref="compound">helios::engine::runtime::spawn::scheduling::SpawnPlan</ref></type>
+        <definition>helios::engine::runtime::spawn::scheduling::SpawnPlan helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnPlan</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>spawnPlan</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnPlan</qualifiedname>
+        <briefdescription>
+<para>Returns the spawn plan associated with this instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A structured plan that can be executed by the spawn management system. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" line="111" column="64" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" bodystart="111" bodyend="113"/>
+        <referencedby refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a0d20724300c2ecbf62cf8eca2f278b8d" compoundref="ScheduledSpawnPlanCommand_8ixx" startline="59" endline="67">helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::ScheduledSpawnPlanCommand</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a0c12f5f7424245590dc058d5f14f70c8" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structhelios_1_1engine_1_1runtime_1_1spawn_1_1SpawnContext" kindref="compound">helios::engine::runtime::spawn::SpawnContext</ref></type>
+        <definition>helios::engine::runtime::spawn::SpawnContext helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnContext</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>spawnContext</name>
+        <qualifiedname>helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::spawnContext</qualifiedname>
+        <briefdescription>
+<para>Retrieves the spawn context associated with this instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The spawn context. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" line="121" column="55" bodyfile="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" bodystart="121" bodyend="123"/>
+        <referencedby refid="classhelios_1_1engine_1_1runtime_1_1spawn_1_1commands_1_1ScheduledSpawnPlanCommand_1a0d20724300c2ecbf62cf8eca2f278b8d" compoundref="ScheduledSpawnPlanCommand_8ixx" startline="59" endline="67">helios::engine::runtime::spawn::commands::ScheduledSpawnPlanCommand::ScheduledSpawnPlanCommand</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/runtime/spawn/commands/ScheduledSpawnPlanCommand.ixx" line="10" column="15"/>
+  </compounddef>
+</doxygen>

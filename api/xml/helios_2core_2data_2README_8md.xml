@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="helios_2core_2data_2README_8md" kind="file" language="Markdown">
+    <compoundname>helios/core/data/README.md</compoundname>
+    <innernamespace refid="namespacehelios_1_1core_1_1data">helios::core::data</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>helios::core::data</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Core<sp/>data<sp/>structures<sp/>for<sp/>type<sp/>indexing<sp/>and<sp/>efficient<sp/>lookups.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>module<sp/>provides<sp/>fundamental<sp/>data<sp/>structures<sp/>including<sp/>type<sp/>indexing<sp/>utilities<sp/>for<sp/>efficient<sp/>type-based<sp/>lookups<sp/>at<sp/>compile<sp/>and<sp/>runtime.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">&lt;details&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;summary&gt;Doxygen&lt;/summary&gt;&lt;p&gt;</highlight></codeline>
+<codeline><highlight class="normal">@namespace<sp/>helios::core::data</highlight></codeline>
+<codeline><highlight class="normal">@brief<sp/>Core<sp/>data<sp/>structures<sp/>for<sp/>type<sp/>indexing.</highlight></codeline>
+<codeline><highlight class="normal">@details<sp/>This<sp/>module<sp/>provides<sp/>fundamental<sp/>data<sp/>structures<sp/>including<sp/>type<sp/>indexing<sp/>utilities<sp/>for<sp/>efficient<sp/>type-based<sp/>lookups.</highlight></codeline>
+<codeline><highlight class="normal">&lt;/p&gt;&lt;/details&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/tmp/h/include/helios/core/data/README.md"/>
+  </compounddef>
+</doxygen>

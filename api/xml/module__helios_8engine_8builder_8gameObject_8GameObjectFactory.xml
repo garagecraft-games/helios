@@ -1,0 +1,976 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="module__helios_8engine_8builder_8gameObject_8GameObjectFactory" kind="module">
+    <compoundname>helios.engine.builder.gameObject.GameObjectFactory</compoundname>
+    <innerfile refid="GameObjectFactory_8ixx">GameObjectFactory.ixx</innerfile>
+    <innerclass refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory" prot="public">helios::engine::builder::gameObject::GameObjectFactory</innerclass>
+    <innerclass refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype" prot="private">helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a23708a2cfa92c0316c4a780b5ef458a3" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1MotionBuilder" kindref="compound">helios::engine::builder::gameObject::builders::MotionBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::MotionBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::MotionBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>MotionBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::MotionBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for motion configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="128" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1acceb498c4f0147314b86a45bd386fb15" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1RenderingBuilder" kindref="compound">helios::engine::builder::gameObject::builders::RenderingBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::RenderingBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::RenderingBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>RenderingBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::RenderingBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for rendering configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="131" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1ae64cc6eb0d5ec67274e42b76e893180b" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1SceneBuilder" kindref="compound">helios::engine::builder::gameObject::builders::SceneBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::SceneBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::SceneBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>SceneBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::SceneBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for scene configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="134" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1af87f80934b06dd8be2e91a5fc2d43f54" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1TransformBuilder" kindref="compound">helios::engine::builder::gameObject::builders::TransformBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::TransformBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::TransformBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>TransformBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::TransformBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for transform configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="137" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1ad4f22487d1587811d95183cda405a645" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1UiTransformBuilder" kindref="compound">helios::engine::builder::gameObject::builders::UiTransformBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::UiTransformBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::UiTransformBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>UiTransformBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::UiTransformBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for UI transform configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="140" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a2970b919c8ed0e80e670e390ee645fdb" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1CollisionBuilder" kindref="compound">helios::engine::builder::gameObject::builders::CollisionBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::CollisionBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::CollisionBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>CollisionBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::CollisionBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for collision configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="143" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a1e14af27c400036bf1a0fdd50a378abf" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1EffectsBuilder" kindref="compound">helios::engine::builder::gameObject::builders::EffectsBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::EffectsBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::EffectsBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>EffectsBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::EffectsBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for effects configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="146" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a6af41d3f15a0803b5c14bdd97ae0dff4" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1SpawnBuilder" kindref="compound">helios::engine::builder::gameObject::builders::SpawnBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::SpawnBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::SpawnBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>SpawnBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::SpawnBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for spawn configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="149" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1adf693c6796d69352b89dd9781917d841" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1AiBuilder" kindref="compound">helios::engine::builder::gameObject::builders::AiBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::AiBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::AiBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>AiBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::AiBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for AI configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="152" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a3da37efec3b78dee659a3a59a063d76c" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1CombatBuilder" kindref="compound">helios::engine::builder::gameObject::builders::CombatBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::CombatBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::CombatBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>CombatBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::CombatBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for combat configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="155" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a7f68e0168faa8853039b078115701576" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1LifecycleBuilder" kindref="compound">helios::engine::builder::gameObject::builders::LifecycleBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::LifecycleBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::LifecycleBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>LifecycleBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::LifecycleBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for lifecycle configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="158" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a366f891a9db6bde9e5c40df3854c9c18" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1HealthBuilder" kindref="compound">helios::engine::builder::gameObject::builders::HealthBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::HealthBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::HealthBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>HealthBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::HealthBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for health configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="161" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a82d9e97a582d0c1f36ab3a88e7f1c9da" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1ScoringBuilder" kindref="compound">helios::engine::builder::gameObject::builders::ScoringBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::ScoringBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::ScoringBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ScoringBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::ScoringBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for scoring configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="164" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1ac30a40f80098e7b593c1eea3c008dd89" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1ObserverBuilder" kindref="compound">helios::engine::builder::gameObject::builders::ObserverBuilder</ref> &amp;)&gt;</type>
+        <definition>using helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::ObserverBuilderCallback =  std::function&lt;void(helios::engine::builder::gameObject::builders::ObserverBuilder&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>ObserverBuilderCallback</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::ObserverBuilderCallback</qualifiedname>
+        <briefdescription>
+<para>Callback type for observer configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="167" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="167" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a5c680110c7b46dbc2557b4258f674860" prot="private" static="no" mutable="no">
+        <type><ref refid="classhelios_1_1engine_1_1ecs_1_1GameObject" kindref="compound">helios::engine::ecs::GameObject</ref></type>
+        <definition>helios::engine::ecs::GameObject helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::gameObject_</definition>
+        <argsstring></argsstring>
+        <name>gameObject_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::gameObject_</qualifiedname>
+        <briefdescription>
+<para>The GameObject being configured. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="54" column="45" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a4dd031798f66d50a3a8bd8a3f8978791" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1MotionBuilder" kindref="compound">helios::engine::builder::gameObject::builders::MotionBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::MotionBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::motionBuilder_</definition>
+        <argsstring></argsstring>
+        <name>motionBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::motionBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for motion-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="59" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1ae7c21215a7ad7c5f113622ccf9f8a96a" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1RenderingBuilder" kindref="compound">helios::engine::builder::gameObject::builders::RenderingBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::RenderingBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::renderingBuilder_</definition>
+        <argsstring></argsstring>
+        <name>renderingBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::renderingBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for rendering-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="64" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a57995df4f016125f0ead19c00e135b83" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1SceneBuilder" kindref="compound">helios::engine::builder::gameObject::builders::SceneBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::SceneBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::sceneBuilder_</definition>
+        <argsstring></argsstring>
+        <name>sceneBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::sceneBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for scene-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="69" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1ada8afeda61c295a7d289554b94a29e42" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1CollisionBuilder" kindref="compound">helios::engine::builder::gameObject::builders::CollisionBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::CollisionBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::collisionBuilder_</definition>
+        <argsstring></argsstring>
+        <name>collisionBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::collisionBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for collision-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="74" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a0a874f6325037b2ff829b0df30e80f6c" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1TransformBuilder" kindref="compound">helios::engine::builder::gameObject::builders::TransformBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::TransformBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::transformBuilder_</definition>
+        <argsstring></argsstring>
+        <name>transformBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::transformBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for spatial transform components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="79" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a73b8bebedd67efb2c98a9f9a06d0367f" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1UiTransformBuilder" kindref="compound">helios::engine::builder::gameObject::builders::UiTransformBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::UiTransformBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::uiTransformBuilder_</definition>
+        <argsstring></argsstring>
+        <name>uiTransformBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::uiTransformBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for UI transform components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="84" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1aaac208470669dbb8bc72f50d567fbb0e" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1EffectsBuilder" kindref="compound">helios::engine::builder::gameObject::builders::EffectsBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::EffectsBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::effectsBuilder_</definition>
+        <argsstring></argsstring>
+        <name>effectsBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::effectsBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for visual effects components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="89" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1aef1a231c9ea2a83ab6ad492da4e40775" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1SpawnBuilder" kindref="compound">helios::engine::builder::gameObject::builders::SpawnBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::SpawnBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::spawnBuilder_</definition>
+        <argsstring></argsstring>
+        <name>spawnBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::spawnBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for spawn-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="94" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1abae248caf925003fd1fab3c3a0672af1" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1AiBuilder" kindref="compound">helios::engine::builder::gameObject::builders::AiBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::AiBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::aiBuilder_</definition>
+        <argsstring></argsstring>
+        <name>aiBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::aiBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for AI behavior components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="99" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a994efa14a138c741125c2bc33271b3ba" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1CombatBuilder" kindref="compound">helios::engine::builder::gameObject::builders::CombatBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::CombatBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::CombatBuilder_</definition>
+        <argsstring></argsstring>
+        <name>CombatBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::CombatBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for combat-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="104" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a915f98ae51af8ca4313515d3cc4879a5" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1LifecycleBuilder" kindref="compound">helios::engine::builder::gameObject::builders::LifecycleBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::LifecycleBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::lifecycleBuilder_</definition>
+        <argsstring></argsstring>
+        <name>lifecycleBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::lifecycleBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for lifecycle components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="109" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a1f9176cc0a59d54c42cbc21afccf264d" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1HealthBuilder" kindref="compound">helios::engine::builder::gameObject::builders::HealthBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::HealthBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::healthBuilder_</definition>
+        <argsstring></argsstring>
+        <name>healthBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::healthBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for health-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="114" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1ad9ccba7b2c98a6e55f9fe9caff315201" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1ScoringBuilder" kindref="compound">helios::engine::builder::gameObject::builders::ScoringBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::ScoringBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::scoringBuilder_</definition>
+        <argsstring></argsstring>
+        <name>scoringBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::scoringBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for scoring-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="119" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a8a88e1bc78fa96e4ca4f201b5ce502c3" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classhelios_1_1engine_1_1builder_1_1gameObject_1_1builders_1_1ObserverBuilder" kindref="compound">helios::engine::builder::gameObject::builders::ObserverBuilder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;helios::engine::builder::gameObject::builders::ObserverBuilder&gt; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::observerBuilder_</definition>
+        <argsstring></argsstring>
+        <name>observerBuilder_</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::observerBuilder_</qualifiedname>
+        <briefdescription>
+<para>Builder for observer components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="124" column="29" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="124" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a2b3dc66fc152dfbffc14a0246104bd51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::GameObjectPrototype</definition>
+        <argsstring>(helios::engine::runtime::world::GameWorld &amp;gameWorld)</argsstring>
+        <name>GameObjectPrototype</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::GameObjectPrototype</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1world_1_1GameWorld" kindref="compound">helios::engine::runtime::world::GameWorld</ref> &amp;</type>
+          <declname>gameWorld</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a prototype with a new empty GameObject. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="173" column="13" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="173" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a7ba6e7b8bcc1a912e5df731e6b7ab6c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::prototype</definition>
+        <argsstring>()</argsstring>
+        <name>prototype</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::prototype</qualifiedname>
+        <briefdescription>
+<para>Returns a reference to this prototype. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to this prototype. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="197" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a5342f75e12895c78f6005e5e0bc60886" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhelios_1_1engine_1_1ecs_1_1GameObject" kindref="compound">helios::engine::ecs::GameObject</ref></type>
+        <definition>helios::engine::ecs::GameObject helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::make</definition>
+        <argsstring>(const bool active=false)</argsstring>
+        <name>make</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::make</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>active</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Finalizes the prototype and returns the configured GameObject. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>active</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the GameObject should be active upon creation.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ownership of the configured GameObject. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="208" column="45" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1adcd08307cbf674958c204c5b191d2a55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withMotion</definition>
+        <argsstring>(const MotionBuilderCallback &amp;mcb)</argsstring>
+        <name>withMotion</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withMotion</qualifiedname>
+        <param>
+          <type>const MotionBuilderCallback &amp;</type>
+          <declname>mcb</declname>
+        </param>
+        <briefdescription>
+<para>Configures motion-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mcb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving a MotionBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="222" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1abb912938b4b55bd937957f12428c84e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withRendering</definition>
+        <argsstring>(const RenderingBuilderCallback &amp;rbc)</argsstring>
+        <name>withRendering</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withRendering</qualifiedname>
+        <param>
+          <type>const RenderingBuilderCallback &amp;</type>
+          <declname>rbc</declname>
+        </param>
+        <briefdescription>
+<para>Configures rendering-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rbc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving a RenderingBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="234" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a695f2dcd6796c02658294d0bf9eb3588" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withCollision</definition>
+        <argsstring>(const CollisionBuilderCallback &amp;cbc)</argsstring>
+        <name>withCollision</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withCollision</qualifiedname>
+        <param>
+          <type>const CollisionBuilderCallback &amp;</type>
+          <declname>cbc</declname>
+        </param>
+        <briefdescription>
+<para>Configures collision-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cbc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving a CollisionBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="246" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a11558d44cd3d936b1097e9eb732a8500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withTransform</definition>
+        <argsstring>(const TransformBuilderCallback &amp;tbc)</argsstring>
+        <name>withTransform</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withTransform</qualifiedname>
+        <param>
+          <type>const TransformBuilderCallback &amp;</type>
+          <declname>tbc</declname>
+        </param>
+        <briefdescription>
+<para>Configures spatial transform components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving a TransformBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="258" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a7111dbd69b2e930cca8023ef20af5b86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withUiTransform</definition>
+        <argsstring>(const UiTransformBuilderCallback &amp;utbc)</argsstring>
+        <name>withUiTransform</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withUiTransform</qualifiedname>
+        <param>
+          <type>const UiTransformBuilderCallback &amp;</type>
+          <declname>utbc</declname>
+        </param>
+        <briefdescription>
+<para>Configures UI transform components for viewport-relative positioning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utbc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving a UiTransformBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="270" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="270" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a017e40fbb5172946c94e3f3d3c4f4033" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withEffects</definition>
+        <argsstring>(const EffectsBuilderCallback &amp;ebc)</argsstring>
+        <name>withEffects</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withEffects</qualifiedname>
+        <param>
+          <type>const EffectsBuilderCallback &amp;</type>
+          <declname>ebc</declname>
+        </param>
+        <briefdescription>
+<para>Configures visual effects components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ebc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving an EffectsBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="282" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1af8b1fa4880376b50dc2d1c5dddd8470a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withSpawn</definition>
+        <argsstring>(const SpawnBuilderCallback &amp;sbc)</argsstring>
+        <name>withSpawn</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withSpawn</qualifiedname>
+        <param>
+          <type>const SpawnBuilderCallback &amp;</type>
+          <declname>sbc</declname>
+        </param>
+        <briefdescription>
+<para>Configures spawn-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sbc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving a SpawnBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="294" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="294" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a1cf70e7c64f4199d75373d320f1c99cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withAi</definition>
+        <argsstring>(const AiBuilderCallback &amp;aibc)</argsstring>
+        <name>withAi</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withAi</qualifiedname>
+        <param>
+          <type>const AiBuilderCallback &amp;</type>
+          <declname>aibc</declname>
+        </param>
+        <briefdescription>
+<para>Configures AI behavior components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aibc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving an AiBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="306" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1a4124e2e38fa7d2dac5ea4f58dd856dbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withCombat</definition>
+        <argsstring>(const CombatBuilderCallback &amp;sbc)</argsstring>
+        <name>withCombat</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withCombat</qualifiedname>
+        <param>
+          <type>const CombatBuilderCallback &amp;</type>
+          <declname>sbc</declname>
+        </param>
+        <briefdescription>
+<para>Configures weapon and shooting components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sbc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving a CombatBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="318" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="318" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1adb0f09ad7d07ce4282697556c872d0d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withLifecycle</definition>
+        <argsstring>(const LifecycleBuilderCallback &amp;sbc)</argsstring>
+        <name>withLifecycle</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withLifecycle</qualifiedname>
+        <param>
+          <type>const LifecycleBuilderCallback &amp;</type>
+          <declname>sbc</declname>
+        </param>
+        <briefdescription>
+<para>Configures lifecycle components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sbc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving a LifecycleBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="330" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="330" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1af96bf6db92fc4b77e95676801c9d2311" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withHealth</definition>
+        <argsstring>(const HealthBuilderCallback &amp;hbc)</argsstring>
+        <name>withHealth</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withHealth</qualifiedname>
+        <param>
+          <type>const HealthBuilderCallback &amp;</type>
+          <declname>hbc</declname>
+        </param>
+        <briefdescription>
+<para>Configures health-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hbc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving a HealthBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="342" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="342" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1ae95bbf198c4ed550cd182296c151ecdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withScoring</definition>
+        <argsstring>(const ScoringBuilderCallback &amp;hbc)</argsstring>
+        <name>withScoring</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withScoring</qualifiedname>
+        <param>
+          <type>const ScoringBuilderCallback &amp;</type>
+          <declname>hbc</declname>
+        </param>
+        <briefdescription>
+<para>Configures scoring-related components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hbc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving a ScoringBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="354" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="354" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1_1GameObjectPrototype_1ac1f716852dc4789a6ef01b7c7c00e35a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype &amp;</type>
+        <definition>GameObjectPrototype &amp; helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withObserver</definition>
+        <argsstring>(const ObserverBuilderCallback &amp;obc)</argsstring>
+        <name>withObserver</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::GameObjectPrototype::withObserver</qualifiedname>
+        <param>
+          <type>const ObserverBuilderCallback &amp;</type>
+          <declname>obc</declname>
+        </param>
+        <briefdescription>
+<para>Configures observer components for data binding. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback receiving an ObserverBuilder reference.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reference to this prototype for chaining. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="366" column="33" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="366" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1a3e1f2fd66b4f091ccbaa98b494240d64" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectFactory &amp;</type>
+        <definition>static GameObjectFactory &amp; helios::engine::builder::gameObject::GameObjectFactory::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::instance</qualifiedname>
+        <briefdescription>
+<para>Returns the singleton instance of the factory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to the singleton factory. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="380" column="34" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classhelios_1_1engine_1_1builder_1_1gameObject_1_1GameObjectFactory_1ac6d64b614d8d67bce93033dbcb1fd58d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObjectPrototype</type>
+        <definition>static GameObjectPrototype helios::engine::builder::gameObject::GameObjectFactory::gameObject</definition>
+        <argsstring>(helios::engine::runtime::world::GameWorld &amp;gameWorld)</argsstring>
+        <name>gameObject</name>
+        <qualifiedname>helios::engine::builder::gameObject::GameObjectFactory::gameObject</qualifiedname>
+        <param>
+          <type><ref refid="classhelios_1_1engine_1_1runtime_1_1world_1_1GameWorld" kindref="compound">helios::engine::runtime::world::GameWorld</ref> &amp;</type>
+          <declname>gameWorld</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new empty GameObject prototype. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameWorld</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The world where the GameObject lives.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A prototype for fluent configuration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="392" column="36" bodyfile="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" bodystart="392" bodyend="394"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/engine/builder/gameObject/GameObjectFactory.ixx" line="10" column="15"/>
+  </compounddef>
+</doxygen>

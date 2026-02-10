@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>helios: include/helios/engine/game/GameObject.ixx File Reference</title>
+<title>helios: GameObject.ixx File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript">var page_layout=1;</script>
 <script type="text/javascript" src="jquery.js"></script>
@@ -103,18 +103,25 @@ $(function() {
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">GameObject.ixx File Reference<div class="ingroups">module <a class="el" href="module__helios_8engine_8game_8GameObject.html">helios.engine.game.GameObject</a></div></div></div>
+  <div class="headertitle"><div class="title">GameObject.ixx File Reference<div class="ingroups">module <a class="el" href="module__helios_8engine_8ecs_8GameObject.html">helios.engine.ecs.GameObject</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Base class for interactive game entities with transform capabilities.  
+<p>High-level facade for entity manipulation in the ECS.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>import <a class="el" href="Updatable_8ixx_source.html">helios.engine.game.Updatable</a>;</code><br />
-<code>import <a class="el" href="UpdateContext_8ixx_source.html">helios.engine.game.UpdateContext</a>;</code><br />
-<code>import <a class="el" href="Component_8ixx_source.html">helios.engine.game.Component</a>;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;typeindex&gt;</code><br />
+<code>#include &lt;generator&gt;</code><br />
+<code>import <a class="el" href="helios_2core_2data_2__module_8ixx_source.html">helios.core.data</a>;</code><br />
+<code>import <a class="el" href="ComponentTypeId_8ixx_source.html">helios.engine.core.data.ComponentTypeId</a>;</code><br />
+<code>import <a class="el" href="UpdateContext_8ixx_source.html">helios.engine.runtime.world.UpdateContext</a>;</code><br />
+<code>import <a class="el" href="EntityManager_8ixx_source.html">helios.engine.ecs.EntityManager</a>;</code><br />
 <code>import <a class="el" href="Guid_8ixx_source.html">helios.util.Guid</a>;</code><br />
+<code>import <a class="el" href="Active_8ixx_source.html">helios.engine.mechanics.lifecycle.components.Active</a>;</code><br />
+<code>import <a class="el" href="Inactive_8ixx_source.html">helios.engine.mechanics.lifecycle.components.Inactive</a>;</code><br />
+<code>import <a class="el" href="ComponentOpsRegistry_8ixx_source.html">helios.engine.ecs.ComponentOpsRegistry</a>;</code><br />
+<code>import <a class="el" href="EntityHandle_8ixx_source.html">helios.engine.ecs.EntityHandle</a>;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for GameObject.ixx:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
@@ -126,19 +133,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:helios_3A_3Aengine_3A_3Agame_3A_3AGameObject" id="r_helios_3A_3Aengine_3A_3Agame_3A_3AGameObject"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1engine_1_1game_1_1GameObject.html">helios::engine::game::GameObject</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for interactive game entities using a component-based architecture.  <a href="classhelios_1_1engine_1_1game_1_1GameObject.html#details">More...</a><br /></td></tr>
+<tr class="memitem:helios_3A_3Aengine_3A_3Aecs_3A_3AGameObject" id="r_helios_3A_3Aengine_3A_3Aecs_3A_3AGameObject"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1engine_1_1ecs_1_1GameObject.html">helios::engine::ecs::GameObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lightweight facade for entity component manipulation.  <a href="classhelios_1_1engine_1_1ecs_1_1GameObject.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:helios" id="r_helios"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios.html">helios</a></td></tr>
 <tr class="memitem:helios_3A_3Aengine" id="r_helios_3A_3Aengine"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios_1_1engine.html">helios::engine</a></td></tr>
-<tr class="memdesc:namespacehelios_1_1engine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Engine utilities for frame pacing and tick/update lifecycle management. <br /></td></tr>
-<tr class="memitem:helios_3A_3Aengine_3A_3Agame" id="r_helios_3A_3Aengine_3A_3Agame"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios_1_1engine_1_1game.html">helios::engine::game</a></td></tr>
-<tr class="memdesc:namespacehelios_1_1engine_1_1game"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game logic infrastructure using <a class="el" href="classhelios_1_1engine_1_1game_1_1Command.html" title="Abstract base class for encapsulating game actions as executable commands.">Command</a> pattern for decoupled, deterministic game systems. <br /></td></tr>
+<tr class="memdesc:namespacehelios_1_1engine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main engine module aggregating core infrastructure and game systems. <br /></td></tr>
+<tr class="memitem:helios_3A_3Aengine_3A_3Aecs" id="r_helios_3A_3Aengine_3A_3Aecs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehelios_1_1engine_1_1ecs.html">helios::engine::ecs</a></td></tr>
+<tr class="memdesc:namespacehelios_1_1engine_1_1ecs"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core Entity-Component-System architecture. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for interactive game entities with transform capabilities. </p>
+<div class="textblock"><p>High-level facade for entity manipulation in the ECS. </p>
 
 <p class="definition">Definition in file <a class="el" href="GameObject_8ixx_source.html">GameObject.ixx</a>.</p>
 </div></div><!-- contents -->
@@ -154,7 +161,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="dir_08c09894bd9f0ab4b1e9fdc7a2628766.html">helios</a></li><li class="navelem"><a href="dir_860c9de2f65c10e8e262a0e7b5bfee5e.html">engine</a></li><li class="navelem"><a href="dir_46c7b0b04924cca8aa10726746d57f30.html">game</a></li><li class="navelem"><a href="GameObject_8ixx.html">GameObject.ixx</a></li>
+    <li class="navelem"><a href="dir_8af83c0dc83a45a35ca6968cdc29a7af.html">tmp</a></li><li class="navelem"><a href="dir_25ba8c016aaabea63a88c40dc27775c8.html">h</a></li><li class="navelem"><a href="dir_b3f59628e993ded3576abd1cf1101eb8.html">include</a></li><li class="navelem"><a href="dir_1ac1243035b4576c146b8d2c8a6274f6.html">helios</a></li><li class="navelem"><a href="dir_1e46d961eb277b2583ee5b095f5b4c8e.html">engine</a></li><li class="navelem"><a href="dir_1ca916e0b9fbc882dbfbd9e6594e5e22.html">ecs</a></li><li class="navelem"><a href="GameObject_8ixx.html">GameObject.ixx</a></li>
     <li class="footer">Generated on <span class="timestamp"></span> for helios by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
   </ul>
 </div>

@@ -1,0 +1,10 @@
+<map id="_module.ixx" name="_module.ixx">
+<area shape="rect" id="Node000001" title="Aggregate module for helios::engine::core::units namespace." alt="" coords="45,5,147,31"/>
+<area shape="rect" id="Node000002" href="$Unit_8ixx.html" title=" " alt="" coords="16,79,176,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,31,99,65,93,65,93,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,64,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,106,56,143,52,140,84,103"/>
+<area shape="rect" id="Node000004" href="$helios_2math_2types_2__module_8ixx.html" title="Module exports for vector and matrix type definitions." alt="" coords="88,152,227,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="108,103,140,140,136,143,104,106"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="201,149,236,150,248,156,253,165,250,172,241,177,215,181,214,176,239,172,246,169,248,165,245,160,235,156,201,155"/>
+</map>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacehelios_1_1core_1_1types" kind="namespace" language="C++">
+    <compoundname>helios::core::types</compoundname>
+    <innerclass refid="structhelios_1_1core_1_1types_1_1no__init__t" prot="public">helios::core::types::no_init_t</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacehelios_1_1core_1_1types_1a209d373c4d42ac831d2f6bfd1c4165ad" prot="public" static="no" constexpr="yes" mutable="no">
+        <type><ref refid="structhelios_1_1core_1_1types_1_1no__init__t" kindref="compound">no_init_t</ref></type>
+        <definition>no_init_t helios::core::types::no_init</definition>
+        <argsstring></argsstring>
+        <name>no_init</name>
+        <qualifiedname>helios::core::types::no_init</qualifiedname>
+        <briefdescription>
+<para>Tag constant for requesting uninitialized construction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a convenience instance of `no_init_t` that can be passed to constructors supporting uninitialized construction.</para>
+<para>```cpp <ref refid="classhelios_1_1util_1_1Guid" kindref="compound">helios::util::Guid</ref> id{<ref refid="namespacehelios_1_1core_1_1types_1a209d373c4d42ac831d2f6bfd1c4165ad" kindref="member">helios::core::types::no_init</ref>}; ```</para>
+<para><simplesect kind="see"><para><ref refid="structhelios_1_1core_1_1types_1_1no__init__t" kindref="compound">no_init_t</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classhelios_1_1util_1_1Guid" kindref="compound">helios::util::Guid</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/h/include/helios/core/types.ixx" line="60" column="32" bodyfile="/tmp/h/include/helios/core/types.ixx" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classhelios_1_1engine_1_1mechanics_1_1scoring_1_1components_1_1ScoreObserverComponent_1ac61ed4347036721e97541a07e2935973" compoundref="ScoreObserverComponent_8ixx" startline="34">helios::engine::mechanics::scoring::components::ScoreObserverComponent::helios::engine::mechanics::scoring::systems::ScoreObserverClearSystem</referencedby>
+        <referencedby refid="classhelios_1_1rendering_1_1Viewport_1a1d9d3a0ebdaff5c51d94a2f5546e4fa8" compoundref="Viewport_8ixx" startline="213" endline="222">helios::rendering::Viewport::Viewport</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/h/include/helios/core/types.ixx" line="11" column="1"/>
+  </compounddef>
+</doxygen>

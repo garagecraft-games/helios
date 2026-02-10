@@ -1,0 +1,13 @@
+<map id="ReadWriteBuffer.ixx" name="ReadWriteBuffer.ixx">
+<area shape="rect" id="Node000001" title="Combined read&#45;write buffer for single&#45;buffered access patterns." alt="" coords="64,5,216,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,152,59,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,33,70,52,54,64,41,80,31,109,31,139,26,138,26,108,36,77,50,61,67,47,103,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="219,152,282,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,28,213,47,230,61,244,77,255,108,256,138,251,139,249,109,239,80,226,64,210,52,174,33"/>
+<area shape="rect" id="Node000004" href="$Buffer_8ixx.html" title="Abstract base class for buffer implementations." alt="" coords="51,79,229,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,31,143,65,137,65,137,31"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="124,106,63,147,60,142,121,102"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="159,102,222,142,219,147,156,106"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="101,152,179,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="143,104,143,138,137,138,137,104"/>
+</map>

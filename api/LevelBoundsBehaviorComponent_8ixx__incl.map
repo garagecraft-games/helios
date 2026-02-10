@@ -1,9 +1,14 @@
-<map id="include/helios/engine/game/components/physics/LevelBoundsBehaviorComponent.ixx" name="include/helios/engine/game/components/physics/LevelBoundsBehaviorComponent.ixx">
-<area shape="rect" id="Node000001" title="Component defining behavior when an entity interacts with level boundaries." alt="" coords="16,5,283,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,108,91,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,62,74,101,70,97,117,58"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="115,108,184,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,60,152,94,147,94,147,60"/>
-<area shape="rect" id="Node000004" href="$Component_8ixx.html" title="Base class for components attached to GameObjects." alt="" coords="208,108,437,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,58,288,99,286,104,201,62"/>
+<map id="LevelBoundsBehaviorComponent.ixx" name="LevelBoundsBehaviorComponent.ixx">
+<area shape="rect" id="Node000001" title="Component defining behavior when an entity interacts with level boundaries." alt="" coords="129,5,391,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,86,91,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,33,92,84,91,79,228,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="115,86,184,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,33,179,80,176,76,242,29"/>
+<area shape="rect" id="Node000004" href="$CollisionResponse_8ixx.html" title="Enum for defining collision response behaviors." alt="" coords="209,79,533,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="278,29,335,69,332,73,275,33"/>
+<area shape="rect" id="Node000006" href="$CollisionBehavior_8ixx.html" title="Enumeration of collision response behaviors." alt="" coords="557,79,881,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="327,28,596,74,595,79,326,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="511,167,577,192"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="413,116,507,158,505,163,411,121"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="678,121,583,163,581,158,676,116"/>
 </map>
